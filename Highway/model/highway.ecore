@@ -2,10 +2,17 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="highway" nsURI="highway" nsPrefix="highway">
   <eClassifiers xsi:type="ecore:EClass" name="Highway"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Node"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Node">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasStarts" lowerBound="1"
+        upperBound="-1" eType="#//Segment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasEnds" lowerBound="1"
+        upperBound="-1" eType="#//Segment"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Segment">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="numLanes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="length"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasCars" upperBound="-1"
+        eType="#//Car"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Semaphore">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="secondsRed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
@@ -15,5 +22,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="canGo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Signal"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Car"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Car">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeIn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeOut" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+  </eClassifiers>
 </ecore:EPackage>
