@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.graphiti.ui.diagramTypes">
+      <diagramType
+            name="GrafiHighway Diagram Type"
+            type="GrafiHighway"
+            id="GrafiHighway.GrafiHighwayDiagramType">
+      </diagramType>
+   </extension>
+   <extension
+         point="org.eclipse.graphiti.ui.diagramTypeProviders">
+      <diagramTypeProvider
+            name="GrafiHighway Diagram Type Provider"
+            class="grafihighway.diagram.GrafiHighwayDiagramTypeProvider"
+            id="GrafiHighway.GrafiHighwayDiagramTypeProvider">
+         <diagramType
+               id="GrafiHighway.GrafiHighwayDiagramType">
+         </diagramType>
+      </diagramTypeProvider>
+   </extension>
+
+</plugin>
