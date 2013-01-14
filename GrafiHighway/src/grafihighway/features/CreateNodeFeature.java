@@ -27,7 +27,7 @@ public class CreateNodeFeature extends AbstractCreateFeature implements
 		Node newNode = HighwayFactory.eINSTANCE.createNode();
 		
 		// TODO: in case of an EMF object add the new object to a suitable resource
-		// getDiagram().eResource().getContents().add(newHighway);
+		getDiagram().eResource().getContents().add(newNode);
 
 		addGraphicalRepresentation(context, newNode);
 		return new Object[] { newNode };

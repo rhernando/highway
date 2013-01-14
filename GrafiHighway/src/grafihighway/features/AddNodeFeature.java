@@ -45,7 +45,7 @@ public class AddNodeFeature extends AbstractAddFeature implements
 		roundedRectangle.setFilled(false);
 		
 		Shape shape = peCreateService.createShape(containerShape, false);
-		Text text = gaService.createText(shape, "Highway");
+		Text text = gaService.createText(shape, "Node");
 		text.setHorizontalAlignment(Orientation.ALIGNMENT_CENTER);
 		text.setVerticalAlignment(Orientation.ALIGNMENT_CENTER);
 		gaService.setLocationAndSize(text, 0, 0, context.getWidth(), context.getHeight());
