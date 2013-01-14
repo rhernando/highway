@@ -15,11 +15,6 @@ Highway returns Highway:
 		('initSignal' '{' initSignal+=Signal ( "," initSignal+=Signal)* '}' )?
 	'}';
 
-
-
-
-
-
 Node returns Node:
 	'Node'
 	'{'
@@ -59,6 +54,9 @@ Signal returns Signal:
 	{Signal}
 	'Signal'
 	;
+	
+EString returns ecore::EString:
+	STRING | ID;
 
 EDate returns ecore::EDate:
 	'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
@@ -68,3 +66,5 @@ EInt returns ecore::EInt:
 
 EBoolean returns ecore::EBoolean:
 	'true' | 'false';
+
+	
