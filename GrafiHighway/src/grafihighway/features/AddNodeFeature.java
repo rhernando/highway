@@ -1,6 +1,8 @@
 package grafihighway.features;
 
-import highway.Node;
+import java.awt.Frame;
+
+import highwayproj.highway.Node;
 
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
@@ -16,6 +18,7 @@ import org.eclipse.graphiti.mm.pictograms.Shape;
 import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
+import org.eclipse.graphiti.util.ColorConstant;
 
 public class AddNodeFeature extends AbstractAddFeature implements
 		IAddFeature {
@@ -35,14 +38,21 @@ public class AddNodeFeature extends AbstractAddFeature implements
 		
 		Node newNode = (Node)context.getNewObject();
 
+		Object[] options = {"Injector", "Extractor"};
+//		Frame
+//		JOptionPane.showOptionDialog(new JFrame(), "sss", "sssw",
+//				JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null,
+//				options, options[1]);
+//		
 		Diagram targetDiagram = (Diagram) context.getTargetContainer();
 		IPeCreateService peCreateService = Graphiti.getPeCreateService();
 		IGaService gaService = Graphiti.getGaService();
 
 		ContainerShape containerShape = peCreateService.createContainerShape(targetDiagram, true);
 		RoundedRectangle roundedRectangle = gaService.createRoundedRectangle(containerShape, 5, 5);
+		roundedRectangle.setBackground(manageColor(new ColorConstant(80,80,200)));
+		roundedRectangle.setForeground(manageColor(new ColorConstant(10,0,0)));
 		gaService.setLocationAndSize(roundedRectangle, context.getX(), context.getY(), context.getWidth(), context.getHeight());
-		roundedRectangle.setFilled(false);
 		
 		Shape shape = peCreateService.createShape(containerShape, false);
 		Text text = gaService.createText(shape, "Node");

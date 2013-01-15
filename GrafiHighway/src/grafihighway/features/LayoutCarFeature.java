@@ -1,6 +1,6 @@
 package grafihighway.features;
 
-import highwayproj.highway.Semaphore;
+import highwayproj.highway.Car;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.graphiti.features.IFeatureProvider;
@@ -15,16 +15,16 @@ import org.eclipse.graphiti.mm.pictograms.PictogramElement;
 import org.eclipse.graphiti.mm.pictograms.Shape;
 import org.eclipse.graphiti.services.Graphiti;
 
-public class LayoutSemaphoreFeature extends AbstractLayoutFeature implements
+public class LayoutCarFeature extends AbstractLayoutFeature implements
 		ILayoutFeature {
 
-	public LayoutSemaphoreFeature(IFeatureProvider fp) {
+	public LayoutCarFeature(IFeatureProvider fp) {
 		super(fp);
 	}
 
 	@Override
 	public boolean canLayout(ILayoutContext context) {
-		return context.getPictogramElement() instanceof ContainerShape && getBusinessObjectForPictogramElement(context.getPictogramElement()) instanceof Semaphore;
+		return context.getPictogramElement() instanceof ContainerShape && getBusinessObjectForPictogramElement(context.getPictogramElement()) instanceof Car;
 	}
 
 	@Override

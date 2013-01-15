@@ -1,7 +1,7 @@
 package grafihighway.features;
 
-import highwayproj.highway.Node;
-import highwayproj.highway.Signal;
+import highwayproj.highway.Car;
+import highwayproj.highway.Segment;
 
 import org.eclipse.graphiti.features.ICreateConnectionFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
@@ -12,19 +12,19 @@ import org.eclipse.graphiti.mm.pictograms.Anchor;
 import org.eclipse.graphiti.mm.pictograms.Connection;
 import org.eclipse.graphiti.mm.pictograms.PictogramElement;
 
-public class CreateAttachSignalConnectionFeature extends
+public class CreateAttachCarConnectionFeature extends
 		AbstractCreateConnectionFeature implements ICreateConnectionFeature {
 
-	public CreateAttachSignalConnectionFeature(IFeatureProvider fp) {
-		super(fp, "AttachSignal",
-				"Attach a Signal to a Node");
+	public CreateAttachCarConnectionFeature(IFeatureProvider fp) {
+		super(fp, "AttachCar",
+				"Attach a Car to a Segment");
 	}
 
 	@Override
 	public boolean canStartConnection(ICreateConnectionContext context) {
 		Anchor source = context.getSourceAnchor();
 		return source != null
-				&& (getBusinessObjectForPictogramElement(source.getParent()) instanceof Signal );
+				&& (getBusinessObjectForPictogramElement(source.getParent()) instanceof Car );
 		// TODO: check for right domain object instance below
 		// return
 		// getBusinessObjectForPictogramElement(context.getSourcePictogramElement())
@@ -42,8 +42,8 @@ public class CreateAttachSignalConnectionFeature extends
 		if (sourcePictogramElement != null && targetPictogramElement != null) {
 			
 			// : check for right domain object instance below
-			if (getBusinessObjectForPictogramElement(sourcePictogramElement) instanceof Signal
-					&& getBusinessObjectForPictogramElement(targetPictogramElement) instanceof Node) {
+			if (getBusinessObjectForPictogramElement(sourcePictogramElement) instanceof Car
+					&& getBusinessObjectForPictogramElement(targetPictogramElement) instanceof Segment) {
 				return true;
 			}else{
 				return false;
@@ -62,12 +62,12 @@ public class CreateAttachSignalConnectionFeature extends
 		PictogramElement targetPictogramElement = context
 				.getTargetPictogramElement();
 
-		Signal mySignal = (Signal)getBusinessObjectForPictogramElement(sourcePictogramElement);
-		Node myNode = (Node)getBusinessObjectForPictogramElement(targetPictogramElement);
-		myNode.getSignals().add(mySignal);
+		Car myCar = (Car)getBusinessObjectForPictogramElement(sourcePictogramElement);
+		Segment mySegment = (Segment)getBusinessObjectForPictogramElement(targetPictogramElement);
+		mySegment.getHasCars().add(myCar);
 
 		// TODO: create the domain object connection here
-		Object newDomainObjectConnetion = "SIG";
+		Object newDomainObjectConnetion = "CAR";
 
 		AddConnectionContext addContext = new AddConnectionContext(
 				context.getSourceAnchor(), context.getTargetAnchor());

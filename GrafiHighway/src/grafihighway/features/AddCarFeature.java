@@ -1,6 +1,6 @@
 package grafihighway.features;
 
-import highwayproj.highway.Semaphore;
+import highwayproj.highway.Car;
 
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
@@ -17,23 +17,23 @@ import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
 
-public class AddSemaphoreFeature extends AbstractAddFeature implements
+public class AddCarFeature extends AbstractAddFeature implements
 		IAddFeature {
 
-	public AddSemaphoreFeature(IFeatureProvider fp) {
+	public AddCarFeature(IFeatureProvider fp) {
 		super(fp);
 	}
 
 	@Override
 	public boolean canAdd(IAddContext context) {
 		// TODO: check for right domain object instance below
-		return context.getNewObject() instanceof Semaphore && context.getTargetContainer() instanceof Diagram;
+		return context.getNewObject() instanceof Car && context.getTargetContainer() instanceof Diagram;
 	}
 
 	@Override
 	public PictogramElement add(IAddContext context) {
 		
-		Semaphore newSemaphore = (Semaphore)context.getNewObject();
+		Car newCar = (Car)context.getNewObject();
 
 		Diagram targetDiagram = (Diagram) context.getTargetContainer();
 		IPeCreateService peCreateService = Graphiti.getPeCreateService();
@@ -45,14 +45,14 @@ public class AddSemaphoreFeature extends AbstractAddFeature implements
 		roundedRectangle.setFilled(false);
 		
 		Shape shape = peCreateService.createShape(containerShape, false);
-		Text text = gaService.createText(shape, "Semaphore");
+		Text text = gaService.createText(shape, "Car");
 		text.setHorizontalAlignment(Orientation.ALIGNMENT_CENTER);
 		text.setVerticalAlignment(Orientation.ALIGNMENT_CENTER);
 		gaService.setLocationAndSize(text, 0, 0, context.getWidth(), context.getHeight());
 
 		peCreateService.createChopboxAnchor(containerShape);
 
-		link(containerShape, newSemaphore);
+		link(containerShape, newCar);
 
 		return containerShape;
 	}

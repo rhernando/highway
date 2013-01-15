@@ -1,13 +1,17 @@
 package grafihighway.diagram;
 
+import grafihighway.features.AddAttachCarConnectionFeature;
 import grafihighway.features.AddAttachSemaphoreConnectionFeature;
 import grafihighway.features.AddAttachSignalConnectionFeature;
+import grafihighway.features.AddCarFeature;
 import grafihighway.features.AddNodeFeature;
 import grafihighway.features.AddSegmentConnectionFeature;
 import grafihighway.features.AddSemaphoreFeature;
 import grafihighway.features.AddSignalFeature;
+import grafihighway.features.CreateAttachCarConnectionFeature;
 import grafihighway.features.CreateAttachSemaphoreConnectionFeature;
 import grafihighway.features.CreateAttachSignalConnectionFeature;
+import grafihighway.features.CreateCarFeature;
 import grafihighway.features.CreateDomainObjectConnectionConnectionFeature;
 import grafihighway.features.CreateHighwayFeature;
 import grafihighway.features.CreateNodeFeature;
@@ -16,10 +20,11 @@ import grafihighway.features.CreateSemaphoreFeature;
 import grafihighway.features.CreateSignalFeature;
 import grafihighway.features.LayoutNodeFeature;
 import grafihighway.features.LayoutSemaphoreFeature;
-import highway.Node;
-import highway.Segment;
-import highway.Semaphore;
-import highway.Signal;
+import highwayproj.highway.Car;
+import highwayproj.highway.Node;
+import highwayproj.highway.Segment;
+import highwayproj.highway.Semaphore;
+import highwayproj.highway.Signal;
 
 import org.eclipse.graphiti.dt.IDiagramTypeProvider;
 import org.eclipse.graphiti.features.IAddFeature;
@@ -42,7 +47,8 @@ public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 	public ICreateFeature[] getCreateFeatures() {
 		return new ICreateFeature[] { new CreateHighwayFeature(this),
 				new CreateNodeFeature(this), new CreateSemaphoreFeature(this),
-				new CreateSignalFeature(this) };
+				new CreateSignalFeature(this),
+				new CreateCarFeature(this)};
 	}
 	
 	@Override
@@ -51,7 +57,8 @@ public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 				new CreateDomainObjectConnectionConnectionFeature(this),
 				new CreateSegmentConnectionFeature(this),
 				new CreateAttachSignalConnectionFeature(this),
-				new CreateAttachSemaphoreConnectionFeature(this) };
+				new CreateAttachSemaphoreConnectionFeature(this),
+				new CreateAttachCarConnectionFeature(this)};
 	}
 	
 	@Override
@@ -60,11 +67,13 @@ public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 			if (context.getNewObject() instanceof Node) return new AddNodeFeature(this);
 			if (context.getNewObject() instanceof Semaphore) return new AddSemaphoreFeature(this);
 			if (context.getNewObject() instanceof Signal) return new AddSignalFeature(this);
+			if (context.getNewObject() instanceof Car) return new AddCarFeature(this);
 		}
 		if (context instanceof IAddConnectionContext){
 			if (context.getNewObject() instanceof Segment) return new AddSegmentConnectionFeature(this);
 			if (context.getNewObject() instanceof String && context.getNewObject().equals("SEM")) return new AddAttachSemaphoreConnectionFeature(this);
 			if (context.getNewObject() instanceof String && context.getNewObject().equals("SIG")) return new AddAttachSignalConnectionFeature(this);
+			if (context.getNewObject() instanceof String && context.getNewObject().equals("CAR")) return new AddAttachCarConnectionFeature(this);
 			
 		}
 				

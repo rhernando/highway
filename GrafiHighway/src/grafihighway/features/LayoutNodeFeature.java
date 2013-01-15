@@ -1,6 +1,6 @@
 package grafihighway.features;
 
-import highway.Node;
+import highwayproj.highway.Node;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.graphiti.features.IFeatureProvider;

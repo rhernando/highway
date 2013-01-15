@@ -1,7 +1,7 @@
 package grafihighway.features;
 
+import highwayproj.highway.Car;
 import highwayproj.highway.HighwayFactory;
-import highwayproj.highway.Semaphore;
 
 import org.eclipse.graphiti.features.ICreateFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
@@ -9,11 +9,11 @@ import org.eclipse.graphiti.features.context.ICreateContext;
 import org.eclipse.graphiti.features.impl.AbstractCreateFeature;
 import org.eclipse.graphiti.mm.pictograms.Diagram;
 
-public class CreateSemaphoreFeature extends AbstractCreateFeature implements
+public class CreateCarFeature extends AbstractCreateFeature implements
 		ICreateFeature {
 
-	public CreateSemaphoreFeature(IFeatureProvider fp) {
-		super(fp, "Semaphore", "Creates a new Semaphore");
+	public CreateCarFeature(IFeatureProvider fp) {
+		super(fp, "Car", "Creates a new Car");
 	}
 
 	@Override
@@ -24,12 +24,12 @@ public class CreateSemaphoreFeature extends AbstractCreateFeature implements
 	@Override
 	public Object[] create(ICreateContext context) {
 		// TODO: create the domain object here
-		Semaphore newSemaphore = HighwayFactory.eINSTANCE.createSemaphore();
+		Car newCar = HighwayFactory.eINSTANCE.createCar();
 		
 		// TODO: in case of an EMF object add the new object to a suitable resource
-		getDiagram().eResource().getContents().add(newSemaphore);
+		getDiagram().eResource().getContents().add(newCar);
 
-		addGraphicalRepresentation(context, newSemaphore);
-		return new Object[] { newSemaphore };
+		addGraphicalRepresentation(context, newCar);
+		return new Object[] { newCar };
 	}
 }

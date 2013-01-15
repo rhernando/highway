@@ -1,6 +1,6 @@
 package grafihighway.features;
 
-import highway.Segment;
+import highwayproj.highway.Segment;
 
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;

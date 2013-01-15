@@ -1,8 +1,8 @@
 package grafihighway.features;
 
-import highway.HighwayFactory;
-import highway.Node;
-import highway.Segment;
+import highwayproj.highway.HighwayFactory;
+import highwayproj.highway.Node;
+import highwayproj.highway.Segment;
 
 import org.eclipse.graphiti.features.ICreateConnectionFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;

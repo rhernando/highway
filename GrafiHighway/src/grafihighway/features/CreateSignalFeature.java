@@ -1,7 +1,7 @@
 package grafihighway.features;
 
-import highway.HighwayFactory;
-import highway.Signal;
+import highwayproj.highway.HighwayFactory;
+import highwayproj.highway.Signal;
 
 import org.eclipse.graphiti.features.ICreateFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;

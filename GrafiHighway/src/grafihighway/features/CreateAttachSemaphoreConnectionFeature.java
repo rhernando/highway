@@ -1,7 +1,7 @@
 package grafihighway.features;
 
-import highway.Node;
-import highway.Semaphore;
+import highwayproj.highway.Node;
+import highwayproj.highway.Semaphore;
 
 import org.eclipse.graphiti.features.ICreateConnectionFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
