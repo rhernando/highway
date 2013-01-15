@@ -76,6 +76,51 @@ public interface HighwayFactory extends EFactory {
 	Car createCar();
 
 	/**
+	 * Returns a new object of class '<em>Extractor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Extractor</em>'.
+	 * @generated
+	 */
+	Extractor createExtractor();
+
+	/**
+	 * Returns a new object of class '<em>Injector</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Injector</em>'.
+	 * @generated
+	 */
+	Injector createInjector();
+
+	/**
+	 * Returns a new object of class '<em>Speedlimit</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Speedlimit</em>'.
+	 * @generated
+	 */
+	Speedlimit createSpeedlimit();
+
+	/**
+	 * Returns a new object of class '<em>Stop</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Stop</em>'.
+	 * @generated
+	 */
+	Stop createStop();
+
+	/**
+	 * Returns a new object of class '<em>Yield</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Yield</em>'.
+	 * @generated
+	 */
+	Yield createYield();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

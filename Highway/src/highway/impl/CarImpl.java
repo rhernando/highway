@@ -5,12 +5,15 @@ package highway.impl;
 import highway.Car;
 import highway.HighwayPackage;
 
+import highway.Node;
+import highway.Segment;
 import java.util.Date;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
@@ -23,6 +26,8 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <ul>
  *   <li>{@link highway.impl.CarImpl#getTimeIn <em>Time In</em>}</li>
  *   <li>{@link highway.impl.CarImpl#getTimeOut <em>Time Out</em>}</li>
+ *   <li>{@link highway.impl.CarImpl#getIsInNode <em>Is In Node</em>}</li>
+ *   <li>{@link highway.impl.CarImpl#getIsInSegment <em>Is In Segment</em>}</li>
  * </ul>
  * </p>
  *
@@ -68,6 +73,26 @@ public class CarImpl extends EObjectImpl implements Car {
 	 * @ordered
 	 */
 	protected Date timeOut = TIME_OUT_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getIsInNode() <em>Is In Node</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsInNode()
+	 * @generated
+	 * @ordered
+	 */
+	protected Node isInNode;
+
+	/**
+	 * The cached value of the '{@link #getIsInSegment() <em>Is In Segment</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsInSegment()
+	 * @generated
+	 * @ordered
+	 */
+	protected Segment isInSegment;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,6 +160,82 @@ public class CarImpl extends EObjectImpl implements Car {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Node getIsInNode() {
+		if (isInNode != null && isInNode.eIsProxy()) {
+			InternalEObject oldIsInNode = (InternalEObject)isInNode;
+			isInNode = (Node)eResolveProxy(oldIsInNode);
+			if (isInNode != oldIsInNode) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, HighwayPackage.CAR__IS_IN_NODE, oldIsInNode, isInNode));
+			}
+		}
+		return isInNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Node basicGetIsInNode() {
+		return isInNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsInNode(Node newIsInNode) {
+		Node oldIsInNode = isInNode;
+		isInNode = newIsInNode;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HighwayPackage.CAR__IS_IN_NODE, oldIsInNode, isInNode));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Segment getIsInSegment() {
+		if (isInSegment != null && isInSegment.eIsProxy()) {
+			InternalEObject oldIsInSegment = (InternalEObject)isInSegment;
+			isInSegment = (Segment)eResolveProxy(oldIsInSegment);
+			if (isInSegment != oldIsInSegment) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, HighwayPackage.CAR__IS_IN_SEGMENT, oldIsInSegment, isInSegment));
+			}
+		}
+		return isInSegment;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Segment basicGetIsInSegment() {
+		return isInSegment;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsInSegment(Segment newIsInSegment) {
+		Segment oldIsInSegment = isInSegment;
+		isInSegment = newIsInSegment;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HighwayPackage.CAR__IS_IN_SEGMENT, oldIsInSegment, isInSegment));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -142,6 +243,12 @@ public class CarImpl extends EObjectImpl implements Car {
 				return getTimeIn();
 			case HighwayPackage.CAR__TIME_OUT:
 				return getTimeOut();
+			case HighwayPackage.CAR__IS_IN_NODE:
+				if (resolve) return getIsInNode();
+				return basicGetIsInNode();
+			case HighwayPackage.CAR__IS_IN_SEGMENT:
+				if (resolve) return getIsInSegment();
+				return basicGetIsInSegment();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -159,6 +266,12 @@ public class CarImpl extends EObjectImpl implements Car {
 				return;
 			case HighwayPackage.CAR__TIME_OUT:
 				setTimeOut((Date)newValue);
+				return;
+			case HighwayPackage.CAR__IS_IN_NODE:
+				setIsInNode((Node)newValue);
+				return;
+			case HighwayPackage.CAR__IS_IN_SEGMENT:
+				setIsInSegment((Segment)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -178,6 +291,12 @@ public class CarImpl extends EObjectImpl implements Car {
 			case HighwayPackage.CAR__TIME_OUT:
 				setTimeOut(TIME_OUT_EDEFAULT);
 				return;
+			case HighwayPackage.CAR__IS_IN_NODE:
+				setIsInNode((Node)null);
+				return;
+			case HighwayPackage.CAR__IS_IN_SEGMENT:
+				setIsInSegment((Segment)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -194,6 +313,10 @@ public class CarImpl extends EObjectImpl implements Car {
 				return TIME_IN_EDEFAULT == null ? timeIn != null : !TIME_IN_EDEFAULT.equals(timeIn);
 			case HighwayPackage.CAR__TIME_OUT:
 				return TIME_OUT_EDEFAULT == null ? timeOut != null : !TIME_OUT_EDEFAULT.equals(timeOut);
+			case HighwayPackage.CAR__IS_IN_NODE:
+				return isInNode != null;
+			case HighwayPackage.CAR__IS_IN_SEGMENT:
+				return isInSegment != null;
 		}
 		return super.eIsSet(featureID);
 	}

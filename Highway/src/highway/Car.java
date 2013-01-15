@@ -16,6 +16,8 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link highway.Car#getTimeIn <em>Time In</em>}</li>
  *   <li>{@link highway.Car#getTimeOut <em>Time Out</em>}</li>
+ *   <li>{@link highway.Car#getIsInNode <em>Is In Node</em>}</li>
+ *   <li>{@link highway.Car#getIsInSegment <em>Is In Segment</em>}</li>
  * </ul>
  * </p>
  *
@@ -75,5 +77,57 @@ public interface Car extends EObject {
 	 * @generated
 	 */
 	void setTimeOut(Date value);
+
+	/**
+	 * Returns the value of the '<em><b>Is In Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Is In Node</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is In Node</em>' reference.
+	 * @see #setIsInNode(Node)
+	 * @see highway.HighwayPackage#getCar_IsInNode()
+	 * @model
+	 * @generated
+	 */
+	Node getIsInNode();
+
+	/**
+	 * Sets the value of the '{@link highway.Car#getIsInNode <em>Is In Node</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is In Node</em>' reference.
+	 * @see #getIsInNode()
+	 * @generated
+	 */
+	void setIsInNode(Node value);
+
+	/**
+	 * Returns the value of the '<em><b>Is In Segment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Is In Segment</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is In Segment</em>' reference.
+	 * @see #setIsInSegment(Segment)
+	 * @see highway.HighwayPackage#getCar_IsInSegment()
+	 * @model
+	 * @generated
+	 */
+	Segment getIsInSegment();
+
+	/**
+	 * Sets the value of the '{@link highway.Car#getIsInSegment <em>Is In Segment</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is In Segment</em>' reference.
+	 * @see #getIsInSegment()
+	 * @generated
+	 */
+	void setIsInSegment(Segment value);
 
 } // Car

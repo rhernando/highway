@@ -37,7 +37,7 @@ public interface Node extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Starts</em>' reference list.
 	 * @see highway.HighwayPackage#getNode_HasStarts()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	EList<Segment> getHasStarts();
@@ -53,7 +53,7 @@ public interface Node extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Ends</em>' reference list.
 	 * @see highway.HighwayPackage#getNode_HasEnds()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	EList<Segment> getHasEnds();

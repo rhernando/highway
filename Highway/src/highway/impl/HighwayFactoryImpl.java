@@ -62,6 +62,11 @@ public class HighwayFactoryImpl extends EFactoryImpl implements HighwayFactory {
 			case HighwayPackage.SEMAPHORE: return createSemaphore();
 			case HighwayPackage.SIGNAL: return createSignal();
 			case HighwayPackage.CAR: return createCar();
+			case HighwayPackage.EXTRACTOR: return createExtractor();
+			case HighwayPackage.INJECTOR: return createInjector();
+			case HighwayPackage.SPEEDLIMIT: return createSpeedlimit();
+			case HighwayPackage.STOP: return createStop();
+			case HighwayPackage.YIELD: return createYield();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -125,6 +130,56 @@ public class HighwayFactoryImpl extends EFactoryImpl implements HighwayFactory {
 	public Car createCar() {
 		CarImpl car = new CarImpl();
 		return car;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Extractor createExtractor() {
+		ExtractorImpl extractor = new ExtractorImpl();
+		return extractor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Injector createInjector() {
+		InjectorImpl injector = new InjectorImpl();
+		return injector;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Speedlimit createSpeedlimit() {
+		SpeedlimitImpl speedlimit = new SpeedlimitImpl();
+		return speedlimit;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Stop createStop() {
+		StopImpl stop = new StopImpl();
+		return stop;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Yield createYield() {
+		YieldImpl yield = new YieldImpl();
+		return yield;
 	}
 
 	/**

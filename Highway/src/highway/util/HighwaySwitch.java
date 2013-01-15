@@ -102,6 +102,41 @@ public class HighwaySwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case HighwayPackage.EXTRACTOR: {
+				Extractor extractor = (Extractor)theEObject;
+				T result = caseExtractor(extractor);
+				if (result == null) result = caseNode(extractor);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case HighwayPackage.INJECTOR: {
+				Injector injector = (Injector)theEObject;
+				T result = caseInjector(injector);
+				if (result == null) result = caseNode(injector);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case HighwayPackage.SPEEDLIMIT: {
+				Speedlimit speedlimit = (Speedlimit)theEObject;
+				T result = caseSpeedlimit(speedlimit);
+				if (result == null) result = caseSignal(speedlimit);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case HighwayPackage.STOP: {
+				Stop stop = (Stop)theEObject;
+				T result = caseStop(stop);
+				if (result == null) result = caseSignal(stop);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case HighwayPackage.YIELD: {
+				Yield yield = (Yield)theEObject;
+				T result = caseYield(yield);
+				if (result == null) result = caseSignal(yield);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -193,6 +228,81 @@ public class HighwaySwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCar(Car object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Extractor</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Extractor</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExtractor(Extractor object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Injector</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Injector</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInjector(Injector object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Speedlimit</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Speedlimit</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpeedlimit(Speedlimit object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Stop</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Stop</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStop(Stop object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Yield</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Yield</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseYield(Yield object) {
 		return null;
 	}
 

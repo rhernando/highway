@@ -14,7 +14,11 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link highway.Highway#getStartNodes <em>Start Nodes</em>}</li>
+ *   <li>{@link highway.Highway#getInitNodes <em>Init Nodes</em>}</li>
+ *   <li>{@link highway.Highway#getInitCars <em>Init Cars</em>}</li>
+ *   <li>{@link highway.Highway#getInitSegments <em>Init Segments</em>}</li>
+ *   <li>{@link highway.Highway#getInitSemaphore <em>Init Semaphore</em>}</li>
+ *   <li>{@link highway.Highway#getInitSignal <em>Init Signal</em>}</li>
  * </ul>
  * </p>
  *
@@ -24,19 +28,83 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Highway extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Start Nodes</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Init Nodes</b></em>' containment reference list.
 	 * The list contents are of type {@link highway.Node}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Start Nodes</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Init Nodes</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Start Nodes</em>' containment reference list.
-	 * @see highway.HighwayPackage#getHighway_StartNodes()
+	 * @return the value of the '<em>Init Nodes</em>' containment reference list.
+	 * @see highway.HighwayPackage#getHighway_InitNodes()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Node> getStartNodes();
+	EList<Node> getInitNodes();
+
+	/**
+	 * Returns the value of the '<em><b>Init Cars</b></em>' containment reference list.
+	 * The list contents are of type {@link highway.Car}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Init Cars</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Init Cars</em>' containment reference list.
+	 * @see highway.HighwayPackage#getHighway_InitCars()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Car> getInitCars();
+
+	/**
+	 * Returns the value of the '<em><b>Init Segments</b></em>' containment reference list.
+	 * The list contents are of type {@link highway.Segment}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Init Segments</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Init Segments</em>' containment reference list.
+	 * @see highway.HighwayPackage#getHighway_InitSegments()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Segment> getInitSegments();
+
+	/**
+	 * Returns the value of the '<em><b>Init Semaphore</b></em>' containment reference list.
+	 * The list contents are of type {@link highway.Semaphore}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Init Semaphore</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Init Semaphore</em>' containment reference list.
+	 * @see highway.HighwayPackage#getHighway_InitSemaphore()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Semaphore> getInitSemaphore();
+
+	/**
+	 * Returns the value of the '<em><b>Init Signal</b></em>' containment reference list.
+	 * The list contents are of type {@link highway.Signal}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Init Signal</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Init Signal</em>' containment reference list.
+	 * @see highway.HighwayPackage#getHighway_InitSignal()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Signal> getInitSignal();
 
 } // Highway

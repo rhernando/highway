@@ -3,12 +3,14 @@
 package highway.impl;
 
 import highway.HighwayPackage;
+import highway.Node;
 import highway.Semaphore;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
@@ -22,6 +24,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link highway.impl.SemaphoreImpl#getSecondsRed <em>Seconds Red</em>}</li>
  *   <li>{@link highway.impl.SemaphoreImpl#getSecondsGreen <em>Seconds Green</em>}</li>
  *   <li>{@link highway.impl.SemaphoreImpl#isCanGo <em>Can Go</em>}</li>
+ *   <li>{@link highway.impl.SemaphoreImpl#getBelongsTo <em>Belongs To</em>}</li>
  * </ul>
  * </p>
  *
@@ -87,6 +90,16 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 	 * @ordered
 	 */
 	protected boolean canGo = CAN_GO_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getBelongsTo() <em>Belongs To</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBelongsTo()
+	 * @generated
+	 * @ordered
+	 */
+	protected Node belongsTo;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,6 +188,44 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Node getBelongsTo() {
+		if (belongsTo != null && belongsTo.eIsProxy()) {
+			InternalEObject oldBelongsTo = (InternalEObject)belongsTo;
+			belongsTo = (Node)eResolveProxy(oldBelongsTo);
+			if (belongsTo != oldBelongsTo) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, HighwayPackage.SEMAPHORE__BELONGS_TO, oldBelongsTo, belongsTo));
+			}
+		}
+		return belongsTo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Node basicGetBelongsTo() {
+		return belongsTo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBelongsTo(Node newBelongsTo) {
+		Node oldBelongsTo = belongsTo;
+		belongsTo = newBelongsTo;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HighwayPackage.SEMAPHORE__BELONGS_TO, oldBelongsTo, belongsTo));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -184,6 +235,9 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 				return getSecondsGreen();
 			case HighwayPackage.SEMAPHORE__CAN_GO:
 				return isCanGo();
+			case HighwayPackage.SEMAPHORE__BELONGS_TO:
+				if (resolve) return getBelongsTo();
+				return basicGetBelongsTo();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -204,6 +258,9 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 				return;
 			case HighwayPackage.SEMAPHORE__CAN_GO:
 				setCanGo((Boolean)newValue);
+				return;
+			case HighwayPackage.SEMAPHORE__BELONGS_TO:
+				setBelongsTo((Node)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -226,6 +283,9 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 			case HighwayPackage.SEMAPHORE__CAN_GO:
 				setCanGo(CAN_GO_EDEFAULT);
 				return;
+			case HighwayPackage.SEMAPHORE__BELONGS_TO:
+				setBelongsTo((Node)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -244,6 +304,8 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 				return secondsGreen != SECONDS_GREEN_EDEFAULT;
 			case HighwayPackage.SEMAPHORE__CAN_GO:
 				return canGo != CAN_GO_EDEFAULT;
+			case HighwayPackage.SEMAPHORE__BELONGS_TO:
+				return belongsTo != null;
 		}
 		return super.eIsSet(featureID);
 	}

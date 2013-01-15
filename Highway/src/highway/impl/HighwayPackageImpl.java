@@ -3,14 +3,19 @@
 package highway.impl;
 
 import highway.Car;
+import highway.Extractor;
 import highway.Highway;
 import highway.HighwayFactory;
 import highway.HighwayPackage;
+import highway.Injector;
 import highway.Node;
 import highway.Segment;
 import highway.Semaphore;
 import highway.Signal;
 
+import highway.Speedlimit;
+import highway.Stop;
+import highway.Yield;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -66,6 +71,41 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 	 * @generated
 	 */
 	private EClass carEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass extractorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass injectorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass speedlimitEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass stopEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass yieldEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -142,8 +182,44 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getHighway_StartNodes() {
+	public EReference getHighway_InitNodes() {
 		return (EReference)highwayEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHighway_InitCars() {
+		return (EReference)highwayEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHighway_InitSegments() {
+		return (EReference)highwayEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHighway_InitSemaphore() {
+		return (EReference)highwayEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHighway_InitSignal() {
+		return (EReference)highwayEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -215,7 +291,7 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 	 * @generated
 	 */
 	public EAttribute getSegment_Length() {
-		return (EAttribute)segmentEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)segmentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -224,7 +300,7 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 	 * @generated
 	 */
 	public EReference getSegment_HasCars() {
-		return (EReference)segmentEClass.getEStructuralFeatures().get(2);
+		return (EReference)segmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -268,8 +344,26 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getSemaphore_BelongsTo() {
+		return (EReference)semaphoreEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSignal() {
 		return signalEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSignal_BelongsTo() {
+		return (EReference)signalEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -304,6 +398,87 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getCar_IsInNode() {
+		return (EReference)carEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCar_IsInSegment() {
+		return (EReference)carEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExtractor() {
+		return extractorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getInjector() {
+		return injectorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInjector_CarsPerHour() {
+		return (EAttribute)injectorEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSpeedlimit() {
+		return speedlimitEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSpeedlimit_Speed() {
+		return (EAttribute)speedlimitEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getStop() {
+		return stopEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getYield() {
+		return yieldEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HighwayFactory getHighwayFactory() {
 		return (HighwayFactory)getEFactoryInstance();
 	}
@@ -328,7 +503,11 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 
 		// Create classes and their features
 		highwayEClass = createEClass(HIGHWAY);
-		createEReference(highwayEClass, HIGHWAY__START_NODES);
+		createEReference(highwayEClass, HIGHWAY__INIT_NODES);
+		createEReference(highwayEClass, HIGHWAY__INIT_CARS);
+		createEReference(highwayEClass, HIGHWAY__INIT_SEGMENTS);
+		createEReference(highwayEClass, HIGHWAY__INIT_SEMAPHORE);
+		createEReference(highwayEClass, HIGHWAY__INIT_SIGNAL);
 
 		nodeEClass = createEClass(NODE);
 		createEReference(nodeEClass, NODE__HAS_STARTS);
@@ -338,19 +517,35 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 
 		segmentEClass = createEClass(SEGMENT);
 		createEAttribute(segmentEClass, SEGMENT__NUM_LANES);
-		createEAttribute(segmentEClass, SEGMENT__LENGTH);
 		createEReference(segmentEClass, SEGMENT__HAS_CARS);
+		createEAttribute(segmentEClass, SEGMENT__LENGTH);
 
 		semaphoreEClass = createEClass(SEMAPHORE);
 		createEAttribute(semaphoreEClass, SEMAPHORE__SECONDS_RED);
 		createEAttribute(semaphoreEClass, SEMAPHORE__SECONDS_GREEN);
 		createEAttribute(semaphoreEClass, SEMAPHORE__CAN_GO);
+		createEReference(semaphoreEClass, SEMAPHORE__BELONGS_TO);
 
 		signalEClass = createEClass(SIGNAL);
+		createEReference(signalEClass, SIGNAL__BELONGS_TO);
 
 		carEClass = createEClass(CAR);
 		createEAttribute(carEClass, CAR__TIME_IN);
 		createEAttribute(carEClass, CAR__TIME_OUT);
+		createEReference(carEClass, CAR__IS_IN_NODE);
+		createEReference(carEClass, CAR__IS_IN_SEGMENT);
+
+		extractorEClass = createEClass(EXTRACTOR);
+
+		injectorEClass = createEClass(INJECTOR);
+		createEAttribute(injectorEClass, INJECTOR__CARS_PER_HOUR);
+
+		speedlimitEClass = createEClass(SPEEDLIMIT);
+		createEAttribute(speedlimitEClass, SPEEDLIMIT__SPEED);
+
+		stopEClass = createEClass(STOP);
+
+		yieldEClass = createEClass(YIELD);
 	}
 
 	/**
@@ -381,32 +576,57 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		extractorEClass.getESuperTypes().add(this.getNode());
+		injectorEClass.getESuperTypes().add(this.getNode());
+		speedlimitEClass.getESuperTypes().add(this.getSignal());
+		stopEClass.getESuperTypes().add(this.getSignal());
+		yieldEClass.getESuperTypes().add(this.getSignal());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(highwayEClass, Highway.class, "Highway", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getHighway_StartNodes(), this.getNode(), null, "startNodes", null, 0, -1, Highway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHighway_InitNodes(), this.getNode(), null, "initNodes", null, 0, -1, Highway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHighway_InitCars(), this.getCar(), null, "initCars", null, 0, -1, Highway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHighway_InitSegments(), this.getSegment(), null, "initSegments", null, 0, -1, Highway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHighway_InitSemaphore(), this.getSemaphore(), null, "initSemaphore", null, 0, -1, Highway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHighway_InitSignal(), this.getSignal(), null, "initSignal", null, 0, -1, Highway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(nodeEClass, Node.class, "Node", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getNode_HasStarts(), this.getSegment(), null, "hasStarts", null, 1, -1, Node.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getNode_HasEnds(), this.getSegment(), null, "hasEnds", null, 1, -1, Node.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getNode_HasStarts(), this.getSegment(), null, "hasStarts", null, 0, -1, Node.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getNode_HasEnds(), this.getSegment(), null, "hasEnds", null, 0, -1, Node.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getNode_Semaphore(), this.getSemaphore(), null, "semaphore", null, 0, 1, Node.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getNode_Signals(), this.getSignal(), null, "signals", null, 0, -1, Node.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(segmentEClass, Segment.class, "Segment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSegment_NumLanes(), ecorePackage.getEInt(), "numLanes", null, 0, 1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSegment_Length(), ecorePackage.getEInt(), "length", null, 0, 1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSegment_HasCars(), this.getCar(), null, "hasCars", null, 0, -1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSegment_Length(), ecorePackage.getEInt(), "length", null, 0, 1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(semaphoreEClass, Semaphore.class, "Semaphore", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSemaphore_SecondsRed(), ecorePackage.getEInt(), "secondsRed", "1", 0, 1, Semaphore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSemaphore_SecondsGreen(), ecorePackage.getEInt(), "secondsGreen", "1", 0, 1, Semaphore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSemaphore_CanGo(), ecorePackage.getEBoolean(), "canGo", null, 0, 1, Semaphore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSemaphore_BelongsTo(), this.getNode(), null, "belongsTo", null, 1, 1, Semaphore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(signalEClass, Signal.class, "Signal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSignal_BelongsTo(), this.getNode(), null, "belongsTo", null, 1, 1, Signal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(carEClass, Car.class, "Car", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCar_TimeIn(), ecorePackage.getEDate(), "timeIn", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCar_TimeOut(), ecorePackage.getEDate(), "timeOut", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCar_IsInNode(), this.getNode(), null, "isInNode", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCar_IsInSegment(), this.getSegment(), null, "isInSegment", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(extractorEClass, Extractor.class, "Extractor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(injectorEClass, Injector.class, "Injector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getInjector_CarsPerHour(), ecorePackage.getEInt(), "carsPerHour", null, 0, 1, Injector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(speedlimitEClass, Speedlimit.class, "Speedlimit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSpeedlimit_Speed(), ecorePackage.getEInt(), "Speed", null, 0, 1, Speedlimit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(stopEClass, Stop.class, "Stop", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(yieldEClass, Yield.class, "Yield", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

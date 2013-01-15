@@ -15,8 +15,8 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link highway.Segment#getNumLanes <em>Num Lanes</em>}</li>
- *   <li>{@link highway.Segment#getLength <em>Length</em>}</li>
  *   <li>{@link highway.Segment#getHasCars <em>Has Cars</em>}</li>
+ *   <li>{@link highway.Segment#getLength <em>Length</em>}</li>
  * </ul>
  * </p>
  *

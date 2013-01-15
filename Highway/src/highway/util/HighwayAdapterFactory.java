@@ -92,6 +92,26 @@ public class HighwayAdapterFactory extends AdapterFactoryImpl {
 				return createCarAdapter();
 			}
 			@Override
+			public Adapter caseExtractor(Extractor object) {
+				return createExtractorAdapter();
+			}
+			@Override
+			public Adapter caseInjector(Injector object) {
+				return createInjectorAdapter();
+			}
+			@Override
+			public Adapter caseSpeedlimit(Speedlimit object) {
+				return createSpeedlimitAdapter();
+			}
+			@Override
+			public Adapter caseStop(Stop object) {
+				return createStopAdapter();
+			}
+			@Override
+			public Adapter caseYield(Yield object) {
+				return createYieldAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -192,6 +212,76 @@ public class HighwayAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCarAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link highway.Extractor <em>Extractor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see highway.Extractor
+	 * @generated
+	 */
+	public Adapter createExtractorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link highway.Injector <em>Injector</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see highway.Injector
+	 * @generated
+	 */
+	public Adapter createInjectorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link highway.Speedlimit <em>Speedlimit</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see highway.Speedlimit
+	 * @generated
+	 */
+	public Adapter createSpeedlimitAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link highway.Stop <em>Stop</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see highway.Stop
+	 * @generated
+	 */
+	public Adapter createStopAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link highway.Yield <em>Yield</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see highway.Yield
+	 * @generated
+	 */
+	public Adapter createYieldAdapter() {
 		return null;
 	}
 

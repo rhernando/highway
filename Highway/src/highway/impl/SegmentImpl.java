@@ -27,8 +27,8 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link highway.impl.SegmentImpl#getNumLanes <em>Num Lanes</em>}</li>
- *   <li>{@link highway.impl.SegmentImpl#getLength <em>Length</em>}</li>
  *   <li>{@link highway.impl.SegmentImpl#getHasCars <em>Has Cars</em>}</li>
+ *   <li>{@link highway.impl.SegmentImpl#getLength <em>Length</em>}</li>
  * </ul>
  * </p>
  *
@@ -56,6 +56,16 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 	protected int numLanes = NUM_LANES_EDEFAULT;
 
 	/**
+	 * The cached value of the '{@link #getHasCars() <em>Has Cars</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHasCars()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Car> hasCars;
+
+	/**
 	 * The default value of the '{@link #getLength() <em>Length</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,16 +84,6 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 	 * @ordered
 	 */
 	protected int length = LENGTH_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getHasCars() <em>Has Cars</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getHasCars()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Car> hasCars;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -168,10 +168,10 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 		switch (featureID) {
 			case HighwayPackage.SEGMENT__NUM_LANES:
 				return getNumLanes();
-			case HighwayPackage.SEGMENT__LENGTH:
-				return getLength();
 			case HighwayPackage.SEGMENT__HAS_CARS:
 				return getHasCars();
+			case HighwayPackage.SEGMENT__LENGTH:
+				return getLength();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -188,12 +188,12 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 			case HighwayPackage.SEGMENT__NUM_LANES:
 				setNumLanes((Integer)newValue);
 				return;
-			case HighwayPackage.SEGMENT__LENGTH:
-				setLength((Integer)newValue);
-				return;
 			case HighwayPackage.SEGMENT__HAS_CARS:
 				getHasCars().clear();
 				getHasCars().addAll((Collection<? extends Car>)newValue);
+				return;
+			case HighwayPackage.SEGMENT__LENGTH:
+				setLength((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -210,11 +210,11 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 			case HighwayPackage.SEGMENT__NUM_LANES:
 				setNumLanes(NUM_LANES_EDEFAULT);
 				return;
-			case HighwayPackage.SEGMENT__LENGTH:
-				setLength(LENGTH_EDEFAULT);
-				return;
 			case HighwayPackage.SEGMENT__HAS_CARS:
 				getHasCars().clear();
+				return;
+			case HighwayPackage.SEGMENT__LENGTH:
+				setLength(LENGTH_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -230,10 +230,10 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 		switch (featureID) {
 			case HighwayPackage.SEGMENT__NUM_LANES:
 				return numLanes != NUM_LANES_EDEFAULT;
-			case HighwayPackage.SEGMENT__LENGTH:
-				return length != LENGTH_EDEFAULT;
 			case HighwayPackage.SEGMENT__HAS_CARS:
 				return hasCars != null && !hasCars.isEmpty();
+			case HighwayPackage.SEGMENT__LENGTH:
+				return length != LENGTH_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

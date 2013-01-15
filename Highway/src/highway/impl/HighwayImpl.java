@@ -2,10 +2,14 @@
  */
 package highway.impl;
 
+import highway.Car;
 import highway.Highway;
 import highway.HighwayPackage;
 import highway.Node;
 
+import highway.Segment;
+import highway.Semaphore;
+import highway.Signal;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -27,7 +31,11 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link highway.impl.HighwayImpl#getStartNodes <em>Start Nodes</em>}</li>
+ *   <li>{@link highway.impl.HighwayImpl#getInitNodes <em>Init Nodes</em>}</li>
+ *   <li>{@link highway.impl.HighwayImpl#getInitCars <em>Init Cars</em>}</li>
+ *   <li>{@link highway.impl.HighwayImpl#getInitSegments <em>Init Segments</em>}</li>
+ *   <li>{@link highway.impl.HighwayImpl#getInitSemaphore <em>Init Semaphore</em>}</li>
+ *   <li>{@link highway.impl.HighwayImpl#getInitSignal <em>Init Signal</em>}</li>
  * </ul>
  * </p>
  *
@@ -35,15 +43,50 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  */
 public class HighwayImpl extends EObjectImpl implements Highway {
 	/**
-	 * The cached value of the '{@link #getStartNodes() <em>Start Nodes</em>}' containment reference list.
+	 * The cached value of the '{@link #getInitNodes() <em>Init Nodes</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStartNodes()
+	 * @see #getInitNodes()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Node> startNodes;
-
+	protected EList<Node> initNodes;
+	/**
+	 * The cached value of the '{@link #getInitCars() <em>Init Cars</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInitCars()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Car> initCars;
+	/**
+	 * The cached value of the '{@link #getInitSegments() <em>Init Segments</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInitSegments()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Segment> initSegments;
+	/**
+	 * The cached value of the '{@link #getInitSemaphore() <em>Init Semaphore</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInitSemaphore()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Semaphore> initSemaphore;
+	/**
+	 * The cached value of the '{@link #getInitSignal() <em>Init Signal</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInitSignal()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Signal> initSignal;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,11 +111,59 @@ public class HighwayImpl extends EObjectImpl implements Highway {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Node> getStartNodes() {
-		if (startNodes == null) {
-			startNodes = new EObjectContainmentEList<Node>(Node.class, this, HighwayPackage.HIGHWAY__START_NODES);
+	public EList<Node> getInitNodes() {
+		if (initNodes == null) {
+			initNodes = new EObjectContainmentEList<Node>(Node.class, this, HighwayPackage.HIGHWAY__INIT_NODES);
 		}
-		return startNodes;
+		return initNodes;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Car> getInitCars() {
+		if (initCars == null) {
+			initCars = new EObjectContainmentEList<Car>(Car.class, this, HighwayPackage.HIGHWAY__INIT_CARS);
+		}
+		return initCars;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Segment> getInitSegments() {
+		if (initSegments == null) {
+			initSegments = new EObjectContainmentEList<Segment>(Segment.class, this, HighwayPackage.HIGHWAY__INIT_SEGMENTS);
+		}
+		return initSegments;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Semaphore> getInitSemaphore() {
+		if (initSemaphore == null) {
+			initSemaphore = new EObjectContainmentEList<Semaphore>(Semaphore.class, this, HighwayPackage.HIGHWAY__INIT_SEMAPHORE);
+		}
+		return initSemaphore;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Signal> getInitSignal() {
+		if (initSignal == null) {
+			initSignal = new EObjectContainmentEList<Signal>(Signal.class, this, HighwayPackage.HIGHWAY__INIT_SIGNAL);
+		}
+		return initSignal;
 	}
 
 	/**
@@ -83,8 +174,16 @@ public class HighwayImpl extends EObjectImpl implements Highway {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case HighwayPackage.HIGHWAY__START_NODES:
-				return ((InternalEList<?>)getStartNodes()).basicRemove(otherEnd, msgs);
+			case HighwayPackage.HIGHWAY__INIT_NODES:
+				return ((InternalEList<?>)getInitNodes()).basicRemove(otherEnd, msgs);
+			case HighwayPackage.HIGHWAY__INIT_CARS:
+				return ((InternalEList<?>)getInitCars()).basicRemove(otherEnd, msgs);
+			case HighwayPackage.HIGHWAY__INIT_SEGMENTS:
+				return ((InternalEList<?>)getInitSegments()).basicRemove(otherEnd, msgs);
+			case HighwayPackage.HIGHWAY__INIT_SEMAPHORE:
+				return ((InternalEList<?>)getInitSemaphore()).basicRemove(otherEnd, msgs);
+			case HighwayPackage.HIGHWAY__INIT_SIGNAL:
+				return ((InternalEList<?>)getInitSignal()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -97,8 +196,16 @@ public class HighwayImpl extends EObjectImpl implements Highway {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case HighwayPackage.HIGHWAY__START_NODES:
-				return getStartNodes();
+			case HighwayPackage.HIGHWAY__INIT_NODES:
+				return getInitNodes();
+			case HighwayPackage.HIGHWAY__INIT_CARS:
+				return getInitCars();
+			case HighwayPackage.HIGHWAY__INIT_SEGMENTS:
+				return getInitSegments();
+			case HighwayPackage.HIGHWAY__INIT_SEMAPHORE:
+				return getInitSemaphore();
+			case HighwayPackage.HIGHWAY__INIT_SIGNAL:
+				return getInitSignal();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -112,9 +219,25 @@ public class HighwayImpl extends EObjectImpl implements Highway {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case HighwayPackage.HIGHWAY__START_NODES:
-				getStartNodes().clear();
-				getStartNodes().addAll((Collection<? extends Node>)newValue);
+			case HighwayPackage.HIGHWAY__INIT_NODES:
+				getInitNodes().clear();
+				getInitNodes().addAll((Collection<? extends Node>)newValue);
+				return;
+			case HighwayPackage.HIGHWAY__INIT_CARS:
+				getInitCars().clear();
+				getInitCars().addAll((Collection<? extends Car>)newValue);
+				return;
+			case HighwayPackage.HIGHWAY__INIT_SEGMENTS:
+				getInitSegments().clear();
+				getInitSegments().addAll((Collection<? extends Segment>)newValue);
+				return;
+			case HighwayPackage.HIGHWAY__INIT_SEMAPHORE:
+				getInitSemaphore().clear();
+				getInitSemaphore().addAll((Collection<? extends Semaphore>)newValue);
+				return;
+			case HighwayPackage.HIGHWAY__INIT_SIGNAL:
+				getInitSignal().clear();
+				getInitSignal().addAll((Collection<? extends Signal>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -128,8 +251,20 @@ public class HighwayImpl extends EObjectImpl implements Highway {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case HighwayPackage.HIGHWAY__START_NODES:
-				getStartNodes().clear();
+			case HighwayPackage.HIGHWAY__INIT_NODES:
+				getInitNodes().clear();
+				return;
+			case HighwayPackage.HIGHWAY__INIT_CARS:
+				getInitCars().clear();
+				return;
+			case HighwayPackage.HIGHWAY__INIT_SEGMENTS:
+				getInitSegments().clear();
+				return;
+			case HighwayPackage.HIGHWAY__INIT_SEMAPHORE:
+				getInitSemaphore().clear();
+				return;
+			case HighwayPackage.HIGHWAY__INIT_SIGNAL:
+				getInitSignal().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -143,8 +278,16 @@ public class HighwayImpl extends EObjectImpl implements Highway {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case HighwayPackage.HIGHWAY__START_NODES:
-				return startNodes != null && !startNodes.isEmpty();
+			case HighwayPackage.HIGHWAY__INIT_NODES:
+				return initNodes != null && !initNodes.isEmpty();
+			case HighwayPackage.HIGHWAY__INIT_CARS:
+				return initCars != null && !initCars.isEmpty();
+			case HighwayPackage.HIGHWAY__INIT_SEGMENTS:
+				return initSegments != null && !initSegments.isEmpty();
+			case HighwayPackage.HIGHWAY__INIT_SEMAPHORE:
+				return initSemaphore != null && !initSemaphore.isEmpty();
+			case HighwayPackage.HIGHWAY__INIT_SIGNAL:
+				return initSignal != null && !initSignal.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -66,13 +66,49 @@ public interface HighwayPackage extends EPackage {
 	int HIGHWAY = 0;
 
 	/**
-	 * The feature id for the '<em><b>Start Nodes</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Init Nodes</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HIGHWAY__START_NODES = 0;
+	int HIGHWAY__INIT_NODES = 0;
+
+	/**
+	 * The feature id for the '<em><b>Init Cars</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HIGHWAY__INIT_CARS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Init Segments</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HIGHWAY__INIT_SEGMENTS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Init Semaphore</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HIGHWAY__INIT_SEMAPHORE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Init Signal</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HIGHWAY__INIT_SIGNAL = 4;
 
 	/**
 	 * The number of structural features of the '<em>Highway</em>' class.
@@ -81,7 +117,7 @@ public interface HighwayPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HIGHWAY_FEATURE_COUNT = 1;
+	int HIGHWAY_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link highway.impl.NodeImpl <em>Node</em>}' class.
@@ -158,22 +194,22 @@ public interface HighwayPackage extends EPackage {
 	int SEGMENT__NUM_LANES = 0;
 
 	/**
-	 * The feature id for the '<em><b>Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEGMENT__LENGTH = 1;
-
-	/**
 	 * The feature id for the '<em><b>Has Cars</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT__HAS_CARS = 2;
+	int SEGMENT__HAS_CARS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEGMENT__LENGTH = 2;
 
 	/**
 	 * The number of structural features of the '<em>Segment</em>' class.
@@ -222,13 +258,22 @@ public interface HighwayPackage extends EPackage {
 	int SEMAPHORE__CAN_GO = 2;
 
 	/**
+	 * The feature id for the '<em><b>Belongs To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEMAPHORE__BELONGS_TO = 3;
+
+	/**
 	 * The number of structural features of the '<em>Semaphore</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEMAPHORE_FEATURE_COUNT = 3;
+	int SEMAPHORE_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link highway.impl.SignalImpl <em>Signal</em>}' class.
@@ -241,13 +286,22 @@ public interface HighwayPackage extends EPackage {
 	int SIGNAL = 4;
 
 	/**
+	 * The feature id for the '<em><b>Belongs To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGNAL__BELONGS_TO = 0;
+
+	/**
 	 * The number of structural features of the '<em>Signal</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SIGNAL_FEATURE_COUNT = 0;
+	int SIGNAL_FEATURE_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link highway.impl.CarImpl <em>Car</em>}' class.
@@ -278,13 +332,244 @@ public interface HighwayPackage extends EPackage {
 	int CAR__TIME_OUT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Is In Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAR__IS_IN_NODE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Is In Segment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAR__IS_IN_SEGMENT = 3;
+
+	/**
 	 * The number of structural features of the '<em>Car</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CAR_FEATURE_COUNT = 2;
+	int CAR_FEATURE_COUNT = 4;
+
+
+	/**
+	 * The meta object id for the '{@link highway.impl.ExtractorImpl <em>Extractor</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see highway.impl.ExtractorImpl
+	 * @see highway.impl.HighwayPackageImpl#getExtractor()
+	 * @generated
+	 */
+	int EXTRACTOR = 6;
+
+	/**
+	 * The feature id for the '<em><b>Has Starts</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACTOR__HAS_STARTS = NODE__HAS_STARTS;
+
+	/**
+	 * The feature id for the '<em><b>Has Ends</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACTOR__HAS_ENDS = NODE__HAS_ENDS;
+
+	/**
+	 * The feature id for the '<em><b>Semaphore</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACTOR__SEMAPHORE = NODE__SEMAPHORE;
+
+	/**
+	 * The feature id for the '<em><b>Signals</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACTOR__SIGNALS = NODE__SIGNALS;
+
+	/**
+	 * The number of structural features of the '<em>Extractor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACTOR_FEATURE_COUNT = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link highway.impl.InjectorImpl <em>Injector</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see highway.impl.InjectorImpl
+	 * @see highway.impl.HighwayPackageImpl#getInjector()
+	 * @generated
+	 */
+	int INJECTOR = 7;
+
+	/**
+	 * The feature id for the '<em><b>Has Starts</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INJECTOR__HAS_STARTS = NODE__HAS_STARTS;
+
+	/**
+	 * The feature id for the '<em><b>Has Ends</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INJECTOR__HAS_ENDS = NODE__HAS_ENDS;
+
+	/**
+	 * The feature id for the '<em><b>Semaphore</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INJECTOR__SEMAPHORE = NODE__SEMAPHORE;
+
+	/**
+	 * The feature id for the '<em><b>Signals</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INJECTOR__SIGNALS = NODE__SIGNALS;
+
+	/**
+	 * The feature id for the '<em><b>Cars Per Hour</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INJECTOR__CARS_PER_HOUR = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Injector</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INJECTOR_FEATURE_COUNT = NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link highway.impl.SpeedlimitImpl <em>Speedlimit</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see highway.impl.SpeedlimitImpl
+	 * @see highway.impl.HighwayPackageImpl#getSpeedlimit()
+	 * @generated
+	 */
+	int SPEEDLIMIT = 8;
+
+	/**
+	 * The feature id for the '<em><b>Belongs To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPEEDLIMIT__BELONGS_TO = SIGNAL__BELONGS_TO;
+
+	/**
+	 * The feature id for the '<em><b>Speed</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPEEDLIMIT__SPEED = SIGNAL_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Speedlimit</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPEEDLIMIT_FEATURE_COUNT = SIGNAL_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link highway.impl.StopImpl <em>Stop</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see highway.impl.StopImpl
+	 * @see highway.impl.HighwayPackageImpl#getStop()
+	 * @generated
+	 */
+	int STOP = 9;
+
+	/**
+	 * The feature id for the '<em><b>Belongs To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STOP__BELONGS_TO = SIGNAL__BELONGS_TO;
+
+	/**
+	 * The number of structural features of the '<em>Stop</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STOP_FEATURE_COUNT = SIGNAL_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link highway.impl.YieldImpl <em>Yield</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see highway.impl.YieldImpl
+	 * @see highway.impl.HighwayPackageImpl#getYield()
+	 * @generated
+	 */
+	int YIELD = 10;
+
+	/**
+	 * The feature id for the '<em><b>Belongs To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int YIELD__BELONGS_TO = SIGNAL__BELONGS_TO;
+
+	/**
+	 * The number of structural features of the '<em>Yield</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int YIELD_FEATURE_COUNT = SIGNAL_FEATURE_COUNT + 0;
 
 
 	/**
@@ -298,15 +583,59 @@ public interface HighwayPackage extends EPackage {
 	EClass getHighway();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link highway.Highway#getStartNodes <em>Start Nodes</em>}'.
+	 * Returns the meta object for the containment reference list '{@link highway.Highway#getInitNodes <em>Init Nodes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Start Nodes</em>'.
-	 * @see highway.Highway#getStartNodes()
+	 * @return the meta object for the containment reference list '<em>Init Nodes</em>'.
+	 * @see highway.Highway#getInitNodes()
 	 * @see #getHighway()
 	 * @generated
 	 */
-	EReference getHighway_StartNodes();
+	EReference getHighway_InitNodes();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link highway.Highway#getInitCars <em>Init Cars</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Init Cars</em>'.
+	 * @see highway.Highway#getInitCars()
+	 * @see #getHighway()
+	 * @generated
+	 */
+	EReference getHighway_InitCars();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link highway.Highway#getInitSegments <em>Init Segments</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Init Segments</em>'.
+	 * @see highway.Highway#getInitSegments()
+	 * @see #getHighway()
+	 * @generated
+	 */
+	EReference getHighway_InitSegments();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link highway.Highway#getInitSemaphore <em>Init Semaphore</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Init Semaphore</em>'.
+	 * @see highway.Highway#getInitSemaphore()
+	 * @see #getHighway()
+	 * @generated
+	 */
+	EReference getHighway_InitSemaphore();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link highway.Highway#getInitSignal <em>Init Signal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Init Signal</em>'.
+	 * @see highway.Highway#getInitSignal()
+	 * @see #getHighway()
+	 * @generated
+	 */
+	EReference getHighway_InitSignal();
 
 	/**
 	 * Returns the meta object for class '{@link highway.Node <em>Node</em>}'.
@@ -449,6 +778,17 @@ public interface HighwayPackage extends EPackage {
 	EAttribute getSemaphore_CanGo();
 
 	/**
+	 * Returns the meta object for the reference '{@link highway.Semaphore#getBelongsTo <em>Belongs To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Belongs To</em>'.
+	 * @see highway.Semaphore#getBelongsTo()
+	 * @see #getSemaphore()
+	 * @generated
+	 */
+	EReference getSemaphore_BelongsTo();
+
+	/**
 	 * Returns the meta object for class '{@link highway.Signal <em>Signal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -457,6 +797,17 @@ public interface HighwayPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSignal();
+
+	/**
+	 * Returns the meta object for the reference '{@link highway.Signal#getBelongsTo <em>Belongs To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Belongs To</em>'.
+	 * @see highway.Signal#getBelongsTo()
+	 * @see #getSignal()
+	 * @generated
+	 */
+	EReference getSignal_BelongsTo();
 
 	/**
 	 * Returns the meta object for class '{@link highway.Car <em>Car</em>}'.
@@ -491,6 +842,100 @@ public interface HighwayPackage extends EPackage {
 	EAttribute getCar_TimeOut();
 
 	/**
+	 * Returns the meta object for the reference '{@link highway.Car#getIsInNode <em>Is In Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Is In Node</em>'.
+	 * @see highway.Car#getIsInNode()
+	 * @see #getCar()
+	 * @generated
+	 */
+	EReference getCar_IsInNode();
+
+	/**
+	 * Returns the meta object for the reference '{@link highway.Car#getIsInSegment <em>Is In Segment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Is In Segment</em>'.
+	 * @see highway.Car#getIsInSegment()
+	 * @see #getCar()
+	 * @generated
+	 */
+	EReference getCar_IsInSegment();
+
+	/**
+	 * Returns the meta object for class '{@link highway.Extractor <em>Extractor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Extractor</em>'.
+	 * @see highway.Extractor
+	 * @generated
+	 */
+	EClass getExtractor();
+
+	/**
+	 * Returns the meta object for class '{@link highway.Injector <em>Injector</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Injector</em>'.
+	 * @see highway.Injector
+	 * @generated
+	 */
+	EClass getInjector();
+
+	/**
+	 * Returns the meta object for the attribute '{@link highway.Injector#getCarsPerHour <em>Cars Per Hour</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cars Per Hour</em>'.
+	 * @see highway.Injector#getCarsPerHour()
+	 * @see #getInjector()
+	 * @generated
+	 */
+	EAttribute getInjector_CarsPerHour();
+
+	/**
+	 * Returns the meta object for class '{@link highway.Speedlimit <em>Speedlimit</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Speedlimit</em>'.
+	 * @see highway.Speedlimit
+	 * @generated
+	 */
+	EClass getSpeedlimit();
+
+	/**
+	 * Returns the meta object for the attribute '{@link highway.Speedlimit#getSpeed <em>Speed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Speed</em>'.
+	 * @see highway.Speedlimit#getSpeed()
+	 * @see #getSpeedlimit()
+	 * @generated
+	 */
+	EAttribute getSpeedlimit_Speed();
+
+	/**
+	 * Returns the meta object for class '{@link highway.Stop <em>Stop</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Stop</em>'.
+	 * @see highway.Stop
+	 * @generated
+	 */
+	EClass getStop();
+
+	/**
+	 * Returns the meta object for class '{@link highway.Yield <em>Yield</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Yield</em>'.
+	 * @see highway.Yield
+	 * @generated
+	 */
+	EClass getYield();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -523,12 +968,44 @@ public interface HighwayPackage extends EPackage {
 		EClass HIGHWAY = eINSTANCE.getHighway();
 
 		/**
-		 * The meta object literal for the '<em><b>Start Nodes</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Init Nodes</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference HIGHWAY__START_NODES = eINSTANCE.getHighway_StartNodes();
+		EReference HIGHWAY__INIT_NODES = eINSTANCE.getHighway_InitNodes();
+
+		/**
+		 * The meta object literal for the '<em><b>Init Cars</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HIGHWAY__INIT_CARS = eINSTANCE.getHighway_InitCars();
+
+		/**
+		 * The meta object literal for the '<em><b>Init Segments</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HIGHWAY__INIT_SEGMENTS = eINSTANCE.getHighway_InitSegments();
+
+		/**
+		 * The meta object literal for the '<em><b>Init Semaphore</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HIGHWAY__INIT_SEMAPHORE = eINSTANCE.getHighway_InitSemaphore();
+
+		/**
+		 * The meta object literal for the '<em><b>Init Signal</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HIGHWAY__INIT_SIGNAL = eINSTANCE.getHighway_InitSignal();
 
 		/**
 		 * The meta object literal for the '{@link highway.impl.NodeImpl <em>Node</em>}' class.
@@ -641,6 +1118,14 @@ public interface HighwayPackage extends EPackage {
 		EAttribute SEMAPHORE__CAN_GO = eINSTANCE.getSemaphore_CanGo();
 
 		/**
+		 * The meta object literal for the '<em><b>Belongs To</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SEMAPHORE__BELONGS_TO = eINSTANCE.getSemaphore_BelongsTo();
+
+		/**
 		 * The meta object literal for the '{@link highway.impl.SignalImpl <em>Signal</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -649,6 +1134,14 @@ public interface HighwayPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SIGNAL = eINSTANCE.getSignal();
+
+		/**
+		 * The meta object literal for the '<em><b>Belongs To</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SIGNAL__BELONGS_TO = eINSTANCE.getSignal_BelongsTo();
 
 		/**
 		 * The meta object literal for the '{@link highway.impl.CarImpl <em>Car</em>}' class.
@@ -675,6 +1168,88 @@ public interface HighwayPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CAR__TIME_OUT = eINSTANCE.getCar_TimeOut();
+
+		/**
+		 * The meta object literal for the '<em><b>Is In Node</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CAR__IS_IN_NODE = eINSTANCE.getCar_IsInNode();
+
+		/**
+		 * The meta object literal for the '<em><b>Is In Segment</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CAR__IS_IN_SEGMENT = eINSTANCE.getCar_IsInSegment();
+
+		/**
+		 * The meta object literal for the '{@link highway.impl.ExtractorImpl <em>Extractor</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see highway.impl.ExtractorImpl
+		 * @see highway.impl.HighwayPackageImpl#getExtractor()
+		 * @generated
+		 */
+		EClass EXTRACTOR = eINSTANCE.getExtractor();
+
+		/**
+		 * The meta object literal for the '{@link highway.impl.InjectorImpl <em>Injector</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see highway.impl.InjectorImpl
+		 * @see highway.impl.HighwayPackageImpl#getInjector()
+		 * @generated
+		 */
+		EClass INJECTOR = eINSTANCE.getInjector();
+
+		/**
+		 * The meta object literal for the '<em><b>Cars Per Hour</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INJECTOR__CARS_PER_HOUR = eINSTANCE.getInjector_CarsPerHour();
+
+		/**
+		 * The meta object literal for the '{@link highway.impl.SpeedlimitImpl <em>Speedlimit</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see highway.impl.SpeedlimitImpl
+		 * @see highway.impl.HighwayPackageImpl#getSpeedlimit()
+		 * @generated
+		 */
+		EClass SPEEDLIMIT = eINSTANCE.getSpeedlimit();
+
+		/**
+		 * The meta object literal for the '<em><b>Speed</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SPEEDLIMIT__SPEED = eINSTANCE.getSpeedlimit_Speed();
+
+		/**
+		 * The meta object literal for the '{@link highway.impl.StopImpl <em>Stop</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see highway.impl.StopImpl
+		 * @see highway.impl.HighwayPackageImpl#getStop()
+		 * @generated
+		 */
+		EClass STOP = eINSTANCE.getStop();
+
+		/**
+		 * The meta object literal for the '{@link highway.impl.YieldImpl <em>Yield</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see highway.impl.YieldImpl
+		 * @see highway.impl.HighwayPackageImpl#getYield()
+		 * @generated
+		 */
+		EClass YIELD = eINSTANCE.getYield();
 
 	}
 

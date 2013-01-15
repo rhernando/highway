@@ -24,9 +24,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Segment">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="numLanes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasCars" upperBound="-1"
         eType="#//Car"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Semaphore">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="secondsRed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
