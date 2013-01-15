@@ -1,5 +1,21 @@
 package grafihighway.diagram;
 
+import grafihighway.features.AddAttachSemaphoreConnectionFeature;
+import grafihighway.features.AddNodeFeature;
+import grafihighway.features.AddSegmentConnectionFeature;
+import grafihighway.features.AddSemaphoreFeature;
+import grafihighway.features.CreateAttachSemaphoreConnectionFeature;
+import grafihighway.features.CreateDomainObjectConnectionConnectionFeature;
+import grafihighway.features.CreateHighwayFeature;
+import grafihighway.features.CreateNodeFeature;
+import grafihighway.features.CreateSegmentConnectionFeature;
+import grafihighway.features.CreateSemaphoreFeature;
+import grafihighway.features.LayoutNodeFeature;
+import grafihighway.features.LayoutSemaphoreFeature;
+import highway.Node;
+import highway.Segment;
+import highway.Semaphore;
+
 import org.eclipse.graphiti.dt.IDiagramTypeProvider;
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.ICreateConnectionFeature;
@@ -11,21 +27,6 @@ import org.eclipse.graphiti.features.context.ILayoutContext;
 import org.eclipse.graphiti.mm.pictograms.ContainerShape;
 import org.eclipse.graphiti.ui.features.DefaultFeatureProvider;
 
-import grafihighway.features.AddDomainObjectConnectionConnectionFeature;
-import grafihighway.features.AddHighwayFeature;
-import grafihighway.features.AddNodeFeature;
-import grafihighway.features.AddSegmentConnectionFeature;
-import grafihighway.features.CreateDomainObjectConnectionConnectionFeature;
-import grafihighway.features.CreateHighwayFeature;
-import grafihighway.features.CreateNodeFeature;
-import grafihighway.features.CreateSegmentConnectionFeature;
-import grafihighway.features.LayoutHighwayFeature;
-import grafihighway.features.LayoutNodeFeature;
-
-import highway.Highway;
-import highway.Node;
-import highway.Segment;
-
 public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 
 	public GrafiHighwayFeatureProvider(IDiagramTypeProvider dtp) {
@@ -34,21 +35,24 @@ public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 
 	@Override
 	public ICreateFeature[] getCreateFeatures() {
-		return new ICreateFeature[] {new CreateHighwayFeature(this), new CreateNodeFeature(this)};
+		return new ICreateFeature[] {new CreateHighwayFeature(this), new CreateNodeFeature(this), new CreateSemaphoreFeature(this)};
 	}
 	
 	@Override
 	public ICreateConnectionFeature[] getCreateConnectionFeatures() {
-		return new ICreateConnectionFeature[] {new CreateDomainObjectConnectionConnectionFeature(this), new CreateSegmentConnectionFeature(this)};
+		return new ICreateConnectionFeature[] {new CreateDomainObjectConnectionConnectionFeature(this), new CreateSegmentConnectionFeature(this), new CreateAttachSemaphoreConnectionFeature(this)};
 	}
 	
 	@Override
 	public IAddFeature getAddFeature(IAddContext context) {
 		if (context instanceof IAddContext){
 			if (context.getNewObject() instanceof Node) return new AddNodeFeature(this);
+			if (context.getNewObject() instanceof Semaphore) return new AddSemaphoreFeature(this);
 		}
 		if (context instanceof IAddConnectionContext){
 			if (context.getNewObject() instanceof Segment) return new AddSegmentConnectionFeature(this);
+			if (context.getNewObject() instanceof String && context.getNewObject().equals("SEM")) return new AddAttachSemaphoreConnectionFeature(this);
+			
 		}
 				
 //		// TODO: check for right domain object instances below
@@ -67,6 +71,7 @@ public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 		if (context.getPictogramElement() instanceof ContainerShape /* && getBusinessObjectForPictogramElement(context.getPictogramElement()) instanceof <DomainObject> */) {
 			Object object = getBusinessObjectForPictogramElement(context.getPictogramElement());
 			if (object instanceof Node) return new LayoutNodeFeature(this);
+			if (object instanceof Semaphore) return new LayoutSemaphoreFeature(this);
 			//return  new LayoutHighwayFeature(this);
 		}
 	

@@ -34,10 +34,6 @@ public class CreateSegmentConnectionFeature extends
 
 	@Override
 	public boolean canCreate(ICreateConnectionContext context) {
-		PictogramElement sourcePictogramElement = context
-				.getSourcePictogramElement();
-		PictogramElement targetPictogramElement = context
-				.getTargetPictogramElement();
 
 		Anchor source = context.getSourceAnchor();
 		Anchor target = context.getTargetAnchor();
@@ -47,6 +43,7 @@ public class CreateSegmentConnectionFeature extends
 				&& getBusinessObjectForPictogramElement(source.getParent()) instanceof Node
 				&& getBusinessObjectForPictogramElement(target.getParent()) instanceof Node)
 			return true;
+		else return false;
 		// TODO: check for right domain object instance below
 		// if (getBusinessObjectForPictogramElement(sourcePictogramElement)
 		// instanceof <DomainObject> &&
@@ -55,7 +52,7 @@ public class CreateSegmentConnectionFeature extends
 		// return true;
 		// }
 
-		return sourcePictogramElement != null && targetPictogramElement != null;
+		//return sourcePictogramElement != null && targetPictogramElement != null;
 	}
 
 	@Override

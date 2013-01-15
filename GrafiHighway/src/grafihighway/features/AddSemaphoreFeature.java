@@ -1,5 +1,7 @@
 package grafihighway.features;
 
+import highway.Semaphore;
+
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.IAddContext;
@@ -15,21 +17,23 @@ import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
 
-public class AddHighwayFeature extends AbstractAddFeature implements
+public class AddSemaphoreFeature extends AbstractAddFeature implements
 		IAddFeature {
 
-	public AddHighwayFeature(IFeatureProvider fp) {
+	public AddSemaphoreFeature(IFeatureProvider fp) {
 		super(fp);
 	}
 
 	@Override
 	public boolean canAdd(IAddContext context) {
 		// TODO: check for right domain object instance below
-		return /* context.getNewObject() instanceof Highway && */ context.getTargetContainer() instanceof Diagram;
+		return context.getNewObject() instanceof Semaphore && context.getTargetContainer() instanceof Diagram;
 	}
 
 	@Override
 	public PictogramElement add(IAddContext context) {
+		
+		Semaphore newSemaphore = (Semaphore)context.getNewObject();
 
 		Diagram targetDiagram = (Diagram) context.getTargetContainer();
 		IPeCreateService peCreateService = Graphiti.getPeCreateService();
@@ -41,16 +45,14 @@ public class AddHighwayFeature extends AbstractAddFeature implements
 		roundedRectangle.setFilled(false);
 		
 		Shape shape = peCreateService.createShape(containerShape, false);
-		Text text = gaService.createText(shape, "Highway");
+		Text text = gaService.createText(shape, "Semaphore");
 		text.setHorizontalAlignment(Orientation.ALIGNMENT_CENTER);
 		text.setVerticalAlignment(Orientation.ALIGNMENT_CENTER);
 		gaService.setLocationAndSize(text, 0, 0, context.getWidth(), context.getHeight());
 
 		peCreateService.createChopboxAnchor(containerShape);
 
-		// TODO: enable the link to the domain object
-		// Object addedDomainObject = context.getNewObject();
-		// link(containerShape, addedDomainObject);
+		link(containerShape, newSemaphore);
 
 		return containerShape;
 	}

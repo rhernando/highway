@@ -1,5 +1,7 @@
 package grafihighway.features;
 
+import highway.Semaphore;
+
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.ILayoutFeature;
@@ -13,17 +15,16 @@ import org.eclipse.graphiti.mm.pictograms.PictogramElement;
 import org.eclipse.graphiti.mm.pictograms.Shape;
 import org.eclipse.graphiti.services.Graphiti;
 
-public class LayoutHighwayFeature extends AbstractLayoutFeature implements
+public class LayoutSemaphoreFeature extends AbstractLayoutFeature implements
 		ILayoutFeature {
 
-	public LayoutHighwayFeature(IFeatureProvider fp) {
+	public LayoutSemaphoreFeature(IFeatureProvider fp) {
 		super(fp);
 	}
 
 	@Override
 	public boolean canLayout(ILayoutContext context) {
-		// TODO: check for right domain object instances below
-		return context.getPictogramElement() instanceof ContainerShape /* && getBusinessObjectForPictogramElement(context.getPictogramElement()) instanceof <DomainObject> */;
+		return context.getPictogramElement() instanceof ContainerShape && getBusinessObjectForPictogramElement(context.getPictogramElement()) instanceof Semaphore;
 	}
 
 	@Override
