@@ -44,7 +44,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Car">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeIn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeOut" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="isInNode" eType="#//Node"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="isInSegment" eType="#//Segment"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Extractor" eSuperTypes="#//Node"/>
