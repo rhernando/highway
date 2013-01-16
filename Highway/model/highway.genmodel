@@ -3,8 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Highway/src" modelPluginID="Highway" modelName="Highway"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false">
   <foreignModel>highway.ecore</foreignModel>
-  <genPackages prefix="Highway" basePackage="highwayproj" disposableProviderFactory="true"
-      ecorePackage="highway.ecore#/">
+  <genPackages prefix="Highway" disposableProviderFactory="true" ecorePackage="highway.ecore#/">
     <genClasses ecoreClass="highway.ecore#//Highway">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference highway.ecore#//Highway/initNodes"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference highway.ecore#//Highway/initCars"/>
@@ -17,20 +16,24 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference highway.ecore#//Node/hasEnds"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference highway.ecore#//Node/semaphore"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference highway.ecore#//Node/signals"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Node/name"/>
     </genClasses>
     <genClasses ecoreClass="highway.ecore#//Segment">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Segment/numLanes"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference highway.ecore#//Segment/hasCars"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Segment/length"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Segment/name"/>
     </genClasses>
     <genClasses ecoreClass="highway.ecore#//Semaphore">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Semaphore/secondsRed"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Semaphore/secondsGreen"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Semaphore/canGo"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference highway.ecore#//Semaphore/belongsTo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Semaphore/name"/>
     </genClasses>
     <genClasses ecoreClass="highway.ecore#//Signal">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference highway.ecore#//Signal/belongsTo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Signal/name"/>
     </genClasses>
     <genClasses ecoreClass="highway.ecore#//Car">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Car/timeIn"/>
