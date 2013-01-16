@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/PetriNetProject/src" modelPluginID="PetriNetProject"
+    modelName="PetriNetModel" importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0"
+    copyrightFields="false">
+  <foreignModel>PetriNetModel.ecore</foreignModel>
+  <genPackages prefix="PetriNet" basePackage="PetriNet" disposableProviderFactory="true"
+      ecorePackage="PetriNetModel.ecore#/">
+    <genClasses ecoreClass="PetriNetModel.ecore#//PetriNetRoot">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PetriNetModel.ecore#//PetriNetRoot/elements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PetriNetModel.ecore#//PetriNetRoot/arcs"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PetriNetModel.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PetriNetModel.ecore#//Element/name"/>
+    </genClasses>
+    <genClasses ecoreClass="PetriNetModel.ecore#//Place">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PetriNetModel.ecore#//Place/Tokens"/>
+    </genClasses>
+    <genClasses ecoreClass="PetriNetModel.ecore#//Transition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PetriNetModel.ecore#//Transition/minTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PetriNetModel.ecore#//Transition/maxTime"/>
+    </genClasses>
+    <genClasses ecoreClass="PetriNetModel.ecore#//Arc">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PetriNetModel.ecore#//Arc/In"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PetriNetModel.ecore#//Arc/Out"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
