@@ -1,11 +1,9 @@
 /**
  */
-package PetriNet.PetriNet.impl;
+package PetriNet.impl;
 
-import PetriNet.PetriNet.PetriNetPackage;
-import PetriNet.PetriNet.Place;
-
-import java.math.BigInteger;
+import PetriNet.PetriNetPackage;
+import PetriNet.Place;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -20,7 +18,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link PetriNet.PetriNet.impl.PlaceImpl#getTokens <em>Tokens</em>}</li>
+ *   <li>{@link PetriNet.impl.PlaceImpl#getTokens <em>Tokens</em>}</li>
  * </ul>
  * </p>
  *

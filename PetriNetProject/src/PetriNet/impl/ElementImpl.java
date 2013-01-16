@@ -1,58 +1,57 @@
 /**
  */
-package PetriNet.PetriNet.impl;
+package PetriNet.impl;
 
-import PetriNet.PetriNet.PetriNetPackage;
-import PetriNet.PetriNet.Place;
-
-import java.math.BigInteger;
+import PetriNet.Element;
+import PetriNet.PetriNetPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Place</b></em>'.
+ * An implementation of the model object '<em><b>Element</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link PetriNet.PetriNet.impl.PlaceImpl#getTokens <em>Tokens</em>}</li>
+ *   <li>{@link PetriNet.impl.ElementImpl#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class PlaceImpl extends ElementImpl implements Place {
+public abstract class ElementImpl extends EObjectImpl implements Element {
 	/**
-	 * The default value of the '{@link #getTokens() <em>Tokens</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTokens()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int TOKENS_EDEFAULT = 0;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTokens() <em>Tokens</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTokens()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected int tokens = TOKENS_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PlaceImpl() {
+	protected ElementImpl() {
 		super();
 	}
 
@@ -63,7 +62,7 @@ public class PlaceImpl extends ElementImpl implements Place {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return PetriNetPackage.Literals.PLACE;
+		return PetriNetPackage.Literals.ELEMENT;
 	}
 
 	/**
@@ -71,8 +70,8 @@ public class PlaceImpl extends ElementImpl implements Place {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getTokens() {
-		return tokens;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -80,11 +79,11 @@ public class PlaceImpl extends ElementImpl implements Place {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTokens(int newTokens) {
-		int oldTokens = tokens;
-		tokens = newTokens;
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PetriNetPackage.PLACE__TOKENS, oldTokens, tokens));
+			eNotify(new ENotificationImpl(this, Notification.SET, PetriNetPackage.ELEMENT__NAME, oldName, name));
 	}
 
 	/**
@@ -95,8 +94,8 @@ public class PlaceImpl extends ElementImpl implements Place {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PetriNetPackage.PLACE__TOKENS:
-				return getTokens();
+			case PetriNetPackage.ELEMENT__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -109,8 +108,8 @@ public class PlaceImpl extends ElementImpl implements Place {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PetriNetPackage.PLACE__TOKENS:
-				setTokens((Integer)newValue);
+			case PetriNetPackage.ELEMENT__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -124,8 +123,8 @@ public class PlaceImpl extends ElementImpl implements Place {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PetriNetPackage.PLACE__TOKENS:
-				setTokens(TOKENS_EDEFAULT);
+			case PetriNetPackage.ELEMENT__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -139,8 +138,8 @@ public class PlaceImpl extends ElementImpl implements Place {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PetriNetPackage.PLACE__TOKENS:
-				return tokens != TOKENS_EDEFAULT;
+			case PetriNetPackage.ELEMENT__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -155,10 +154,10 @@ public class PlaceImpl extends ElementImpl implements Place {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (Tokens: ");
-		result.append(tokens);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}
 
-} //PlaceImpl
+} //ElementImpl

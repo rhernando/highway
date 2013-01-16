@@ -1,8 +1,7 @@
 /**
  */
-package PetriNet.PetriNet;
+package PetriNet;
 
-import java.math.BigInteger;
 
 /**
  * <!-- begin-user-doc -->
@@ -12,12 +11,12 @@ import java.math.BigInteger;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link PetriNet.PetriNet.Transition#getMinTime <em>Min Time</em>}</li>
- *   <li>{@link PetriNet.PetriNet.Transition#getMaxTime <em>Max Time</em>}</li>
+ *   <li>{@link PetriNet.Transition#getMinTime <em>Min Time</em>}</li>
+ *   <li>{@link PetriNet.Transition#getMaxTime <em>Max Time</em>}</li>
  * </ul>
  * </p>
  *
- * @see PetriNet.PetriNet.PetriNetPackage#getTransition()
+ * @see PetriNet.PetriNetPackage#getTransition()
  * @model
  * @generated
  */
@@ -32,14 +31,14 @@ public interface Transition extends Element {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Time</em>' attribute.
 	 * @see #setMinTime(int)
-	 * @see PetriNet.PetriNet.PetriNetPackage#getTransition_MinTime()
+	 * @see PetriNet.PetriNetPackage#getTransition_MinTime()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	int getMinTime();
 
 	/**
-	 * Sets the value of the '{@link PetriNet.PetriNet.Transition#getMinTime <em>Min Time</em>}' attribute.
+	 * Sets the value of the '{@link PetriNet.Transition#getMinTime <em>Min Time</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Min Time</em>' attribute.
@@ -58,14 +57,14 @@ public interface Transition extends Element {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Time</em>' attribute.
 	 * @see #setMaxTime(int)
-	 * @see PetriNet.PetriNet.PetriNetPackage#getTransition_MaxTime()
+	 * @see PetriNet.PetriNetPackage#getTransition_MaxTime()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	int getMaxTime();
 
 	/**
-	 * Sets the value of the '{@link PetriNet.PetriNet.Transition#getMaxTime <em>Max Time</em>}' attribute.
+	 * Sets the value of the '{@link PetriNet.Transition#getMaxTime <em>Max Time</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Max Time</em>' attribute.

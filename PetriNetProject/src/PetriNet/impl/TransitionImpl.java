@@ -1,11 +1,9 @@
 /**
  */
-package PetriNet.PetriNet.impl;
+package PetriNet.impl;
 
-import PetriNet.PetriNet.PetriNetPackage;
-import PetriNet.PetriNet.Transition;
-
-import java.math.BigInteger;
+import PetriNet.PetriNetPackage;
+import PetriNet.Transition;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -20,8 +18,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link PetriNet.PetriNet.impl.TransitionImpl#getMinTime <em>Min Time</em>}</li>
- *   <li>{@link PetriNet.PetriNet.impl.TransitionImpl#getMaxTime <em>Max Time</em>}</li>
+ *   <li>{@link PetriNet.impl.TransitionImpl#getMinTime <em>Min Time</em>}</li>
+ *   <li>{@link PetriNet.impl.TransitionImpl#getMaxTime <em>Max Time</em>}</li>
  * </ul>
  * </p>
  *

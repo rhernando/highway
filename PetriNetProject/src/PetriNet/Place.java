@@ -1,8 +1,7 @@
 /**
  */
-package PetriNet.PetriNet;
+package PetriNet;
 
-import java.math.BigInteger;
 
 /**
  * <!-- begin-user-doc -->
@@ -12,11 +11,11 @@ import java.math.BigInteger;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link PetriNet.PetriNet.Place#getTokens <em>Tokens</em>}</li>
+ *   <li>{@link PetriNet.Place#getTokens <em>Tokens</em>}</li>
  * </ul>
  * </p>
  *
- * @see PetriNet.PetriNet.PetriNetPackage#getPlace()
+ * @see PetriNet.PetriNetPackage#getPlace()
  * @model
  * @generated
  */
@@ -31,14 +30,14 @@ public interface Place extends Element {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tokens</em>' attribute.
 	 * @see #setTokens(int)
-	 * @see PetriNet.PetriNet.PetriNetPackage#getPlace_Tokens()
+	 * @see PetriNet.PetriNetPackage#getPlace_Tokens()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	int getTokens();
 
 	/**
-	 * Sets the value of the '{@link PetriNet.PetriNet.Place#getTokens <em>Tokens</em>}' attribute.
+	 * Sets the value of the '{@link PetriNet.Place#getTokens <em>Tokens</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Tokens</em>' attribute.

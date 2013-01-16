@@ -1,14 +1,14 @@
 /**
  */
-package PetriNet.PetriNet.impl;
+package PetriNet.impl;
 
-import PetriNet.PetriNet.Arc;
-import PetriNet.PetriNet.Element;
-import PetriNet.PetriNet.PetriNetFactory;
-import PetriNet.PetriNet.PetriNetPackage;
-import PetriNet.PetriNet.PetriNetRoot;
-import PetriNet.PetriNet.Place;
-import PetriNet.PetriNet.Transition;
+import PetriNet.Arc;
+import PetriNet.Element;
+import PetriNet.PetriNetFactory;
+import PetriNet.PetriNetPackage;
+import PetriNet.PetriNetRoot;
+import PetriNet.Place;
+import PetriNet.Transition;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -70,7 +70,7 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see PetriNet.PetriNet.PetriNetPackage#eNS_URI
+	 * @see PetriNet.PetriNetPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
