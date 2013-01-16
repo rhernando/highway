@@ -103,8 +103,10 @@ public class SpeedlimitItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		Speedlimit speedlimit = (Speedlimit)object;
-		return getString("_UI_Speedlimit_type") + " " + speedlimit.getSpeed();
+		String label = ((Speedlimit)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Speedlimit_type") :
+			getString("_UI_Speedlimit_type") + " " + label;
 	}
 
 	/**

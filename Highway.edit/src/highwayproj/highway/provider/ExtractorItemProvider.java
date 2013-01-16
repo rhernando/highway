@@ -3,6 +3,7 @@
 package highwayproj.highway.provider;
 
 
+import highwayproj.highway.Extractor;
 import java.util.Collection;
 import java.util.List;
 
@@ -74,7 +75,10 @@ public class ExtractorItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_Extractor_type");
+		String label = ((Extractor)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Extractor_type") :
+			getString("_UI_Extractor_type") + " " + label;
 	}
 
 	/**

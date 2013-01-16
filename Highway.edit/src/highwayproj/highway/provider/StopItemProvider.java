@@ -3,6 +3,7 @@
 package highwayproj.highway.provider;
 
 
+import highwayproj.highway.Stop;
 import java.util.Collection;
 import java.util.List;
 
@@ -74,7 +75,10 @@ public class StopItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_Stop_type");
+		String label = ((Stop)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Stop_type") :
+			getString("_UI_Stop_type") + " " + label;
 	}
 
 	/**

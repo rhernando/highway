@@ -166,13 +166,22 @@ public interface HighwayPackage extends EPackage {
 	int NODE__SIGNALS = 3;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__NAME = 4;
+
+	/**
 	 * The number of structural features of the '<em>Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NODE_FEATURE_COUNT = 4;
+	int NODE_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link highwayproj.highway.impl.SegmentImpl <em>Segment</em>}' class.
@@ -212,13 +221,22 @@ public interface HighwayPackage extends EPackage {
 	int SEGMENT__LENGTH = 2;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEGMENT__NAME = 3;
+
+	/**
 	 * The number of structural features of the '<em>Segment</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_FEATURE_COUNT = 3;
+	int SEGMENT_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link highwayproj.highway.impl.SemaphoreImpl <em>Semaphore</em>}' class.
@@ -267,13 +285,22 @@ public interface HighwayPackage extends EPackage {
 	int SEMAPHORE__BELONGS_TO = 3;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEMAPHORE__NAME = 4;
+
+	/**
 	 * The number of structural features of the '<em>Semaphore</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEMAPHORE_FEATURE_COUNT = 4;
+	int SEMAPHORE_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link highwayproj.highway.impl.SignalImpl <em>Signal</em>}' class.
@@ -295,13 +322,22 @@ public interface HighwayPackage extends EPackage {
 	int SIGNAL__BELONGS_TO = 0;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGNAL__NAME = 1;
+
+	/**
 	 * The number of structural features of the '<em>Signal</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SIGNAL_FEATURE_COUNT = 1;
+	int SIGNAL_FEATURE_COUNT = 2;
 
 	/**
 	 * The meta object id for the '{@link highwayproj.highway.impl.CarImpl <em>Car</em>}' class.
@@ -396,6 +432,15 @@ public interface HighwayPackage extends EPackage {
 	int EXTRACTOR__SIGNALS = NODE__SIGNALS;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACTOR__NAME = NODE__NAME;
+
+	/**
 	 * The number of structural features of the '<em>Extractor</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -451,6 +496,15 @@ public interface HighwayPackage extends EPackage {
 	int INJECTOR__SIGNALS = NODE__SIGNALS;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INJECTOR__NAME = NODE__NAME;
+
+	/**
 	 * The feature id for the '<em><b>Cars Per Hour</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -486,6 +540,15 @@ public interface HighwayPackage extends EPackage {
 	 * @ordered
 	 */
 	int SPEEDLIMIT__BELONGS_TO = SIGNAL__BELONGS_TO;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPEEDLIMIT__NAME = SIGNAL__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Speed</b></em>' attribute.
@@ -525,6 +588,15 @@ public interface HighwayPackage extends EPackage {
 	int STOP__BELONGS_TO = SIGNAL__BELONGS_TO;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STOP__NAME = SIGNAL__NAME;
+
+	/**
 	 * The number of structural features of the '<em>Stop</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -551,6 +623,15 @@ public interface HighwayPackage extends EPackage {
 	 * @ordered
 	 */
 	int YIELD__BELONGS_TO = SIGNAL__BELONGS_TO;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int YIELD__NAME = SIGNAL__NAME;
 
 	/**
 	 * The number of structural features of the '<em>Yield</em>' class.
@@ -682,6 +763,17 @@ public interface HighwayPackage extends EPackage {
 	EReference getNode_Signals();
 
 	/**
+	 * Returns the meta object for the attribute '{@link highwayproj.highway.Node#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see highwayproj.highway.Node#getName()
+	 * @see #getNode()
+	 * @generated
+	 */
+	EAttribute getNode_Name();
+
+	/**
 	 * Returns the meta object for class '{@link highwayproj.highway.Segment <em>Segment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -723,6 +815,17 @@ public interface HighwayPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getSegment_Length();
+
+	/**
+	 * Returns the meta object for the attribute '{@link highwayproj.highway.Segment#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see highwayproj.highway.Segment#getName()
+	 * @see #getSegment()
+	 * @generated
+	 */
+	EAttribute getSegment_Name();
 
 	/**
 	 * Returns the meta object for class '{@link highwayproj.highway.Semaphore <em>Semaphore</em>}'.
@@ -779,6 +882,17 @@ public interface HighwayPackage extends EPackage {
 	EReference getSemaphore_BelongsTo();
 
 	/**
+	 * Returns the meta object for the attribute '{@link highwayproj.highway.Semaphore#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see highwayproj.highway.Semaphore#getName()
+	 * @see #getSemaphore()
+	 * @generated
+	 */
+	EAttribute getSemaphore_Name();
+
+	/**
 	 * Returns the meta object for class '{@link highwayproj.highway.Signal <em>Signal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -798,6 +912,17 @@ public interface HighwayPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSignal_BelongsTo();
+
+	/**
+	 * Returns the meta object for the attribute '{@link highwayproj.highway.Signal#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see highwayproj.highway.Signal#getName()
+	 * @see #getSignal()
+	 * @generated
+	 */
+	EAttribute getSignal_Name();
 
 	/**
 	 * Returns the meta object for class '{@link highwayproj.highway.Car <em>Car</em>}'.
@@ -1029,6 +1154,14 @@ public interface HighwayPackage extends EPackage {
 		EReference NODE__SIGNALS = eINSTANCE.getNode_Signals();
 
 		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NODE__NAME = eINSTANCE.getNode_Name();
+
+		/**
 		 * The meta object literal for the '{@link highwayproj.highway.impl.SegmentImpl <em>Segment</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1061,6 +1194,14 @@ public interface HighwayPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SEGMENT__LENGTH = eINSTANCE.getSegment_Length();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEGMENT__NAME = eINSTANCE.getSegment_Name();
 
 		/**
 		 * The meta object literal for the '{@link highwayproj.highway.impl.SemaphoreImpl <em>Semaphore</em>}' class.
@@ -1105,6 +1246,14 @@ public interface HighwayPackage extends EPackage {
 		EReference SEMAPHORE__BELONGS_TO = eINSTANCE.getSemaphore_BelongsTo();
 
 		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEMAPHORE__NAME = eINSTANCE.getSemaphore_Name();
+
+		/**
 		 * The meta object literal for the '{@link highwayproj.highway.impl.SignalImpl <em>Signal</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1121,6 +1270,14 @@ public interface HighwayPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SIGNAL__BELONGS_TO = eINSTANCE.getSignal_BelongsTo();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGNAL__NAME = eINSTANCE.getSignal_Name();
 
 		/**
 		 * The meta object literal for the '{@link highwayproj.highway.impl.CarImpl <em>Car</em>}' class.

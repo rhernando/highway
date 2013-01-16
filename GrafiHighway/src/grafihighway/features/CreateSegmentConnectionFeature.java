@@ -1,5 +1,11 @@
 package grafihighway.features;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerModel;
+import javax.swing.SpinnerNumberModel;
+
 import highwayproj.highway.HighwayFactory;
 import highwayproj.highway.Node;
 import highwayproj.highway.Segment;
@@ -58,7 +64,26 @@ public class CreateSegmentConnectionFeature extends
 	@Override
 	public Connection create(ICreateConnectionContext context) {
 		Segment newSegment = HighwayFactory.eINSTANCE.createSegment();
+		newSegment.setName(JOptionPane.showInputDialog(new JFrame(),
+				"Element Name", ""));
+
+		Object[] lanesOpt = {"1","2","3","4"};
 		
+		Object seleccion = JOptionPane.showInputDialog(
+				new JFrame(),
+				   "Select max speed",
+				   "Options",
+				   JOptionPane.QUESTION_MESSAGE,
+				   null,  
+				   lanesOpt, 
+				   lanesOpt[1]);
+		newSegment.setNumLanes(Integer.parseInt(seleccion.toString()));
+
+		SpinnerModel sm = new SpinnerNumberModel(100,10,3600, 10);
+		JSpinner jsp = new JSpinner(sm);
+        int len = JOptionPane.showOptionDialog(null, jsp, "Length of Segment", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+        newSegment.setLength(len);
+        
 		PictogramElement source = context.getSourceAnchor().getParent();
 		PictogramElement target = context.getTargetAnchor().getParent();
 		

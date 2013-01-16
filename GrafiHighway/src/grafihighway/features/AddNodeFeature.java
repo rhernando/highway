@@ -37,35 +37,34 @@ public class AddNodeFeature extends AbstractAddFeature implements
 	public PictogramElement add(IAddContext context) {
 		
 		Node newNode = (Node)context.getNewObject();
-
 	
 		Diagram targetDiagram = (Diagram) context.getTargetContainer();
 		IPeCreateService peCreateService = Graphiti.getPeCreateService();
 		IGaService gaService = Graphiti.getGaService();
 
-        int width = 50;
-        int height = 50; 
+        int width = 80;
+        int height = 80; 
 
 		ContainerShape containerShape = peCreateService.createContainerShape(targetDiagram, true);
 		RoundedRectangle roundedRectangle = gaService.createRoundedRectangle(containerShape, 5, 5);
 		if (newNode instanceof Injector){
 			roundedRectangle.setBackground(manageColor(new ColorConstant(80,150,200)));
-			roundedRectangle.setForeground(manageColor(new ColorConstant(200,200,200)));
 		}else if (newNode instanceof Extractor){
 			roundedRectangle.setBackground(manageColor(new ColorConstant(120,80,220)));
-			roundedRectangle.setForeground(manageColor(new ColorConstant(200,200,200)));
 		}else{
 			roundedRectangle.setBackground(manageColor(new ColorConstant(60,80,220)));
-			roundedRectangle.setForeground(manageColor(new ColorConstant(200,200,200)));
 		}
+
 		roundedRectangle.setLineWidth(2);
 		gaService.setLocationAndSize(roundedRectangle, context.getX(), context.getY(), width, height);
 		
 		Shape shape = peCreateService.createShape(containerShape, false);
-		Text text = gaService.createText(shape, "Node");
+		Text text = gaService.createText(shape, "N: " + newNode.getName());
 		text.setHorizontalAlignment(Orientation.ALIGNMENT_CENTER);
 		text.setVerticalAlignment(Orientation.ALIGNMENT_CENTER);
-		gaService.setLocationAndSize(text, 0, 0, context.getWidth(), context.getHeight());
+		text.setForeground(manageColor(new ColorConstant(230,230,230)));
+		
+		gaService.setLocationAndSize(text, 0, 0, roundedRectangle.getWidth(), roundedRectangle.getHeight());
 
 		peCreateService.createChopboxAnchor(containerShape);
 

@@ -63,6 +63,7 @@ public class SegmentItemProvider
 			addNumLanesPropertyDescriptor(object);
 			addHasCarsPropertyDescriptor(object);
 			addLengthPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -134,6 +135,28 @@ public class SegmentItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Segment_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Segment_name_feature", "_UI_Segment_type"),
+				 HighwayPackage.Literals.SEGMENT__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Segment.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -152,8 +175,10 @@ public class SegmentItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		Segment segment = (Segment)object;
-		return getString("_UI_Segment_type") + " " + segment.getNumLanes();
+		String label = ((Segment)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Segment_type") :
+			getString("_UI_Segment_type") + " " + label;
 	}
 
 	/**
@@ -170,6 +195,7 @@ public class SegmentItemProvider
 		switch (notification.getFeatureID(Segment.class)) {
 			case HighwayPackage.SEGMENT__NUM_LANES:
 			case HighwayPackage.SEGMENT__LENGTH:
+			case HighwayPackage.SEGMENT__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

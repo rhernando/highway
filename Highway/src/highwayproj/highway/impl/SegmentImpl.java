@@ -31,6 +31,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *   <li>{@link highwayproj.highway.impl.SegmentImpl#getNumLanes <em>Num Lanes</em>}</li>
  *   <li>{@link highwayproj.highway.impl.SegmentImpl#getHasCars <em>Has Cars</em>}</li>
  *   <li>{@link highwayproj.highway.impl.SegmentImpl#getLength <em>Length</em>}</li>
+ *   <li>{@link highwayproj.highway.impl.SegmentImpl#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -86,6 +87,26 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 	 * @ordered
 	 */
 	protected int length = LENGTH_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,6 +186,27 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HighwayPackage.SEGMENT__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -174,6 +216,8 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 				return getHasCars();
 			case HighwayPackage.SEGMENT__LENGTH:
 				return getLength();
+			case HighwayPackage.SEGMENT__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -197,6 +241,9 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 			case HighwayPackage.SEGMENT__LENGTH:
 				setLength((Integer)newValue);
 				return;
+			case HighwayPackage.SEGMENT__NAME:
+				setName((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -218,6 +265,9 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 			case HighwayPackage.SEGMENT__LENGTH:
 				setLength(LENGTH_EDEFAULT);
 				return;
+			case HighwayPackage.SEGMENT__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -236,6 +286,8 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 				return hasCars != null && !hasCars.isEmpty();
 			case HighwayPackage.SEGMENT__LENGTH:
 				return length != LENGTH_EDEFAULT;
+			case HighwayPackage.SEGMENT__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -254,6 +306,8 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 		result.append(numLanes);
 		result.append(", length: ");
 		result.append(length);
+		result.append(", name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

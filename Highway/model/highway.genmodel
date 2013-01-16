@@ -3,7 +3,8 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Highway/src" modelPluginID="Highway" modelName="Highway"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false">
   <foreignModel>highway.ecore</foreignModel>
-  <genPackages prefix="Highway" disposableProviderFactory="true" ecorePackage="highway.ecore#/">
+  <genPackages prefix="Highway" basePackage="highwayproj" disposableProviderFactory="true"
+      ecorePackage="highway.ecore#/">
     <genClasses ecoreClass="highway.ecore#//Highway">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference highway.ecore#//Highway/initNodes"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference highway.ecore#//Highway/initCars"/>

@@ -50,7 +50,7 @@ public class AddSemaphoreFeature extends AbstractAddFeature implements
 			roundedRectangle.setBackground(manageColor(new ColorConstant(250,0,0)));
 		
 		Shape shape = peCreateService.createShape(containerShape, false);
-		Text text = gaService.createText(shape, "Semaphore");
+		Text text = gaService.createText(shape, "Sem " + newSemaphore.getName());
 		text.setHorizontalAlignment(Orientation.ALIGNMENT_CENTER);
 		text.setVerticalAlignment(Orientation.ALIGNMENT_CENTER);
 		gaService.setLocationAndSize(text, 0, 0, context.getWidth(), context.getHeight());

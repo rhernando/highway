@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link highwayproj.highway.impl.SemaphoreImpl#getSecondsGreen <em>Seconds Green</em>}</li>
  *   <li>{@link highwayproj.highway.impl.SemaphoreImpl#isCanGo <em>Can Go</em>}</li>
  *   <li>{@link highwayproj.highway.impl.SemaphoreImpl#getBelongsTo <em>Belongs To</em>}</li>
+ *   <li>{@link highwayproj.highway.impl.SemaphoreImpl#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -100,6 +101,26 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 	 * @ordered
 	 */
 	protected Node belongsTo;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -226,6 +247,27 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HighwayPackage.SEMAPHORE__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -238,6 +280,8 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 			case HighwayPackage.SEMAPHORE__BELONGS_TO:
 				if (resolve) return getBelongsTo();
 				return basicGetBelongsTo();
+			case HighwayPackage.SEMAPHORE__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -261,6 +305,9 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 				return;
 			case HighwayPackage.SEMAPHORE__BELONGS_TO:
 				setBelongsTo((Node)newValue);
+				return;
+			case HighwayPackage.SEMAPHORE__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -286,6 +333,9 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 			case HighwayPackage.SEMAPHORE__BELONGS_TO:
 				setBelongsTo((Node)null);
 				return;
+			case HighwayPackage.SEMAPHORE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -306,6 +356,8 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 				return canGo != CAN_GO_EDEFAULT;
 			case HighwayPackage.SEMAPHORE__BELONGS_TO:
 				return belongsTo != null;
+			case HighwayPackage.SEMAPHORE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -326,6 +378,8 @@ public class SemaphoreImpl extends EObjectImpl implements Semaphore {
 		result.append(secondsGreen);
 		result.append(", canGo: ");
 		result.append(canGo);
+		result.append(", name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

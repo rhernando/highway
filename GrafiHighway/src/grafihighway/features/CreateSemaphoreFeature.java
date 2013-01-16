@@ -31,6 +31,8 @@ public class CreateSemaphoreFeature extends AbstractCreateFeature implements
 	public Object[] create(ICreateContext context) {
 		// TODO: create the domain object here
 		Semaphore newSemaphore = HighwayFactory.eINSTANCE.createSemaphore();
+		newSemaphore.setName(JOptionPane.showInputDialog(new JFrame(),
+				"Element Name", ""));
 
 		Object[] options = {"Red", "Green"};
 		int opt = JOptionPane.showOptionDialog(new JFrame(), "Initial value", "Select:",

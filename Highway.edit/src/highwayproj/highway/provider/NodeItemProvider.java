@@ -5,6 +5,7 @@ package highwayproj.highway.provider;
 
 import highwayproj.highway.HighwayPackage;
 
+import highwayproj.highway.Node;
 import java.util.Collection;
 import java.util.List;
 
@@ -20,7 +21,9 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
+import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
  * This is the item provider adapter for a {@link highwayproj.highway.Node} object.
@@ -61,6 +64,7 @@ public class NodeItemProvider
 			addHasEndsPropertyDescriptor(object);
 			addSemaphorePropertyDescriptor(object);
 			addSignalsPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -154,6 +158,28 @@ public class NodeItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Node_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Node_name_feature", "_UI_Node_type"),
+				 HighwayPackage.Literals.NODE__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Node.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -172,7 +198,10 @@ public class NodeItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_Node_type");
+		String label = ((Node)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Node_type") :
+			getString("_UI_Node_type") + " " + label;
 	}
 
 	/**
@@ -185,6 +214,12 @@ public class NodeItemProvider
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
+
+		switch (notification.getFeatureID(Node.class)) {
+			case HighwayPackage.NODE__NAME:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+		}
 		super.notifyChanged(notification);
 	}
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link highwayproj.highway.Semaphore#getSecondsGreen <em>Seconds Green</em>}</li>
  *   <li>{@link highwayproj.highway.Semaphore#isCanGo <em>Can Go</em>}</li>
  *   <li>{@link highwayproj.highway.Semaphore#getBelongsTo <em>Belongs To</em>}</li>
+ *   <li>{@link highwayproj.highway.Semaphore#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -36,7 +37,7 @@ public interface Semaphore extends EObject {
 	 * @return the value of the '<em>Seconds Red</em>' attribute.
 	 * @see #setSecondsRed(int)
 	 * @see highwayproj.highway.HighwayPackage#getSemaphore_SecondsRed()
-	 * @model default="1"
+	 * @model default="1" ordered="false"
 	 * @generated
 	 */
 	int getSecondsRed();
@@ -63,7 +64,7 @@ public interface Semaphore extends EObject {
 	 * @return the value of the '<em>Seconds Green</em>' attribute.
 	 * @see #setSecondsGreen(int)
 	 * @see highwayproj.highway.HighwayPackage#getSemaphore_SecondsGreen()
-	 * @model default="1"
+	 * @model default="1" ordered="false"
 	 * @generated
 	 */
 	int getSecondsGreen();
@@ -89,7 +90,7 @@ public interface Semaphore extends EObject {
 	 * @return the value of the '<em>Can Go</em>' attribute.
 	 * @see #setCanGo(boolean)
 	 * @see highwayproj.highway.HighwayPackage#getSemaphore_CanGo()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	boolean isCanGo();
@@ -115,7 +116,7 @@ public interface Semaphore extends EObject {
 	 * @return the value of the '<em>Belongs To</em>' reference.
 	 * @see #setBelongsTo(Node)
 	 * @see highwayproj.highway.HighwayPackage#getSemaphore_BelongsTo()
-	 * @model required="true"
+	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	Node getBelongsTo();
@@ -129,5 +130,31 @@ public interface Semaphore extends EObject {
 	 * @generated
 	 */
 	void setBelongsTo(Node value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see highwayproj.highway.HighwayPackage#getSemaphore_Name()
+	 * @model required="true" ordered="false"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link highwayproj.highway.Semaphore#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // Semaphore

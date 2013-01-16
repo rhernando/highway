@@ -38,7 +38,7 @@ public interface Highway extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Init Nodes</em>' containment reference list.
 	 * @see highwayproj.highway.HighwayPackage#getHighway_InitNodes()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<Node> getInitNodes();
@@ -54,7 +54,7 @@ public interface Highway extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Init Cars</em>' containment reference list.
 	 * @see highwayproj.highway.HighwayPackage#getHighway_InitCars()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<Car> getInitCars();
@@ -70,7 +70,7 @@ public interface Highway extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Init Segments</em>' containment reference list.
 	 * @see highwayproj.highway.HighwayPackage#getHighway_InitSegments()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<Segment> getInitSegments();
@@ -86,7 +86,7 @@ public interface Highway extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Init Semaphore</em>' containment reference list.
 	 * @see highwayproj.highway.HighwayPackage#getHighway_InitSemaphore()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<Semaphore> getInitSemaphore();
@@ -102,7 +102,7 @@ public interface Highway extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Init Signal</em>' containment reference list.
 	 * @see highwayproj.highway.HighwayPackage#getHighway_InitSignal()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<Signal> getInitSignal();

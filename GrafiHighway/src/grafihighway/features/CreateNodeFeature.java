@@ -32,6 +32,9 @@ public class CreateNodeFeature extends AbstractCreateFeature implements
 	public Object[] create(ICreateContext context) {
 		Node newNode = HighwayFactory.eINSTANCE.createNode();
 
+		String name = JOptionPane.showInputDialog(new JFrame(),
+				"Element Name", "");
+		
 		Object[] options = {"Injector", "Extractor", "Normal Node"};
 		int opt = JOptionPane.showOptionDialog(new JFrame(), "Node type", "Select node type",
 				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null,
@@ -49,6 +52,7 @@ public class CreateNodeFeature extends AbstractCreateFeature implements
 			newNode = HighwayFactory.eINSTANCE.createExtractor();				
 		}
 
+		newNode.setName(name);
 		
 		// TODO: in case of an EMF object add the new object to a suitable resource
 		getDiagram().eResource().getContents().add(newNode);

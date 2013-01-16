@@ -3,6 +3,7 @@
 package highwayproj.highway.provider;
 
 
+import highwayproj.highway.Yield;
 import java.util.Collection;
 import java.util.List;
 
@@ -74,7 +75,10 @@ public class YieldItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_Yield_type");
+		String label = ((Yield)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Yield_type") :
+			getString("_UI_Yield_type") + " " + label;
 	}
 
 	/**

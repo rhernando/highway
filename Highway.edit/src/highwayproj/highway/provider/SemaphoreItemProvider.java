@@ -64,6 +64,7 @@ public class SemaphoreItemProvider
 			addSecondsGreenPropertyDescriptor(object);
 			addCanGoPropertyDescriptor(object);
 			addBelongsToPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -157,6 +158,28 @@ public class SemaphoreItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Semaphore_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Semaphore_name_feature", "_UI_Semaphore_type"),
+				 HighwayPackage.Literals.SEMAPHORE__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Semaphore.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -175,8 +198,10 @@ public class SemaphoreItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		Semaphore semaphore = (Semaphore)object;
-		return getString("_UI_Semaphore_type") + " " + semaphore.getSecondsRed();
+		String label = ((Semaphore)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Semaphore_type") :
+			getString("_UI_Semaphore_type") + " " + label;
 	}
 
 	/**
@@ -194,6 +219,7 @@ public class SemaphoreItemProvider
 			case HighwayPackage.SEMAPHORE__SECONDS_RED:
 			case HighwayPackage.SEMAPHORE__SECONDS_GREEN:
 			case HighwayPackage.SEMAPHORE__CAN_GO:
+			case HighwayPackage.SEMAPHORE__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

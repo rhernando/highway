@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link highwayproj.highway.Node#getHasEnds <em>Has Ends</em>}</li>
  *   <li>{@link highwayproj.highway.Node#getSemaphore <em>Semaphore</em>}</li>
  *   <li>{@link highwayproj.highway.Node#getSignals <em>Signals</em>}</li>
+ *   <li>{@link highwayproj.highway.Node#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,7 +38,7 @@ public interface Node extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Starts</em>' reference list.
 	 * @see highwayproj.highway.HighwayPackage#getNode_HasStarts()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	EList<Segment> getHasStarts();
@@ -53,7 +54,7 @@ public interface Node extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Ends</em>' reference list.
 	 * @see highwayproj.highway.HighwayPackage#getNode_HasEnds()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	EList<Segment> getHasEnds();
@@ -69,7 +70,7 @@ public interface Node extends EObject {
 	 * @return the value of the '<em>Semaphore</em>' reference.
 	 * @see #setSemaphore(Semaphore)
 	 * @see highwayproj.highway.HighwayPackage#getNode_Semaphore()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	Semaphore getSemaphore();
@@ -95,9 +96,35 @@ public interface Node extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Signals</em>' reference list.
 	 * @see highwayproj.highway.HighwayPackage#getNode_Signals()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	EList<Signal> getSignals();
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see highwayproj.highway.HighwayPackage#getNode_Name()
+	 * @model required="true" ordered="false"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link highwayproj.highway.Node#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // Node

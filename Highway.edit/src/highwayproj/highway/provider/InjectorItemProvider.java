@@ -103,8 +103,10 @@ public class InjectorItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		Injector injector = (Injector)object;
-		return getString("_UI_Injector_type") + " " + injector.getCarsPerHour();
+		String label = ((Injector)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Injector_type") :
+			getString("_UI_Injector_type") + " " + label;
 	}
 
 	/**
