@@ -44,7 +44,7 @@ public class CreateNodeFeature extends AbstractCreateFeature implements
 			newNode = HighwayFactory.eINSTANCE.createInjector();
 			SpinnerModel sm = new SpinnerNumberModel(0,0,3600, 1);
 			JSpinner jsp = new JSpinner(sm);
-	        int numCar = JOptionPane.showOptionDialog(null, jsp, "Number of cars per hour", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+	        int numCar = JOptionPane.showOptionDialog(null, jsp, "Number of cars per hour", JOptionPane.CLOSED_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
 	        ((Injector)newNode).setCarsPerHour(numCar);
 	        
 	        

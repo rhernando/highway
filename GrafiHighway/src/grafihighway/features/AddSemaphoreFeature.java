@@ -6,6 +6,7 @@ import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.IAddContext;
 import org.eclipse.graphiti.features.impl.AbstractAddFeature;
+import org.eclipse.graphiti.mm.algorithms.Ellipse;
 import org.eclipse.graphiti.mm.algorithms.RoundedRectangle;
 import org.eclipse.graphiti.mm.algorithms.Text;
 import org.eclipse.graphiti.mm.algorithms.styles.Orientation;
@@ -17,6 +18,7 @@ import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
 import org.eclipse.graphiti.util.ColorConstant;
+import org.eclipse.graphiti.util.IColorConstant;
 
 public class AddSemaphoreFeature extends AbstractAddFeature implements
 		IAddFeature {
@@ -41,19 +43,17 @@ public class AddSemaphoreFeature extends AbstractAddFeature implements
 		IGaService gaService = Graphiti.getGaService();
 
 		ContainerShape containerShape = peCreateService.createContainerShape(targetDiagram, true);
-		RoundedRectangle roundedRectangle = gaService.createRoundedRectangle(containerShape, 5, 5);
-		gaService.setLocationAndSize(roundedRectangle, context.getX(), context.getY(), context.getWidth(), context.getHeight());
+		Ellipse circ = gaService.createEllipse(containerShape);
+		circ.setForeground(manageColor(IColorConstant.BLACK));
+		circ.setLineWidth(5);
+		gaService.setLocationAndSize(circ, context.getX(), context.getY(),
+				50, 50);
 
 		if (newSemaphore.isCanGo())
-			roundedRectangle.setBackground(manageColor(new ColorConstant(0,250,0)));
+			circ.setBackground(manageColor(new ColorConstant(0,250,0)));
 		else
-			roundedRectangle.setBackground(manageColor(new ColorConstant(250,0,0)));
+			circ.setBackground(manageColor(new ColorConstant(250,0,0)));
 		
-		Shape shape = peCreateService.createShape(containerShape, false);
-		Text text = gaService.createText(shape, "Sem " + newSemaphore.getName());
-		text.setHorizontalAlignment(Orientation.ALIGNMENT_CENTER);
-		text.setVerticalAlignment(Orientation.ALIGNMENT_CENTER);
-		gaService.setLocationAndSize(text, 0, 0, context.getWidth(), context.getHeight());
 
 		peCreateService.createChopboxAnchor(containerShape);
 

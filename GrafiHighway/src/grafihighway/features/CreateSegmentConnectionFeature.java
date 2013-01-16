@@ -71,7 +71,7 @@ public class CreateSegmentConnectionFeature extends
 		
 		Object seleccion = JOptionPane.showInputDialog(
 				new JFrame(),
-				   "Select max speed",
+				   "Select number of lanes",
 				   "Options",
 				   JOptionPane.QUESTION_MESSAGE,
 				   null,  
@@ -83,7 +83,6 @@ public class CreateSegmentConnectionFeature extends
 		JSpinner jsp = new JSpinner(sm);
         int len = JOptionPane.showOptionDialog(null, jsp, "Length of Segment", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
         newSegment.setLength(len);
-        
 		PictogramElement source = context.getSourceAnchor().getParent();
 		PictogramElement target = context.getTargetAnchor().getParent();
 		

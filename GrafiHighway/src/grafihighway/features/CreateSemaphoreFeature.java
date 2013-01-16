@@ -43,10 +43,10 @@ public class CreateSemaphoreFeature extends AbstractCreateFeature implements
 		SpinnerModel sm = new SpinnerNumberModel(0,0,60, 1);
 		JSpinner jsp = new JSpinner(sm);
 		
-        int numCar = JOptionPane.showOptionDialog(null, jsp, "Red light delay", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+        int numCar = JOptionPane.showOptionDialog(null, jsp, "Red light delay", JOptionPane.CLOSED_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
         newSemaphore.setSecondsRed(numCar);
 
-        numCar = JOptionPane.showOptionDialog(null, jsp, "Green light delay", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+        numCar = JOptionPane.showOptionDialog(null, jsp, "Green light delay", JOptionPane.CLOSED_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
         newSemaphore.setSecondsGreen(numCar);
         
         

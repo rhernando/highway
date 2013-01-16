@@ -78,7 +78,6 @@ public class AddSignalFeature extends AbstractAddFeature implements
 		} else {
 
 			Ellipse circ = gaService.createEllipse(containerShape);
-
 			circ.setForeground(manageColor(IColorConstant.RED));
 			circ.setBackground(manageColor(IColorConstant.WHITE));
 			circ.setLineWidth(7);
