@@ -1,7 +1,14 @@
 package grafihighway.features;
 
 import highwayproj.highway.HighwayFactory;
+import highwayproj.highway.Injector;
 import highwayproj.highway.Node;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerModel;
+import javax.swing.SpinnerNumberModel;
 
 import org.eclipse.graphiti.features.ICreateFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
@@ -23,8 +30,25 @@ public class CreateNodeFeature extends AbstractCreateFeature implements
 
 	@Override
 	public Object[] create(ICreateContext context) {
-		// TODO: create the domain object here
 		Node newNode = HighwayFactory.eINSTANCE.createNode();
+
+		Object[] options = {"Injector", "Extractor", "Normal Node"};
+		int opt = JOptionPane.showOptionDialog(new JFrame(), "Node type", "Select node type",
+				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null,
+				options, options[1]);
+
+		if (opt == 0){
+			newNode = HighwayFactory.eINSTANCE.createInjector();
+			SpinnerModel sm = new SpinnerNumberModel(0,0,3600, 1);
+			JSpinner jsp = new JSpinner(sm);
+	        int numCar = JOptionPane.showOptionDialog(null, jsp, "Number of cars per hour", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+	        ((Injector)newNode).setCarsPerHour(numCar);
+	        
+	        
+		}else if (opt == 1){
+			newNode = HighwayFactory.eINSTANCE.createExtractor();				
+		}
+
 		
 		// TODO: in case of an EMF object add the new object to a suitable resource
 		getDiagram().eResource().getContents().add(newNode);

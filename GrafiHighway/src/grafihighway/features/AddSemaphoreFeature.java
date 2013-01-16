@@ -16,6 +16,7 @@ import org.eclipse.graphiti.mm.pictograms.Shape;
 import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
+import org.eclipse.graphiti.util.ColorConstant;
 
 public class AddSemaphoreFeature extends AbstractAddFeature implements
 		IAddFeature {
@@ -42,7 +43,11 @@ public class AddSemaphoreFeature extends AbstractAddFeature implements
 		ContainerShape containerShape = peCreateService.createContainerShape(targetDiagram, true);
 		RoundedRectangle roundedRectangle = gaService.createRoundedRectangle(containerShape, 5, 5);
 		gaService.setLocationAndSize(roundedRectangle, context.getX(), context.getY(), context.getWidth(), context.getHeight());
-		roundedRectangle.setFilled(false);
+
+		if (newSemaphore.isCanGo())
+			roundedRectangle.setBackground(manageColor(new ColorConstant(0,250,0)));
+		else
+			roundedRectangle.setBackground(manageColor(new ColorConstant(250,0,0)));
 		
 		Shape shape = peCreateService.createShape(containerShape, false);
 		Text text = gaService.createText(shape, "Semaphore");

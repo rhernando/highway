@@ -3,6 +3,12 @@ package grafihighway.features;
 import highwayproj.highway.HighwayFactory;
 import highwayproj.highway.Semaphore;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerModel;
+import javax.swing.SpinnerNumberModel;
+
 import org.eclipse.graphiti.features.ICreateFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.ICreateContext;
@@ -25,7 +31,23 @@ public class CreateSemaphoreFeature extends AbstractCreateFeature implements
 	public Object[] create(ICreateContext context) {
 		// TODO: create the domain object here
 		Semaphore newSemaphore = HighwayFactory.eINSTANCE.createSemaphore();
+
+		Object[] options = {"Red", "Green"};
+		int opt = JOptionPane.showOptionDialog(new JFrame(), "Initial value", "Select:",
+				JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null,
+				options, options[1]);
+		newSemaphore.setCanGo(opt != 0);
+
+		SpinnerModel sm = new SpinnerNumberModel(0,0,60, 1);
+		JSpinner jsp = new JSpinner(sm);
 		
+        int numCar = JOptionPane.showOptionDialog(null, jsp, "Red light delay", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+        newSemaphore.setSecondsRed(numCar);
+
+        numCar = JOptionPane.showOptionDialog(null, jsp, "Green light delay", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+        newSemaphore.setSecondsGreen(numCar);
+        
+        
 		// TODO: in case of an EMF object add the new object to a suitable resource
 		getDiagram().eResource().getContents().add(newSemaphore);
 

@@ -1,0 +1,7 @@
+* ER diagram
+	- cars in segment
+	- node types
+
+* grafiti
+	* ask Q onCreate
+	* semaphore simplified to R/G

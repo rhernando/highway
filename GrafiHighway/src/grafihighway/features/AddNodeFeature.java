@@ -1,7 +1,7 @@
 package grafihighway.features;
 
-import java.awt.Frame;
-
+import highwayproj.highway.Extractor;
+import highwayproj.highway.Injector;
 import highwayproj.highway.Node;
 
 import org.eclipse.graphiti.features.IAddFeature;
@@ -38,21 +38,28 @@ public class AddNodeFeature extends AbstractAddFeature implements
 		
 		Node newNode = (Node)context.getNewObject();
 
-		Object[] options = {"Injector", "Extractor"};
-//		Frame
-//		JOptionPane.showOptionDialog(new JFrame(), "sss", "sssw",
-//				JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null,
-//				options, options[1]);
-//		
+	
 		Diagram targetDiagram = (Diagram) context.getTargetContainer();
 		IPeCreateService peCreateService = Graphiti.getPeCreateService();
 		IGaService gaService = Graphiti.getGaService();
 
+        int width = 50;
+        int height = 50; 
+
 		ContainerShape containerShape = peCreateService.createContainerShape(targetDiagram, true);
 		RoundedRectangle roundedRectangle = gaService.createRoundedRectangle(containerShape, 5, 5);
-		roundedRectangle.setBackground(manageColor(new ColorConstant(80,80,200)));
-		roundedRectangle.setForeground(manageColor(new ColorConstant(10,0,0)));
-		gaService.setLocationAndSize(roundedRectangle, context.getX(), context.getY(), context.getWidth(), context.getHeight());
+		if (newNode instanceof Injector){
+			roundedRectangle.setBackground(manageColor(new ColorConstant(80,150,200)));
+			roundedRectangle.setForeground(manageColor(new ColorConstant(200,200,200)));
+		}else if (newNode instanceof Extractor){
+			roundedRectangle.setBackground(manageColor(new ColorConstant(120,80,220)));
+			roundedRectangle.setForeground(manageColor(new ColorConstant(200,200,200)));
+		}else{
+			roundedRectangle.setBackground(manageColor(new ColorConstant(60,80,220)));
+			roundedRectangle.setForeground(manageColor(new ColorConstant(200,200,200)));
+		}
+		roundedRectangle.setLineWidth(2);
+		gaService.setLocationAndSize(roundedRectangle, context.getX(), context.getY(), width, height);
 		
 		Shape shape = peCreateService.createShape(containerShape, false);
 		Text text = gaService.createText(shape, "Node");
