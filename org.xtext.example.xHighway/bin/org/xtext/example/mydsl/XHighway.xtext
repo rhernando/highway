@@ -16,10 +16,17 @@ Highway returns Highway:
 	'}';
 
 Node returns Node:
+	Node_Impl | Extractor | Injector;
+
+Signal returns Signal:
+	Signal_Impl | Speedlimit | Stop | Yield;
+
+Node_Impl returns Node:
+	{Node}
 	'Node'
 	'{'
-		'hasStarts' '(' hasStarts+=[Segment|EString] ( "," hasStarts+=[Segment|EString])* ')' 
-		'hasEnds' '(' hasEnds+=[Segment|EString] ( "," hasEnds+=[Segment|EString])* ')' 
+		('hasStarts' '(' hasStarts+=[Segment|EString] ( "," hasStarts+=[Segment|EString])* ')' )?
+		('hasEnds' '(' hasEnds+=[Segment|EString] ( "," hasEnds+=[Segment|EString])* ')' )?
 		('semaphore' semaphore=[Semaphore|EString])?
 		('signals' '(' signals+=[Signal|EString] ( "," signals+=[Signal|EString])* ')' )?
 	'}';
@@ -30,6 +37,7 @@ Car returns Car:
 	'{'
 		('timeIn' timeIn=EDate)?
 		('timeOut' timeOut=EDate)?
+		('isInSegment' isInSegment=[Segment|EString])?
 	'}';
 
 Segment returns Segment:
@@ -42,29 +50,70 @@ Segment returns Segment:
 	'}';
 
 Semaphore returns Semaphore:
-	{Semaphore}
 	(canGo?='canGo')?
 	'Semaphore'
 	'{'
 		('secondsRed' secondsRed=EInt)?
 		('secondsGreen' secondsGreen=EInt)?
+		'belongsTo' belongsTo=[Node|EString]
 	'}';
 
-Signal returns Signal:
-	{Signal}
+Signal_Impl returns Signal:
 	'Signal'
-	;
-	
-EString returns ecore::EString:
-	STRING | ID;
+	'{'
+		'belongsTo' belongsTo=[Node|EString]
+	'}';
 
-EDate returns ecore::EDate:
-	'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
+Extractor returns Extractor:
+	{Extractor}
+	'Extractor'
+	'{'
+		('hasStarts' '(' hasStarts+=[Segment|EString] ( "," hasStarts+=[Segment|EString])* ')' )?
+		('hasEnds' '(' hasEnds+=[Segment|EString] ( "," hasEnds+=[Segment|EString])* ')' )?
+		('semaphore' semaphore=[Semaphore|EString])?
+		('signals' '(' signals+=[Signal|EString] ( "," signals+=[Signal|EString])* ')' )?
+	'}';
+
+Injector returns Injector:
+	{Injector}
+	'Injector'
+	'{'
+		('carsPerHour' carsPerHour=EInt)?
+		('hasStarts' '(' hasStarts+=[Segment|EString] ( "," hasStarts+=[Segment|EString])* ')' )?
+		('hasEnds' '(' hasEnds+=[Segment|EString] ( "," hasEnds+=[Segment|EString])* ')' )?
+		('semaphore' semaphore=[Semaphore|EString])?
+		('signals' '(' signals+=[Signal|EString] ( "," signals+=[Signal|EString])* ')' )?
+	'}';
 
 EInt returns ecore::EInt:
 	'-'? INT;
 
+EDate returns ecore::EDate:
+	'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
+
 EBoolean returns ecore::EBoolean:
 	'true' | 'false';
+
+Speedlimit returns Speedlimit:
+	'Speedlimit'
+	'{'
+		('Speed' Speed=EInt)?
+		'belongsTo' belongsTo=[Node|EString]
+	'}';
+
+Stop returns Stop:
+	'Stop'
+	'{'
+		'belongsTo' belongsTo=[Node|EString]
+	'}';
+
+Yield returns Yield:
+	'Yield'
+	'{'
+		'belongsTo' belongsTo=[Node|EString]
+	'}';
+
+EString returns ecore::EString:
+	STRING | ID;
 
 	
