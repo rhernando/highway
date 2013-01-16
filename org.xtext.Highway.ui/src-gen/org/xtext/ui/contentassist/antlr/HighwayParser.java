@@ -59,9 +59,9 @@ public class HighwayParser extends AbstractContentAssistParser {
 					put(grammarAccess.getNode_ImplAccess().getGroup_15(), "rule__Node_Impl__Group_15__0");
 					put(grammarAccess.getNode_ImplAccess().getGroup_15_3(), "rule__Node_Impl__Group_15_3__0");
 					put(grammarAccess.getCarAccess().getGroup(), "rule__Car__Group__0");
-					put(grammarAccess.getCarAccess().getGroup_3(), "rule__Car__Group_3__0");
 					put(grammarAccess.getCarAccess().getGroup_4(), "rule__Car__Group_4__0");
 					put(grammarAccess.getCarAccess().getGroup_5(), "rule__Car__Group_5__0");
+					put(grammarAccess.getCarAccess().getGroup_6(), "rule__Car__Group_6__0");
 					put(grammarAccess.getSegmentAccess().getGroup(), "rule__Segment__Group__0");
 					put(grammarAccess.getSegmentAccess().getGroup_4(), "rule__Segment__Group_4__0");
 					put(grammarAccess.getSegmentAccess().getGroup_5(), "rule__Segment__Group_5__0");
@@ -110,9 +110,10 @@ public class HighwayParser extends AbstractContentAssistParser {
 					put(grammarAccess.getNode_ImplAccess().getSemaphoreAssignment_14_1(), "rule__Node_Impl__SemaphoreAssignment_14_1");
 					put(grammarAccess.getNode_ImplAccess().getSignalsAssignment_15_2(), "rule__Node_Impl__SignalsAssignment_15_2");
 					put(grammarAccess.getNode_ImplAccess().getSignalsAssignment_15_3_1(), "rule__Node_Impl__SignalsAssignment_15_3_1");
-					put(grammarAccess.getCarAccess().getTimeInAssignment_3_1(), "rule__Car__TimeInAssignment_3_1");
-					put(grammarAccess.getCarAccess().getTimeOutAssignment_4_1(), "rule__Car__TimeOutAssignment_4_1");
-					put(grammarAccess.getCarAccess().getIsInSegmentAssignment_5_1(), "rule__Car__IsInSegmentAssignment_5_1");
+					put(grammarAccess.getCarAccess().getNameAssignment_2(), "rule__Car__NameAssignment_2");
+					put(grammarAccess.getCarAccess().getTimeInAssignment_4_1(), "rule__Car__TimeInAssignment_4_1");
+					put(grammarAccess.getCarAccess().getTimeOutAssignment_5_1(), "rule__Car__TimeOutAssignment_5_1");
+					put(grammarAccess.getCarAccess().getIsInSegmentAssignment_6_1(), "rule__Car__IsInSegmentAssignment_6_1");
 					put(grammarAccess.getSegmentAccess().getNameAssignment_2(), "rule__Segment__NameAssignment_2");
 					put(grammarAccess.getSegmentAccess().getNumLanesAssignment_4_1(), "rule__Segment__NumLanesAssignment_4_1");
 					put(grammarAccess.getSegmentAccess().getLengthAssignment_5_1(), "rule__Segment__LengthAssignment_5_1");

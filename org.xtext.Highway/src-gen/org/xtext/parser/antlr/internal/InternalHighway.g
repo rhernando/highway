@@ -710,57 +710,75 @@ ruleCar returns [EObject current=null]
     {
     	newLeafNode(otherlv_1, grammarAccess.getCarAccess().getCarKeyword_1());
     }
-	otherlv_2='{' 
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getCarAccess().getNameEStringParserRuleCall_2_0()); 
+	    }
+		lv_name_2_0=ruleEString		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getCarRule());
+	        }
+       		set(
+       			$current, 
+       			"name",
+        		lv_name_2_0, 
+        		"EString");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)	otherlv_3='{' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_2());
+    	newLeafNode(otherlv_3, grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_3());
     }
-(	otherlv_3='timeIn' 
+(	otherlv_4='timeIn' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getCarAccess().getTimeInKeyword_3_0());
+    	newLeafNode(otherlv_4, grammarAccess.getCarAccess().getTimeInKeyword_4_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_3_1_0()); 
+	        newCompositeNode(grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_4_1_0()); 
 	    }
-		lv_timeIn_4_0=ruleEDate		{
+		lv_timeIn_5_0=ruleEDate		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getCarRule());
 	        }
        		set(
        			$current, 
        			"timeIn",
-        		lv_timeIn_4_0, 
+        		lv_timeIn_5_0, 
         		"EDate");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))?(	otherlv_5='timeOut' 
+))?(	otherlv_6='timeOut' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getCarAccess().getTimeOutKeyword_4_0());
+    	newLeafNode(otherlv_6, grammarAccess.getCarAccess().getTimeOutKeyword_5_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_5_1_0()); 
 	    }
-		lv_timeOut_6_0=ruleEDate		{
+		lv_timeOut_7_0=ruleEDate		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getCarRule());
 	        }
        		set(
        			$current, 
        			"timeOut",
-        		lv_timeOut_6_0, 
+        		lv_timeOut_7_0, 
         		"EDate");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))?(	otherlv_7='isInSegment' 
+))?(	otherlv_8='isInSegment' 
     {
-    	newLeafNode(otherlv_7, grammarAccess.getCarAccess().getIsInSegmentKeyword_5_0());
+    	newLeafNode(otherlv_8, grammarAccess.getCarAccess().getIsInSegmentKeyword_6_0());
     }
 (
 (
@@ -770,16 +788,16 @@ ruleCar returns [EObject current=null]
 	        }
         }
 		{ 
-	        newCompositeNode(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_5_1_0()); 
+	        newCompositeNode(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_6_1_0()); 
 	    }
 		ruleEString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))?	otherlv_9='}' 
+))?	otherlv_10='}' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getCarAccess().getRightCurlyBracketKeyword_6());
+    	newLeafNode(otherlv_10, grammarAccess.getCarAccess().getRightCurlyBracketKeyword_7());
     }
 )
 ;

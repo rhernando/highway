@@ -913,10 +913,10 @@ public class InternalHighwayLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8537:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8537:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8583:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8583:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8537:11: ( '^' )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8583:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -925,7 +925,7 @@ public class InternalHighwayLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8537:11: '^'
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8583:11: '^'
                     {
                     match('^'); 
 
@@ -943,7 +943,7 @@ public class InternalHighwayLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8537:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8583:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -992,10 +992,10 @@ public class InternalHighwayLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8539:10: ( ( '0' .. '9' )+ )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8539:12: ( '0' .. '9' )+
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8585:10: ( ( '0' .. '9' )+ )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8585:12: ( '0' .. '9' )+
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8539:12: ( '0' .. '9' )+
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8585:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -1009,7 +1009,7 @@ public class InternalHighwayLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8539:13: '0' .. '9'
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8585:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1041,10 +1041,10 @@ public class InternalHighwayLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1062,10 +1062,10 @@ public class InternalHighwayLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1081,7 +1081,7 @@ public class InternalHighwayLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1097,7 +1097,7 @@ public class InternalHighwayLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1122,10 +1122,10 @@ public class InternalHighwayLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1141,7 +1141,7 @@ public class InternalHighwayLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1157,7 +1157,7 @@ public class InternalHighwayLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8541:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8587:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1200,12 +1200,12 @@ public class InternalHighwayLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8543:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8543:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8589:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8589:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8543:24: ( options {greedy=false; } : . )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8589:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -1230,7 +1230,7 @@ public class InternalHighwayLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8543:52: .
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8589:52: .
             	    {
             	    matchAny(); 
 
@@ -1260,12 +1260,12 @@ public class InternalHighwayLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8545:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8545:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8591:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8591:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8545:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8591:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1278,7 +1278,7 @@ public class InternalHighwayLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8545:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8591:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1298,7 +1298,7 @@ public class InternalHighwayLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8545:40: ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8591:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1307,9 +1307,9 @@ public class InternalHighwayLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8545:41: ( '\\r' )? '\\n'
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8591:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8545:41: ( '\\r' )?
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8591:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1318,7 +1318,7 @@ public class InternalHighwayLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8545:41: '\\r'
+                            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8591:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1350,10 +1350,10 @@ public class InternalHighwayLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8547:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8547:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8593:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8593:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8547:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8593:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1407,8 +1407,8 @@ public class InternalHighwayLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8549:16: ( . )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8549:18: .
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8595:16: ( . )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8595:18: .
             {
             matchAny(); 
 

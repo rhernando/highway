@@ -7994,21 +7994,31 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3081:1: rule__Car__Group__2__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3081:1: rule__Car__Group__2__Impl : ( ( rule__Car__NameAssignment_2 ) ) ;
     public final void rule__Car__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3085:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3086:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3085:1: ( ( ( rule__Car__NameAssignment_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3086:1: ( ( rule__Car__NameAssignment_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3086:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3087:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3086:1: ( ( rule__Car__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3087:1: ( rule__Car__NameAssignment_2 )
             {
-             before(grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Car__Group__2__Impl6126); 
-             after(grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_2()); 
+             before(grammarAccess.getCarAccess().getNameAssignment_2()); 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3088:1: ( rule__Car__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3088:2: rule__Car__NameAssignment_2
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Car__NameAssignment_2_in_rule__Car__Group__2__Impl6125);
+            rule__Car__NameAssignment_2();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getCarAccess().getNameAssignment_2()); 
 
             }
 
@@ -8031,21 +8041,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3100:1: rule__Car__Group__3 : rule__Car__Group__3__Impl rule__Car__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3098:1: rule__Car__Group__3 : rule__Car__Group__3__Impl rule__Car__Group__4 ;
     public final void rule__Car__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3104:1: ( rule__Car__Group__3__Impl rule__Car__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3105:2: rule__Car__Group__3__Impl rule__Car__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3102:1: ( rule__Car__Group__3__Impl rule__Car__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3103:2: rule__Car__Group__3__Impl rule__Car__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__3__Impl_in_rule__Car__Group__36157);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__3__Impl_in_rule__Car__Group__36155);
             rule__Car__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__4_in_rule__Car__Group__36160);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__4_in_rule__Car__Group__36158);
             rule__Car__Group__4();
 
             state._fsp--;
@@ -8069,42 +8079,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3112:1: rule__Car__Group__3__Impl : ( ( rule__Car__Group_3__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3110:1: rule__Car__Group__3__Impl : ( '{' ) ;
     public final void rule__Car__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3116:1: ( ( ( rule__Car__Group_3__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3117:1: ( ( rule__Car__Group_3__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3114:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3115:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3117:1: ( ( rule__Car__Group_3__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3118:1: ( rule__Car__Group_3__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3115:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3116:1: '{'
             {
-             before(grammarAccess.getCarAccess().getGroup_3()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3119:1: ( rule__Car__Group_3__0 )?
-            int alt20=2;
-            int LA20_0 = input.LA(1);
-
-            if ( (LA20_0==30) ) {
-                alt20=1;
-            }
-            switch (alt20) {
-                case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3119:2: rule__Car__Group_3__0
-                    {
-                    pushFollow(FollowSets000.FOLLOW_rule__Car__Group_3__0_in_rule__Car__Group__3__Impl6187);
-                    rule__Car__Group_3__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getCarAccess().getGroup_3()); 
+             before(grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_3()); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Car__Group__3__Impl6186); 
+             after(grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
 
@@ -8136,12 +8125,12 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3133:1: ( rule__Car__Group__4__Impl rule__Car__Group__5 )
             // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3134:2: rule__Car__Group__4__Impl rule__Car__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__4__Impl_in_rule__Car__Group__46218);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__4__Impl_in_rule__Car__Group__46217);
             rule__Car__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__5_in_rule__Car__Group__46221);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__5_in_rule__Car__Group__46220);
             rule__Car__Group__5();
 
             state._fsp--;
@@ -8179,17 +8168,17 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getCarAccess().getGroup_4()); 
             // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3148:1: ( rule__Car__Group_4__0 )?
-            int alt21=2;
-            int LA21_0 = input.LA(1);
+            int alt20=2;
+            int LA20_0 = input.LA(1);
 
-            if ( (LA21_0==31) ) {
-                alt21=1;
+            if ( (LA20_0==30) ) {
+                alt20=1;
             }
-            switch (alt21) {
+            switch (alt20) {
                 case 1 :
                     // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3148:2: rule__Car__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Car__Group_4__0_in_rule__Car__Group__4__Impl6248);
+                    pushFollow(FollowSets000.FOLLOW_rule__Car__Group_4__0_in_rule__Car__Group__4__Impl6247);
                     rule__Car__Group_4__0();
 
                     state._fsp--;
@@ -8232,12 +8221,12 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3162:1: ( rule__Car__Group__5__Impl rule__Car__Group__6 )
             // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3163:2: rule__Car__Group__5__Impl rule__Car__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__5__Impl_in_rule__Car__Group__56279);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__5__Impl_in_rule__Car__Group__56278);
             rule__Car__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__6_in_rule__Car__Group__56282);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__6_in_rule__Car__Group__56281);
             rule__Car__Group__6();
 
             state._fsp--;
@@ -8275,17 +8264,17 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getCarAccess().getGroup_5()); 
             // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3177:1: ( rule__Car__Group_5__0 )?
-            int alt22=2;
-            int LA22_0 = input.LA(1);
+            int alt21=2;
+            int LA21_0 = input.LA(1);
 
-            if ( (LA22_0==32) ) {
-                alt22=1;
+            if ( (LA21_0==31) ) {
+                alt21=1;
             }
-            switch (alt22) {
+            switch (alt21) {
                 case 1 :
                     // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3177:2: rule__Car__Group_5__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Car__Group_5__0_in_rule__Car__Group__5__Impl6309);
+                    pushFollow(FollowSets000.FOLLOW_rule__Car__Group_5__0_in_rule__Car__Group__5__Impl6308);
                     rule__Car__Group_5__0();
 
                     state._fsp--;
@@ -8319,17 +8308,22 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group__6"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3187:1: rule__Car__Group__6 : rule__Car__Group__6__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3187:1: rule__Car__Group__6 : rule__Car__Group__6__Impl rule__Car__Group__7 ;
     public final void rule__Car__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3191:1: ( rule__Car__Group__6__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3192:2: rule__Car__Group__6__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3191:1: ( rule__Car__Group__6__Impl rule__Car__Group__7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3192:2: rule__Car__Group__6__Impl rule__Car__Group__7
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__6__Impl_in_rule__Car__Group__66340);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__6__Impl_in_rule__Car__Group__66339);
             rule__Car__Group__6__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__7_in_rule__Car__Group__66342);
+            rule__Car__Group__7();
 
             state._fsp--;
 
@@ -8352,21 +8346,42 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group__6__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3198:1: rule__Car__Group__6__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3199:1: rule__Car__Group__6__Impl : ( ( rule__Car__Group_6__0 )? ) ;
     public final void rule__Car__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3202:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3203:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3203:1: ( ( ( rule__Car__Group_6__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3204:1: ( ( rule__Car__Group_6__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3203:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3204:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3204:1: ( ( rule__Car__Group_6__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3205:1: ( rule__Car__Group_6__0 )?
             {
-             before(grammarAccess.getCarAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Car__Group__6__Impl6368); 
-             after(grammarAccess.getCarAccess().getRightCurlyBracketKeyword_6()); 
+             before(grammarAccess.getCarAccess().getGroup_6()); 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3206:1: ( rule__Car__Group_6__0 )?
+            int alt22=2;
+            int LA22_0 = input.LA(1);
+
+            if ( (LA22_0==32) ) {
+                alt22=1;
+            }
+            switch (alt22) {
+                case 1 :
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3206:2: rule__Car__Group_6__0
+                    {
+                    pushFollow(FollowSets000.FOLLOW_rule__Car__Group_6__0_in_rule__Car__Group__6__Impl6369);
+                    rule__Car__Group_6__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getCarAccess().getGroup_6()); 
 
             }
 
@@ -8388,23 +8403,18 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Car__Group__6__Impl"
 
 
-    // $ANTLR start "rule__Car__Group_3__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3231:1: rule__Car__Group_3__0 : rule__Car__Group_3__0__Impl rule__Car__Group_3__1 ;
-    public final void rule__Car__Group_3__0() throws RecognitionException {
+    // $ANTLR start "rule__Car__Group__7"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3216:1: rule__Car__Group__7 : rule__Car__Group__7__Impl ;
+    public final void rule__Car__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3235:1: ( rule__Car__Group_3__0__Impl rule__Car__Group_3__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3236:2: rule__Car__Group_3__0__Impl rule__Car__Group_3__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3220:1: ( rule__Car__Group__7__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3221:2: rule__Car__Group__7__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_3__0__Impl_in_rule__Car__Group_3__06413);
-            rule__Car__Group_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_3__1_in_rule__Car__Group_3__06416);
-            rule__Car__Group_3__1();
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group__7__Impl_in_rule__Car__Group__76400);
+            rule__Car__Group__7__Impl();
 
             state._fsp--;
 
@@ -8423,25 +8433,25 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Car__Group_3__0"
+    // $ANTLR end "rule__Car__Group__7"
 
 
-    // $ANTLR start "rule__Car__Group_3__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3243:1: rule__Car__Group_3__0__Impl : ( 'timeIn' ) ;
-    public final void rule__Car__Group_3__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Car__Group__7__Impl"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3227:1: rule__Car__Group__7__Impl : ( '}' ) ;
+    public final void rule__Car__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3247:1: ( ( 'timeIn' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3248:1: ( 'timeIn' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3231:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3232:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3248:1: ( 'timeIn' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3249:1: 'timeIn'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3232:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3233:1: '}'
             {
-             before(grammarAccess.getCarAccess().getTimeInKeyword_3_0()); 
-            match(input,30,FollowSets000.FOLLOW_30_in_rule__Car__Group_3__0__Impl6444); 
-             after(grammarAccess.getCarAccess().getTimeInKeyword_3_0()); 
+             before(grammarAccess.getCarAccess().getRightCurlyBracketKeyword_7()); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Car__Group__7__Impl6428); 
+             after(grammarAccess.getCarAccess().getRightCurlyBracketKeyword_7()); 
 
             }
 
@@ -8460,105 +8470,25 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Car__Group_3__0__Impl"
-
-
-    // $ANTLR start "rule__Car__Group_3__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3262:1: rule__Car__Group_3__1 : rule__Car__Group_3__1__Impl ;
-    public final void rule__Car__Group_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3266:1: ( rule__Car__Group_3__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3267:2: rule__Car__Group_3__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_3__1__Impl_in_rule__Car__Group_3__16475);
-            rule__Car__Group_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Car__Group_3__1"
-
-
-    // $ANTLR start "rule__Car__Group_3__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3273:1: rule__Car__Group_3__1__Impl : ( ( rule__Car__TimeInAssignment_3_1 ) ) ;
-    public final void rule__Car__Group_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3277:1: ( ( ( rule__Car__TimeInAssignment_3_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3278:1: ( ( rule__Car__TimeInAssignment_3_1 ) )
-            {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3278:1: ( ( rule__Car__TimeInAssignment_3_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3279:1: ( rule__Car__TimeInAssignment_3_1 )
-            {
-             before(grammarAccess.getCarAccess().getTimeInAssignment_3_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3280:1: ( rule__Car__TimeInAssignment_3_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3280:2: rule__Car__TimeInAssignment_3_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__TimeInAssignment_3_1_in_rule__Car__Group_3__1__Impl6502);
-            rule__Car__TimeInAssignment_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getCarAccess().getTimeInAssignment_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Car__Group_3__1__Impl"
+    // $ANTLR end "rule__Car__Group__7__Impl"
 
 
     // $ANTLR start "rule__Car__Group_4__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3294:1: rule__Car__Group_4__0 : rule__Car__Group_4__0__Impl rule__Car__Group_4__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3262:1: rule__Car__Group_4__0 : rule__Car__Group_4__0__Impl rule__Car__Group_4__1 ;
     public final void rule__Car__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3298:1: ( rule__Car__Group_4__0__Impl rule__Car__Group_4__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3299:2: rule__Car__Group_4__0__Impl rule__Car__Group_4__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3266:1: ( rule__Car__Group_4__0__Impl rule__Car__Group_4__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3267:2: rule__Car__Group_4__0__Impl rule__Car__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_4__0__Impl_in_rule__Car__Group_4__06536);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_4__0__Impl_in_rule__Car__Group_4__06475);
             rule__Car__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_4__1_in_rule__Car__Group_4__06539);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_4__1_in_rule__Car__Group_4__06478);
             rule__Car__Group_4__1();
 
             state._fsp--;
@@ -8582,21 +8512,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group_4__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3306:1: rule__Car__Group_4__0__Impl : ( 'timeOut' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3274:1: rule__Car__Group_4__0__Impl : ( 'timeIn' ) ;
     public final void rule__Car__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3310:1: ( ( 'timeOut' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3311:1: ( 'timeOut' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3278:1: ( ( 'timeIn' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3279:1: ( 'timeIn' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3311:1: ( 'timeOut' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3312:1: 'timeOut'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3279:1: ( 'timeIn' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3280:1: 'timeIn'
             {
-             before(grammarAccess.getCarAccess().getTimeOutKeyword_4_0()); 
-            match(input,31,FollowSets000.FOLLOW_31_in_rule__Car__Group_4__0__Impl6567); 
-             after(grammarAccess.getCarAccess().getTimeOutKeyword_4_0()); 
+             before(grammarAccess.getCarAccess().getTimeInKeyword_4_0()); 
+            match(input,30,FollowSets000.FOLLOW_30_in_rule__Car__Group_4__0__Impl6506); 
+             after(grammarAccess.getCarAccess().getTimeInKeyword_4_0()); 
 
             }
 
@@ -8619,16 +8549,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group_4__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3325:1: rule__Car__Group_4__1 : rule__Car__Group_4__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3293:1: rule__Car__Group_4__1 : rule__Car__Group_4__1__Impl ;
     public final void rule__Car__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3329:1: ( rule__Car__Group_4__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3330:2: rule__Car__Group_4__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3297:1: ( rule__Car__Group_4__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3298:2: rule__Car__Group_4__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_4__1__Impl_in_rule__Car__Group_4__16598);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_4__1__Impl_in_rule__Car__Group_4__16537);
             rule__Car__Group_4__1__Impl();
 
             state._fsp--;
@@ -8652,31 +8582,31 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group_4__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3336:1: rule__Car__Group_4__1__Impl : ( ( rule__Car__TimeOutAssignment_4_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3304:1: rule__Car__Group_4__1__Impl : ( ( rule__Car__TimeInAssignment_4_1 ) ) ;
     public final void rule__Car__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3340:1: ( ( ( rule__Car__TimeOutAssignment_4_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3341:1: ( ( rule__Car__TimeOutAssignment_4_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3308:1: ( ( ( rule__Car__TimeInAssignment_4_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3309:1: ( ( rule__Car__TimeInAssignment_4_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3341:1: ( ( rule__Car__TimeOutAssignment_4_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3342:1: ( rule__Car__TimeOutAssignment_4_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3309:1: ( ( rule__Car__TimeInAssignment_4_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3310:1: ( rule__Car__TimeInAssignment_4_1 )
             {
-             before(grammarAccess.getCarAccess().getTimeOutAssignment_4_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3343:1: ( rule__Car__TimeOutAssignment_4_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3343:2: rule__Car__TimeOutAssignment_4_1
+             before(grammarAccess.getCarAccess().getTimeInAssignment_4_1()); 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3311:1: ( rule__Car__TimeInAssignment_4_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3311:2: rule__Car__TimeInAssignment_4_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__TimeOutAssignment_4_1_in_rule__Car__Group_4__1__Impl6625);
-            rule__Car__TimeOutAssignment_4_1();
+            pushFollow(FollowSets000.FOLLOW_rule__Car__TimeInAssignment_4_1_in_rule__Car__Group_4__1__Impl6564);
+            rule__Car__TimeInAssignment_4_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getCarAccess().getTimeOutAssignment_4_1()); 
+             after(grammarAccess.getCarAccess().getTimeInAssignment_4_1()); 
 
             }
 
@@ -8699,21 +8629,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group_5__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3357:1: rule__Car__Group_5__0 : rule__Car__Group_5__0__Impl rule__Car__Group_5__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3325:1: rule__Car__Group_5__0 : rule__Car__Group_5__0__Impl rule__Car__Group_5__1 ;
     public final void rule__Car__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3361:1: ( rule__Car__Group_5__0__Impl rule__Car__Group_5__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3362:2: rule__Car__Group_5__0__Impl rule__Car__Group_5__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3329:1: ( rule__Car__Group_5__0__Impl rule__Car__Group_5__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3330:2: rule__Car__Group_5__0__Impl rule__Car__Group_5__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_5__0__Impl_in_rule__Car__Group_5__06659);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_5__0__Impl_in_rule__Car__Group_5__06598);
             rule__Car__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_5__1_in_rule__Car__Group_5__06662);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_5__1_in_rule__Car__Group_5__06601);
             rule__Car__Group_5__1();
 
             state._fsp--;
@@ -8737,21 +8667,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group_5__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3369:1: rule__Car__Group_5__0__Impl : ( 'isInSegment' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3337:1: rule__Car__Group_5__0__Impl : ( 'timeOut' ) ;
     public final void rule__Car__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3373:1: ( ( 'isInSegment' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3374:1: ( 'isInSegment' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3341:1: ( ( 'timeOut' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3342:1: ( 'timeOut' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3374:1: ( 'isInSegment' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3375:1: 'isInSegment'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3342:1: ( 'timeOut' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3343:1: 'timeOut'
             {
-             before(grammarAccess.getCarAccess().getIsInSegmentKeyword_5_0()); 
-            match(input,32,FollowSets000.FOLLOW_32_in_rule__Car__Group_5__0__Impl6690); 
-             after(grammarAccess.getCarAccess().getIsInSegmentKeyword_5_0()); 
+             before(grammarAccess.getCarAccess().getTimeOutKeyword_5_0()); 
+            match(input,31,FollowSets000.FOLLOW_31_in_rule__Car__Group_5__0__Impl6629); 
+             after(grammarAccess.getCarAccess().getTimeOutKeyword_5_0()); 
 
             }
 
@@ -8774,16 +8704,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group_5__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3388:1: rule__Car__Group_5__1 : rule__Car__Group_5__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3356:1: rule__Car__Group_5__1 : rule__Car__Group_5__1__Impl ;
     public final void rule__Car__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3392:1: ( rule__Car__Group_5__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3393:2: rule__Car__Group_5__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3360:1: ( rule__Car__Group_5__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3361:2: rule__Car__Group_5__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_5__1__Impl_in_rule__Car__Group_5__16721);
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_5__1__Impl_in_rule__Car__Group_5__16660);
             rule__Car__Group_5__1__Impl();
 
             state._fsp--;
@@ -8807,31 +8737,31 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Car__Group_5__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3399:1: rule__Car__Group_5__1__Impl : ( ( rule__Car__IsInSegmentAssignment_5_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3367:1: rule__Car__Group_5__1__Impl : ( ( rule__Car__TimeOutAssignment_5_1 ) ) ;
     public final void rule__Car__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3403:1: ( ( ( rule__Car__IsInSegmentAssignment_5_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3404:1: ( ( rule__Car__IsInSegmentAssignment_5_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3371:1: ( ( ( rule__Car__TimeOutAssignment_5_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3372:1: ( ( rule__Car__TimeOutAssignment_5_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3404:1: ( ( rule__Car__IsInSegmentAssignment_5_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3405:1: ( rule__Car__IsInSegmentAssignment_5_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3372:1: ( ( rule__Car__TimeOutAssignment_5_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3373:1: ( rule__Car__TimeOutAssignment_5_1 )
             {
-             before(grammarAccess.getCarAccess().getIsInSegmentAssignment_5_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3406:1: ( rule__Car__IsInSegmentAssignment_5_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3406:2: rule__Car__IsInSegmentAssignment_5_1
+             before(grammarAccess.getCarAccess().getTimeOutAssignment_5_1()); 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3374:1: ( rule__Car__TimeOutAssignment_5_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3374:2: rule__Car__TimeOutAssignment_5_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Car__IsInSegmentAssignment_5_1_in_rule__Car__Group_5__1__Impl6748);
-            rule__Car__IsInSegmentAssignment_5_1();
+            pushFollow(FollowSets000.FOLLOW_rule__Car__TimeOutAssignment_5_1_in_rule__Car__Group_5__1__Impl6687);
+            rule__Car__TimeOutAssignment_5_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getCarAccess().getIsInSegmentAssignment_5_1()); 
+             after(grammarAccess.getCarAccess().getTimeOutAssignment_5_1()); 
 
             }
 
@@ -8853,22 +8783,177 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Car__Group_5__1__Impl"
 
 
+    // $ANTLR start "rule__Car__Group_6__0"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3388:1: rule__Car__Group_6__0 : rule__Car__Group_6__0__Impl rule__Car__Group_6__1 ;
+    public final void rule__Car__Group_6__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3392:1: ( rule__Car__Group_6__0__Impl rule__Car__Group_6__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3393:2: rule__Car__Group_6__0__Impl rule__Car__Group_6__1
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_6__0__Impl_in_rule__Car__Group_6__06721);
+            rule__Car__Group_6__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_6__1_in_rule__Car__Group_6__06724);
+            rule__Car__Group_6__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Car__Group_6__0"
+
+
+    // $ANTLR start "rule__Car__Group_6__0__Impl"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3400:1: rule__Car__Group_6__0__Impl : ( 'isInSegment' ) ;
+    public final void rule__Car__Group_6__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3404:1: ( ( 'isInSegment' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3405:1: ( 'isInSegment' )
+            {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3405:1: ( 'isInSegment' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3406:1: 'isInSegment'
+            {
+             before(grammarAccess.getCarAccess().getIsInSegmentKeyword_6_0()); 
+            match(input,32,FollowSets000.FOLLOW_32_in_rule__Car__Group_6__0__Impl6752); 
+             after(grammarAccess.getCarAccess().getIsInSegmentKeyword_6_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Car__Group_6__0__Impl"
+
+
+    // $ANTLR start "rule__Car__Group_6__1"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3419:1: rule__Car__Group_6__1 : rule__Car__Group_6__1__Impl ;
+    public final void rule__Car__Group_6__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3423:1: ( rule__Car__Group_6__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3424:2: rule__Car__Group_6__1__Impl
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Car__Group_6__1__Impl_in_rule__Car__Group_6__16783);
+            rule__Car__Group_6__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Car__Group_6__1"
+
+
+    // $ANTLR start "rule__Car__Group_6__1__Impl"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3430:1: rule__Car__Group_6__1__Impl : ( ( rule__Car__IsInSegmentAssignment_6_1 ) ) ;
+    public final void rule__Car__Group_6__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3434:1: ( ( ( rule__Car__IsInSegmentAssignment_6_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3435:1: ( ( rule__Car__IsInSegmentAssignment_6_1 ) )
+            {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3435:1: ( ( rule__Car__IsInSegmentAssignment_6_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3436:1: ( rule__Car__IsInSegmentAssignment_6_1 )
+            {
+             before(grammarAccess.getCarAccess().getIsInSegmentAssignment_6_1()); 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3437:1: ( rule__Car__IsInSegmentAssignment_6_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3437:2: rule__Car__IsInSegmentAssignment_6_1
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Car__IsInSegmentAssignment_6_1_in_rule__Car__Group_6__1__Impl6810);
+            rule__Car__IsInSegmentAssignment_6_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getCarAccess().getIsInSegmentAssignment_6_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Car__Group_6__1__Impl"
+
+
     // $ANTLR start "rule__Segment__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3420:1: rule__Segment__Group__0 : rule__Segment__Group__0__Impl rule__Segment__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3451:1: rule__Segment__Group__0 : rule__Segment__Group__0__Impl rule__Segment__Group__1 ;
     public final void rule__Segment__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3424:1: ( rule__Segment__Group__0__Impl rule__Segment__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3425:2: rule__Segment__Group__0__Impl rule__Segment__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3455:1: ( rule__Segment__Group__0__Impl rule__Segment__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3456:2: rule__Segment__Group__0__Impl rule__Segment__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__0__Impl_in_rule__Segment__Group__06782);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__0__Impl_in_rule__Segment__Group__06844);
             rule__Segment__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__1_in_rule__Segment__Group__06785);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__1_in_rule__Segment__Group__06847);
             rule__Segment__Group__1();
 
             state._fsp--;
@@ -8892,21 +8977,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3432:1: rule__Segment__Group__0__Impl : ( () ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3463:1: rule__Segment__Group__0__Impl : ( () ) ;
     public final void rule__Segment__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3436:1: ( ( () ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3437:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3467:1: ( ( () ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3468:1: ( () )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3437:1: ( () )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3438:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3468:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3469:1: ()
             {
              before(grammarAccess.getSegmentAccess().getSegmentAction_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3439:1: ()
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3441:1: 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3470:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3472:1: 
             {
             }
 
@@ -8929,21 +9014,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3451:1: rule__Segment__Group__1 : rule__Segment__Group__1__Impl rule__Segment__Group__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3482:1: rule__Segment__Group__1 : rule__Segment__Group__1__Impl rule__Segment__Group__2 ;
     public final void rule__Segment__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3455:1: ( rule__Segment__Group__1__Impl rule__Segment__Group__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3456:2: rule__Segment__Group__1__Impl rule__Segment__Group__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3486:1: ( rule__Segment__Group__1__Impl rule__Segment__Group__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3487:2: rule__Segment__Group__1__Impl rule__Segment__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__1__Impl_in_rule__Segment__Group__16843);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__1__Impl_in_rule__Segment__Group__16905);
             rule__Segment__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__2_in_rule__Segment__Group__16846);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__2_in_rule__Segment__Group__16908);
             rule__Segment__Group__2();
 
             state._fsp--;
@@ -8967,20 +9052,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3463:1: rule__Segment__Group__1__Impl : ( 'Segment' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3494:1: rule__Segment__Group__1__Impl : ( 'Segment' ) ;
     public final void rule__Segment__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3467:1: ( ( 'Segment' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3468:1: ( 'Segment' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3498:1: ( ( 'Segment' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3499:1: ( 'Segment' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3468:1: ( 'Segment' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3469:1: 'Segment'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3499:1: ( 'Segment' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3500:1: 'Segment'
             {
              before(grammarAccess.getSegmentAccess().getSegmentKeyword_1()); 
-            match(input,33,FollowSets000.FOLLOW_33_in_rule__Segment__Group__1__Impl6874); 
+            match(input,33,FollowSets000.FOLLOW_33_in_rule__Segment__Group__1__Impl6936); 
              after(grammarAccess.getSegmentAccess().getSegmentKeyword_1()); 
 
             }
@@ -9004,21 +9089,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3482:1: rule__Segment__Group__2 : rule__Segment__Group__2__Impl rule__Segment__Group__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3513:1: rule__Segment__Group__2 : rule__Segment__Group__2__Impl rule__Segment__Group__3 ;
     public final void rule__Segment__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3486:1: ( rule__Segment__Group__2__Impl rule__Segment__Group__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3487:2: rule__Segment__Group__2__Impl rule__Segment__Group__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3517:1: ( rule__Segment__Group__2__Impl rule__Segment__Group__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3518:2: rule__Segment__Group__2__Impl rule__Segment__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__2__Impl_in_rule__Segment__Group__26905);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__2__Impl_in_rule__Segment__Group__26967);
             rule__Segment__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__3_in_rule__Segment__Group__26908);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__3_in_rule__Segment__Group__26970);
             rule__Segment__Group__3();
 
             state._fsp--;
@@ -9042,23 +9127,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3494:1: rule__Segment__Group__2__Impl : ( ( rule__Segment__NameAssignment_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3525:1: rule__Segment__Group__2__Impl : ( ( rule__Segment__NameAssignment_2 ) ) ;
     public final void rule__Segment__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3498:1: ( ( ( rule__Segment__NameAssignment_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3499:1: ( ( rule__Segment__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3529:1: ( ( ( rule__Segment__NameAssignment_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3530:1: ( ( rule__Segment__NameAssignment_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3499:1: ( ( rule__Segment__NameAssignment_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3500:1: ( rule__Segment__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3530:1: ( ( rule__Segment__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3531:1: ( rule__Segment__NameAssignment_2 )
             {
              before(grammarAccess.getSegmentAccess().getNameAssignment_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3501:1: ( rule__Segment__NameAssignment_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3501:2: rule__Segment__NameAssignment_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3532:1: ( rule__Segment__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3532:2: rule__Segment__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__NameAssignment_2_in_rule__Segment__Group__2__Impl6935);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__NameAssignment_2_in_rule__Segment__Group__2__Impl6997);
             rule__Segment__NameAssignment_2();
 
             state._fsp--;
@@ -9089,21 +9174,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3511:1: rule__Segment__Group__3 : rule__Segment__Group__3__Impl rule__Segment__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3542:1: rule__Segment__Group__3 : rule__Segment__Group__3__Impl rule__Segment__Group__4 ;
     public final void rule__Segment__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3515:1: ( rule__Segment__Group__3__Impl rule__Segment__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3516:2: rule__Segment__Group__3__Impl rule__Segment__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3546:1: ( rule__Segment__Group__3__Impl rule__Segment__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3547:2: rule__Segment__Group__3__Impl rule__Segment__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__3__Impl_in_rule__Segment__Group__36965);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__3__Impl_in_rule__Segment__Group__37027);
             rule__Segment__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__4_in_rule__Segment__Group__36968);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__4_in_rule__Segment__Group__37030);
             rule__Segment__Group__4();
 
             state._fsp--;
@@ -9127,20 +9212,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3523:1: rule__Segment__Group__3__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3554:1: rule__Segment__Group__3__Impl : ( '{' ) ;
     public final void rule__Segment__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3527:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3528:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3558:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3559:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3528:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3529:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3559:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3560:1: '{'
             {
              before(grammarAccess.getSegmentAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Segment__Group__3__Impl6996); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Segment__Group__3__Impl7058); 
              after(grammarAccess.getSegmentAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -9164,21 +9249,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3542:1: rule__Segment__Group__4 : rule__Segment__Group__4__Impl rule__Segment__Group__5 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3573:1: rule__Segment__Group__4 : rule__Segment__Group__4__Impl rule__Segment__Group__5 ;
     public final void rule__Segment__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3546:1: ( rule__Segment__Group__4__Impl rule__Segment__Group__5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3547:2: rule__Segment__Group__4__Impl rule__Segment__Group__5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3577:1: ( rule__Segment__Group__4__Impl rule__Segment__Group__5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3578:2: rule__Segment__Group__4__Impl rule__Segment__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__4__Impl_in_rule__Segment__Group__47027);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__4__Impl_in_rule__Segment__Group__47089);
             rule__Segment__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__5_in_rule__Segment__Group__47030);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__5_in_rule__Segment__Group__47092);
             rule__Segment__Group__5();
 
             state._fsp--;
@@ -9202,20 +9287,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3554:1: rule__Segment__Group__4__Impl : ( ( rule__Segment__Group_4__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3585:1: rule__Segment__Group__4__Impl : ( ( rule__Segment__Group_4__0 )? ) ;
     public final void rule__Segment__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3558:1: ( ( ( rule__Segment__Group_4__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3559:1: ( ( rule__Segment__Group_4__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3589:1: ( ( ( rule__Segment__Group_4__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3590:1: ( ( rule__Segment__Group_4__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3559:1: ( ( rule__Segment__Group_4__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3560:1: ( rule__Segment__Group_4__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3590:1: ( ( rule__Segment__Group_4__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3591:1: ( rule__Segment__Group_4__0 )?
             {
              before(grammarAccess.getSegmentAccess().getGroup_4()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3561:1: ( rule__Segment__Group_4__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3592:1: ( rule__Segment__Group_4__0 )?
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -9224,9 +9309,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt23) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3561:2: rule__Segment__Group_4__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3592:2: rule__Segment__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_4__0_in_rule__Segment__Group__4__Impl7057);
+                    pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_4__0_in_rule__Segment__Group__4__Impl7119);
                     rule__Segment__Group_4__0();
 
                     state._fsp--;
@@ -9260,21 +9345,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3571:1: rule__Segment__Group__5 : rule__Segment__Group__5__Impl rule__Segment__Group__6 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3602:1: rule__Segment__Group__5 : rule__Segment__Group__5__Impl rule__Segment__Group__6 ;
     public final void rule__Segment__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3575:1: ( rule__Segment__Group__5__Impl rule__Segment__Group__6 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3576:2: rule__Segment__Group__5__Impl rule__Segment__Group__6
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3606:1: ( rule__Segment__Group__5__Impl rule__Segment__Group__6 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3607:2: rule__Segment__Group__5__Impl rule__Segment__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__5__Impl_in_rule__Segment__Group__57088);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__5__Impl_in_rule__Segment__Group__57150);
             rule__Segment__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__6_in_rule__Segment__Group__57091);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__6_in_rule__Segment__Group__57153);
             rule__Segment__Group__6();
 
             state._fsp--;
@@ -9298,20 +9383,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__5__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3583:1: rule__Segment__Group__5__Impl : ( ( rule__Segment__Group_5__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3614:1: rule__Segment__Group__5__Impl : ( ( rule__Segment__Group_5__0 )? ) ;
     public final void rule__Segment__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3587:1: ( ( ( rule__Segment__Group_5__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3588:1: ( ( rule__Segment__Group_5__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3618:1: ( ( ( rule__Segment__Group_5__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3619:1: ( ( rule__Segment__Group_5__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3588:1: ( ( rule__Segment__Group_5__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3589:1: ( rule__Segment__Group_5__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3619:1: ( ( rule__Segment__Group_5__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3620:1: ( rule__Segment__Group_5__0 )?
             {
              before(grammarAccess.getSegmentAccess().getGroup_5()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3590:1: ( rule__Segment__Group_5__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3621:1: ( rule__Segment__Group_5__0 )?
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -9320,9 +9405,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt24) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3590:2: rule__Segment__Group_5__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3621:2: rule__Segment__Group_5__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_5__0_in_rule__Segment__Group__5__Impl7118);
+                    pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_5__0_in_rule__Segment__Group__5__Impl7180);
                     rule__Segment__Group_5__0();
 
                     state._fsp--;
@@ -9356,21 +9441,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__6"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3600:1: rule__Segment__Group__6 : rule__Segment__Group__6__Impl rule__Segment__Group__7 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3631:1: rule__Segment__Group__6 : rule__Segment__Group__6__Impl rule__Segment__Group__7 ;
     public final void rule__Segment__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3604:1: ( rule__Segment__Group__6__Impl rule__Segment__Group__7 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3605:2: rule__Segment__Group__6__Impl rule__Segment__Group__7
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3635:1: ( rule__Segment__Group__6__Impl rule__Segment__Group__7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3636:2: rule__Segment__Group__6__Impl rule__Segment__Group__7
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__6__Impl_in_rule__Segment__Group__67149);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__6__Impl_in_rule__Segment__Group__67211);
             rule__Segment__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__7_in_rule__Segment__Group__67152);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__7_in_rule__Segment__Group__67214);
             rule__Segment__Group__7();
 
             state._fsp--;
@@ -9394,20 +9479,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__6__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3612:1: rule__Segment__Group__6__Impl : ( ( rule__Segment__Group_6__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3643:1: rule__Segment__Group__6__Impl : ( ( rule__Segment__Group_6__0 )? ) ;
     public final void rule__Segment__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3616:1: ( ( ( rule__Segment__Group_6__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3617:1: ( ( rule__Segment__Group_6__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3647:1: ( ( ( rule__Segment__Group_6__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3648:1: ( ( rule__Segment__Group_6__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3617:1: ( ( rule__Segment__Group_6__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3618:1: ( rule__Segment__Group_6__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3648:1: ( ( rule__Segment__Group_6__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3649:1: ( rule__Segment__Group_6__0 )?
             {
              before(grammarAccess.getSegmentAccess().getGroup_6()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3619:1: ( rule__Segment__Group_6__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3650:1: ( rule__Segment__Group_6__0 )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -9416,9 +9501,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt25) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3619:2: rule__Segment__Group_6__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3650:2: rule__Segment__Group_6__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__0_in_rule__Segment__Group__6__Impl7179);
+                    pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__0_in_rule__Segment__Group__6__Impl7241);
                     rule__Segment__Group_6__0();
 
                     state._fsp--;
@@ -9452,16 +9537,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__7"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3629:1: rule__Segment__Group__7 : rule__Segment__Group__7__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3660:1: rule__Segment__Group__7 : rule__Segment__Group__7__Impl ;
     public final void rule__Segment__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3633:1: ( rule__Segment__Group__7__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3634:2: rule__Segment__Group__7__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3664:1: ( rule__Segment__Group__7__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3665:2: rule__Segment__Group__7__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__7__Impl_in_rule__Segment__Group__77210);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group__7__Impl_in_rule__Segment__Group__77272);
             rule__Segment__Group__7__Impl();
 
             state._fsp--;
@@ -9485,20 +9570,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group__7__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3640:1: rule__Segment__Group__7__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3671:1: rule__Segment__Group__7__Impl : ( '}' ) ;
     public final void rule__Segment__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3644:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3645:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3675:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3676:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3645:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3646:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3676:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3677:1: '}'
             {
              before(grammarAccess.getSegmentAccess().getRightCurlyBracketKeyword_7()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Segment__Group__7__Impl7238); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Segment__Group__7__Impl7300); 
              after(grammarAccess.getSegmentAccess().getRightCurlyBracketKeyword_7()); 
 
             }
@@ -9522,21 +9607,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_4__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3675:1: rule__Segment__Group_4__0 : rule__Segment__Group_4__0__Impl rule__Segment__Group_4__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3706:1: rule__Segment__Group_4__0 : rule__Segment__Group_4__0__Impl rule__Segment__Group_4__1 ;
     public final void rule__Segment__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3679:1: ( rule__Segment__Group_4__0__Impl rule__Segment__Group_4__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3680:2: rule__Segment__Group_4__0__Impl rule__Segment__Group_4__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3710:1: ( rule__Segment__Group_4__0__Impl rule__Segment__Group_4__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3711:2: rule__Segment__Group_4__0__Impl rule__Segment__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_4__0__Impl_in_rule__Segment__Group_4__07285);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_4__0__Impl_in_rule__Segment__Group_4__07347);
             rule__Segment__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_4__1_in_rule__Segment__Group_4__07288);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_4__1_in_rule__Segment__Group_4__07350);
             rule__Segment__Group_4__1();
 
             state._fsp--;
@@ -9560,20 +9645,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_4__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3687:1: rule__Segment__Group_4__0__Impl : ( 'numLanes' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3718:1: rule__Segment__Group_4__0__Impl : ( 'numLanes' ) ;
     public final void rule__Segment__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3691:1: ( ( 'numLanes' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3692:1: ( 'numLanes' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3722:1: ( ( 'numLanes' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3723:1: ( 'numLanes' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3692:1: ( 'numLanes' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3693:1: 'numLanes'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3723:1: ( 'numLanes' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3724:1: 'numLanes'
             {
              before(grammarAccess.getSegmentAccess().getNumLanesKeyword_4_0()); 
-            match(input,34,FollowSets000.FOLLOW_34_in_rule__Segment__Group_4__0__Impl7316); 
+            match(input,34,FollowSets000.FOLLOW_34_in_rule__Segment__Group_4__0__Impl7378); 
              after(grammarAccess.getSegmentAccess().getNumLanesKeyword_4_0()); 
 
             }
@@ -9597,16 +9682,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_4__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3706:1: rule__Segment__Group_4__1 : rule__Segment__Group_4__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3737:1: rule__Segment__Group_4__1 : rule__Segment__Group_4__1__Impl ;
     public final void rule__Segment__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3710:1: ( rule__Segment__Group_4__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3711:2: rule__Segment__Group_4__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3741:1: ( rule__Segment__Group_4__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3742:2: rule__Segment__Group_4__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_4__1__Impl_in_rule__Segment__Group_4__17347);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_4__1__Impl_in_rule__Segment__Group_4__17409);
             rule__Segment__Group_4__1__Impl();
 
             state._fsp--;
@@ -9630,23 +9715,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_4__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3717:1: rule__Segment__Group_4__1__Impl : ( ( rule__Segment__NumLanesAssignment_4_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3748:1: rule__Segment__Group_4__1__Impl : ( ( rule__Segment__NumLanesAssignment_4_1 ) ) ;
     public final void rule__Segment__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3721:1: ( ( ( rule__Segment__NumLanesAssignment_4_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3722:1: ( ( rule__Segment__NumLanesAssignment_4_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3752:1: ( ( ( rule__Segment__NumLanesAssignment_4_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3753:1: ( ( rule__Segment__NumLanesAssignment_4_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3722:1: ( ( rule__Segment__NumLanesAssignment_4_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3723:1: ( rule__Segment__NumLanesAssignment_4_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3753:1: ( ( rule__Segment__NumLanesAssignment_4_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3754:1: ( rule__Segment__NumLanesAssignment_4_1 )
             {
              before(grammarAccess.getSegmentAccess().getNumLanesAssignment_4_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3724:1: ( rule__Segment__NumLanesAssignment_4_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3724:2: rule__Segment__NumLanesAssignment_4_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3755:1: ( rule__Segment__NumLanesAssignment_4_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3755:2: rule__Segment__NumLanesAssignment_4_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__NumLanesAssignment_4_1_in_rule__Segment__Group_4__1__Impl7374);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__NumLanesAssignment_4_1_in_rule__Segment__Group_4__1__Impl7436);
             rule__Segment__NumLanesAssignment_4_1();
 
             state._fsp--;
@@ -9677,21 +9762,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_5__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3738:1: rule__Segment__Group_5__0 : rule__Segment__Group_5__0__Impl rule__Segment__Group_5__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3769:1: rule__Segment__Group_5__0 : rule__Segment__Group_5__0__Impl rule__Segment__Group_5__1 ;
     public final void rule__Segment__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3742:1: ( rule__Segment__Group_5__0__Impl rule__Segment__Group_5__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3743:2: rule__Segment__Group_5__0__Impl rule__Segment__Group_5__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3773:1: ( rule__Segment__Group_5__0__Impl rule__Segment__Group_5__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3774:2: rule__Segment__Group_5__0__Impl rule__Segment__Group_5__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_5__0__Impl_in_rule__Segment__Group_5__07408);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_5__0__Impl_in_rule__Segment__Group_5__07470);
             rule__Segment__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_5__1_in_rule__Segment__Group_5__07411);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_5__1_in_rule__Segment__Group_5__07473);
             rule__Segment__Group_5__1();
 
             state._fsp--;
@@ -9715,20 +9800,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_5__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3750:1: rule__Segment__Group_5__0__Impl : ( 'length' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3781:1: rule__Segment__Group_5__0__Impl : ( 'length' ) ;
     public final void rule__Segment__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3754:1: ( ( 'length' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3755:1: ( 'length' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3785:1: ( ( 'length' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3786:1: ( 'length' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3755:1: ( 'length' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3756:1: 'length'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3786:1: ( 'length' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3787:1: 'length'
             {
              before(grammarAccess.getSegmentAccess().getLengthKeyword_5_0()); 
-            match(input,35,FollowSets000.FOLLOW_35_in_rule__Segment__Group_5__0__Impl7439); 
+            match(input,35,FollowSets000.FOLLOW_35_in_rule__Segment__Group_5__0__Impl7501); 
              after(grammarAccess.getSegmentAccess().getLengthKeyword_5_0()); 
 
             }
@@ -9752,16 +9837,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_5__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3769:1: rule__Segment__Group_5__1 : rule__Segment__Group_5__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3800:1: rule__Segment__Group_5__1 : rule__Segment__Group_5__1__Impl ;
     public final void rule__Segment__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3773:1: ( rule__Segment__Group_5__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3774:2: rule__Segment__Group_5__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3804:1: ( rule__Segment__Group_5__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3805:2: rule__Segment__Group_5__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_5__1__Impl_in_rule__Segment__Group_5__17470);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_5__1__Impl_in_rule__Segment__Group_5__17532);
             rule__Segment__Group_5__1__Impl();
 
             state._fsp--;
@@ -9785,23 +9870,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_5__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3780:1: rule__Segment__Group_5__1__Impl : ( ( rule__Segment__LengthAssignment_5_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3811:1: rule__Segment__Group_5__1__Impl : ( ( rule__Segment__LengthAssignment_5_1 ) ) ;
     public final void rule__Segment__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3784:1: ( ( ( rule__Segment__LengthAssignment_5_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3785:1: ( ( rule__Segment__LengthAssignment_5_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3815:1: ( ( ( rule__Segment__LengthAssignment_5_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3816:1: ( ( rule__Segment__LengthAssignment_5_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3785:1: ( ( rule__Segment__LengthAssignment_5_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3786:1: ( rule__Segment__LengthAssignment_5_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3816:1: ( ( rule__Segment__LengthAssignment_5_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3817:1: ( rule__Segment__LengthAssignment_5_1 )
             {
              before(grammarAccess.getSegmentAccess().getLengthAssignment_5_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3787:1: ( rule__Segment__LengthAssignment_5_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3787:2: rule__Segment__LengthAssignment_5_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3818:1: ( rule__Segment__LengthAssignment_5_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3818:2: rule__Segment__LengthAssignment_5_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__LengthAssignment_5_1_in_rule__Segment__Group_5__1__Impl7497);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__LengthAssignment_5_1_in_rule__Segment__Group_5__1__Impl7559);
             rule__Segment__LengthAssignment_5_1();
 
             state._fsp--;
@@ -9832,21 +9917,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3801:1: rule__Segment__Group_6__0 : rule__Segment__Group_6__0__Impl rule__Segment__Group_6__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3832:1: rule__Segment__Group_6__0 : rule__Segment__Group_6__0__Impl rule__Segment__Group_6__1 ;
     public final void rule__Segment__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3805:1: ( rule__Segment__Group_6__0__Impl rule__Segment__Group_6__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3806:2: rule__Segment__Group_6__0__Impl rule__Segment__Group_6__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3836:1: ( rule__Segment__Group_6__0__Impl rule__Segment__Group_6__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3837:2: rule__Segment__Group_6__0__Impl rule__Segment__Group_6__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__0__Impl_in_rule__Segment__Group_6__07531);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__0__Impl_in_rule__Segment__Group_6__07593);
             rule__Segment__Group_6__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__1_in_rule__Segment__Group_6__07534);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__1_in_rule__Segment__Group_6__07596);
             rule__Segment__Group_6__1();
 
             state._fsp--;
@@ -9870,20 +9955,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3813:1: rule__Segment__Group_6__0__Impl : ( 'hasCars' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3844:1: rule__Segment__Group_6__0__Impl : ( 'hasCars' ) ;
     public final void rule__Segment__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3817:1: ( ( 'hasCars' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3818:1: ( 'hasCars' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3848:1: ( ( 'hasCars' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3849:1: ( 'hasCars' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3818:1: ( 'hasCars' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3819:1: 'hasCars'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3849:1: ( 'hasCars' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3850:1: 'hasCars'
             {
              before(grammarAccess.getSegmentAccess().getHasCarsKeyword_6_0()); 
-            match(input,36,FollowSets000.FOLLOW_36_in_rule__Segment__Group_6__0__Impl7562); 
+            match(input,36,FollowSets000.FOLLOW_36_in_rule__Segment__Group_6__0__Impl7624); 
              after(grammarAccess.getSegmentAccess().getHasCarsKeyword_6_0()); 
 
             }
@@ -9907,21 +9992,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3832:1: rule__Segment__Group_6__1 : rule__Segment__Group_6__1__Impl rule__Segment__Group_6__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3863:1: rule__Segment__Group_6__1 : rule__Segment__Group_6__1__Impl rule__Segment__Group_6__2 ;
     public final void rule__Segment__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3836:1: ( rule__Segment__Group_6__1__Impl rule__Segment__Group_6__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3837:2: rule__Segment__Group_6__1__Impl rule__Segment__Group_6__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3867:1: ( rule__Segment__Group_6__1__Impl rule__Segment__Group_6__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3868:2: rule__Segment__Group_6__1__Impl rule__Segment__Group_6__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__1__Impl_in_rule__Segment__Group_6__17593);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__1__Impl_in_rule__Segment__Group_6__17655);
             rule__Segment__Group_6__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__2_in_rule__Segment__Group_6__17596);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__2_in_rule__Segment__Group_6__17658);
             rule__Segment__Group_6__2();
 
             state._fsp--;
@@ -9945,20 +10030,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3844:1: rule__Segment__Group_6__1__Impl : ( '(' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3875:1: rule__Segment__Group_6__1__Impl : ( '(' ) ;
     public final void rule__Segment__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3848:1: ( ( '(' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3849:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3879:1: ( ( '(' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3880:1: ( '(' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3849:1: ( '(' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3850:1: '('
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3880:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3881:1: '('
             {
              before(grammarAccess.getSegmentAccess().getLeftParenthesisKeyword_6_1()); 
-            match(input,24,FollowSets000.FOLLOW_24_in_rule__Segment__Group_6__1__Impl7624); 
+            match(input,24,FollowSets000.FOLLOW_24_in_rule__Segment__Group_6__1__Impl7686); 
              after(grammarAccess.getSegmentAccess().getLeftParenthesisKeyword_6_1()); 
 
             }
@@ -9982,21 +10067,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3863:1: rule__Segment__Group_6__2 : rule__Segment__Group_6__2__Impl rule__Segment__Group_6__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3894:1: rule__Segment__Group_6__2 : rule__Segment__Group_6__2__Impl rule__Segment__Group_6__3 ;
     public final void rule__Segment__Group_6__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3867:1: ( rule__Segment__Group_6__2__Impl rule__Segment__Group_6__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3868:2: rule__Segment__Group_6__2__Impl rule__Segment__Group_6__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3898:1: ( rule__Segment__Group_6__2__Impl rule__Segment__Group_6__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3899:2: rule__Segment__Group_6__2__Impl rule__Segment__Group_6__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__2__Impl_in_rule__Segment__Group_6__27655);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__2__Impl_in_rule__Segment__Group_6__27717);
             rule__Segment__Group_6__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__3_in_rule__Segment__Group_6__27658);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__3_in_rule__Segment__Group_6__27720);
             rule__Segment__Group_6__3();
 
             state._fsp--;
@@ -10020,23 +10105,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3875:1: rule__Segment__Group_6__2__Impl : ( ( rule__Segment__HasCarsAssignment_6_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3906:1: rule__Segment__Group_6__2__Impl : ( ( rule__Segment__HasCarsAssignment_6_2 ) ) ;
     public final void rule__Segment__Group_6__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3879:1: ( ( ( rule__Segment__HasCarsAssignment_6_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3880:1: ( ( rule__Segment__HasCarsAssignment_6_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3910:1: ( ( ( rule__Segment__HasCarsAssignment_6_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3911:1: ( ( rule__Segment__HasCarsAssignment_6_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3880:1: ( ( rule__Segment__HasCarsAssignment_6_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3881:1: ( rule__Segment__HasCarsAssignment_6_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3911:1: ( ( rule__Segment__HasCarsAssignment_6_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3912:1: ( rule__Segment__HasCarsAssignment_6_2 )
             {
              before(grammarAccess.getSegmentAccess().getHasCarsAssignment_6_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3882:1: ( rule__Segment__HasCarsAssignment_6_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3882:2: rule__Segment__HasCarsAssignment_6_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3913:1: ( rule__Segment__HasCarsAssignment_6_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3913:2: rule__Segment__HasCarsAssignment_6_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__HasCarsAssignment_6_2_in_rule__Segment__Group_6__2__Impl7685);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__HasCarsAssignment_6_2_in_rule__Segment__Group_6__2__Impl7747);
             rule__Segment__HasCarsAssignment_6_2();
 
             state._fsp--;
@@ -10067,21 +10152,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3892:1: rule__Segment__Group_6__3 : rule__Segment__Group_6__3__Impl rule__Segment__Group_6__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3923:1: rule__Segment__Group_6__3 : rule__Segment__Group_6__3__Impl rule__Segment__Group_6__4 ;
     public final void rule__Segment__Group_6__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3896:1: ( rule__Segment__Group_6__3__Impl rule__Segment__Group_6__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3897:2: rule__Segment__Group_6__3__Impl rule__Segment__Group_6__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3927:1: ( rule__Segment__Group_6__3__Impl rule__Segment__Group_6__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3928:2: rule__Segment__Group_6__3__Impl rule__Segment__Group_6__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__3__Impl_in_rule__Segment__Group_6__37715);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__3__Impl_in_rule__Segment__Group_6__37777);
             rule__Segment__Group_6__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__4_in_rule__Segment__Group_6__37718);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__4_in_rule__Segment__Group_6__37780);
             rule__Segment__Group_6__4();
 
             state._fsp--;
@@ -10105,20 +10190,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3904:1: rule__Segment__Group_6__3__Impl : ( ( rule__Segment__Group_6_3__0 )* ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3935:1: rule__Segment__Group_6__3__Impl : ( ( rule__Segment__Group_6_3__0 )* ) ;
     public final void rule__Segment__Group_6__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3908:1: ( ( ( rule__Segment__Group_6_3__0 )* ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3909:1: ( ( rule__Segment__Group_6_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3939:1: ( ( ( rule__Segment__Group_6_3__0 )* ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3940:1: ( ( rule__Segment__Group_6_3__0 )* )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3909:1: ( ( rule__Segment__Group_6_3__0 )* )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3910:1: ( rule__Segment__Group_6_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3940:1: ( ( rule__Segment__Group_6_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3941:1: ( rule__Segment__Group_6_3__0 )*
             {
              before(grammarAccess.getSegmentAccess().getGroup_6_3()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3911:1: ( rule__Segment__Group_6_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3942:1: ( rule__Segment__Group_6_3__0 )*
             loop26:
             do {
                 int alt26=2;
@@ -10131,9 +10216,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
                 switch (alt26) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3911:2: rule__Segment__Group_6_3__0
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3942:2: rule__Segment__Group_6_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6_3__0_in_rule__Segment__Group_6__3__Impl7745);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6_3__0_in_rule__Segment__Group_6__3__Impl7807);
             	    rule__Segment__Group_6_3__0();
 
             	    state._fsp--;
@@ -10170,16 +10255,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3921:1: rule__Segment__Group_6__4 : rule__Segment__Group_6__4__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3952:1: rule__Segment__Group_6__4 : rule__Segment__Group_6__4__Impl ;
     public final void rule__Segment__Group_6__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3925:1: ( rule__Segment__Group_6__4__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3926:2: rule__Segment__Group_6__4__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3956:1: ( rule__Segment__Group_6__4__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3957:2: rule__Segment__Group_6__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__4__Impl_in_rule__Segment__Group_6__47776);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6__4__Impl_in_rule__Segment__Group_6__47838);
             rule__Segment__Group_6__4__Impl();
 
             state._fsp--;
@@ -10203,20 +10288,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3932:1: rule__Segment__Group_6__4__Impl : ( ')' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3963:1: rule__Segment__Group_6__4__Impl : ( ')' ) ;
     public final void rule__Segment__Group_6__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3936:1: ( ( ')' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3937:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3967:1: ( ( ')' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3968:1: ( ')' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3937:1: ( ')' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3938:1: ')'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3968:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3969:1: ')'
             {
              before(grammarAccess.getSegmentAccess().getRightParenthesisKeyword_6_4()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Segment__Group_6__4__Impl7804); 
+            match(input,25,FollowSets000.FOLLOW_25_in_rule__Segment__Group_6__4__Impl7866); 
              after(grammarAccess.getSegmentAccess().getRightParenthesisKeyword_6_4()); 
 
             }
@@ -10240,21 +10325,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6_3__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3961:1: rule__Segment__Group_6_3__0 : rule__Segment__Group_6_3__0__Impl rule__Segment__Group_6_3__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3992:1: rule__Segment__Group_6_3__0 : rule__Segment__Group_6_3__0__Impl rule__Segment__Group_6_3__1 ;
     public final void rule__Segment__Group_6_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3965:1: ( rule__Segment__Group_6_3__0__Impl rule__Segment__Group_6_3__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3966:2: rule__Segment__Group_6_3__0__Impl rule__Segment__Group_6_3__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3996:1: ( rule__Segment__Group_6_3__0__Impl rule__Segment__Group_6_3__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3997:2: rule__Segment__Group_6_3__0__Impl rule__Segment__Group_6_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6_3__0__Impl_in_rule__Segment__Group_6_3__07845);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6_3__0__Impl_in_rule__Segment__Group_6_3__07907);
             rule__Segment__Group_6_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6_3__1_in_rule__Segment__Group_6_3__07848);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6_3__1_in_rule__Segment__Group_6_3__07910);
             rule__Segment__Group_6_3__1();
 
             state._fsp--;
@@ -10278,20 +10363,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6_3__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3973:1: rule__Segment__Group_6_3__0__Impl : ( ',' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4004:1: rule__Segment__Group_6_3__0__Impl : ( ',' ) ;
     public final void rule__Segment__Group_6_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3977:1: ( ( ',' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3978:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4008:1: ( ( ',' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4009:1: ( ',' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3978:1: ( ',' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3979:1: ','
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4009:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4010:1: ','
             {
              before(grammarAccess.getSegmentAccess().getCommaKeyword_6_3_0()); 
-            match(input,17,FollowSets000.FOLLOW_17_in_rule__Segment__Group_6_3__0__Impl7876); 
+            match(input,17,FollowSets000.FOLLOW_17_in_rule__Segment__Group_6_3__0__Impl7938); 
              after(grammarAccess.getSegmentAccess().getCommaKeyword_6_3_0()); 
 
             }
@@ -10315,16 +10400,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6_3__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3992:1: rule__Segment__Group_6_3__1 : rule__Segment__Group_6_3__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4023:1: rule__Segment__Group_6_3__1 : rule__Segment__Group_6_3__1__Impl ;
     public final void rule__Segment__Group_6_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3996:1: ( rule__Segment__Group_6_3__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:3997:2: rule__Segment__Group_6_3__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4027:1: ( rule__Segment__Group_6_3__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4028:2: rule__Segment__Group_6_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6_3__1__Impl_in_rule__Segment__Group_6_3__17907);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__Group_6_3__1__Impl_in_rule__Segment__Group_6_3__17969);
             rule__Segment__Group_6_3__1__Impl();
 
             state._fsp--;
@@ -10348,23 +10433,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__Group_6_3__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4003:1: rule__Segment__Group_6_3__1__Impl : ( ( rule__Segment__HasCarsAssignment_6_3_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4034:1: rule__Segment__Group_6_3__1__Impl : ( ( rule__Segment__HasCarsAssignment_6_3_1 ) ) ;
     public final void rule__Segment__Group_6_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4007:1: ( ( ( rule__Segment__HasCarsAssignment_6_3_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4008:1: ( ( rule__Segment__HasCarsAssignment_6_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4038:1: ( ( ( rule__Segment__HasCarsAssignment_6_3_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4039:1: ( ( rule__Segment__HasCarsAssignment_6_3_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4008:1: ( ( rule__Segment__HasCarsAssignment_6_3_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4009:1: ( rule__Segment__HasCarsAssignment_6_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4039:1: ( ( rule__Segment__HasCarsAssignment_6_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4040:1: ( rule__Segment__HasCarsAssignment_6_3_1 )
             {
              before(grammarAccess.getSegmentAccess().getHasCarsAssignment_6_3_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4010:1: ( rule__Segment__HasCarsAssignment_6_3_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4010:2: rule__Segment__HasCarsAssignment_6_3_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4041:1: ( rule__Segment__HasCarsAssignment_6_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4041:2: rule__Segment__HasCarsAssignment_6_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Segment__HasCarsAssignment_6_3_1_in_rule__Segment__Group_6_3__1__Impl7934);
+            pushFollow(FollowSets000.FOLLOW_rule__Segment__HasCarsAssignment_6_3_1_in_rule__Segment__Group_6_3__1__Impl7996);
             rule__Segment__HasCarsAssignment_6_3_1();
 
             state._fsp--;
@@ -10395,21 +10480,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4024:1: rule__Semaphore__Group__0 : rule__Semaphore__Group__0__Impl rule__Semaphore__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4055:1: rule__Semaphore__Group__0 : rule__Semaphore__Group__0__Impl rule__Semaphore__Group__1 ;
     public final void rule__Semaphore__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4028:1: ( rule__Semaphore__Group__0__Impl rule__Semaphore__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4029:2: rule__Semaphore__Group__0__Impl rule__Semaphore__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4059:1: ( rule__Semaphore__Group__0__Impl rule__Semaphore__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4060:2: rule__Semaphore__Group__0__Impl rule__Semaphore__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__0__Impl_in_rule__Semaphore__Group__07968);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__0__Impl_in_rule__Semaphore__Group__08030);
             rule__Semaphore__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__1_in_rule__Semaphore__Group__07971);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__1_in_rule__Semaphore__Group__08033);
             rule__Semaphore__Group__1();
 
             state._fsp--;
@@ -10433,21 +10518,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4036:1: rule__Semaphore__Group__0__Impl : ( () ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4067:1: rule__Semaphore__Group__0__Impl : ( () ) ;
     public final void rule__Semaphore__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4040:1: ( ( () ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4041:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4071:1: ( ( () ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4072:1: ( () )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4041:1: ( () )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4042:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4072:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4073:1: ()
             {
              before(grammarAccess.getSemaphoreAccess().getSemaphoreAction_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4043:1: ()
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4045:1: 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4074:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4076:1: 
             {
             }
 
@@ -10470,21 +10555,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4055:1: rule__Semaphore__Group__1 : rule__Semaphore__Group__1__Impl rule__Semaphore__Group__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4086:1: rule__Semaphore__Group__1 : rule__Semaphore__Group__1__Impl rule__Semaphore__Group__2 ;
     public final void rule__Semaphore__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4059:1: ( rule__Semaphore__Group__1__Impl rule__Semaphore__Group__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4060:2: rule__Semaphore__Group__1__Impl rule__Semaphore__Group__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4090:1: ( rule__Semaphore__Group__1__Impl rule__Semaphore__Group__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4091:2: rule__Semaphore__Group__1__Impl rule__Semaphore__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__1__Impl_in_rule__Semaphore__Group__18029);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__1__Impl_in_rule__Semaphore__Group__18091);
             rule__Semaphore__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__2_in_rule__Semaphore__Group__18032);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__2_in_rule__Semaphore__Group__18094);
             rule__Semaphore__Group__2();
 
             state._fsp--;
@@ -10508,20 +10593,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4067:1: rule__Semaphore__Group__1__Impl : ( 'Semaphore' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4098:1: rule__Semaphore__Group__1__Impl : ( 'Semaphore' ) ;
     public final void rule__Semaphore__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4071:1: ( ( 'Semaphore' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4072:1: ( 'Semaphore' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4102:1: ( ( 'Semaphore' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4103:1: ( 'Semaphore' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4072:1: ( 'Semaphore' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4073:1: 'Semaphore'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4103:1: ( 'Semaphore' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4104:1: 'Semaphore'
             {
              before(grammarAccess.getSemaphoreAccess().getSemaphoreKeyword_1()); 
-            match(input,37,FollowSets000.FOLLOW_37_in_rule__Semaphore__Group__1__Impl8060); 
+            match(input,37,FollowSets000.FOLLOW_37_in_rule__Semaphore__Group__1__Impl8122); 
              after(grammarAccess.getSemaphoreAccess().getSemaphoreKeyword_1()); 
 
             }
@@ -10545,21 +10630,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4086:1: rule__Semaphore__Group__2 : rule__Semaphore__Group__2__Impl rule__Semaphore__Group__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4117:1: rule__Semaphore__Group__2 : rule__Semaphore__Group__2__Impl rule__Semaphore__Group__3 ;
     public final void rule__Semaphore__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4090:1: ( rule__Semaphore__Group__2__Impl rule__Semaphore__Group__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4091:2: rule__Semaphore__Group__2__Impl rule__Semaphore__Group__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4121:1: ( rule__Semaphore__Group__2__Impl rule__Semaphore__Group__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4122:2: rule__Semaphore__Group__2__Impl rule__Semaphore__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__2__Impl_in_rule__Semaphore__Group__28091);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__2__Impl_in_rule__Semaphore__Group__28153);
             rule__Semaphore__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__3_in_rule__Semaphore__Group__28094);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__3_in_rule__Semaphore__Group__28156);
             rule__Semaphore__Group__3();
 
             state._fsp--;
@@ -10583,23 +10668,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4098:1: rule__Semaphore__Group__2__Impl : ( ( rule__Semaphore__NameAssignment_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4129:1: rule__Semaphore__Group__2__Impl : ( ( rule__Semaphore__NameAssignment_2 ) ) ;
     public final void rule__Semaphore__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4102:1: ( ( ( rule__Semaphore__NameAssignment_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4103:1: ( ( rule__Semaphore__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4133:1: ( ( ( rule__Semaphore__NameAssignment_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4134:1: ( ( rule__Semaphore__NameAssignment_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4103:1: ( ( rule__Semaphore__NameAssignment_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4104:1: ( rule__Semaphore__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4134:1: ( ( rule__Semaphore__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4135:1: ( rule__Semaphore__NameAssignment_2 )
             {
              before(grammarAccess.getSemaphoreAccess().getNameAssignment_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4105:1: ( rule__Semaphore__NameAssignment_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4105:2: rule__Semaphore__NameAssignment_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4136:1: ( rule__Semaphore__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4136:2: rule__Semaphore__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__NameAssignment_2_in_rule__Semaphore__Group__2__Impl8121);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__NameAssignment_2_in_rule__Semaphore__Group__2__Impl8183);
             rule__Semaphore__NameAssignment_2();
 
             state._fsp--;
@@ -10630,21 +10715,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4115:1: rule__Semaphore__Group__3 : rule__Semaphore__Group__3__Impl rule__Semaphore__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4146:1: rule__Semaphore__Group__3 : rule__Semaphore__Group__3__Impl rule__Semaphore__Group__4 ;
     public final void rule__Semaphore__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4119:1: ( rule__Semaphore__Group__3__Impl rule__Semaphore__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4120:2: rule__Semaphore__Group__3__Impl rule__Semaphore__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4150:1: ( rule__Semaphore__Group__3__Impl rule__Semaphore__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4151:2: rule__Semaphore__Group__3__Impl rule__Semaphore__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__3__Impl_in_rule__Semaphore__Group__38151);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__3__Impl_in_rule__Semaphore__Group__38213);
             rule__Semaphore__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__4_in_rule__Semaphore__Group__38154);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__4_in_rule__Semaphore__Group__38216);
             rule__Semaphore__Group__4();
 
             state._fsp--;
@@ -10668,20 +10753,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4127:1: rule__Semaphore__Group__3__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4158:1: rule__Semaphore__Group__3__Impl : ( '{' ) ;
     public final void rule__Semaphore__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4131:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4132:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4162:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4163:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4132:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4133:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4163:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4164:1: '{'
             {
              before(grammarAccess.getSemaphoreAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Semaphore__Group__3__Impl8182); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Semaphore__Group__3__Impl8244); 
              after(grammarAccess.getSemaphoreAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -10705,21 +10790,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4146:1: rule__Semaphore__Group__4 : rule__Semaphore__Group__4__Impl rule__Semaphore__Group__5 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4177:1: rule__Semaphore__Group__4 : rule__Semaphore__Group__4__Impl rule__Semaphore__Group__5 ;
     public final void rule__Semaphore__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4150:1: ( rule__Semaphore__Group__4__Impl rule__Semaphore__Group__5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4151:2: rule__Semaphore__Group__4__Impl rule__Semaphore__Group__5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4181:1: ( rule__Semaphore__Group__4__Impl rule__Semaphore__Group__5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4182:2: rule__Semaphore__Group__4__Impl rule__Semaphore__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__4__Impl_in_rule__Semaphore__Group__48213);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__4__Impl_in_rule__Semaphore__Group__48275);
             rule__Semaphore__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__5_in_rule__Semaphore__Group__48216);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__5_in_rule__Semaphore__Group__48278);
             rule__Semaphore__Group__5();
 
             state._fsp--;
@@ -10743,20 +10828,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4158:1: rule__Semaphore__Group__4__Impl : ( ( rule__Semaphore__Group_4__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4189:1: rule__Semaphore__Group__4__Impl : ( ( rule__Semaphore__Group_4__0 )? ) ;
     public final void rule__Semaphore__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4162:1: ( ( ( rule__Semaphore__Group_4__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4163:1: ( ( rule__Semaphore__Group_4__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4193:1: ( ( ( rule__Semaphore__Group_4__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4194:1: ( ( rule__Semaphore__Group_4__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4163:1: ( ( rule__Semaphore__Group_4__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4164:1: ( rule__Semaphore__Group_4__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4194:1: ( ( rule__Semaphore__Group_4__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4195:1: ( rule__Semaphore__Group_4__0 )?
             {
              before(grammarAccess.getSemaphoreAccess().getGroup_4()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4165:1: ( rule__Semaphore__Group_4__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4196:1: ( rule__Semaphore__Group_4__0 )?
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -10765,9 +10850,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt27) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4165:2: rule__Semaphore__Group_4__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4196:2: rule__Semaphore__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_4__0_in_rule__Semaphore__Group__4__Impl8243);
+                    pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_4__0_in_rule__Semaphore__Group__4__Impl8305);
                     rule__Semaphore__Group_4__0();
 
                     state._fsp--;
@@ -10801,21 +10886,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4175:1: rule__Semaphore__Group__5 : rule__Semaphore__Group__5__Impl rule__Semaphore__Group__6 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4206:1: rule__Semaphore__Group__5 : rule__Semaphore__Group__5__Impl rule__Semaphore__Group__6 ;
     public final void rule__Semaphore__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4179:1: ( rule__Semaphore__Group__5__Impl rule__Semaphore__Group__6 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4180:2: rule__Semaphore__Group__5__Impl rule__Semaphore__Group__6
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4210:1: ( rule__Semaphore__Group__5__Impl rule__Semaphore__Group__6 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4211:2: rule__Semaphore__Group__5__Impl rule__Semaphore__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__5__Impl_in_rule__Semaphore__Group__58274);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__5__Impl_in_rule__Semaphore__Group__58336);
             rule__Semaphore__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__6_in_rule__Semaphore__Group__58277);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__6_in_rule__Semaphore__Group__58339);
             rule__Semaphore__Group__6();
 
             state._fsp--;
@@ -10839,20 +10924,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__5__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4187:1: rule__Semaphore__Group__5__Impl : ( ( rule__Semaphore__Group_5__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4218:1: rule__Semaphore__Group__5__Impl : ( ( rule__Semaphore__Group_5__0 )? ) ;
     public final void rule__Semaphore__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4191:1: ( ( ( rule__Semaphore__Group_5__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4192:1: ( ( rule__Semaphore__Group_5__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4222:1: ( ( ( rule__Semaphore__Group_5__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4223:1: ( ( rule__Semaphore__Group_5__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4192:1: ( ( rule__Semaphore__Group_5__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4193:1: ( rule__Semaphore__Group_5__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4223:1: ( ( rule__Semaphore__Group_5__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4224:1: ( rule__Semaphore__Group_5__0 )?
             {
              before(grammarAccess.getSemaphoreAccess().getGroup_5()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4194:1: ( rule__Semaphore__Group_5__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4225:1: ( rule__Semaphore__Group_5__0 )?
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -10861,9 +10946,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt28) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4194:2: rule__Semaphore__Group_5__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4225:2: rule__Semaphore__Group_5__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_5__0_in_rule__Semaphore__Group__5__Impl8304);
+                    pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_5__0_in_rule__Semaphore__Group__5__Impl8366);
                     rule__Semaphore__Group_5__0();
 
                     state._fsp--;
@@ -10897,21 +10982,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__6"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4204:1: rule__Semaphore__Group__6 : rule__Semaphore__Group__6__Impl rule__Semaphore__Group__7 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4235:1: rule__Semaphore__Group__6 : rule__Semaphore__Group__6__Impl rule__Semaphore__Group__7 ;
     public final void rule__Semaphore__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4208:1: ( rule__Semaphore__Group__6__Impl rule__Semaphore__Group__7 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4209:2: rule__Semaphore__Group__6__Impl rule__Semaphore__Group__7
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4239:1: ( rule__Semaphore__Group__6__Impl rule__Semaphore__Group__7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4240:2: rule__Semaphore__Group__6__Impl rule__Semaphore__Group__7
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__6__Impl_in_rule__Semaphore__Group__68335);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__6__Impl_in_rule__Semaphore__Group__68397);
             rule__Semaphore__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__7_in_rule__Semaphore__Group__68338);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__7_in_rule__Semaphore__Group__68400);
             rule__Semaphore__Group__7();
 
             state._fsp--;
@@ -10935,20 +11020,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__6__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4216:1: rule__Semaphore__Group__6__Impl : ( ( rule__Semaphore__Group_6__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4247:1: rule__Semaphore__Group__6__Impl : ( ( rule__Semaphore__Group_6__0 )? ) ;
     public final void rule__Semaphore__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4220:1: ( ( ( rule__Semaphore__Group_6__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4221:1: ( ( rule__Semaphore__Group_6__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4251:1: ( ( ( rule__Semaphore__Group_6__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4252:1: ( ( rule__Semaphore__Group_6__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4221:1: ( ( rule__Semaphore__Group_6__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4222:1: ( rule__Semaphore__Group_6__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4252:1: ( ( rule__Semaphore__Group_6__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4253:1: ( rule__Semaphore__Group_6__0 )?
             {
              before(grammarAccess.getSemaphoreAccess().getGroup_6()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4223:1: ( rule__Semaphore__Group_6__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4254:1: ( rule__Semaphore__Group_6__0 )?
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -10957,9 +11042,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt29) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4223:2: rule__Semaphore__Group_6__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4254:2: rule__Semaphore__Group_6__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_6__0_in_rule__Semaphore__Group__6__Impl8365);
+                    pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_6__0_in_rule__Semaphore__Group__6__Impl8427);
                     rule__Semaphore__Group_6__0();
 
                     state._fsp--;
@@ -10993,21 +11078,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__7"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4233:1: rule__Semaphore__Group__7 : rule__Semaphore__Group__7__Impl rule__Semaphore__Group__8 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4264:1: rule__Semaphore__Group__7 : rule__Semaphore__Group__7__Impl rule__Semaphore__Group__8 ;
     public final void rule__Semaphore__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4237:1: ( rule__Semaphore__Group__7__Impl rule__Semaphore__Group__8 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4238:2: rule__Semaphore__Group__7__Impl rule__Semaphore__Group__8
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4268:1: ( rule__Semaphore__Group__7__Impl rule__Semaphore__Group__8 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4269:2: rule__Semaphore__Group__7__Impl rule__Semaphore__Group__8
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__7__Impl_in_rule__Semaphore__Group__78396);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__7__Impl_in_rule__Semaphore__Group__78458);
             rule__Semaphore__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__8_in_rule__Semaphore__Group__78399);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__8_in_rule__Semaphore__Group__78461);
             rule__Semaphore__Group__8();
 
             state._fsp--;
@@ -11031,20 +11116,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__7__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4245:1: rule__Semaphore__Group__7__Impl : ( 'belongsTo' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4276:1: rule__Semaphore__Group__7__Impl : ( 'belongsTo' ) ;
     public final void rule__Semaphore__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4249:1: ( ( 'belongsTo' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4250:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4280:1: ( ( 'belongsTo' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4281:1: ( 'belongsTo' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4250:1: ( 'belongsTo' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4251:1: 'belongsTo'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4281:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4282:1: 'belongsTo'
             {
              before(grammarAccess.getSemaphoreAccess().getBelongsToKeyword_7()); 
-            match(input,38,FollowSets000.FOLLOW_38_in_rule__Semaphore__Group__7__Impl8427); 
+            match(input,38,FollowSets000.FOLLOW_38_in_rule__Semaphore__Group__7__Impl8489); 
              after(grammarAccess.getSemaphoreAccess().getBelongsToKeyword_7()); 
 
             }
@@ -11068,21 +11153,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__8"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4264:1: rule__Semaphore__Group__8 : rule__Semaphore__Group__8__Impl rule__Semaphore__Group__9 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4295:1: rule__Semaphore__Group__8 : rule__Semaphore__Group__8__Impl rule__Semaphore__Group__9 ;
     public final void rule__Semaphore__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4268:1: ( rule__Semaphore__Group__8__Impl rule__Semaphore__Group__9 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4269:2: rule__Semaphore__Group__8__Impl rule__Semaphore__Group__9
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4299:1: ( rule__Semaphore__Group__8__Impl rule__Semaphore__Group__9 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4300:2: rule__Semaphore__Group__8__Impl rule__Semaphore__Group__9
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__8__Impl_in_rule__Semaphore__Group__88458);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__8__Impl_in_rule__Semaphore__Group__88520);
             rule__Semaphore__Group__8__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__9_in_rule__Semaphore__Group__88461);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__9_in_rule__Semaphore__Group__88523);
             rule__Semaphore__Group__9();
 
             state._fsp--;
@@ -11106,23 +11191,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__8__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4276:1: rule__Semaphore__Group__8__Impl : ( ( rule__Semaphore__BelongsToAssignment_8 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4307:1: rule__Semaphore__Group__8__Impl : ( ( rule__Semaphore__BelongsToAssignment_8 ) ) ;
     public final void rule__Semaphore__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4280:1: ( ( ( rule__Semaphore__BelongsToAssignment_8 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4281:1: ( ( rule__Semaphore__BelongsToAssignment_8 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4311:1: ( ( ( rule__Semaphore__BelongsToAssignment_8 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4312:1: ( ( rule__Semaphore__BelongsToAssignment_8 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4281:1: ( ( rule__Semaphore__BelongsToAssignment_8 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4282:1: ( rule__Semaphore__BelongsToAssignment_8 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4312:1: ( ( rule__Semaphore__BelongsToAssignment_8 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4313:1: ( rule__Semaphore__BelongsToAssignment_8 )
             {
              before(grammarAccess.getSemaphoreAccess().getBelongsToAssignment_8()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4283:1: ( rule__Semaphore__BelongsToAssignment_8 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4283:2: rule__Semaphore__BelongsToAssignment_8
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4314:1: ( rule__Semaphore__BelongsToAssignment_8 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4314:2: rule__Semaphore__BelongsToAssignment_8
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__BelongsToAssignment_8_in_rule__Semaphore__Group__8__Impl8488);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__BelongsToAssignment_8_in_rule__Semaphore__Group__8__Impl8550);
             rule__Semaphore__BelongsToAssignment_8();
 
             state._fsp--;
@@ -11153,16 +11238,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__9"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4293:1: rule__Semaphore__Group__9 : rule__Semaphore__Group__9__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4324:1: rule__Semaphore__Group__9 : rule__Semaphore__Group__9__Impl ;
     public final void rule__Semaphore__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4297:1: ( rule__Semaphore__Group__9__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4298:2: rule__Semaphore__Group__9__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4328:1: ( rule__Semaphore__Group__9__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4329:2: rule__Semaphore__Group__9__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__9__Impl_in_rule__Semaphore__Group__98518);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group__9__Impl_in_rule__Semaphore__Group__98580);
             rule__Semaphore__Group__9__Impl();
 
             state._fsp--;
@@ -11186,20 +11271,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group__9__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4304:1: rule__Semaphore__Group__9__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4335:1: rule__Semaphore__Group__9__Impl : ( '}' ) ;
     public final void rule__Semaphore__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4308:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4309:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4339:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4340:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4309:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4310:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4340:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4341:1: '}'
             {
              before(grammarAccess.getSemaphoreAccess().getRightCurlyBracketKeyword_9()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Semaphore__Group__9__Impl8546); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Semaphore__Group__9__Impl8608); 
              after(grammarAccess.getSemaphoreAccess().getRightCurlyBracketKeyword_9()); 
 
             }
@@ -11223,21 +11308,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_4__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4343:1: rule__Semaphore__Group_4__0 : rule__Semaphore__Group_4__0__Impl rule__Semaphore__Group_4__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4374:1: rule__Semaphore__Group_4__0 : rule__Semaphore__Group_4__0__Impl rule__Semaphore__Group_4__1 ;
     public final void rule__Semaphore__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4347:1: ( rule__Semaphore__Group_4__0__Impl rule__Semaphore__Group_4__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4348:2: rule__Semaphore__Group_4__0__Impl rule__Semaphore__Group_4__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4378:1: ( rule__Semaphore__Group_4__0__Impl rule__Semaphore__Group_4__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4379:2: rule__Semaphore__Group_4__0__Impl rule__Semaphore__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_4__0__Impl_in_rule__Semaphore__Group_4__08597);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_4__0__Impl_in_rule__Semaphore__Group_4__08659);
             rule__Semaphore__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_4__1_in_rule__Semaphore__Group_4__08600);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_4__1_in_rule__Semaphore__Group_4__08662);
             rule__Semaphore__Group_4__1();
 
             state._fsp--;
@@ -11261,20 +11346,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_4__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4355:1: rule__Semaphore__Group_4__0__Impl : ( 'canGo' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4386:1: rule__Semaphore__Group_4__0__Impl : ( 'canGo' ) ;
     public final void rule__Semaphore__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4359:1: ( ( 'canGo' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4360:1: ( 'canGo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4390:1: ( ( 'canGo' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4391:1: ( 'canGo' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4360:1: ( 'canGo' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4361:1: 'canGo'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4391:1: ( 'canGo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4392:1: 'canGo'
             {
              before(grammarAccess.getSemaphoreAccess().getCanGoKeyword_4_0()); 
-            match(input,39,FollowSets000.FOLLOW_39_in_rule__Semaphore__Group_4__0__Impl8628); 
+            match(input,39,FollowSets000.FOLLOW_39_in_rule__Semaphore__Group_4__0__Impl8690); 
              after(grammarAccess.getSemaphoreAccess().getCanGoKeyword_4_0()); 
 
             }
@@ -11298,16 +11383,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_4__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4374:1: rule__Semaphore__Group_4__1 : rule__Semaphore__Group_4__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4405:1: rule__Semaphore__Group_4__1 : rule__Semaphore__Group_4__1__Impl ;
     public final void rule__Semaphore__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4378:1: ( rule__Semaphore__Group_4__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4379:2: rule__Semaphore__Group_4__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4409:1: ( rule__Semaphore__Group_4__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4410:2: rule__Semaphore__Group_4__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_4__1__Impl_in_rule__Semaphore__Group_4__18659);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_4__1__Impl_in_rule__Semaphore__Group_4__18721);
             rule__Semaphore__Group_4__1__Impl();
 
             state._fsp--;
@@ -11331,23 +11416,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_4__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4385:1: rule__Semaphore__Group_4__1__Impl : ( ( rule__Semaphore__CanGoAssignment_4_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4416:1: rule__Semaphore__Group_4__1__Impl : ( ( rule__Semaphore__CanGoAssignment_4_1 ) ) ;
     public final void rule__Semaphore__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4389:1: ( ( ( rule__Semaphore__CanGoAssignment_4_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4390:1: ( ( rule__Semaphore__CanGoAssignment_4_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4420:1: ( ( ( rule__Semaphore__CanGoAssignment_4_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4421:1: ( ( rule__Semaphore__CanGoAssignment_4_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4390:1: ( ( rule__Semaphore__CanGoAssignment_4_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4391:1: ( rule__Semaphore__CanGoAssignment_4_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4421:1: ( ( rule__Semaphore__CanGoAssignment_4_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4422:1: ( rule__Semaphore__CanGoAssignment_4_1 )
             {
              before(grammarAccess.getSemaphoreAccess().getCanGoAssignment_4_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4392:1: ( rule__Semaphore__CanGoAssignment_4_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4392:2: rule__Semaphore__CanGoAssignment_4_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4423:1: ( rule__Semaphore__CanGoAssignment_4_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4423:2: rule__Semaphore__CanGoAssignment_4_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__CanGoAssignment_4_1_in_rule__Semaphore__Group_4__1__Impl8686);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__CanGoAssignment_4_1_in_rule__Semaphore__Group_4__1__Impl8748);
             rule__Semaphore__CanGoAssignment_4_1();
 
             state._fsp--;
@@ -11378,21 +11463,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_5__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4406:1: rule__Semaphore__Group_5__0 : rule__Semaphore__Group_5__0__Impl rule__Semaphore__Group_5__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4437:1: rule__Semaphore__Group_5__0 : rule__Semaphore__Group_5__0__Impl rule__Semaphore__Group_5__1 ;
     public final void rule__Semaphore__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4410:1: ( rule__Semaphore__Group_5__0__Impl rule__Semaphore__Group_5__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4411:2: rule__Semaphore__Group_5__0__Impl rule__Semaphore__Group_5__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4441:1: ( rule__Semaphore__Group_5__0__Impl rule__Semaphore__Group_5__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4442:2: rule__Semaphore__Group_5__0__Impl rule__Semaphore__Group_5__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_5__0__Impl_in_rule__Semaphore__Group_5__08720);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_5__0__Impl_in_rule__Semaphore__Group_5__08782);
             rule__Semaphore__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_5__1_in_rule__Semaphore__Group_5__08723);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_5__1_in_rule__Semaphore__Group_5__08785);
             rule__Semaphore__Group_5__1();
 
             state._fsp--;
@@ -11416,20 +11501,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_5__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4418:1: rule__Semaphore__Group_5__0__Impl : ( 'secondsRed' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4449:1: rule__Semaphore__Group_5__0__Impl : ( 'secondsRed' ) ;
     public final void rule__Semaphore__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4422:1: ( ( 'secondsRed' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4423:1: ( 'secondsRed' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4453:1: ( ( 'secondsRed' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4454:1: ( 'secondsRed' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4423:1: ( 'secondsRed' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4424:1: 'secondsRed'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4454:1: ( 'secondsRed' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4455:1: 'secondsRed'
             {
              before(grammarAccess.getSemaphoreAccess().getSecondsRedKeyword_5_0()); 
-            match(input,40,FollowSets000.FOLLOW_40_in_rule__Semaphore__Group_5__0__Impl8751); 
+            match(input,40,FollowSets000.FOLLOW_40_in_rule__Semaphore__Group_5__0__Impl8813); 
              after(grammarAccess.getSemaphoreAccess().getSecondsRedKeyword_5_0()); 
 
             }
@@ -11453,16 +11538,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_5__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4437:1: rule__Semaphore__Group_5__1 : rule__Semaphore__Group_5__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4468:1: rule__Semaphore__Group_5__1 : rule__Semaphore__Group_5__1__Impl ;
     public final void rule__Semaphore__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4441:1: ( rule__Semaphore__Group_5__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4442:2: rule__Semaphore__Group_5__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4472:1: ( rule__Semaphore__Group_5__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4473:2: rule__Semaphore__Group_5__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_5__1__Impl_in_rule__Semaphore__Group_5__18782);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_5__1__Impl_in_rule__Semaphore__Group_5__18844);
             rule__Semaphore__Group_5__1__Impl();
 
             state._fsp--;
@@ -11486,23 +11571,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_5__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4448:1: rule__Semaphore__Group_5__1__Impl : ( ( rule__Semaphore__SecondsRedAssignment_5_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4479:1: rule__Semaphore__Group_5__1__Impl : ( ( rule__Semaphore__SecondsRedAssignment_5_1 ) ) ;
     public final void rule__Semaphore__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4452:1: ( ( ( rule__Semaphore__SecondsRedAssignment_5_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4453:1: ( ( rule__Semaphore__SecondsRedAssignment_5_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4483:1: ( ( ( rule__Semaphore__SecondsRedAssignment_5_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4484:1: ( ( rule__Semaphore__SecondsRedAssignment_5_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4453:1: ( ( rule__Semaphore__SecondsRedAssignment_5_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4454:1: ( rule__Semaphore__SecondsRedAssignment_5_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4484:1: ( ( rule__Semaphore__SecondsRedAssignment_5_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4485:1: ( rule__Semaphore__SecondsRedAssignment_5_1 )
             {
              before(grammarAccess.getSemaphoreAccess().getSecondsRedAssignment_5_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4455:1: ( rule__Semaphore__SecondsRedAssignment_5_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4455:2: rule__Semaphore__SecondsRedAssignment_5_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4486:1: ( rule__Semaphore__SecondsRedAssignment_5_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4486:2: rule__Semaphore__SecondsRedAssignment_5_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__SecondsRedAssignment_5_1_in_rule__Semaphore__Group_5__1__Impl8809);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__SecondsRedAssignment_5_1_in_rule__Semaphore__Group_5__1__Impl8871);
             rule__Semaphore__SecondsRedAssignment_5_1();
 
             state._fsp--;
@@ -11533,21 +11618,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_6__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4469:1: rule__Semaphore__Group_6__0 : rule__Semaphore__Group_6__0__Impl rule__Semaphore__Group_6__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4500:1: rule__Semaphore__Group_6__0 : rule__Semaphore__Group_6__0__Impl rule__Semaphore__Group_6__1 ;
     public final void rule__Semaphore__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4473:1: ( rule__Semaphore__Group_6__0__Impl rule__Semaphore__Group_6__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4474:2: rule__Semaphore__Group_6__0__Impl rule__Semaphore__Group_6__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4504:1: ( rule__Semaphore__Group_6__0__Impl rule__Semaphore__Group_6__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4505:2: rule__Semaphore__Group_6__0__Impl rule__Semaphore__Group_6__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_6__0__Impl_in_rule__Semaphore__Group_6__08843);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_6__0__Impl_in_rule__Semaphore__Group_6__08905);
             rule__Semaphore__Group_6__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_6__1_in_rule__Semaphore__Group_6__08846);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_6__1_in_rule__Semaphore__Group_6__08908);
             rule__Semaphore__Group_6__1();
 
             state._fsp--;
@@ -11571,20 +11656,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_6__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4481:1: rule__Semaphore__Group_6__0__Impl : ( 'secondsGreen' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4512:1: rule__Semaphore__Group_6__0__Impl : ( 'secondsGreen' ) ;
     public final void rule__Semaphore__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4485:1: ( ( 'secondsGreen' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4486:1: ( 'secondsGreen' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4516:1: ( ( 'secondsGreen' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4517:1: ( 'secondsGreen' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4486:1: ( 'secondsGreen' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4487:1: 'secondsGreen'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4517:1: ( 'secondsGreen' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4518:1: 'secondsGreen'
             {
              before(grammarAccess.getSemaphoreAccess().getSecondsGreenKeyword_6_0()); 
-            match(input,41,FollowSets000.FOLLOW_41_in_rule__Semaphore__Group_6__0__Impl8874); 
+            match(input,41,FollowSets000.FOLLOW_41_in_rule__Semaphore__Group_6__0__Impl8936); 
              after(grammarAccess.getSemaphoreAccess().getSecondsGreenKeyword_6_0()); 
 
             }
@@ -11608,16 +11693,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_6__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4500:1: rule__Semaphore__Group_6__1 : rule__Semaphore__Group_6__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4531:1: rule__Semaphore__Group_6__1 : rule__Semaphore__Group_6__1__Impl ;
     public final void rule__Semaphore__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4504:1: ( rule__Semaphore__Group_6__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4505:2: rule__Semaphore__Group_6__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4535:1: ( rule__Semaphore__Group_6__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4536:2: rule__Semaphore__Group_6__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_6__1__Impl_in_rule__Semaphore__Group_6__18905);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__Group_6__1__Impl_in_rule__Semaphore__Group_6__18967);
             rule__Semaphore__Group_6__1__Impl();
 
             state._fsp--;
@@ -11641,23 +11726,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__Group_6__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4511:1: rule__Semaphore__Group_6__1__Impl : ( ( rule__Semaphore__SecondsGreenAssignment_6_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4542:1: rule__Semaphore__Group_6__1__Impl : ( ( rule__Semaphore__SecondsGreenAssignment_6_1 ) ) ;
     public final void rule__Semaphore__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4515:1: ( ( ( rule__Semaphore__SecondsGreenAssignment_6_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4516:1: ( ( rule__Semaphore__SecondsGreenAssignment_6_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4546:1: ( ( ( rule__Semaphore__SecondsGreenAssignment_6_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4547:1: ( ( rule__Semaphore__SecondsGreenAssignment_6_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4516:1: ( ( rule__Semaphore__SecondsGreenAssignment_6_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4517:1: ( rule__Semaphore__SecondsGreenAssignment_6_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4547:1: ( ( rule__Semaphore__SecondsGreenAssignment_6_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4548:1: ( rule__Semaphore__SecondsGreenAssignment_6_1 )
             {
              before(grammarAccess.getSemaphoreAccess().getSecondsGreenAssignment_6_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4518:1: ( rule__Semaphore__SecondsGreenAssignment_6_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4518:2: rule__Semaphore__SecondsGreenAssignment_6_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4549:1: ( rule__Semaphore__SecondsGreenAssignment_6_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4549:2: rule__Semaphore__SecondsGreenAssignment_6_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__SecondsGreenAssignment_6_1_in_rule__Semaphore__Group_6__1__Impl8932);
+            pushFollow(FollowSets000.FOLLOW_rule__Semaphore__SecondsGreenAssignment_6_1_in_rule__Semaphore__Group_6__1__Impl8994);
             rule__Semaphore__SecondsGreenAssignment_6_1();
 
             state._fsp--;
@@ -11688,21 +11773,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4532:1: rule__Signal_Impl__Group__0 : rule__Signal_Impl__Group__0__Impl rule__Signal_Impl__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4563:1: rule__Signal_Impl__Group__0 : rule__Signal_Impl__Group__0__Impl rule__Signal_Impl__Group__1 ;
     public final void rule__Signal_Impl__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4536:1: ( rule__Signal_Impl__Group__0__Impl rule__Signal_Impl__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4537:2: rule__Signal_Impl__Group__0__Impl rule__Signal_Impl__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4567:1: ( rule__Signal_Impl__Group__0__Impl rule__Signal_Impl__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4568:2: rule__Signal_Impl__Group__0__Impl rule__Signal_Impl__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__0__Impl_in_rule__Signal_Impl__Group__08966);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__0__Impl_in_rule__Signal_Impl__Group__09028);
             rule__Signal_Impl__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__1_in_rule__Signal_Impl__Group__08969);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__1_in_rule__Signal_Impl__Group__09031);
             rule__Signal_Impl__Group__1();
 
             state._fsp--;
@@ -11726,21 +11811,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4544:1: rule__Signal_Impl__Group__0__Impl : ( () ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4575:1: rule__Signal_Impl__Group__0__Impl : ( () ) ;
     public final void rule__Signal_Impl__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4548:1: ( ( () ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4549:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4579:1: ( ( () ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4580:1: ( () )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4549:1: ( () )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4550:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4580:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4581:1: ()
             {
              before(grammarAccess.getSignal_ImplAccess().getSignalAction_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4551:1: ()
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4553:1: 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4582:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4584:1: 
             {
             }
 
@@ -11763,21 +11848,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4563:1: rule__Signal_Impl__Group__1 : rule__Signal_Impl__Group__1__Impl rule__Signal_Impl__Group__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4594:1: rule__Signal_Impl__Group__1 : rule__Signal_Impl__Group__1__Impl rule__Signal_Impl__Group__2 ;
     public final void rule__Signal_Impl__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4567:1: ( rule__Signal_Impl__Group__1__Impl rule__Signal_Impl__Group__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4568:2: rule__Signal_Impl__Group__1__Impl rule__Signal_Impl__Group__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4598:1: ( rule__Signal_Impl__Group__1__Impl rule__Signal_Impl__Group__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4599:2: rule__Signal_Impl__Group__1__Impl rule__Signal_Impl__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__1__Impl_in_rule__Signal_Impl__Group__19027);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__1__Impl_in_rule__Signal_Impl__Group__19089);
             rule__Signal_Impl__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__2_in_rule__Signal_Impl__Group__19030);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__2_in_rule__Signal_Impl__Group__19092);
             rule__Signal_Impl__Group__2();
 
             state._fsp--;
@@ -11801,20 +11886,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4575:1: rule__Signal_Impl__Group__1__Impl : ( 'Signal' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4606:1: rule__Signal_Impl__Group__1__Impl : ( 'Signal' ) ;
     public final void rule__Signal_Impl__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4579:1: ( ( 'Signal' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4580:1: ( 'Signal' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4610:1: ( ( 'Signal' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4611:1: ( 'Signal' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4580:1: ( 'Signal' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4581:1: 'Signal'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4611:1: ( 'Signal' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4612:1: 'Signal'
             {
              before(grammarAccess.getSignal_ImplAccess().getSignalKeyword_1()); 
-            match(input,42,FollowSets000.FOLLOW_42_in_rule__Signal_Impl__Group__1__Impl9058); 
+            match(input,42,FollowSets000.FOLLOW_42_in_rule__Signal_Impl__Group__1__Impl9120); 
              after(grammarAccess.getSignal_ImplAccess().getSignalKeyword_1()); 
 
             }
@@ -11838,21 +11923,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4594:1: rule__Signal_Impl__Group__2 : rule__Signal_Impl__Group__2__Impl rule__Signal_Impl__Group__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4625:1: rule__Signal_Impl__Group__2 : rule__Signal_Impl__Group__2__Impl rule__Signal_Impl__Group__3 ;
     public final void rule__Signal_Impl__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4598:1: ( rule__Signal_Impl__Group__2__Impl rule__Signal_Impl__Group__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4599:2: rule__Signal_Impl__Group__2__Impl rule__Signal_Impl__Group__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4629:1: ( rule__Signal_Impl__Group__2__Impl rule__Signal_Impl__Group__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4630:2: rule__Signal_Impl__Group__2__Impl rule__Signal_Impl__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__2__Impl_in_rule__Signal_Impl__Group__29089);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__2__Impl_in_rule__Signal_Impl__Group__29151);
             rule__Signal_Impl__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__3_in_rule__Signal_Impl__Group__29092);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__3_in_rule__Signal_Impl__Group__29154);
             rule__Signal_Impl__Group__3();
 
             state._fsp--;
@@ -11876,23 +11961,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4606:1: rule__Signal_Impl__Group__2__Impl : ( ( rule__Signal_Impl__NameAssignment_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4637:1: rule__Signal_Impl__Group__2__Impl : ( ( rule__Signal_Impl__NameAssignment_2 ) ) ;
     public final void rule__Signal_Impl__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4610:1: ( ( ( rule__Signal_Impl__NameAssignment_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4611:1: ( ( rule__Signal_Impl__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4641:1: ( ( ( rule__Signal_Impl__NameAssignment_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4642:1: ( ( rule__Signal_Impl__NameAssignment_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4611:1: ( ( rule__Signal_Impl__NameAssignment_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4612:1: ( rule__Signal_Impl__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4642:1: ( ( rule__Signal_Impl__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4643:1: ( rule__Signal_Impl__NameAssignment_2 )
             {
              before(grammarAccess.getSignal_ImplAccess().getNameAssignment_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4613:1: ( rule__Signal_Impl__NameAssignment_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4613:2: rule__Signal_Impl__NameAssignment_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4644:1: ( rule__Signal_Impl__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4644:2: rule__Signal_Impl__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__NameAssignment_2_in_rule__Signal_Impl__Group__2__Impl9119);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__NameAssignment_2_in_rule__Signal_Impl__Group__2__Impl9181);
             rule__Signal_Impl__NameAssignment_2();
 
             state._fsp--;
@@ -11923,21 +12008,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4623:1: rule__Signal_Impl__Group__3 : rule__Signal_Impl__Group__3__Impl rule__Signal_Impl__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4654:1: rule__Signal_Impl__Group__3 : rule__Signal_Impl__Group__3__Impl rule__Signal_Impl__Group__4 ;
     public final void rule__Signal_Impl__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4627:1: ( rule__Signal_Impl__Group__3__Impl rule__Signal_Impl__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4628:2: rule__Signal_Impl__Group__3__Impl rule__Signal_Impl__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4658:1: ( rule__Signal_Impl__Group__3__Impl rule__Signal_Impl__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4659:2: rule__Signal_Impl__Group__3__Impl rule__Signal_Impl__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__3__Impl_in_rule__Signal_Impl__Group__39149);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__3__Impl_in_rule__Signal_Impl__Group__39211);
             rule__Signal_Impl__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__4_in_rule__Signal_Impl__Group__39152);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__4_in_rule__Signal_Impl__Group__39214);
             rule__Signal_Impl__Group__4();
 
             state._fsp--;
@@ -11961,20 +12046,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4635:1: rule__Signal_Impl__Group__3__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4666:1: rule__Signal_Impl__Group__3__Impl : ( '{' ) ;
     public final void rule__Signal_Impl__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4639:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4640:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4670:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4671:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4640:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4641:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4671:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4672:1: '{'
             {
              before(grammarAccess.getSignal_ImplAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Signal_Impl__Group__3__Impl9180); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Signal_Impl__Group__3__Impl9242); 
              after(grammarAccess.getSignal_ImplAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -11998,21 +12083,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4654:1: rule__Signal_Impl__Group__4 : rule__Signal_Impl__Group__4__Impl rule__Signal_Impl__Group__5 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4685:1: rule__Signal_Impl__Group__4 : rule__Signal_Impl__Group__4__Impl rule__Signal_Impl__Group__5 ;
     public final void rule__Signal_Impl__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4658:1: ( rule__Signal_Impl__Group__4__Impl rule__Signal_Impl__Group__5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4659:2: rule__Signal_Impl__Group__4__Impl rule__Signal_Impl__Group__5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4689:1: ( rule__Signal_Impl__Group__4__Impl rule__Signal_Impl__Group__5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4690:2: rule__Signal_Impl__Group__4__Impl rule__Signal_Impl__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__4__Impl_in_rule__Signal_Impl__Group__49211);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__4__Impl_in_rule__Signal_Impl__Group__49273);
             rule__Signal_Impl__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__5_in_rule__Signal_Impl__Group__49214);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__5_in_rule__Signal_Impl__Group__49276);
             rule__Signal_Impl__Group__5();
 
             state._fsp--;
@@ -12036,20 +12121,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4666:1: rule__Signal_Impl__Group__4__Impl : ( 'belongsTo' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4697:1: rule__Signal_Impl__Group__4__Impl : ( 'belongsTo' ) ;
     public final void rule__Signal_Impl__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4670:1: ( ( 'belongsTo' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4671:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4701:1: ( ( 'belongsTo' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4702:1: ( 'belongsTo' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4671:1: ( 'belongsTo' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4672:1: 'belongsTo'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4702:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4703:1: 'belongsTo'
             {
              before(grammarAccess.getSignal_ImplAccess().getBelongsToKeyword_4()); 
-            match(input,38,FollowSets000.FOLLOW_38_in_rule__Signal_Impl__Group__4__Impl9242); 
+            match(input,38,FollowSets000.FOLLOW_38_in_rule__Signal_Impl__Group__4__Impl9304); 
              after(grammarAccess.getSignal_ImplAccess().getBelongsToKeyword_4()); 
 
             }
@@ -12073,21 +12158,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4685:1: rule__Signal_Impl__Group__5 : rule__Signal_Impl__Group__5__Impl rule__Signal_Impl__Group__6 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4716:1: rule__Signal_Impl__Group__5 : rule__Signal_Impl__Group__5__Impl rule__Signal_Impl__Group__6 ;
     public final void rule__Signal_Impl__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4689:1: ( rule__Signal_Impl__Group__5__Impl rule__Signal_Impl__Group__6 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4690:2: rule__Signal_Impl__Group__5__Impl rule__Signal_Impl__Group__6
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4720:1: ( rule__Signal_Impl__Group__5__Impl rule__Signal_Impl__Group__6 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4721:2: rule__Signal_Impl__Group__5__Impl rule__Signal_Impl__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__5__Impl_in_rule__Signal_Impl__Group__59273);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__5__Impl_in_rule__Signal_Impl__Group__59335);
             rule__Signal_Impl__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__6_in_rule__Signal_Impl__Group__59276);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__6_in_rule__Signal_Impl__Group__59338);
             rule__Signal_Impl__Group__6();
 
             state._fsp--;
@@ -12111,23 +12196,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__5__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4697:1: rule__Signal_Impl__Group__5__Impl : ( ( rule__Signal_Impl__BelongsToAssignment_5 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4728:1: rule__Signal_Impl__Group__5__Impl : ( ( rule__Signal_Impl__BelongsToAssignment_5 ) ) ;
     public final void rule__Signal_Impl__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4701:1: ( ( ( rule__Signal_Impl__BelongsToAssignment_5 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4702:1: ( ( rule__Signal_Impl__BelongsToAssignment_5 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4732:1: ( ( ( rule__Signal_Impl__BelongsToAssignment_5 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4733:1: ( ( rule__Signal_Impl__BelongsToAssignment_5 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4702:1: ( ( rule__Signal_Impl__BelongsToAssignment_5 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4703:1: ( rule__Signal_Impl__BelongsToAssignment_5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4733:1: ( ( rule__Signal_Impl__BelongsToAssignment_5 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4734:1: ( rule__Signal_Impl__BelongsToAssignment_5 )
             {
              before(grammarAccess.getSignal_ImplAccess().getBelongsToAssignment_5()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4704:1: ( rule__Signal_Impl__BelongsToAssignment_5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4704:2: rule__Signal_Impl__BelongsToAssignment_5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4735:1: ( rule__Signal_Impl__BelongsToAssignment_5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4735:2: rule__Signal_Impl__BelongsToAssignment_5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__BelongsToAssignment_5_in_rule__Signal_Impl__Group__5__Impl9303);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__BelongsToAssignment_5_in_rule__Signal_Impl__Group__5__Impl9365);
             rule__Signal_Impl__BelongsToAssignment_5();
 
             state._fsp--;
@@ -12158,16 +12243,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__6"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4714:1: rule__Signal_Impl__Group__6 : rule__Signal_Impl__Group__6__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4745:1: rule__Signal_Impl__Group__6 : rule__Signal_Impl__Group__6__Impl ;
     public final void rule__Signal_Impl__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4718:1: ( rule__Signal_Impl__Group__6__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4719:2: rule__Signal_Impl__Group__6__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4749:1: ( rule__Signal_Impl__Group__6__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4750:2: rule__Signal_Impl__Group__6__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__6__Impl_in_rule__Signal_Impl__Group__69333);
+            pushFollow(FollowSets000.FOLLOW_rule__Signal_Impl__Group__6__Impl_in_rule__Signal_Impl__Group__69395);
             rule__Signal_Impl__Group__6__Impl();
 
             state._fsp--;
@@ -12191,20 +12276,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__Group__6__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4725:1: rule__Signal_Impl__Group__6__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4756:1: rule__Signal_Impl__Group__6__Impl : ( '}' ) ;
     public final void rule__Signal_Impl__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4729:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4730:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4760:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4761:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4730:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4731:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4761:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4762:1: '}'
             {
              before(grammarAccess.getSignal_ImplAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Signal_Impl__Group__6__Impl9361); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Signal_Impl__Group__6__Impl9423); 
              after(grammarAccess.getSignal_ImplAccess().getRightCurlyBracketKeyword_6()); 
 
             }
@@ -12228,21 +12313,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4758:1: rule__Extractor__Group__0 : rule__Extractor__Group__0__Impl rule__Extractor__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4789:1: rule__Extractor__Group__0 : rule__Extractor__Group__0__Impl rule__Extractor__Group__1 ;
     public final void rule__Extractor__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4762:1: ( rule__Extractor__Group__0__Impl rule__Extractor__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4763:2: rule__Extractor__Group__0__Impl rule__Extractor__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4793:1: ( rule__Extractor__Group__0__Impl rule__Extractor__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4794:2: rule__Extractor__Group__0__Impl rule__Extractor__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__0__Impl_in_rule__Extractor__Group__09406);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__0__Impl_in_rule__Extractor__Group__09468);
             rule__Extractor__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__1_in_rule__Extractor__Group__09409);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__1_in_rule__Extractor__Group__09471);
             rule__Extractor__Group__1();
 
             state._fsp--;
@@ -12266,21 +12351,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4770:1: rule__Extractor__Group__0__Impl : ( () ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4801:1: rule__Extractor__Group__0__Impl : ( () ) ;
     public final void rule__Extractor__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4774:1: ( ( () ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4775:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4805:1: ( ( () ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4806:1: ( () )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4775:1: ( () )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4776:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4806:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4807:1: ()
             {
              before(grammarAccess.getExtractorAccess().getExtractorAction_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4777:1: ()
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4779:1: 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4808:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4810:1: 
             {
             }
 
@@ -12303,21 +12388,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4789:1: rule__Extractor__Group__1 : rule__Extractor__Group__1__Impl rule__Extractor__Group__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4820:1: rule__Extractor__Group__1 : rule__Extractor__Group__1__Impl rule__Extractor__Group__2 ;
     public final void rule__Extractor__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4793:1: ( rule__Extractor__Group__1__Impl rule__Extractor__Group__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4794:2: rule__Extractor__Group__1__Impl rule__Extractor__Group__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4824:1: ( rule__Extractor__Group__1__Impl rule__Extractor__Group__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4825:2: rule__Extractor__Group__1__Impl rule__Extractor__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__1__Impl_in_rule__Extractor__Group__19467);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__1__Impl_in_rule__Extractor__Group__19529);
             rule__Extractor__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__2_in_rule__Extractor__Group__19470);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__2_in_rule__Extractor__Group__19532);
             rule__Extractor__Group__2();
 
             state._fsp--;
@@ -12341,20 +12426,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4801:1: rule__Extractor__Group__1__Impl : ( 'Extractor' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4832:1: rule__Extractor__Group__1__Impl : ( 'Extractor' ) ;
     public final void rule__Extractor__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4805:1: ( ( 'Extractor' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4806:1: ( 'Extractor' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4836:1: ( ( 'Extractor' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4837:1: ( 'Extractor' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4806:1: ( 'Extractor' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4807:1: 'Extractor'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4837:1: ( 'Extractor' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4838:1: 'Extractor'
             {
              before(grammarAccess.getExtractorAccess().getExtractorKeyword_1()); 
-            match(input,43,FollowSets000.FOLLOW_43_in_rule__Extractor__Group__1__Impl9498); 
+            match(input,43,FollowSets000.FOLLOW_43_in_rule__Extractor__Group__1__Impl9560); 
              after(grammarAccess.getExtractorAccess().getExtractorKeyword_1()); 
 
             }
@@ -12378,21 +12463,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4820:1: rule__Extractor__Group__2 : rule__Extractor__Group__2__Impl rule__Extractor__Group__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4851:1: rule__Extractor__Group__2 : rule__Extractor__Group__2__Impl rule__Extractor__Group__3 ;
     public final void rule__Extractor__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4824:1: ( rule__Extractor__Group__2__Impl rule__Extractor__Group__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4825:2: rule__Extractor__Group__2__Impl rule__Extractor__Group__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4855:1: ( rule__Extractor__Group__2__Impl rule__Extractor__Group__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4856:2: rule__Extractor__Group__2__Impl rule__Extractor__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__2__Impl_in_rule__Extractor__Group__29529);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__2__Impl_in_rule__Extractor__Group__29591);
             rule__Extractor__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__3_in_rule__Extractor__Group__29532);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__3_in_rule__Extractor__Group__29594);
             rule__Extractor__Group__3();
 
             state._fsp--;
@@ -12416,23 +12501,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4832:1: rule__Extractor__Group__2__Impl : ( ( rule__Extractor__NameAssignment_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4863:1: rule__Extractor__Group__2__Impl : ( ( rule__Extractor__NameAssignment_2 ) ) ;
     public final void rule__Extractor__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4836:1: ( ( ( rule__Extractor__NameAssignment_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4837:1: ( ( rule__Extractor__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4867:1: ( ( ( rule__Extractor__NameAssignment_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4868:1: ( ( rule__Extractor__NameAssignment_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4837:1: ( ( rule__Extractor__NameAssignment_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4838:1: ( rule__Extractor__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4868:1: ( ( rule__Extractor__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4869:1: ( rule__Extractor__NameAssignment_2 )
             {
              before(grammarAccess.getExtractorAccess().getNameAssignment_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4839:1: ( rule__Extractor__NameAssignment_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4839:2: rule__Extractor__NameAssignment_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4870:1: ( rule__Extractor__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4870:2: rule__Extractor__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__NameAssignment_2_in_rule__Extractor__Group__2__Impl9559);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__NameAssignment_2_in_rule__Extractor__Group__2__Impl9621);
             rule__Extractor__NameAssignment_2();
 
             state._fsp--;
@@ -12463,21 +12548,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4849:1: rule__Extractor__Group__3 : rule__Extractor__Group__3__Impl rule__Extractor__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4880:1: rule__Extractor__Group__3 : rule__Extractor__Group__3__Impl rule__Extractor__Group__4 ;
     public final void rule__Extractor__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4853:1: ( rule__Extractor__Group__3__Impl rule__Extractor__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4854:2: rule__Extractor__Group__3__Impl rule__Extractor__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4884:1: ( rule__Extractor__Group__3__Impl rule__Extractor__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4885:2: rule__Extractor__Group__3__Impl rule__Extractor__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__3__Impl_in_rule__Extractor__Group__39589);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__3__Impl_in_rule__Extractor__Group__39651);
             rule__Extractor__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__4_in_rule__Extractor__Group__39592);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__4_in_rule__Extractor__Group__39654);
             rule__Extractor__Group__4();
 
             state._fsp--;
@@ -12501,20 +12586,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4861:1: rule__Extractor__Group__3__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4892:1: rule__Extractor__Group__3__Impl : ( '{' ) ;
     public final void rule__Extractor__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4865:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4866:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4896:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4897:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4866:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4867:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4897:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4898:1: '{'
             {
              before(grammarAccess.getExtractorAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Extractor__Group__3__Impl9620); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Extractor__Group__3__Impl9682); 
              after(grammarAccess.getExtractorAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -12538,21 +12623,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4880:1: rule__Extractor__Group__4 : rule__Extractor__Group__4__Impl rule__Extractor__Group__5 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4911:1: rule__Extractor__Group__4 : rule__Extractor__Group__4__Impl rule__Extractor__Group__5 ;
     public final void rule__Extractor__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4884:1: ( rule__Extractor__Group__4__Impl rule__Extractor__Group__5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4885:2: rule__Extractor__Group__4__Impl rule__Extractor__Group__5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4915:1: ( rule__Extractor__Group__4__Impl rule__Extractor__Group__5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4916:2: rule__Extractor__Group__4__Impl rule__Extractor__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__4__Impl_in_rule__Extractor__Group__49651);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__4__Impl_in_rule__Extractor__Group__49713);
             rule__Extractor__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__5_in_rule__Extractor__Group__49654);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__5_in_rule__Extractor__Group__49716);
             rule__Extractor__Group__5();
 
             state._fsp--;
@@ -12576,20 +12661,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4892:1: rule__Extractor__Group__4__Impl : ( ( rule__Extractor__Group_4__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4923:1: rule__Extractor__Group__4__Impl : ( ( rule__Extractor__Group_4__0 )? ) ;
     public final void rule__Extractor__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4896:1: ( ( ( rule__Extractor__Group_4__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4897:1: ( ( rule__Extractor__Group_4__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4927:1: ( ( ( rule__Extractor__Group_4__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4928:1: ( ( rule__Extractor__Group_4__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4897:1: ( ( rule__Extractor__Group_4__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4898:1: ( rule__Extractor__Group_4__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4928:1: ( ( rule__Extractor__Group_4__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4929:1: ( rule__Extractor__Group_4__0 )?
             {
              before(grammarAccess.getExtractorAccess().getGroup_4()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4899:1: ( rule__Extractor__Group_4__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4930:1: ( rule__Extractor__Group_4__0 )?
             int alt30=2;
             int LA30_0 = input.LA(1);
 
@@ -12598,9 +12683,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt30) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4899:2: rule__Extractor__Group_4__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4930:2: rule__Extractor__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__0_in_rule__Extractor__Group__4__Impl9681);
+                    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__0_in_rule__Extractor__Group__4__Impl9743);
                     rule__Extractor__Group_4__0();
 
                     state._fsp--;
@@ -12634,21 +12719,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4909:1: rule__Extractor__Group__5 : rule__Extractor__Group__5__Impl rule__Extractor__Group__6 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4940:1: rule__Extractor__Group__5 : rule__Extractor__Group__5__Impl rule__Extractor__Group__6 ;
     public final void rule__Extractor__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4913:1: ( rule__Extractor__Group__5__Impl rule__Extractor__Group__6 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4914:2: rule__Extractor__Group__5__Impl rule__Extractor__Group__6
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4944:1: ( rule__Extractor__Group__5__Impl rule__Extractor__Group__6 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4945:2: rule__Extractor__Group__5__Impl rule__Extractor__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__5__Impl_in_rule__Extractor__Group__59712);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__5__Impl_in_rule__Extractor__Group__59774);
             rule__Extractor__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__6_in_rule__Extractor__Group__59715);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__6_in_rule__Extractor__Group__59777);
             rule__Extractor__Group__6();
 
             state._fsp--;
@@ -12672,20 +12757,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__5__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4921:1: rule__Extractor__Group__5__Impl : ( 'hasEnds' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4952:1: rule__Extractor__Group__5__Impl : ( 'hasEnds' ) ;
     public final void rule__Extractor__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4925:1: ( ( 'hasEnds' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4926:1: ( 'hasEnds' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4956:1: ( ( 'hasEnds' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4957:1: ( 'hasEnds' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4926:1: ( 'hasEnds' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4927:1: 'hasEnds'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4957:1: ( 'hasEnds' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4958:1: 'hasEnds'
             {
              before(grammarAccess.getExtractorAccess().getHasEndsKeyword_5()); 
-            match(input,26,FollowSets000.FOLLOW_26_in_rule__Extractor__Group__5__Impl9743); 
+            match(input,26,FollowSets000.FOLLOW_26_in_rule__Extractor__Group__5__Impl9805); 
              after(grammarAccess.getExtractorAccess().getHasEndsKeyword_5()); 
 
             }
@@ -12709,21 +12794,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__6"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4940:1: rule__Extractor__Group__6 : rule__Extractor__Group__6__Impl rule__Extractor__Group__7 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4971:1: rule__Extractor__Group__6 : rule__Extractor__Group__6__Impl rule__Extractor__Group__7 ;
     public final void rule__Extractor__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4944:1: ( rule__Extractor__Group__6__Impl rule__Extractor__Group__7 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4945:2: rule__Extractor__Group__6__Impl rule__Extractor__Group__7
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4975:1: ( rule__Extractor__Group__6__Impl rule__Extractor__Group__7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4976:2: rule__Extractor__Group__6__Impl rule__Extractor__Group__7
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__6__Impl_in_rule__Extractor__Group__69774);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__6__Impl_in_rule__Extractor__Group__69836);
             rule__Extractor__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__7_in_rule__Extractor__Group__69777);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__7_in_rule__Extractor__Group__69839);
             rule__Extractor__Group__7();
 
             state._fsp--;
@@ -12747,20 +12832,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__6__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4952:1: rule__Extractor__Group__6__Impl : ( '(' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4983:1: rule__Extractor__Group__6__Impl : ( '(' ) ;
     public final void rule__Extractor__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4956:1: ( ( '(' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4957:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4987:1: ( ( '(' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4988:1: ( '(' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4957:1: ( '(' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4958:1: '('
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4988:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4989:1: '('
             {
              before(grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_6()); 
-            match(input,24,FollowSets000.FOLLOW_24_in_rule__Extractor__Group__6__Impl9805); 
+            match(input,24,FollowSets000.FOLLOW_24_in_rule__Extractor__Group__6__Impl9867); 
              after(grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_6()); 
 
             }
@@ -12784,21 +12869,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__7"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4971:1: rule__Extractor__Group__7 : rule__Extractor__Group__7__Impl rule__Extractor__Group__8 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5002:1: rule__Extractor__Group__7 : rule__Extractor__Group__7__Impl rule__Extractor__Group__8 ;
     public final void rule__Extractor__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4975:1: ( rule__Extractor__Group__7__Impl rule__Extractor__Group__8 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4976:2: rule__Extractor__Group__7__Impl rule__Extractor__Group__8
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5006:1: ( rule__Extractor__Group__7__Impl rule__Extractor__Group__8 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5007:2: rule__Extractor__Group__7__Impl rule__Extractor__Group__8
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__7__Impl_in_rule__Extractor__Group__79836);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__7__Impl_in_rule__Extractor__Group__79898);
             rule__Extractor__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__8_in_rule__Extractor__Group__79839);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__8_in_rule__Extractor__Group__79901);
             rule__Extractor__Group__8();
 
             state._fsp--;
@@ -12822,23 +12907,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__7__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4983:1: rule__Extractor__Group__7__Impl : ( ( rule__Extractor__HasEndsAssignment_7 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5014:1: rule__Extractor__Group__7__Impl : ( ( rule__Extractor__HasEndsAssignment_7 ) ) ;
     public final void rule__Extractor__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4987:1: ( ( ( rule__Extractor__HasEndsAssignment_7 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4988:1: ( ( rule__Extractor__HasEndsAssignment_7 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5018:1: ( ( ( rule__Extractor__HasEndsAssignment_7 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5019:1: ( ( rule__Extractor__HasEndsAssignment_7 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4988:1: ( ( rule__Extractor__HasEndsAssignment_7 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4989:1: ( rule__Extractor__HasEndsAssignment_7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5019:1: ( ( rule__Extractor__HasEndsAssignment_7 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5020:1: ( rule__Extractor__HasEndsAssignment_7 )
             {
              before(grammarAccess.getExtractorAccess().getHasEndsAssignment_7()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4990:1: ( rule__Extractor__HasEndsAssignment_7 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:4990:2: rule__Extractor__HasEndsAssignment_7
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5021:1: ( rule__Extractor__HasEndsAssignment_7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5021:2: rule__Extractor__HasEndsAssignment_7
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__HasEndsAssignment_7_in_rule__Extractor__Group__7__Impl9866);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__HasEndsAssignment_7_in_rule__Extractor__Group__7__Impl9928);
             rule__Extractor__HasEndsAssignment_7();
 
             state._fsp--;
@@ -12869,21 +12954,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__8"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5000:1: rule__Extractor__Group__8 : rule__Extractor__Group__8__Impl rule__Extractor__Group__9 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5031:1: rule__Extractor__Group__8 : rule__Extractor__Group__8__Impl rule__Extractor__Group__9 ;
     public final void rule__Extractor__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5004:1: ( rule__Extractor__Group__8__Impl rule__Extractor__Group__9 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5005:2: rule__Extractor__Group__8__Impl rule__Extractor__Group__9
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5035:1: ( rule__Extractor__Group__8__Impl rule__Extractor__Group__9 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5036:2: rule__Extractor__Group__8__Impl rule__Extractor__Group__9
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__8__Impl_in_rule__Extractor__Group__89896);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__8__Impl_in_rule__Extractor__Group__89958);
             rule__Extractor__Group__8__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__9_in_rule__Extractor__Group__89899);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__9_in_rule__Extractor__Group__89961);
             rule__Extractor__Group__9();
 
             state._fsp--;
@@ -12907,20 +12992,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__8__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5012:1: rule__Extractor__Group__8__Impl : ( ( rule__Extractor__Group_8__0 )* ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5043:1: rule__Extractor__Group__8__Impl : ( ( rule__Extractor__Group_8__0 )* ) ;
     public final void rule__Extractor__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5016:1: ( ( ( rule__Extractor__Group_8__0 )* ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5017:1: ( ( rule__Extractor__Group_8__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5047:1: ( ( ( rule__Extractor__Group_8__0 )* ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5048:1: ( ( rule__Extractor__Group_8__0 )* )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5017:1: ( ( rule__Extractor__Group_8__0 )* )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5018:1: ( rule__Extractor__Group_8__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5048:1: ( ( rule__Extractor__Group_8__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5049:1: ( rule__Extractor__Group_8__0 )*
             {
              before(grammarAccess.getExtractorAccess().getGroup_8()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5019:1: ( rule__Extractor__Group_8__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5050:1: ( rule__Extractor__Group_8__0 )*
             loop31:
             do {
                 int alt31=2;
@@ -12933,9 +13018,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
                 switch (alt31) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5019:2: rule__Extractor__Group_8__0
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5050:2: rule__Extractor__Group_8__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_8__0_in_rule__Extractor__Group__8__Impl9926);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_8__0_in_rule__Extractor__Group__8__Impl9988);
             	    rule__Extractor__Group_8__0();
 
             	    state._fsp--;
@@ -12972,21 +13057,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__9"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5029:1: rule__Extractor__Group__9 : rule__Extractor__Group__9__Impl rule__Extractor__Group__10 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5060:1: rule__Extractor__Group__9 : rule__Extractor__Group__9__Impl rule__Extractor__Group__10 ;
     public final void rule__Extractor__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5033:1: ( rule__Extractor__Group__9__Impl rule__Extractor__Group__10 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5034:2: rule__Extractor__Group__9__Impl rule__Extractor__Group__10
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5064:1: ( rule__Extractor__Group__9__Impl rule__Extractor__Group__10 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5065:2: rule__Extractor__Group__9__Impl rule__Extractor__Group__10
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__9__Impl_in_rule__Extractor__Group__99957);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__9__Impl_in_rule__Extractor__Group__910019);
             rule__Extractor__Group__9__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__10_in_rule__Extractor__Group__99960);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__10_in_rule__Extractor__Group__910022);
             rule__Extractor__Group__10();
 
             state._fsp--;
@@ -13010,20 +13095,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__9__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5041:1: rule__Extractor__Group__9__Impl : ( ')' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5072:1: rule__Extractor__Group__9__Impl : ( ')' ) ;
     public final void rule__Extractor__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5045:1: ( ( ')' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5046:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5076:1: ( ( ')' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5077:1: ( ')' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5046:1: ( ')' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5047:1: ')'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5077:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5078:1: ')'
             {
              before(grammarAccess.getExtractorAccess().getRightParenthesisKeyword_9()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Extractor__Group__9__Impl9988); 
+            match(input,25,FollowSets000.FOLLOW_25_in_rule__Extractor__Group__9__Impl10050); 
              after(grammarAccess.getExtractorAccess().getRightParenthesisKeyword_9()); 
 
             }
@@ -13047,21 +13132,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__10"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5060:1: rule__Extractor__Group__10 : rule__Extractor__Group__10__Impl rule__Extractor__Group__11 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5091:1: rule__Extractor__Group__10 : rule__Extractor__Group__10__Impl rule__Extractor__Group__11 ;
     public final void rule__Extractor__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5064:1: ( rule__Extractor__Group__10__Impl rule__Extractor__Group__11 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5065:2: rule__Extractor__Group__10__Impl rule__Extractor__Group__11
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5095:1: ( rule__Extractor__Group__10__Impl rule__Extractor__Group__11 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5096:2: rule__Extractor__Group__10__Impl rule__Extractor__Group__11
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__10__Impl_in_rule__Extractor__Group__1010019);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__10__Impl_in_rule__Extractor__Group__1010081);
             rule__Extractor__Group__10__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__11_in_rule__Extractor__Group__1010022);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__11_in_rule__Extractor__Group__1010084);
             rule__Extractor__Group__11();
 
             state._fsp--;
@@ -13085,20 +13170,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__10__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5072:1: rule__Extractor__Group__10__Impl : ( ( rule__Extractor__Group_10__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5103:1: rule__Extractor__Group__10__Impl : ( ( rule__Extractor__Group_10__0 )? ) ;
     public final void rule__Extractor__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5076:1: ( ( ( rule__Extractor__Group_10__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5077:1: ( ( rule__Extractor__Group_10__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5107:1: ( ( ( rule__Extractor__Group_10__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5108:1: ( ( rule__Extractor__Group_10__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5077:1: ( ( rule__Extractor__Group_10__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5078:1: ( rule__Extractor__Group_10__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5108:1: ( ( rule__Extractor__Group_10__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5109:1: ( rule__Extractor__Group_10__0 )?
             {
              before(grammarAccess.getExtractorAccess().getGroup_10()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5079:1: ( rule__Extractor__Group_10__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5110:1: ( rule__Extractor__Group_10__0 )?
             int alt32=2;
             int LA32_0 = input.LA(1);
 
@@ -13107,9 +13192,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt32) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5079:2: rule__Extractor__Group_10__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5110:2: rule__Extractor__Group_10__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_10__0_in_rule__Extractor__Group__10__Impl10049);
+                    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_10__0_in_rule__Extractor__Group__10__Impl10111);
                     rule__Extractor__Group_10__0();
 
                     state._fsp--;
@@ -13143,21 +13228,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__11"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5089:1: rule__Extractor__Group__11 : rule__Extractor__Group__11__Impl rule__Extractor__Group__12 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5120:1: rule__Extractor__Group__11 : rule__Extractor__Group__11__Impl rule__Extractor__Group__12 ;
     public final void rule__Extractor__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5093:1: ( rule__Extractor__Group__11__Impl rule__Extractor__Group__12 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5094:2: rule__Extractor__Group__11__Impl rule__Extractor__Group__12
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5124:1: ( rule__Extractor__Group__11__Impl rule__Extractor__Group__12 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5125:2: rule__Extractor__Group__11__Impl rule__Extractor__Group__12
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__11__Impl_in_rule__Extractor__Group__1110080);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__11__Impl_in_rule__Extractor__Group__1110142);
             rule__Extractor__Group__11__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__12_in_rule__Extractor__Group__1110083);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__12_in_rule__Extractor__Group__1110145);
             rule__Extractor__Group__12();
 
             state._fsp--;
@@ -13181,20 +13266,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__11__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5101:1: rule__Extractor__Group__11__Impl : ( ( rule__Extractor__Group_11__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5132:1: rule__Extractor__Group__11__Impl : ( ( rule__Extractor__Group_11__0 )? ) ;
     public final void rule__Extractor__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5105:1: ( ( ( rule__Extractor__Group_11__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5106:1: ( ( rule__Extractor__Group_11__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5136:1: ( ( ( rule__Extractor__Group_11__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5137:1: ( ( rule__Extractor__Group_11__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5106:1: ( ( rule__Extractor__Group_11__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5107:1: ( rule__Extractor__Group_11__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5137:1: ( ( rule__Extractor__Group_11__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5138:1: ( rule__Extractor__Group_11__0 )?
             {
              before(grammarAccess.getExtractorAccess().getGroup_11()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5108:1: ( rule__Extractor__Group_11__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5139:1: ( rule__Extractor__Group_11__0 )?
             int alt33=2;
             int LA33_0 = input.LA(1);
 
@@ -13203,9 +13288,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt33) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5108:2: rule__Extractor__Group_11__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5139:2: rule__Extractor__Group_11__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__0_in_rule__Extractor__Group__11__Impl10110);
+                    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__0_in_rule__Extractor__Group__11__Impl10172);
                     rule__Extractor__Group_11__0();
 
                     state._fsp--;
@@ -13239,16 +13324,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__12"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5118:1: rule__Extractor__Group__12 : rule__Extractor__Group__12__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5149:1: rule__Extractor__Group__12 : rule__Extractor__Group__12__Impl ;
     public final void rule__Extractor__Group__12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5122:1: ( rule__Extractor__Group__12__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5123:2: rule__Extractor__Group__12__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5153:1: ( rule__Extractor__Group__12__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5154:2: rule__Extractor__Group__12__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__12__Impl_in_rule__Extractor__Group__1210141);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group__12__Impl_in_rule__Extractor__Group__1210203);
             rule__Extractor__Group__12__Impl();
 
             state._fsp--;
@@ -13272,20 +13357,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group__12__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5129:1: rule__Extractor__Group__12__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5160:1: rule__Extractor__Group__12__Impl : ( '}' ) ;
     public final void rule__Extractor__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5133:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5134:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5164:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5165:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5134:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5135:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5165:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5166:1: '}'
             {
              before(grammarAccess.getExtractorAccess().getRightCurlyBracketKeyword_12()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Extractor__Group__12__Impl10169); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Extractor__Group__12__Impl10231); 
              after(grammarAccess.getExtractorAccess().getRightCurlyBracketKeyword_12()); 
 
             }
@@ -13309,21 +13394,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5174:1: rule__Extractor__Group_4__0 : rule__Extractor__Group_4__0__Impl rule__Extractor__Group_4__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5205:1: rule__Extractor__Group_4__0 : rule__Extractor__Group_4__0__Impl rule__Extractor__Group_4__1 ;
     public final void rule__Extractor__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5178:1: ( rule__Extractor__Group_4__0__Impl rule__Extractor__Group_4__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5179:2: rule__Extractor__Group_4__0__Impl rule__Extractor__Group_4__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5209:1: ( rule__Extractor__Group_4__0__Impl rule__Extractor__Group_4__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5210:2: rule__Extractor__Group_4__0__Impl rule__Extractor__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__0__Impl_in_rule__Extractor__Group_4__010226);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__0__Impl_in_rule__Extractor__Group_4__010288);
             rule__Extractor__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__1_in_rule__Extractor__Group_4__010229);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__1_in_rule__Extractor__Group_4__010291);
             rule__Extractor__Group_4__1();
 
             state._fsp--;
@@ -13347,20 +13432,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5186:1: rule__Extractor__Group_4__0__Impl : ( 'hasStarts' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5217:1: rule__Extractor__Group_4__0__Impl : ( 'hasStarts' ) ;
     public final void rule__Extractor__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5190:1: ( ( 'hasStarts' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5191:1: ( 'hasStarts' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5221:1: ( ( 'hasStarts' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5222:1: ( 'hasStarts' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5191:1: ( 'hasStarts' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5192:1: 'hasStarts'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5222:1: ( 'hasStarts' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5223:1: 'hasStarts'
             {
              before(grammarAccess.getExtractorAccess().getHasStartsKeyword_4_0()); 
-            match(input,23,FollowSets000.FOLLOW_23_in_rule__Extractor__Group_4__0__Impl10257); 
+            match(input,23,FollowSets000.FOLLOW_23_in_rule__Extractor__Group_4__0__Impl10319); 
              after(grammarAccess.getExtractorAccess().getHasStartsKeyword_4_0()); 
 
             }
@@ -13384,21 +13469,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5205:1: rule__Extractor__Group_4__1 : rule__Extractor__Group_4__1__Impl rule__Extractor__Group_4__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5236:1: rule__Extractor__Group_4__1 : rule__Extractor__Group_4__1__Impl rule__Extractor__Group_4__2 ;
     public final void rule__Extractor__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5209:1: ( rule__Extractor__Group_4__1__Impl rule__Extractor__Group_4__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5210:2: rule__Extractor__Group_4__1__Impl rule__Extractor__Group_4__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5240:1: ( rule__Extractor__Group_4__1__Impl rule__Extractor__Group_4__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5241:2: rule__Extractor__Group_4__1__Impl rule__Extractor__Group_4__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__1__Impl_in_rule__Extractor__Group_4__110288);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__1__Impl_in_rule__Extractor__Group_4__110350);
             rule__Extractor__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__2_in_rule__Extractor__Group_4__110291);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__2_in_rule__Extractor__Group_4__110353);
             rule__Extractor__Group_4__2();
 
             state._fsp--;
@@ -13422,20 +13507,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5217:1: rule__Extractor__Group_4__1__Impl : ( '(' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5248:1: rule__Extractor__Group_4__1__Impl : ( '(' ) ;
     public final void rule__Extractor__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5221:1: ( ( '(' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5222:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5252:1: ( ( '(' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5253:1: ( '(' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5222:1: ( '(' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5223:1: '('
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5253:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5254:1: '('
             {
              before(grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_4_1()); 
-            match(input,24,FollowSets000.FOLLOW_24_in_rule__Extractor__Group_4__1__Impl10319); 
+            match(input,24,FollowSets000.FOLLOW_24_in_rule__Extractor__Group_4__1__Impl10381); 
              after(grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_4_1()); 
 
             }
@@ -13459,21 +13544,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5236:1: rule__Extractor__Group_4__2 : rule__Extractor__Group_4__2__Impl rule__Extractor__Group_4__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5267:1: rule__Extractor__Group_4__2 : rule__Extractor__Group_4__2__Impl rule__Extractor__Group_4__3 ;
     public final void rule__Extractor__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5240:1: ( rule__Extractor__Group_4__2__Impl rule__Extractor__Group_4__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5241:2: rule__Extractor__Group_4__2__Impl rule__Extractor__Group_4__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5271:1: ( rule__Extractor__Group_4__2__Impl rule__Extractor__Group_4__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5272:2: rule__Extractor__Group_4__2__Impl rule__Extractor__Group_4__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__2__Impl_in_rule__Extractor__Group_4__210350);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__2__Impl_in_rule__Extractor__Group_4__210412);
             rule__Extractor__Group_4__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__3_in_rule__Extractor__Group_4__210353);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__3_in_rule__Extractor__Group_4__210415);
             rule__Extractor__Group_4__3();
 
             state._fsp--;
@@ -13497,23 +13582,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5248:1: rule__Extractor__Group_4__2__Impl : ( ( rule__Extractor__HasStartsAssignment_4_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5279:1: rule__Extractor__Group_4__2__Impl : ( ( rule__Extractor__HasStartsAssignment_4_2 ) ) ;
     public final void rule__Extractor__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5252:1: ( ( ( rule__Extractor__HasStartsAssignment_4_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5253:1: ( ( rule__Extractor__HasStartsAssignment_4_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5283:1: ( ( ( rule__Extractor__HasStartsAssignment_4_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5284:1: ( ( rule__Extractor__HasStartsAssignment_4_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5253:1: ( ( rule__Extractor__HasStartsAssignment_4_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5254:1: ( rule__Extractor__HasStartsAssignment_4_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5284:1: ( ( rule__Extractor__HasStartsAssignment_4_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5285:1: ( rule__Extractor__HasStartsAssignment_4_2 )
             {
              before(grammarAccess.getExtractorAccess().getHasStartsAssignment_4_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5255:1: ( rule__Extractor__HasStartsAssignment_4_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5255:2: rule__Extractor__HasStartsAssignment_4_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5286:1: ( rule__Extractor__HasStartsAssignment_4_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5286:2: rule__Extractor__HasStartsAssignment_4_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__HasStartsAssignment_4_2_in_rule__Extractor__Group_4__2__Impl10380);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__HasStartsAssignment_4_2_in_rule__Extractor__Group_4__2__Impl10442);
             rule__Extractor__HasStartsAssignment_4_2();
 
             state._fsp--;
@@ -13544,21 +13629,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5265:1: rule__Extractor__Group_4__3 : rule__Extractor__Group_4__3__Impl rule__Extractor__Group_4__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5296:1: rule__Extractor__Group_4__3 : rule__Extractor__Group_4__3__Impl rule__Extractor__Group_4__4 ;
     public final void rule__Extractor__Group_4__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5269:1: ( rule__Extractor__Group_4__3__Impl rule__Extractor__Group_4__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5270:2: rule__Extractor__Group_4__3__Impl rule__Extractor__Group_4__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5300:1: ( rule__Extractor__Group_4__3__Impl rule__Extractor__Group_4__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5301:2: rule__Extractor__Group_4__3__Impl rule__Extractor__Group_4__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__3__Impl_in_rule__Extractor__Group_4__310410);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__3__Impl_in_rule__Extractor__Group_4__310472);
             rule__Extractor__Group_4__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__4_in_rule__Extractor__Group_4__310413);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__4_in_rule__Extractor__Group_4__310475);
             rule__Extractor__Group_4__4();
 
             state._fsp--;
@@ -13582,20 +13667,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5277:1: rule__Extractor__Group_4__3__Impl : ( ( rule__Extractor__Group_4_3__0 )* ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5308:1: rule__Extractor__Group_4__3__Impl : ( ( rule__Extractor__Group_4_3__0 )* ) ;
     public final void rule__Extractor__Group_4__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5281:1: ( ( ( rule__Extractor__Group_4_3__0 )* ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5282:1: ( ( rule__Extractor__Group_4_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5312:1: ( ( ( rule__Extractor__Group_4_3__0 )* ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5313:1: ( ( rule__Extractor__Group_4_3__0 )* )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5282:1: ( ( rule__Extractor__Group_4_3__0 )* )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5283:1: ( rule__Extractor__Group_4_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5313:1: ( ( rule__Extractor__Group_4_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5314:1: ( rule__Extractor__Group_4_3__0 )*
             {
              before(grammarAccess.getExtractorAccess().getGroup_4_3()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5284:1: ( rule__Extractor__Group_4_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5315:1: ( rule__Extractor__Group_4_3__0 )*
             loop34:
             do {
                 int alt34=2;
@@ -13608,9 +13693,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
                 switch (alt34) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5284:2: rule__Extractor__Group_4_3__0
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5315:2: rule__Extractor__Group_4_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4_3__0_in_rule__Extractor__Group_4__3__Impl10440);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4_3__0_in_rule__Extractor__Group_4__3__Impl10502);
             	    rule__Extractor__Group_4_3__0();
 
             	    state._fsp--;
@@ -13647,16 +13732,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5294:1: rule__Extractor__Group_4__4 : rule__Extractor__Group_4__4__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5325:1: rule__Extractor__Group_4__4 : rule__Extractor__Group_4__4__Impl ;
     public final void rule__Extractor__Group_4__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5298:1: ( rule__Extractor__Group_4__4__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5299:2: rule__Extractor__Group_4__4__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5329:1: ( rule__Extractor__Group_4__4__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5330:2: rule__Extractor__Group_4__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__4__Impl_in_rule__Extractor__Group_4__410471);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4__4__Impl_in_rule__Extractor__Group_4__410533);
             rule__Extractor__Group_4__4__Impl();
 
             state._fsp--;
@@ -13680,20 +13765,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5305:1: rule__Extractor__Group_4__4__Impl : ( ')' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5336:1: rule__Extractor__Group_4__4__Impl : ( ')' ) ;
     public final void rule__Extractor__Group_4__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5309:1: ( ( ')' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5310:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5340:1: ( ( ')' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5341:1: ( ')' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5310:1: ( ')' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5311:1: ')'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5341:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5342:1: ')'
             {
              before(grammarAccess.getExtractorAccess().getRightParenthesisKeyword_4_4()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Extractor__Group_4__4__Impl10499); 
+            match(input,25,FollowSets000.FOLLOW_25_in_rule__Extractor__Group_4__4__Impl10561); 
              after(grammarAccess.getExtractorAccess().getRightParenthesisKeyword_4_4()); 
 
             }
@@ -13717,21 +13802,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4_3__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5334:1: rule__Extractor__Group_4_3__0 : rule__Extractor__Group_4_3__0__Impl rule__Extractor__Group_4_3__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5365:1: rule__Extractor__Group_4_3__0 : rule__Extractor__Group_4_3__0__Impl rule__Extractor__Group_4_3__1 ;
     public final void rule__Extractor__Group_4_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5338:1: ( rule__Extractor__Group_4_3__0__Impl rule__Extractor__Group_4_3__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5339:2: rule__Extractor__Group_4_3__0__Impl rule__Extractor__Group_4_3__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5369:1: ( rule__Extractor__Group_4_3__0__Impl rule__Extractor__Group_4_3__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5370:2: rule__Extractor__Group_4_3__0__Impl rule__Extractor__Group_4_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4_3__0__Impl_in_rule__Extractor__Group_4_3__010540);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4_3__0__Impl_in_rule__Extractor__Group_4_3__010602);
             rule__Extractor__Group_4_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4_3__1_in_rule__Extractor__Group_4_3__010543);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4_3__1_in_rule__Extractor__Group_4_3__010605);
             rule__Extractor__Group_4_3__1();
 
             state._fsp--;
@@ -13755,20 +13840,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4_3__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5346:1: rule__Extractor__Group_4_3__0__Impl : ( ',' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5377:1: rule__Extractor__Group_4_3__0__Impl : ( ',' ) ;
     public final void rule__Extractor__Group_4_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5350:1: ( ( ',' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5351:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5381:1: ( ( ',' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5382:1: ( ',' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5351:1: ( ',' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5352:1: ','
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5382:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5383:1: ','
             {
              before(grammarAccess.getExtractorAccess().getCommaKeyword_4_3_0()); 
-            match(input,17,FollowSets000.FOLLOW_17_in_rule__Extractor__Group_4_3__0__Impl10571); 
+            match(input,17,FollowSets000.FOLLOW_17_in_rule__Extractor__Group_4_3__0__Impl10633); 
              after(grammarAccess.getExtractorAccess().getCommaKeyword_4_3_0()); 
 
             }
@@ -13792,16 +13877,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4_3__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5365:1: rule__Extractor__Group_4_3__1 : rule__Extractor__Group_4_3__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5396:1: rule__Extractor__Group_4_3__1 : rule__Extractor__Group_4_3__1__Impl ;
     public final void rule__Extractor__Group_4_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5369:1: ( rule__Extractor__Group_4_3__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5370:2: rule__Extractor__Group_4_3__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5400:1: ( rule__Extractor__Group_4_3__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5401:2: rule__Extractor__Group_4_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4_3__1__Impl_in_rule__Extractor__Group_4_3__110602);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_4_3__1__Impl_in_rule__Extractor__Group_4_3__110664);
             rule__Extractor__Group_4_3__1__Impl();
 
             state._fsp--;
@@ -13825,23 +13910,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_4_3__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5376:1: rule__Extractor__Group_4_3__1__Impl : ( ( rule__Extractor__HasStartsAssignment_4_3_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5407:1: rule__Extractor__Group_4_3__1__Impl : ( ( rule__Extractor__HasStartsAssignment_4_3_1 ) ) ;
     public final void rule__Extractor__Group_4_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5380:1: ( ( ( rule__Extractor__HasStartsAssignment_4_3_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5381:1: ( ( rule__Extractor__HasStartsAssignment_4_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5411:1: ( ( ( rule__Extractor__HasStartsAssignment_4_3_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5412:1: ( ( rule__Extractor__HasStartsAssignment_4_3_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5381:1: ( ( rule__Extractor__HasStartsAssignment_4_3_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5382:1: ( rule__Extractor__HasStartsAssignment_4_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5412:1: ( ( rule__Extractor__HasStartsAssignment_4_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5413:1: ( rule__Extractor__HasStartsAssignment_4_3_1 )
             {
              before(grammarAccess.getExtractorAccess().getHasStartsAssignment_4_3_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5383:1: ( rule__Extractor__HasStartsAssignment_4_3_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5383:2: rule__Extractor__HasStartsAssignment_4_3_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5414:1: ( rule__Extractor__HasStartsAssignment_4_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5414:2: rule__Extractor__HasStartsAssignment_4_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__HasStartsAssignment_4_3_1_in_rule__Extractor__Group_4_3__1__Impl10629);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__HasStartsAssignment_4_3_1_in_rule__Extractor__Group_4_3__1__Impl10691);
             rule__Extractor__HasStartsAssignment_4_3_1();
 
             state._fsp--;
@@ -13872,21 +13957,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_8__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5397:1: rule__Extractor__Group_8__0 : rule__Extractor__Group_8__0__Impl rule__Extractor__Group_8__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5428:1: rule__Extractor__Group_8__0 : rule__Extractor__Group_8__0__Impl rule__Extractor__Group_8__1 ;
     public final void rule__Extractor__Group_8__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5401:1: ( rule__Extractor__Group_8__0__Impl rule__Extractor__Group_8__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5402:2: rule__Extractor__Group_8__0__Impl rule__Extractor__Group_8__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5432:1: ( rule__Extractor__Group_8__0__Impl rule__Extractor__Group_8__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5433:2: rule__Extractor__Group_8__0__Impl rule__Extractor__Group_8__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_8__0__Impl_in_rule__Extractor__Group_8__010663);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_8__0__Impl_in_rule__Extractor__Group_8__010725);
             rule__Extractor__Group_8__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_8__1_in_rule__Extractor__Group_8__010666);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_8__1_in_rule__Extractor__Group_8__010728);
             rule__Extractor__Group_8__1();
 
             state._fsp--;
@@ -13910,20 +13995,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_8__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5409:1: rule__Extractor__Group_8__0__Impl : ( ',' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5440:1: rule__Extractor__Group_8__0__Impl : ( ',' ) ;
     public final void rule__Extractor__Group_8__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5413:1: ( ( ',' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5414:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5444:1: ( ( ',' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5445:1: ( ',' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5414:1: ( ',' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5415:1: ','
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5445:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5446:1: ','
             {
              before(grammarAccess.getExtractorAccess().getCommaKeyword_8_0()); 
-            match(input,17,FollowSets000.FOLLOW_17_in_rule__Extractor__Group_8__0__Impl10694); 
+            match(input,17,FollowSets000.FOLLOW_17_in_rule__Extractor__Group_8__0__Impl10756); 
              after(grammarAccess.getExtractorAccess().getCommaKeyword_8_0()); 
 
             }
@@ -13947,16 +14032,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_8__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5428:1: rule__Extractor__Group_8__1 : rule__Extractor__Group_8__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5459:1: rule__Extractor__Group_8__1 : rule__Extractor__Group_8__1__Impl ;
     public final void rule__Extractor__Group_8__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5432:1: ( rule__Extractor__Group_8__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5433:2: rule__Extractor__Group_8__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5463:1: ( rule__Extractor__Group_8__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5464:2: rule__Extractor__Group_8__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_8__1__Impl_in_rule__Extractor__Group_8__110725);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_8__1__Impl_in_rule__Extractor__Group_8__110787);
             rule__Extractor__Group_8__1__Impl();
 
             state._fsp--;
@@ -13980,23 +14065,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_8__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5439:1: rule__Extractor__Group_8__1__Impl : ( ( rule__Extractor__HasEndsAssignment_8_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5470:1: rule__Extractor__Group_8__1__Impl : ( ( rule__Extractor__HasEndsAssignment_8_1 ) ) ;
     public final void rule__Extractor__Group_8__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5443:1: ( ( ( rule__Extractor__HasEndsAssignment_8_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5444:1: ( ( rule__Extractor__HasEndsAssignment_8_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5474:1: ( ( ( rule__Extractor__HasEndsAssignment_8_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5475:1: ( ( rule__Extractor__HasEndsAssignment_8_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5444:1: ( ( rule__Extractor__HasEndsAssignment_8_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5445:1: ( rule__Extractor__HasEndsAssignment_8_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5475:1: ( ( rule__Extractor__HasEndsAssignment_8_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5476:1: ( rule__Extractor__HasEndsAssignment_8_1 )
             {
              before(grammarAccess.getExtractorAccess().getHasEndsAssignment_8_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5446:1: ( rule__Extractor__HasEndsAssignment_8_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5446:2: rule__Extractor__HasEndsAssignment_8_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5477:1: ( rule__Extractor__HasEndsAssignment_8_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5477:2: rule__Extractor__HasEndsAssignment_8_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__HasEndsAssignment_8_1_in_rule__Extractor__Group_8__1__Impl10752);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__HasEndsAssignment_8_1_in_rule__Extractor__Group_8__1__Impl10814);
             rule__Extractor__HasEndsAssignment_8_1();
 
             state._fsp--;
@@ -14027,21 +14112,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_10__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5460:1: rule__Extractor__Group_10__0 : rule__Extractor__Group_10__0__Impl rule__Extractor__Group_10__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5491:1: rule__Extractor__Group_10__0 : rule__Extractor__Group_10__0__Impl rule__Extractor__Group_10__1 ;
     public final void rule__Extractor__Group_10__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5464:1: ( rule__Extractor__Group_10__0__Impl rule__Extractor__Group_10__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5465:2: rule__Extractor__Group_10__0__Impl rule__Extractor__Group_10__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5495:1: ( rule__Extractor__Group_10__0__Impl rule__Extractor__Group_10__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5496:2: rule__Extractor__Group_10__0__Impl rule__Extractor__Group_10__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_10__0__Impl_in_rule__Extractor__Group_10__010786);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_10__0__Impl_in_rule__Extractor__Group_10__010848);
             rule__Extractor__Group_10__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_10__1_in_rule__Extractor__Group_10__010789);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_10__1_in_rule__Extractor__Group_10__010851);
             rule__Extractor__Group_10__1();
 
             state._fsp--;
@@ -14065,20 +14150,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_10__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5472:1: rule__Extractor__Group_10__0__Impl : ( 'semaphore' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5503:1: rule__Extractor__Group_10__0__Impl : ( 'semaphore' ) ;
     public final void rule__Extractor__Group_10__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5476:1: ( ( 'semaphore' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5477:1: ( 'semaphore' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5507:1: ( ( 'semaphore' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5508:1: ( 'semaphore' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5477:1: ( 'semaphore' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5478:1: 'semaphore'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5508:1: ( 'semaphore' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5509:1: 'semaphore'
             {
              before(grammarAccess.getExtractorAccess().getSemaphoreKeyword_10_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__Extractor__Group_10__0__Impl10817); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__Extractor__Group_10__0__Impl10879); 
              after(grammarAccess.getExtractorAccess().getSemaphoreKeyword_10_0()); 
 
             }
@@ -14102,16 +14187,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_10__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5491:1: rule__Extractor__Group_10__1 : rule__Extractor__Group_10__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5522:1: rule__Extractor__Group_10__1 : rule__Extractor__Group_10__1__Impl ;
     public final void rule__Extractor__Group_10__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5495:1: ( rule__Extractor__Group_10__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5496:2: rule__Extractor__Group_10__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5526:1: ( rule__Extractor__Group_10__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5527:2: rule__Extractor__Group_10__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_10__1__Impl_in_rule__Extractor__Group_10__110848);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_10__1__Impl_in_rule__Extractor__Group_10__110910);
             rule__Extractor__Group_10__1__Impl();
 
             state._fsp--;
@@ -14135,23 +14220,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_10__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5502:1: rule__Extractor__Group_10__1__Impl : ( ( rule__Extractor__SemaphoreAssignment_10_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5533:1: rule__Extractor__Group_10__1__Impl : ( ( rule__Extractor__SemaphoreAssignment_10_1 ) ) ;
     public final void rule__Extractor__Group_10__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5506:1: ( ( ( rule__Extractor__SemaphoreAssignment_10_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5507:1: ( ( rule__Extractor__SemaphoreAssignment_10_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5537:1: ( ( ( rule__Extractor__SemaphoreAssignment_10_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5538:1: ( ( rule__Extractor__SemaphoreAssignment_10_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5507:1: ( ( rule__Extractor__SemaphoreAssignment_10_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5508:1: ( rule__Extractor__SemaphoreAssignment_10_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5538:1: ( ( rule__Extractor__SemaphoreAssignment_10_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5539:1: ( rule__Extractor__SemaphoreAssignment_10_1 )
             {
              before(grammarAccess.getExtractorAccess().getSemaphoreAssignment_10_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5509:1: ( rule__Extractor__SemaphoreAssignment_10_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5509:2: rule__Extractor__SemaphoreAssignment_10_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5540:1: ( rule__Extractor__SemaphoreAssignment_10_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5540:2: rule__Extractor__SemaphoreAssignment_10_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__SemaphoreAssignment_10_1_in_rule__Extractor__Group_10__1__Impl10875);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__SemaphoreAssignment_10_1_in_rule__Extractor__Group_10__1__Impl10937);
             rule__Extractor__SemaphoreAssignment_10_1();
 
             state._fsp--;
@@ -14182,21 +14267,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5523:1: rule__Extractor__Group_11__0 : rule__Extractor__Group_11__0__Impl rule__Extractor__Group_11__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5554:1: rule__Extractor__Group_11__0 : rule__Extractor__Group_11__0__Impl rule__Extractor__Group_11__1 ;
     public final void rule__Extractor__Group_11__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5527:1: ( rule__Extractor__Group_11__0__Impl rule__Extractor__Group_11__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5528:2: rule__Extractor__Group_11__0__Impl rule__Extractor__Group_11__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5558:1: ( rule__Extractor__Group_11__0__Impl rule__Extractor__Group_11__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5559:2: rule__Extractor__Group_11__0__Impl rule__Extractor__Group_11__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__0__Impl_in_rule__Extractor__Group_11__010909);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__0__Impl_in_rule__Extractor__Group_11__010971);
             rule__Extractor__Group_11__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__1_in_rule__Extractor__Group_11__010912);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__1_in_rule__Extractor__Group_11__010974);
             rule__Extractor__Group_11__1();
 
             state._fsp--;
@@ -14220,20 +14305,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5535:1: rule__Extractor__Group_11__0__Impl : ( 'signals' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5566:1: rule__Extractor__Group_11__0__Impl : ( 'signals' ) ;
     public final void rule__Extractor__Group_11__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5539:1: ( ( 'signals' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5540:1: ( 'signals' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5570:1: ( ( 'signals' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5571:1: ( 'signals' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5540:1: ( 'signals' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5541:1: 'signals'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5571:1: ( 'signals' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5572:1: 'signals'
             {
              before(grammarAccess.getExtractorAccess().getSignalsKeyword_11_0()); 
-            match(input,28,FollowSets000.FOLLOW_28_in_rule__Extractor__Group_11__0__Impl10940); 
+            match(input,28,FollowSets000.FOLLOW_28_in_rule__Extractor__Group_11__0__Impl11002); 
              after(grammarAccess.getExtractorAccess().getSignalsKeyword_11_0()); 
 
             }
@@ -14257,21 +14342,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5554:1: rule__Extractor__Group_11__1 : rule__Extractor__Group_11__1__Impl rule__Extractor__Group_11__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5585:1: rule__Extractor__Group_11__1 : rule__Extractor__Group_11__1__Impl rule__Extractor__Group_11__2 ;
     public final void rule__Extractor__Group_11__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5558:1: ( rule__Extractor__Group_11__1__Impl rule__Extractor__Group_11__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5559:2: rule__Extractor__Group_11__1__Impl rule__Extractor__Group_11__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5589:1: ( rule__Extractor__Group_11__1__Impl rule__Extractor__Group_11__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5590:2: rule__Extractor__Group_11__1__Impl rule__Extractor__Group_11__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__1__Impl_in_rule__Extractor__Group_11__110971);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__1__Impl_in_rule__Extractor__Group_11__111033);
             rule__Extractor__Group_11__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__2_in_rule__Extractor__Group_11__110974);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__2_in_rule__Extractor__Group_11__111036);
             rule__Extractor__Group_11__2();
 
             state._fsp--;
@@ -14295,20 +14380,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5566:1: rule__Extractor__Group_11__1__Impl : ( '(' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5597:1: rule__Extractor__Group_11__1__Impl : ( '(' ) ;
     public final void rule__Extractor__Group_11__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5570:1: ( ( '(' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5571:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5601:1: ( ( '(' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5602:1: ( '(' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5571:1: ( '(' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5572:1: '('
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5602:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5603:1: '('
             {
              before(grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_11_1()); 
-            match(input,24,FollowSets000.FOLLOW_24_in_rule__Extractor__Group_11__1__Impl11002); 
+            match(input,24,FollowSets000.FOLLOW_24_in_rule__Extractor__Group_11__1__Impl11064); 
              after(grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_11_1()); 
 
             }
@@ -14332,21 +14417,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5585:1: rule__Extractor__Group_11__2 : rule__Extractor__Group_11__2__Impl rule__Extractor__Group_11__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5616:1: rule__Extractor__Group_11__2 : rule__Extractor__Group_11__2__Impl rule__Extractor__Group_11__3 ;
     public final void rule__Extractor__Group_11__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5589:1: ( rule__Extractor__Group_11__2__Impl rule__Extractor__Group_11__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5590:2: rule__Extractor__Group_11__2__Impl rule__Extractor__Group_11__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5620:1: ( rule__Extractor__Group_11__2__Impl rule__Extractor__Group_11__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5621:2: rule__Extractor__Group_11__2__Impl rule__Extractor__Group_11__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__2__Impl_in_rule__Extractor__Group_11__211033);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__2__Impl_in_rule__Extractor__Group_11__211095);
             rule__Extractor__Group_11__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__3_in_rule__Extractor__Group_11__211036);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__3_in_rule__Extractor__Group_11__211098);
             rule__Extractor__Group_11__3();
 
             state._fsp--;
@@ -14370,23 +14455,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5597:1: rule__Extractor__Group_11__2__Impl : ( ( rule__Extractor__SignalsAssignment_11_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5628:1: rule__Extractor__Group_11__2__Impl : ( ( rule__Extractor__SignalsAssignment_11_2 ) ) ;
     public final void rule__Extractor__Group_11__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5601:1: ( ( ( rule__Extractor__SignalsAssignment_11_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5602:1: ( ( rule__Extractor__SignalsAssignment_11_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5632:1: ( ( ( rule__Extractor__SignalsAssignment_11_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5633:1: ( ( rule__Extractor__SignalsAssignment_11_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5602:1: ( ( rule__Extractor__SignalsAssignment_11_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5603:1: ( rule__Extractor__SignalsAssignment_11_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5633:1: ( ( rule__Extractor__SignalsAssignment_11_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5634:1: ( rule__Extractor__SignalsAssignment_11_2 )
             {
              before(grammarAccess.getExtractorAccess().getSignalsAssignment_11_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5604:1: ( rule__Extractor__SignalsAssignment_11_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5604:2: rule__Extractor__SignalsAssignment_11_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5635:1: ( rule__Extractor__SignalsAssignment_11_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5635:2: rule__Extractor__SignalsAssignment_11_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__SignalsAssignment_11_2_in_rule__Extractor__Group_11__2__Impl11063);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__SignalsAssignment_11_2_in_rule__Extractor__Group_11__2__Impl11125);
             rule__Extractor__SignalsAssignment_11_2();
 
             state._fsp--;
@@ -14417,21 +14502,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5614:1: rule__Extractor__Group_11__3 : rule__Extractor__Group_11__3__Impl rule__Extractor__Group_11__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5645:1: rule__Extractor__Group_11__3 : rule__Extractor__Group_11__3__Impl rule__Extractor__Group_11__4 ;
     public final void rule__Extractor__Group_11__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5618:1: ( rule__Extractor__Group_11__3__Impl rule__Extractor__Group_11__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5619:2: rule__Extractor__Group_11__3__Impl rule__Extractor__Group_11__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5649:1: ( rule__Extractor__Group_11__3__Impl rule__Extractor__Group_11__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5650:2: rule__Extractor__Group_11__3__Impl rule__Extractor__Group_11__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__3__Impl_in_rule__Extractor__Group_11__311093);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__3__Impl_in_rule__Extractor__Group_11__311155);
             rule__Extractor__Group_11__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__4_in_rule__Extractor__Group_11__311096);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__4_in_rule__Extractor__Group_11__311158);
             rule__Extractor__Group_11__4();
 
             state._fsp--;
@@ -14455,20 +14540,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5626:1: rule__Extractor__Group_11__3__Impl : ( ( rule__Extractor__Group_11_3__0 )* ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5657:1: rule__Extractor__Group_11__3__Impl : ( ( rule__Extractor__Group_11_3__0 )* ) ;
     public final void rule__Extractor__Group_11__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5630:1: ( ( ( rule__Extractor__Group_11_3__0 )* ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5631:1: ( ( rule__Extractor__Group_11_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5661:1: ( ( ( rule__Extractor__Group_11_3__0 )* ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5662:1: ( ( rule__Extractor__Group_11_3__0 )* )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5631:1: ( ( rule__Extractor__Group_11_3__0 )* )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5632:1: ( rule__Extractor__Group_11_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5662:1: ( ( rule__Extractor__Group_11_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5663:1: ( rule__Extractor__Group_11_3__0 )*
             {
              before(grammarAccess.getExtractorAccess().getGroup_11_3()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5633:1: ( rule__Extractor__Group_11_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5664:1: ( rule__Extractor__Group_11_3__0 )*
             loop35:
             do {
                 int alt35=2;
@@ -14481,9 +14566,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
                 switch (alt35) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5633:2: rule__Extractor__Group_11_3__0
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5664:2: rule__Extractor__Group_11_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11_3__0_in_rule__Extractor__Group_11__3__Impl11123);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11_3__0_in_rule__Extractor__Group_11__3__Impl11185);
             	    rule__Extractor__Group_11_3__0();
 
             	    state._fsp--;
@@ -14520,16 +14605,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5643:1: rule__Extractor__Group_11__4 : rule__Extractor__Group_11__4__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5674:1: rule__Extractor__Group_11__4 : rule__Extractor__Group_11__4__Impl ;
     public final void rule__Extractor__Group_11__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5647:1: ( rule__Extractor__Group_11__4__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5648:2: rule__Extractor__Group_11__4__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5678:1: ( rule__Extractor__Group_11__4__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5679:2: rule__Extractor__Group_11__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__4__Impl_in_rule__Extractor__Group_11__411154);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11__4__Impl_in_rule__Extractor__Group_11__411216);
             rule__Extractor__Group_11__4__Impl();
 
             state._fsp--;
@@ -14553,20 +14638,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5654:1: rule__Extractor__Group_11__4__Impl : ( ')' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5685:1: rule__Extractor__Group_11__4__Impl : ( ')' ) ;
     public final void rule__Extractor__Group_11__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5658:1: ( ( ')' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5659:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5689:1: ( ( ')' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5690:1: ( ')' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5659:1: ( ')' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5660:1: ')'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5690:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5691:1: ')'
             {
              before(grammarAccess.getExtractorAccess().getRightParenthesisKeyword_11_4()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Extractor__Group_11__4__Impl11182); 
+            match(input,25,FollowSets000.FOLLOW_25_in_rule__Extractor__Group_11__4__Impl11244); 
              after(grammarAccess.getExtractorAccess().getRightParenthesisKeyword_11_4()); 
 
             }
@@ -14590,21 +14675,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11_3__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5683:1: rule__Extractor__Group_11_3__0 : rule__Extractor__Group_11_3__0__Impl rule__Extractor__Group_11_3__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5714:1: rule__Extractor__Group_11_3__0 : rule__Extractor__Group_11_3__0__Impl rule__Extractor__Group_11_3__1 ;
     public final void rule__Extractor__Group_11_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5687:1: ( rule__Extractor__Group_11_3__0__Impl rule__Extractor__Group_11_3__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5688:2: rule__Extractor__Group_11_3__0__Impl rule__Extractor__Group_11_3__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5718:1: ( rule__Extractor__Group_11_3__0__Impl rule__Extractor__Group_11_3__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5719:2: rule__Extractor__Group_11_3__0__Impl rule__Extractor__Group_11_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11_3__0__Impl_in_rule__Extractor__Group_11_3__011223);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11_3__0__Impl_in_rule__Extractor__Group_11_3__011285);
             rule__Extractor__Group_11_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11_3__1_in_rule__Extractor__Group_11_3__011226);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11_3__1_in_rule__Extractor__Group_11_3__011288);
             rule__Extractor__Group_11_3__1();
 
             state._fsp--;
@@ -14628,20 +14713,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11_3__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5695:1: rule__Extractor__Group_11_3__0__Impl : ( ',' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5726:1: rule__Extractor__Group_11_3__0__Impl : ( ',' ) ;
     public final void rule__Extractor__Group_11_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5699:1: ( ( ',' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5700:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5730:1: ( ( ',' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5731:1: ( ',' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5700:1: ( ',' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5701:1: ','
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5731:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5732:1: ','
             {
              before(grammarAccess.getExtractorAccess().getCommaKeyword_11_3_0()); 
-            match(input,17,FollowSets000.FOLLOW_17_in_rule__Extractor__Group_11_3__0__Impl11254); 
+            match(input,17,FollowSets000.FOLLOW_17_in_rule__Extractor__Group_11_3__0__Impl11316); 
              after(grammarAccess.getExtractorAccess().getCommaKeyword_11_3_0()); 
 
             }
@@ -14665,16 +14750,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11_3__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5714:1: rule__Extractor__Group_11_3__1 : rule__Extractor__Group_11_3__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5745:1: rule__Extractor__Group_11_3__1 : rule__Extractor__Group_11_3__1__Impl ;
     public final void rule__Extractor__Group_11_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5718:1: ( rule__Extractor__Group_11_3__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5719:2: rule__Extractor__Group_11_3__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5749:1: ( rule__Extractor__Group_11_3__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5750:2: rule__Extractor__Group_11_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11_3__1__Impl_in_rule__Extractor__Group_11_3__111285);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__Group_11_3__1__Impl_in_rule__Extractor__Group_11_3__111347);
             rule__Extractor__Group_11_3__1__Impl();
 
             state._fsp--;
@@ -14698,23 +14783,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__Group_11_3__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5725:1: rule__Extractor__Group_11_3__1__Impl : ( ( rule__Extractor__SignalsAssignment_11_3_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5756:1: rule__Extractor__Group_11_3__1__Impl : ( ( rule__Extractor__SignalsAssignment_11_3_1 ) ) ;
     public final void rule__Extractor__Group_11_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5729:1: ( ( ( rule__Extractor__SignalsAssignment_11_3_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5730:1: ( ( rule__Extractor__SignalsAssignment_11_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5760:1: ( ( ( rule__Extractor__SignalsAssignment_11_3_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5761:1: ( ( rule__Extractor__SignalsAssignment_11_3_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5730:1: ( ( rule__Extractor__SignalsAssignment_11_3_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5731:1: ( rule__Extractor__SignalsAssignment_11_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5761:1: ( ( rule__Extractor__SignalsAssignment_11_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5762:1: ( rule__Extractor__SignalsAssignment_11_3_1 )
             {
              before(grammarAccess.getExtractorAccess().getSignalsAssignment_11_3_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5732:1: ( rule__Extractor__SignalsAssignment_11_3_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5732:2: rule__Extractor__SignalsAssignment_11_3_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5763:1: ( rule__Extractor__SignalsAssignment_11_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5763:2: rule__Extractor__SignalsAssignment_11_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Extractor__SignalsAssignment_11_3_1_in_rule__Extractor__Group_11_3__1__Impl11312);
+            pushFollow(FollowSets000.FOLLOW_rule__Extractor__SignalsAssignment_11_3_1_in_rule__Extractor__Group_11_3__1__Impl11374);
             rule__Extractor__SignalsAssignment_11_3_1();
 
             state._fsp--;
@@ -14745,21 +14830,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5746:1: rule__Injector__Group__0 : rule__Injector__Group__0__Impl rule__Injector__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5777:1: rule__Injector__Group__0 : rule__Injector__Group__0__Impl rule__Injector__Group__1 ;
     public final void rule__Injector__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5750:1: ( rule__Injector__Group__0__Impl rule__Injector__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5751:2: rule__Injector__Group__0__Impl rule__Injector__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5781:1: ( rule__Injector__Group__0__Impl rule__Injector__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5782:2: rule__Injector__Group__0__Impl rule__Injector__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__0__Impl_in_rule__Injector__Group__011346);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__0__Impl_in_rule__Injector__Group__011408);
             rule__Injector__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__1_in_rule__Injector__Group__011349);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__1_in_rule__Injector__Group__011411);
             rule__Injector__Group__1();
 
             state._fsp--;
@@ -14783,21 +14868,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5758:1: rule__Injector__Group__0__Impl : ( () ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5789:1: rule__Injector__Group__0__Impl : ( () ) ;
     public final void rule__Injector__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5762:1: ( ( () ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5763:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5793:1: ( ( () ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5794:1: ( () )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5763:1: ( () )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5764:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5794:1: ( () )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5795:1: ()
             {
              before(grammarAccess.getInjectorAccess().getInjectorAction_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5765:1: ()
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5767:1: 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5796:1: ()
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5798:1: 
             {
             }
 
@@ -14820,21 +14905,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5777:1: rule__Injector__Group__1 : rule__Injector__Group__1__Impl rule__Injector__Group__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5808:1: rule__Injector__Group__1 : rule__Injector__Group__1__Impl rule__Injector__Group__2 ;
     public final void rule__Injector__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5781:1: ( rule__Injector__Group__1__Impl rule__Injector__Group__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5782:2: rule__Injector__Group__1__Impl rule__Injector__Group__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5812:1: ( rule__Injector__Group__1__Impl rule__Injector__Group__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5813:2: rule__Injector__Group__1__Impl rule__Injector__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__1__Impl_in_rule__Injector__Group__111407);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__1__Impl_in_rule__Injector__Group__111469);
             rule__Injector__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__2_in_rule__Injector__Group__111410);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__2_in_rule__Injector__Group__111472);
             rule__Injector__Group__2();
 
             state._fsp--;
@@ -14858,20 +14943,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5789:1: rule__Injector__Group__1__Impl : ( 'Injector' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5820:1: rule__Injector__Group__1__Impl : ( 'Injector' ) ;
     public final void rule__Injector__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5793:1: ( ( 'Injector' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5794:1: ( 'Injector' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5824:1: ( ( 'Injector' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5825:1: ( 'Injector' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5794:1: ( 'Injector' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5795:1: 'Injector'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5825:1: ( 'Injector' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5826:1: 'Injector'
             {
              before(grammarAccess.getInjectorAccess().getInjectorKeyword_1()); 
-            match(input,44,FollowSets000.FOLLOW_44_in_rule__Injector__Group__1__Impl11438); 
+            match(input,44,FollowSets000.FOLLOW_44_in_rule__Injector__Group__1__Impl11500); 
              after(grammarAccess.getInjectorAccess().getInjectorKeyword_1()); 
 
             }
@@ -14895,21 +14980,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5808:1: rule__Injector__Group__2 : rule__Injector__Group__2__Impl rule__Injector__Group__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5839:1: rule__Injector__Group__2 : rule__Injector__Group__2__Impl rule__Injector__Group__3 ;
     public final void rule__Injector__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5812:1: ( rule__Injector__Group__2__Impl rule__Injector__Group__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5813:2: rule__Injector__Group__2__Impl rule__Injector__Group__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5843:1: ( rule__Injector__Group__2__Impl rule__Injector__Group__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5844:2: rule__Injector__Group__2__Impl rule__Injector__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__2__Impl_in_rule__Injector__Group__211469);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__2__Impl_in_rule__Injector__Group__211531);
             rule__Injector__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__3_in_rule__Injector__Group__211472);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__3_in_rule__Injector__Group__211534);
             rule__Injector__Group__3();
 
             state._fsp--;
@@ -14933,23 +15018,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5820:1: rule__Injector__Group__2__Impl : ( ( rule__Injector__NameAssignment_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5851:1: rule__Injector__Group__2__Impl : ( ( rule__Injector__NameAssignment_2 ) ) ;
     public final void rule__Injector__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5824:1: ( ( ( rule__Injector__NameAssignment_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5825:1: ( ( rule__Injector__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5855:1: ( ( ( rule__Injector__NameAssignment_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5856:1: ( ( rule__Injector__NameAssignment_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5825:1: ( ( rule__Injector__NameAssignment_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5826:1: ( rule__Injector__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5856:1: ( ( rule__Injector__NameAssignment_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5857:1: ( rule__Injector__NameAssignment_2 )
             {
              before(grammarAccess.getInjectorAccess().getNameAssignment_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5827:1: ( rule__Injector__NameAssignment_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5827:2: rule__Injector__NameAssignment_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5858:1: ( rule__Injector__NameAssignment_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5858:2: rule__Injector__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__NameAssignment_2_in_rule__Injector__Group__2__Impl11499);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__NameAssignment_2_in_rule__Injector__Group__2__Impl11561);
             rule__Injector__NameAssignment_2();
 
             state._fsp--;
@@ -14980,21 +15065,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5837:1: rule__Injector__Group__3 : rule__Injector__Group__3__Impl rule__Injector__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5868:1: rule__Injector__Group__3 : rule__Injector__Group__3__Impl rule__Injector__Group__4 ;
     public final void rule__Injector__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5841:1: ( rule__Injector__Group__3__Impl rule__Injector__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5842:2: rule__Injector__Group__3__Impl rule__Injector__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5872:1: ( rule__Injector__Group__3__Impl rule__Injector__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5873:2: rule__Injector__Group__3__Impl rule__Injector__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__3__Impl_in_rule__Injector__Group__311529);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__3__Impl_in_rule__Injector__Group__311591);
             rule__Injector__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__4_in_rule__Injector__Group__311532);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__4_in_rule__Injector__Group__311594);
             rule__Injector__Group__4();
 
             state._fsp--;
@@ -15018,20 +15103,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5849:1: rule__Injector__Group__3__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5880:1: rule__Injector__Group__3__Impl : ( '{' ) ;
     public final void rule__Injector__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5853:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5854:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5884:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5885:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5854:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5855:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5885:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5886:1: '{'
             {
              before(grammarAccess.getInjectorAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Injector__Group__3__Impl11560); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Injector__Group__3__Impl11622); 
              after(grammarAccess.getInjectorAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -15055,21 +15140,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5868:1: rule__Injector__Group__4 : rule__Injector__Group__4__Impl rule__Injector__Group__5 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5899:1: rule__Injector__Group__4 : rule__Injector__Group__4__Impl rule__Injector__Group__5 ;
     public final void rule__Injector__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5872:1: ( rule__Injector__Group__4__Impl rule__Injector__Group__5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5873:2: rule__Injector__Group__4__Impl rule__Injector__Group__5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5903:1: ( rule__Injector__Group__4__Impl rule__Injector__Group__5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5904:2: rule__Injector__Group__4__Impl rule__Injector__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__4__Impl_in_rule__Injector__Group__411591);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__4__Impl_in_rule__Injector__Group__411653);
             rule__Injector__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__5_in_rule__Injector__Group__411594);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__5_in_rule__Injector__Group__411656);
             rule__Injector__Group__5();
 
             state._fsp--;
@@ -15093,20 +15178,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5880:1: rule__Injector__Group__4__Impl : ( ( rule__Injector__Group_4__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5911:1: rule__Injector__Group__4__Impl : ( ( rule__Injector__Group_4__0 )? ) ;
     public final void rule__Injector__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5884:1: ( ( ( rule__Injector__Group_4__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5885:1: ( ( rule__Injector__Group_4__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5915:1: ( ( ( rule__Injector__Group_4__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5916:1: ( ( rule__Injector__Group_4__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5885:1: ( ( rule__Injector__Group_4__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5886:1: ( rule__Injector__Group_4__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5916:1: ( ( rule__Injector__Group_4__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5917:1: ( rule__Injector__Group_4__0 )?
             {
              before(grammarAccess.getInjectorAccess().getGroup_4()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5887:1: ( rule__Injector__Group_4__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5918:1: ( rule__Injector__Group_4__0 )?
             int alt36=2;
             int LA36_0 = input.LA(1);
 
@@ -15115,9 +15200,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt36) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5887:2: rule__Injector__Group_4__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5918:2: rule__Injector__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_4__0_in_rule__Injector__Group__4__Impl11621);
+                    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_4__0_in_rule__Injector__Group__4__Impl11683);
                     rule__Injector__Group_4__0();
 
                     state._fsp--;
@@ -15151,21 +15236,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5897:1: rule__Injector__Group__5 : rule__Injector__Group__5__Impl rule__Injector__Group__6 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5928:1: rule__Injector__Group__5 : rule__Injector__Group__5__Impl rule__Injector__Group__6 ;
     public final void rule__Injector__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5901:1: ( rule__Injector__Group__5__Impl rule__Injector__Group__6 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5902:2: rule__Injector__Group__5__Impl rule__Injector__Group__6
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5932:1: ( rule__Injector__Group__5__Impl rule__Injector__Group__6 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5933:2: rule__Injector__Group__5__Impl rule__Injector__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__5__Impl_in_rule__Injector__Group__511652);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__5__Impl_in_rule__Injector__Group__511714);
             rule__Injector__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__6_in_rule__Injector__Group__511655);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__6_in_rule__Injector__Group__511717);
             rule__Injector__Group__6();
 
             state._fsp--;
@@ -15189,20 +15274,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__5__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5909:1: rule__Injector__Group__5__Impl : ( 'hasStarts' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5940:1: rule__Injector__Group__5__Impl : ( 'hasStarts' ) ;
     public final void rule__Injector__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5913:1: ( ( 'hasStarts' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5914:1: ( 'hasStarts' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5944:1: ( ( 'hasStarts' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5945:1: ( 'hasStarts' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5914:1: ( 'hasStarts' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5915:1: 'hasStarts'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5945:1: ( 'hasStarts' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5946:1: 'hasStarts'
             {
              before(grammarAccess.getInjectorAccess().getHasStartsKeyword_5()); 
-            match(input,23,FollowSets000.FOLLOW_23_in_rule__Injector__Group__5__Impl11683); 
+            match(input,23,FollowSets000.FOLLOW_23_in_rule__Injector__Group__5__Impl11745); 
              after(grammarAccess.getInjectorAccess().getHasStartsKeyword_5()); 
 
             }
@@ -15226,21 +15311,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__6"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5928:1: rule__Injector__Group__6 : rule__Injector__Group__6__Impl rule__Injector__Group__7 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5959:1: rule__Injector__Group__6 : rule__Injector__Group__6__Impl rule__Injector__Group__7 ;
     public final void rule__Injector__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5932:1: ( rule__Injector__Group__6__Impl rule__Injector__Group__7 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5933:2: rule__Injector__Group__6__Impl rule__Injector__Group__7
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5963:1: ( rule__Injector__Group__6__Impl rule__Injector__Group__7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5964:2: rule__Injector__Group__6__Impl rule__Injector__Group__7
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__6__Impl_in_rule__Injector__Group__611714);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__6__Impl_in_rule__Injector__Group__611776);
             rule__Injector__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__7_in_rule__Injector__Group__611717);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__7_in_rule__Injector__Group__611779);
             rule__Injector__Group__7();
 
             state._fsp--;
@@ -15264,20 +15349,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__6__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5940:1: rule__Injector__Group__6__Impl : ( '(' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5971:1: rule__Injector__Group__6__Impl : ( '(' ) ;
     public final void rule__Injector__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5944:1: ( ( '(' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5945:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5975:1: ( ( '(' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5976:1: ( '(' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5945:1: ( '(' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5946:1: '('
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5976:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5977:1: '('
             {
              before(grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_6()); 
-            match(input,24,FollowSets000.FOLLOW_24_in_rule__Injector__Group__6__Impl11745); 
+            match(input,24,FollowSets000.FOLLOW_24_in_rule__Injector__Group__6__Impl11807); 
              after(grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_6()); 
 
             }
@@ -15301,21 +15386,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__7"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5959:1: rule__Injector__Group__7 : rule__Injector__Group__7__Impl rule__Injector__Group__8 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5990:1: rule__Injector__Group__7 : rule__Injector__Group__7__Impl rule__Injector__Group__8 ;
     public final void rule__Injector__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5963:1: ( rule__Injector__Group__7__Impl rule__Injector__Group__8 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5964:2: rule__Injector__Group__7__Impl rule__Injector__Group__8
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5994:1: ( rule__Injector__Group__7__Impl rule__Injector__Group__8 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5995:2: rule__Injector__Group__7__Impl rule__Injector__Group__8
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__7__Impl_in_rule__Injector__Group__711776);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__7__Impl_in_rule__Injector__Group__711838);
             rule__Injector__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__8_in_rule__Injector__Group__711779);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__8_in_rule__Injector__Group__711841);
             rule__Injector__Group__8();
 
             state._fsp--;
@@ -15339,23 +15424,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__7__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5971:1: rule__Injector__Group__7__Impl : ( ( rule__Injector__HasStartsAssignment_7 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6002:1: rule__Injector__Group__7__Impl : ( ( rule__Injector__HasStartsAssignment_7 ) ) ;
     public final void rule__Injector__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5975:1: ( ( ( rule__Injector__HasStartsAssignment_7 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5976:1: ( ( rule__Injector__HasStartsAssignment_7 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6006:1: ( ( ( rule__Injector__HasStartsAssignment_7 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6007:1: ( ( rule__Injector__HasStartsAssignment_7 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5976:1: ( ( rule__Injector__HasStartsAssignment_7 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5977:1: ( rule__Injector__HasStartsAssignment_7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6007:1: ( ( rule__Injector__HasStartsAssignment_7 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6008:1: ( rule__Injector__HasStartsAssignment_7 )
             {
              before(grammarAccess.getInjectorAccess().getHasStartsAssignment_7()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5978:1: ( rule__Injector__HasStartsAssignment_7 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5978:2: rule__Injector__HasStartsAssignment_7
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6009:1: ( rule__Injector__HasStartsAssignment_7 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6009:2: rule__Injector__HasStartsAssignment_7
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__HasStartsAssignment_7_in_rule__Injector__Group__7__Impl11806);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__HasStartsAssignment_7_in_rule__Injector__Group__7__Impl11868);
             rule__Injector__HasStartsAssignment_7();
 
             state._fsp--;
@@ -15386,21 +15471,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__8"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5988:1: rule__Injector__Group__8 : rule__Injector__Group__8__Impl rule__Injector__Group__9 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6019:1: rule__Injector__Group__8 : rule__Injector__Group__8__Impl rule__Injector__Group__9 ;
     public final void rule__Injector__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5992:1: ( rule__Injector__Group__8__Impl rule__Injector__Group__9 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:5993:2: rule__Injector__Group__8__Impl rule__Injector__Group__9
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6023:1: ( rule__Injector__Group__8__Impl rule__Injector__Group__9 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6024:2: rule__Injector__Group__8__Impl rule__Injector__Group__9
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__8__Impl_in_rule__Injector__Group__811836);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__8__Impl_in_rule__Injector__Group__811898);
             rule__Injector__Group__8__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__9_in_rule__Injector__Group__811839);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__9_in_rule__Injector__Group__811901);
             rule__Injector__Group__9();
 
             state._fsp--;
@@ -15424,20 +15509,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__8__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6000:1: rule__Injector__Group__8__Impl : ( ( rule__Injector__Group_8__0 )* ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6031:1: rule__Injector__Group__8__Impl : ( ( rule__Injector__Group_8__0 )* ) ;
     public final void rule__Injector__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6004:1: ( ( ( rule__Injector__Group_8__0 )* ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6005:1: ( ( rule__Injector__Group_8__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6035:1: ( ( ( rule__Injector__Group_8__0 )* ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6036:1: ( ( rule__Injector__Group_8__0 )* )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6005:1: ( ( rule__Injector__Group_8__0 )* )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6006:1: ( rule__Injector__Group_8__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6036:1: ( ( rule__Injector__Group_8__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6037:1: ( rule__Injector__Group_8__0 )*
             {
              before(grammarAccess.getInjectorAccess().getGroup_8()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6007:1: ( rule__Injector__Group_8__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6038:1: ( rule__Injector__Group_8__0 )*
             loop37:
             do {
                 int alt37=2;
@@ -15450,9 +15535,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
                 switch (alt37) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6007:2: rule__Injector__Group_8__0
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6038:2: rule__Injector__Group_8__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_8__0_in_rule__Injector__Group__8__Impl11866);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_8__0_in_rule__Injector__Group__8__Impl11928);
             	    rule__Injector__Group_8__0();
 
             	    state._fsp--;
@@ -15489,21 +15574,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__9"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6017:1: rule__Injector__Group__9 : rule__Injector__Group__9__Impl rule__Injector__Group__10 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6048:1: rule__Injector__Group__9 : rule__Injector__Group__9__Impl rule__Injector__Group__10 ;
     public final void rule__Injector__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6021:1: ( rule__Injector__Group__9__Impl rule__Injector__Group__10 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6022:2: rule__Injector__Group__9__Impl rule__Injector__Group__10
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6052:1: ( rule__Injector__Group__9__Impl rule__Injector__Group__10 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6053:2: rule__Injector__Group__9__Impl rule__Injector__Group__10
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__9__Impl_in_rule__Injector__Group__911897);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__9__Impl_in_rule__Injector__Group__911959);
             rule__Injector__Group__9__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__10_in_rule__Injector__Group__911900);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__10_in_rule__Injector__Group__911962);
             rule__Injector__Group__10();
 
             state._fsp--;
@@ -15527,20 +15612,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__9__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6029:1: rule__Injector__Group__9__Impl : ( ')' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6060:1: rule__Injector__Group__9__Impl : ( ')' ) ;
     public final void rule__Injector__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6033:1: ( ( ')' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6034:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6064:1: ( ( ')' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6065:1: ( ')' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6034:1: ( ')' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6035:1: ')'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6065:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6066:1: ')'
             {
              before(grammarAccess.getInjectorAccess().getRightParenthesisKeyword_9()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Injector__Group__9__Impl11928); 
+            match(input,25,FollowSets000.FOLLOW_25_in_rule__Injector__Group__9__Impl11990); 
              after(grammarAccess.getInjectorAccess().getRightParenthesisKeyword_9()); 
 
             }
@@ -15564,21 +15649,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__10"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6048:1: rule__Injector__Group__10 : rule__Injector__Group__10__Impl rule__Injector__Group__11 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6079:1: rule__Injector__Group__10 : rule__Injector__Group__10__Impl rule__Injector__Group__11 ;
     public final void rule__Injector__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6052:1: ( rule__Injector__Group__10__Impl rule__Injector__Group__11 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6053:2: rule__Injector__Group__10__Impl rule__Injector__Group__11
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6083:1: ( rule__Injector__Group__10__Impl rule__Injector__Group__11 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6084:2: rule__Injector__Group__10__Impl rule__Injector__Group__11
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__10__Impl_in_rule__Injector__Group__1011959);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__10__Impl_in_rule__Injector__Group__1012021);
             rule__Injector__Group__10__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__11_in_rule__Injector__Group__1011962);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__11_in_rule__Injector__Group__1012024);
             rule__Injector__Group__11();
 
             state._fsp--;
@@ -15602,20 +15687,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__10__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6060:1: rule__Injector__Group__10__Impl : ( ( rule__Injector__Group_10__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6091:1: rule__Injector__Group__10__Impl : ( ( rule__Injector__Group_10__0 )? ) ;
     public final void rule__Injector__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6064:1: ( ( ( rule__Injector__Group_10__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6065:1: ( ( rule__Injector__Group_10__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6095:1: ( ( ( rule__Injector__Group_10__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6096:1: ( ( rule__Injector__Group_10__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6065:1: ( ( rule__Injector__Group_10__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6066:1: ( rule__Injector__Group_10__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6096:1: ( ( rule__Injector__Group_10__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6097:1: ( rule__Injector__Group_10__0 )?
             {
              before(grammarAccess.getInjectorAccess().getGroup_10()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6067:1: ( rule__Injector__Group_10__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6098:1: ( rule__Injector__Group_10__0 )?
             int alt38=2;
             int LA38_0 = input.LA(1);
 
@@ -15624,9 +15709,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt38) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6067:2: rule__Injector__Group_10__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6098:2: rule__Injector__Group_10__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__0_in_rule__Injector__Group__10__Impl11989);
+                    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__0_in_rule__Injector__Group__10__Impl12051);
                     rule__Injector__Group_10__0();
 
                     state._fsp--;
@@ -15660,21 +15745,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__11"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6077:1: rule__Injector__Group__11 : rule__Injector__Group__11__Impl rule__Injector__Group__12 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6108:1: rule__Injector__Group__11 : rule__Injector__Group__11__Impl rule__Injector__Group__12 ;
     public final void rule__Injector__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6081:1: ( rule__Injector__Group__11__Impl rule__Injector__Group__12 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6082:2: rule__Injector__Group__11__Impl rule__Injector__Group__12
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6112:1: ( rule__Injector__Group__11__Impl rule__Injector__Group__12 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6113:2: rule__Injector__Group__11__Impl rule__Injector__Group__12
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__11__Impl_in_rule__Injector__Group__1112020);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__11__Impl_in_rule__Injector__Group__1112082);
             rule__Injector__Group__11__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__12_in_rule__Injector__Group__1112023);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__12_in_rule__Injector__Group__1112085);
             rule__Injector__Group__12();
 
             state._fsp--;
@@ -15698,20 +15783,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__11__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6089:1: rule__Injector__Group__11__Impl : ( ( rule__Injector__Group_11__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6120:1: rule__Injector__Group__11__Impl : ( ( rule__Injector__Group_11__0 )? ) ;
     public final void rule__Injector__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6093:1: ( ( ( rule__Injector__Group_11__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6094:1: ( ( rule__Injector__Group_11__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6124:1: ( ( ( rule__Injector__Group_11__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6125:1: ( ( rule__Injector__Group_11__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6094:1: ( ( rule__Injector__Group_11__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6095:1: ( rule__Injector__Group_11__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6125:1: ( ( rule__Injector__Group_11__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6126:1: ( rule__Injector__Group_11__0 )?
             {
              before(grammarAccess.getInjectorAccess().getGroup_11()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6096:1: ( rule__Injector__Group_11__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6127:1: ( rule__Injector__Group_11__0 )?
             int alt39=2;
             int LA39_0 = input.LA(1);
 
@@ -15720,9 +15805,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt39) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6096:2: rule__Injector__Group_11__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6127:2: rule__Injector__Group_11__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_11__0_in_rule__Injector__Group__11__Impl12050);
+                    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_11__0_in_rule__Injector__Group__11__Impl12112);
                     rule__Injector__Group_11__0();
 
                     state._fsp--;
@@ -15756,21 +15841,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__12"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6106:1: rule__Injector__Group__12 : rule__Injector__Group__12__Impl rule__Injector__Group__13 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6137:1: rule__Injector__Group__12 : rule__Injector__Group__12__Impl rule__Injector__Group__13 ;
     public final void rule__Injector__Group__12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6110:1: ( rule__Injector__Group__12__Impl rule__Injector__Group__13 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6111:2: rule__Injector__Group__12__Impl rule__Injector__Group__13
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6141:1: ( rule__Injector__Group__12__Impl rule__Injector__Group__13 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6142:2: rule__Injector__Group__12__Impl rule__Injector__Group__13
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__12__Impl_in_rule__Injector__Group__1212081);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__12__Impl_in_rule__Injector__Group__1212143);
             rule__Injector__Group__12__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__13_in_rule__Injector__Group__1212084);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__13_in_rule__Injector__Group__1212146);
             rule__Injector__Group__13();
 
             state._fsp--;
@@ -15794,20 +15879,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__12__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6118:1: rule__Injector__Group__12__Impl : ( ( rule__Injector__Group_12__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6149:1: rule__Injector__Group__12__Impl : ( ( rule__Injector__Group_12__0 )? ) ;
     public final void rule__Injector__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6122:1: ( ( ( rule__Injector__Group_12__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6123:1: ( ( rule__Injector__Group_12__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6153:1: ( ( ( rule__Injector__Group_12__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6154:1: ( ( rule__Injector__Group_12__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6123:1: ( ( rule__Injector__Group_12__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6124:1: ( rule__Injector__Group_12__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6154:1: ( ( rule__Injector__Group_12__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6155:1: ( rule__Injector__Group_12__0 )?
             {
              before(grammarAccess.getInjectorAccess().getGroup_12()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6125:1: ( rule__Injector__Group_12__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6156:1: ( rule__Injector__Group_12__0 )?
             int alt40=2;
             int LA40_0 = input.LA(1);
 
@@ -15816,9 +15901,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt40) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6125:2: rule__Injector__Group_12__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6156:2: rule__Injector__Group_12__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__0_in_rule__Injector__Group__12__Impl12111);
+                    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__0_in_rule__Injector__Group__12__Impl12173);
                     rule__Injector__Group_12__0();
 
                     state._fsp--;
@@ -15852,16 +15937,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__13"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6135:1: rule__Injector__Group__13 : rule__Injector__Group__13__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6166:1: rule__Injector__Group__13 : rule__Injector__Group__13__Impl ;
     public final void rule__Injector__Group__13() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6139:1: ( rule__Injector__Group__13__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6140:2: rule__Injector__Group__13__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6170:1: ( rule__Injector__Group__13__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6171:2: rule__Injector__Group__13__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__13__Impl_in_rule__Injector__Group__1312142);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group__13__Impl_in_rule__Injector__Group__1312204);
             rule__Injector__Group__13__Impl();
 
             state._fsp--;
@@ -15885,20 +15970,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group__13__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6146:1: rule__Injector__Group__13__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6177:1: rule__Injector__Group__13__Impl : ( '}' ) ;
     public final void rule__Injector__Group__13__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6150:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6151:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6181:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6182:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6151:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6152:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6182:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6183:1: '}'
             {
              before(grammarAccess.getInjectorAccess().getRightCurlyBracketKeyword_13()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Injector__Group__13__Impl12170); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Injector__Group__13__Impl12232); 
              after(grammarAccess.getInjectorAccess().getRightCurlyBracketKeyword_13()); 
 
             }
@@ -15922,21 +16007,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_4__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6193:1: rule__Injector__Group_4__0 : rule__Injector__Group_4__0__Impl rule__Injector__Group_4__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6224:1: rule__Injector__Group_4__0 : rule__Injector__Group_4__0__Impl rule__Injector__Group_4__1 ;
     public final void rule__Injector__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6197:1: ( rule__Injector__Group_4__0__Impl rule__Injector__Group_4__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6198:2: rule__Injector__Group_4__0__Impl rule__Injector__Group_4__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6228:1: ( rule__Injector__Group_4__0__Impl rule__Injector__Group_4__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6229:2: rule__Injector__Group_4__0__Impl rule__Injector__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_4__0__Impl_in_rule__Injector__Group_4__012229);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_4__0__Impl_in_rule__Injector__Group_4__012291);
             rule__Injector__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_4__1_in_rule__Injector__Group_4__012232);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_4__1_in_rule__Injector__Group_4__012294);
             rule__Injector__Group_4__1();
 
             state._fsp--;
@@ -15960,20 +16045,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_4__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6205:1: rule__Injector__Group_4__0__Impl : ( 'carsPerHour' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6236:1: rule__Injector__Group_4__0__Impl : ( 'carsPerHour' ) ;
     public final void rule__Injector__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6209:1: ( ( 'carsPerHour' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6210:1: ( 'carsPerHour' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6240:1: ( ( 'carsPerHour' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6241:1: ( 'carsPerHour' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6210:1: ( 'carsPerHour' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6211:1: 'carsPerHour'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6241:1: ( 'carsPerHour' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6242:1: 'carsPerHour'
             {
              before(grammarAccess.getInjectorAccess().getCarsPerHourKeyword_4_0()); 
-            match(input,45,FollowSets000.FOLLOW_45_in_rule__Injector__Group_4__0__Impl12260); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__Injector__Group_4__0__Impl12322); 
              after(grammarAccess.getInjectorAccess().getCarsPerHourKeyword_4_0()); 
 
             }
@@ -15997,16 +16082,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_4__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6224:1: rule__Injector__Group_4__1 : rule__Injector__Group_4__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6255:1: rule__Injector__Group_4__1 : rule__Injector__Group_4__1__Impl ;
     public final void rule__Injector__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6228:1: ( rule__Injector__Group_4__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6229:2: rule__Injector__Group_4__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6259:1: ( rule__Injector__Group_4__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6260:2: rule__Injector__Group_4__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_4__1__Impl_in_rule__Injector__Group_4__112291);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_4__1__Impl_in_rule__Injector__Group_4__112353);
             rule__Injector__Group_4__1__Impl();
 
             state._fsp--;
@@ -16030,23 +16115,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_4__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6235:1: rule__Injector__Group_4__1__Impl : ( ( rule__Injector__CarsPerHourAssignment_4_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6266:1: rule__Injector__Group_4__1__Impl : ( ( rule__Injector__CarsPerHourAssignment_4_1 ) ) ;
     public final void rule__Injector__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6239:1: ( ( ( rule__Injector__CarsPerHourAssignment_4_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6240:1: ( ( rule__Injector__CarsPerHourAssignment_4_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6270:1: ( ( ( rule__Injector__CarsPerHourAssignment_4_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6271:1: ( ( rule__Injector__CarsPerHourAssignment_4_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6240:1: ( ( rule__Injector__CarsPerHourAssignment_4_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6241:1: ( rule__Injector__CarsPerHourAssignment_4_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6271:1: ( ( rule__Injector__CarsPerHourAssignment_4_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6272:1: ( rule__Injector__CarsPerHourAssignment_4_1 )
             {
              before(grammarAccess.getInjectorAccess().getCarsPerHourAssignment_4_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6242:1: ( rule__Injector__CarsPerHourAssignment_4_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6242:2: rule__Injector__CarsPerHourAssignment_4_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6273:1: ( rule__Injector__CarsPerHourAssignment_4_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6273:2: rule__Injector__CarsPerHourAssignment_4_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__CarsPerHourAssignment_4_1_in_rule__Injector__Group_4__1__Impl12318);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__CarsPerHourAssignment_4_1_in_rule__Injector__Group_4__1__Impl12380);
             rule__Injector__CarsPerHourAssignment_4_1();
 
             state._fsp--;
@@ -16077,21 +16162,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_8__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6256:1: rule__Injector__Group_8__0 : rule__Injector__Group_8__0__Impl rule__Injector__Group_8__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6287:1: rule__Injector__Group_8__0 : rule__Injector__Group_8__0__Impl rule__Injector__Group_8__1 ;
     public final void rule__Injector__Group_8__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6260:1: ( rule__Injector__Group_8__0__Impl rule__Injector__Group_8__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6261:2: rule__Injector__Group_8__0__Impl rule__Injector__Group_8__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6291:1: ( rule__Injector__Group_8__0__Impl rule__Injector__Group_8__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6292:2: rule__Injector__Group_8__0__Impl rule__Injector__Group_8__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_8__0__Impl_in_rule__Injector__Group_8__012352);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_8__0__Impl_in_rule__Injector__Group_8__012414);
             rule__Injector__Group_8__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_8__1_in_rule__Injector__Group_8__012355);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_8__1_in_rule__Injector__Group_8__012417);
             rule__Injector__Group_8__1();
 
             state._fsp--;
@@ -16115,20 +16200,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_8__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6268:1: rule__Injector__Group_8__0__Impl : ( ',' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6299:1: rule__Injector__Group_8__0__Impl : ( ',' ) ;
     public final void rule__Injector__Group_8__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6272:1: ( ( ',' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6273:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6303:1: ( ( ',' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6304:1: ( ',' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6273:1: ( ',' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6274:1: ','
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6304:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6305:1: ','
             {
              before(grammarAccess.getInjectorAccess().getCommaKeyword_8_0()); 
-            match(input,17,FollowSets000.FOLLOW_17_in_rule__Injector__Group_8__0__Impl12383); 
+            match(input,17,FollowSets000.FOLLOW_17_in_rule__Injector__Group_8__0__Impl12445); 
              after(grammarAccess.getInjectorAccess().getCommaKeyword_8_0()); 
 
             }
@@ -16152,16 +16237,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_8__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6287:1: rule__Injector__Group_8__1 : rule__Injector__Group_8__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6318:1: rule__Injector__Group_8__1 : rule__Injector__Group_8__1__Impl ;
     public final void rule__Injector__Group_8__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6291:1: ( rule__Injector__Group_8__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6292:2: rule__Injector__Group_8__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6322:1: ( rule__Injector__Group_8__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6323:2: rule__Injector__Group_8__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_8__1__Impl_in_rule__Injector__Group_8__112414);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_8__1__Impl_in_rule__Injector__Group_8__112476);
             rule__Injector__Group_8__1__Impl();
 
             state._fsp--;
@@ -16185,23 +16270,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_8__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6298:1: rule__Injector__Group_8__1__Impl : ( ( rule__Injector__HasStartsAssignment_8_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6329:1: rule__Injector__Group_8__1__Impl : ( ( rule__Injector__HasStartsAssignment_8_1 ) ) ;
     public final void rule__Injector__Group_8__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6302:1: ( ( ( rule__Injector__HasStartsAssignment_8_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6303:1: ( ( rule__Injector__HasStartsAssignment_8_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6333:1: ( ( ( rule__Injector__HasStartsAssignment_8_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6334:1: ( ( rule__Injector__HasStartsAssignment_8_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6303:1: ( ( rule__Injector__HasStartsAssignment_8_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6304:1: ( rule__Injector__HasStartsAssignment_8_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6334:1: ( ( rule__Injector__HasStartsAssignment_8_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6335:1: ( rule__Injector__HasStartsAssignment_8_1 )
             {
              before(grammarAccess.getInjectorAccess().getHasStartsAssignment_8_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6305:1: ( rule__Injector__HasStartsAssignment_8_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6305:2: rule__Injector__HasStartsAssignment_8_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6336:1: ( rule__Injector__HasStartsAssignment_8_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6336:2: rule__Injector__HasStartsAssignment_8_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__HasStartsAssignment_8_1_in_rule__Injector__Group_8__1__Impl12441);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__HasStartsAssignment_8_1_in_rule__Injector__Group_8__1__Impl12503);
             rule__Injector__HasStartsAssignment_8_1();
 
             state._fsp--;
@@ -16232,21 +16317,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6319:1: rule__Injector__Group_10__0 : rule__Injector__Group_10__0__Impl rule__Injector__Group_10__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6350:1: rule__Injector__Group_10__0 : rule__Injector__Group_10__0__Impl rule__Injector__Group_10__1 ;
     public final void rule__Injector__Group_10__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6323:1: ( rule__Injector__Group_10__0__Impl rule__Injector__Group_10__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6324:2: rule__Injector__Group_10__0__Impl rule__Injector__Group_10__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6354:1: ( rule__Injector__Group_10__0__Impl rule__Injector__Group_10__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6355:2: rule__Injector__Group_10__0__Impl rule__Injector__Group_10__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__0__Impl_in_rule__Injector__Group_10__012475);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__0__Impl_in_rule__Injector__Group_10__012537);
             rule__Injector__Group_10__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__1_in_rule__Injector__Group_10__012478);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__1_in_rule__Injector__Group_10__012540);
             rule__Injector__Group_10__1();
 
             state._fsp--;
@@ -16270,20 +16355,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6331:1: rule__Injector__Group_10__0__Impl : ( 'hasEnds' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6362:1: rule__Injector__Group_10__0__Impl : ( 'hasEnds' ) ;
     public final void rule__Injector__Group_10__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6335:1: ( ( 'hasEnds' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6336:1: ( 'hasEnds' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6366:1: ( ( 'hasEnds' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6367:1: ( 'hasEnds' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6336:1: ( 'hasEnds' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6337:1: 'hasEnds'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6367:1: ( 'hasEnds' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6368:1: 'hasEnds'
             {
              before(grammarAccess.getInjectorAccess().getHasEndsKeyword_10_0()); 
-            match(input,26,FollowSets000.FOLLOW_26_in_rule__Injector__Group_10__0__Impl12506); 
+            match(input,26,FollowSets000.FOLLOW_26_in_rule__Injector__Group_10__0__Impl12568); 
              after(grammarAccess.getInjectorAccess().getHasEndsKeyword_10_0()); 
 
             }
@@ -16307,21 +16392,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6350:1: rule__Injector__Group_10__1 : rule__Injector__Group_10__1__Impl rule__Injector__Group_10__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6381:1: rule__Injector__Group_10__1 : rule__Injector__Group_10__1__Impl rule__Injector__Group_10__2 ;
     public final void rule__Injector__Group_10__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6354:1: ( rule__Injector__Group_10__1__Impl rule__Injector__Group_10__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6355:2: rule__Injector__Group_10__1__Impl rule__Injector__Group_10__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6385:1: ( rule__Injector__Group_10__1__Impl rule__Injector__Group_10__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6386:2: rule__Injector__Group_10__1__Impl rule__Injector__Group_10__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__1__Impl_in_rule__Injector__Group_10__112537);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__1__Impl_in_rule__Injector__Group_10__112599);
             rule__Injector__Group_10__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__2_in_rule__Injector__Group_10__112540);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__2_in_rule__Injector__Group_10__112602);
             rule__Injector__Group_10__2();
 
             state._fsp--;
@@ -16345,20 +16430,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6362:1: rule__Injector__Group_10__1__Impl : ( '(' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6393:1: rule__Injector__Group_10__1__Impl : ( '(' ) ;
     public final void rule__Injector__Group_10__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6366:1: ( ( '(' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6367:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6397:1: ( ( '(' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6398:1: ( '(' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6367:1: ( '(' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6368:1: '('
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6398:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6399:1: '('
             {
              before(grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_10_1()); 
-            match(input,24,FollowSets000.FOLLOW_24_in_rule__Injector__Group_10__1__Impl12568); 
+            match(input,24,FollowSets000.FOLLOW_24_in_rule__Injector__Group_10__1__Impl12630); 
              after(grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_10_1()); 
 
             }
@@ -16382,21 +16467,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6381:1: rule__Injector__Group_10__2 : rule__Injector__Group_10__2__Impl rule__Injector__Group_10__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6412:1: rule__Injector__Group_10__2 : rule__Injector__Group_10__2__Impl rule__Injector__Group_10__3 ;
     public final void rule__Injector__Group_10__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6385:1: ( rule__Injector__Group_10__2__Impl rule__Injector__Group_10__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6386:2: rule__Injector__Group_10__2__Impl rule__Injector__Group_10__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6416:1: ( rule__Injector__Group_10__2__Impl rule__Injector__Group_10__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6417:2: rule__Injector__Group_10__2__Impl rule__Injector__Group_10__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__2__Impl_in_rule__Injector__Group_10__212599);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__2__Impl_in_rule__Injector__Group_10__212661);
             rule__Injector__Group_10__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__3_in_rule__Injector__Group_10__212602);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__3_in_rule__Injector__Group_10__212664);
             rule__Injector__Group_10__3();
 
             state._fsp--;
@@ -16420,23 +16505,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6393:1: rule__Injector__Group_10__2__Impl : ( ( rule__Injector__HasEndsAssignment_10_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6424:1: rule__Injector__Group_10__2__Impl : ( ( rule__Injector__HasEndsAssignment_10_2 ) ) ;
     public final void rule__Injector__Group_10__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6397:1: ( ( ( rule__Injector__HasEndsAssignment_10_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6398:1: ( ( rule__Injector__HasEndsAssignment_10_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6428:1: ( ( ( rule__Injector__HasEndsAssignment_10_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6429:1: ( ( rule__Injector__HasEndsAssignment_10_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6398:1: ( ( rule__Injector__HasEndsAssignment_10_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6399:1: ( rule__Injector__HasEndsAssignment_10_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6429:1: ( ( rule__Injector__HasEndsAssignment_10_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6430:1: ( rule__Injector__HasEndsAssignment_10_2 )
             {
              before(grammarAccess.getInjectorAccess().getHasEndsAssignment_10_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6400:1: ( rule__Injector__HasEndsAssignment_10_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6400:2: rule__Injector__HasEndsAssignment_10_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6431:1: ( rule__Injector__HasEndsAssignment_10_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6431:2: rule__Injector__HasEndsAssignment_10_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__HasEndsAssignment_10_2_in_rule__Injector__Group_10__2__Impl12629);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__HasEndsAssignment_10_2_in_rule__Injector__Group_10__2__Impl12691);
             rule__Injector__HasEndsAssignment_10_2();
 
             state._fsp--;
@@ -16467,21 +16552,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6410:1: rule__Injector__Group_10__3 : rule__Injector__Group_10__3__Impl rule__Injector__Group_10__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6441:1: rule__Injector__Group_10__3 : rule__Injector__Group_10__3__Impl rule__Injector__Group_10__4 ;
     public final void rule__Injector__Group_10__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6414:1: ( rule__Injector__Group_10__3__Impl rule__Injector__Group_10__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6415:2: rule__Injector__Group_10__3__Impl rule__Injector__Group_10__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6445:1: ( rule__Injector__Group_10__3__Impl rule__Injector__Group_10__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6446:2: rule__Injector__Group_10__3__Impl rule__Injector__Group_10__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__3__Impl_in_rule__Injector__Group_10__312659);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__3__Impl_in_rule__Injector__Group_10__312721);
             rule__Injector__Group_10__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__4_in_rule__Injector__Group_10__312662);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__4_in_rule__Injector__Group_10__312724);
             rule__Injector__Group_10__4();
 
             state._fsp--;
@@ -16505,20 +16590,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6422:1: rule__Injector__Group_10__3__Impl : ( ( rule__Injector__Group_10_3__0 )* ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6453:1: rule__Injector__Group_10__3__Impl : ( ( rule__Injector__Group_10_3__0 )* ) ;
     public final void rule__Injector__Group_10__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6426:1: ( ( ( rule__Injector__Group_10_3__0 )* ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6427:1: ( ( rule__Injector__Group_10_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6457:1: ( ( ( rule__Injector__Group_10_3__0 )* ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6458:1: ( ( rule__Injector__Group_10_3__0 )* )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6427:1: ( ( rule__Injector__Group_10_3__0 )* )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6428:1: ( rule__Injector__Group_10_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6458:1: ( ( rule__Injector__Group_10_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6459:1: ( rule__Injector__Group_10_3__0 )*
             {
              before(grammarAccess.getInjectorAccess().getGroup_10_3()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6429:1: ( rule__Injector__Group_10_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6460:1: ( rule__Injector__Group_10_3__0 )*
             loop41:
             do {
                 int alt41=2;
@@ -16531,9 +16616,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
                 switch (alt41) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6429:2: rule__Injector__Group_10_3__0
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6460:2: rule__Injector__Group_10_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10_3__0_in_rule__Injector__Group_10__3__Impl12689);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10_3__0_in_rule__Injector__Group_10__3__Impl12751);
             	    rule__Injector__Group_10_3__0();
 
             	    state._fsp--;
@@ -16570,16 +16655,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6439:1: rule__Injector__Group_10__4 : rule__Injector__Group_10__4__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6470:1: rule__Injector__Group_10__4 : rule__Injector__Group_10__4__Impl ;
     public final void rule__Injector__Group_10__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6443:1: ( rule__Injector__Group_10__4__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6444:2: rule__Injector__Group_10__4__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6474:1: ( rule__Injector__Group_10__4__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6475:2: rule__Injector__Group_10__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__4__Impl_in_rule__Injector__Group_10__412720);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10__4__Impl_in_rule__Injector__Group_10__412782);
             rule__Injector__Group_10__4__Impl();
 
             state._fsp--;
@@ -16603,20 +16688,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6450:1: rule__Injector__Group_10__4__Impl : ( ')' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6481:1: rule__Injector__Group_10__4__Impl : ( ')' ) ;
     public final void rule__Injector__Group_10__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6454:1: ( ( ')' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6455:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6485:1: ( ( ')' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6486:1: ( ')' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6455:1: ( ')' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6456:1: ')'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6486:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6487:1: ')'
             {
              before(grammarAccess.getInjectorAccess().getRightParenthesisKeyword_10_4()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Injector__Group_10__4__Impl12748); 
+            match(input,25,FollowSets000.FOLLOW_25_in_rule__Injector__Group_10__4__Impl12810); 
              after(grammarAccess.getInjectorAccess().getRightParenthesisKeyword_10_4()); 
 
             }
@@ -16640,21 +16725,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10_3__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6479:1: rule__Injector__Group_10_3__0 : rule__Injector__Group_10_3__0__Impl rule__Injector__Group_10_3__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6510:1: rule__Injector__Group_10_3__0 : rule__Injector__Group_10_3__0__Impl rule__Injector__Group_10_3__1 ;
     public final void rule__Injector__Group_10_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6483:1: ( rule__Injector__Group_10_3__0__Impl rule__Injector__Group_10_3__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6484:2: rule__Injector__Group_10_3__0__Impl rule__Injector__Group_10_3__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6514:1: ( rule__Injector__Group_10_3__0__Impl rule__Injector__Group_10_3__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6515:2: rule__Injector__Group_10_3__0__Impl rule__Injector__Group_10_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10_3__0__Impl_in_rule__Injector__Group_10_3__012789);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10_3__0__Impl_in_rule__Injector__Group_10_3__012851);
             rule__Injector__Group_10_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10_3__1_in_rule__Injector__Group_10_3__012792);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10_3__1_in_rule__Injector__Group_10_3__012854);
             rule__Injector__Group_10_3__1();
 
             state._fsp--;
@@ -16678,20 +16763,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10_3__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6491:1: rule__Injector__Group_10_3__0__Impl : ( ',' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6522:1: rule__Injector__Group_10_3__0__Impl : ( ',' ) ;
     public final void rule__Injector__Group_10_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6495:1: ( ( ',' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6496:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6526:1: ( ( ',' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6527:1: ( ',' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6496:1: ( ',' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6497:1: ','
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6527:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6528:1: ','
             {
              before(grammarAccess.getInjectorAccess().getCommaKeyword_10_3_0()); 
-            match(input,17,FollowSets000.FOLLOW_17_in_rule__Injector__Group_10_3__0__Impl12820); 
+            match(input,17,FollowSets000.FOLLOW_17_in_rule__Injector__Group_10_3__0__Impl12882); 
              after(grammarAccess.getInjectorAccess().getCommaKeyword_10_3_0()); 
 
             }
@@ -16715,16 +16800,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10_3__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6510:1: rule__Injector__Group_10_3__1 : rule__Injector__Group_10_3__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6541:1: rule__Injector__Group_10_3__1 : rule__Injector__Group_10_3__1__Impl ;
     public final void rule__Injector__Group_10_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6514:1: ( rule__Injector__Group_10_3__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6515:2: rule__Injector__Group_10_3__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6545:1: ( rule__Injector__Group_10_3__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6546:2: rule__Injector__Group_10_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10_3__1__Impl_in_rule__Injector__Group_10_3__112851);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_10_3__1__Impl_in_rule__Injector__Group_10_3__112913);
             rule__Injector__Group_10_3__1__Impl();
 
             state._fsp--;
@@ -16748,23 +16833,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_10_3__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6521:1: rule__Injector__Group_10_3__1__Impl : ( ( rule__Injector__HasEndsAssignment_10_3_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6552:1: rule__Injector__Group_10_3__1__Impl : ( ( rule__Injector__HasEndsAssignment_10_3_1 ) ) ;
     public final void rule__Injector__Group_10_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6525:1: ( ( ( rule__Injector__HasEndsAssignment_10_3_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6526:1: ( ( rule__Injector__HasEndsAssignment_10_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6556:1: ( ( ( rule__Injector__HasEndsAssignment_10_3_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6557:1: ( ( rule__Injector__HasEndsAssignment_10_3_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6526:1: ( ( rule__Injector__HasEndsAssignment_10_3_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6527:1: ( rule__Injector__HasEndsAssignment_10_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6557:1: ( ( rule__Injector__HasEndsAssignment_10_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6558:1: ( rule__Injector__HasEndsAssignment_10_3_1 )
             {
              before(grammarAccess.getInjectorAccess().getHasEndsAssignment_10_3_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6528:1: ( rule__Injector__HasEndsAssignment_10_3_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6528:2: rule__Injector__HasEndsAssignment_10_3_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6559:1: ( rule__Injector__HasEndsAssignment_10_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6559:2: rule__Injector__HasEndsAssignment_10_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__HasEndsAssignment_10_3_1_in_rule__Injector__Group_10_3__1__Impl12878);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__HasEndsAssignment_10_3_1_in_rule__Injector__Group_10_3__1__Impl12940);
             rule__Injector__HasEndsAssignment_10_3_1();
 
             state._fsp--;
@@ -16795,21 +16880,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_11__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6542:1: rule__Injector__Group_11__0 : rule__Injector__Group_11__0__Impl rule__Injector__Group_11__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6573:1: rule__Injector__Group_11__0 : rule__Injector__Group_11__0__Impl rule__Injector__Group_11__1 ;
     public final void rule__Injector__Group_11__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6546:1: ( rule__Injector__Group_11__0__Impl rule__Injector__Group_11__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6547:2: rule__Injector__Group_11__0__Impl rule__Injector__Group_11__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6577:1: ( rule__Injector__Group_11__0__Impl rule__Injector__Group_11__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6578:2: rule__Injector__Group_11__0__Impl rule__Injector__Group_11__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_11__0__Impl_in_rule__Injector__Group_11__012912);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_11__0__Impl_in_rule__Injector__Group_11__012974);
             rule__Injector__Group_11__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_11__1_in_rule__Injector__Group_11__012915);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_11__1_in_rule__Injector__Group_11__012977);
             rule__Injector__Group_11__1();
 
             state._fsp--;
@@ -16833,20 +16918,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_11__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6554:1: rule__Injector__Group_11__0__Impl : ( 'semaphore' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6585:1: rule__Injector__Group_11__0__Impl : ( 'semaphore' ) ;
     public final void rule__Injector__Group_11__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6558:1: ( ( 'semaphore' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6559:1: ( 'semaphore' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6589:1: ( ( 'semaphore' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6590:1: ( 'semaphore' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6559:1: ( 'semaphore' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6560:1: 'semaphore'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6590:1: ( 'semaphore' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6591:1: 'semaphore'
             {
              before(grammarAccess.getInjectorAccess().getSemaphoreKeyword_11_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__Injector__Group_11__0__Impl12943); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__Injector__Group_11__0__Impl13005); 
              after(grammarAccess.getInjectorAccess().getSemaphoreKeyword_11_0()); 
 
             }
@@ -16870,16 +16955,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_11__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6573:1: rule__Injector__Group_11__1 : rule__Injector__Group_11__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6604:1: rule__Injector__Group_11__1 : rule__Injector__Group_11__1__Impl ;
     public final void rule__Injector__Group_11__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6577:1: ( rule__Injector__Group_11__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6578:2: rule__Injector__Group_11__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6608:1: ( rule__Injector__Group_11__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6609:2: rule__Injector__Group_11__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_11__1__Impl_in_rule__Injector__Group_11__112974);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_11__1__Impl_in_rule__Injector__Group_11__113036);
             rule__Injector__Group_11__1__Impl();
 
             state._fsp--;
@@ -16903,23 +16988,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_11__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6584:1: rule__Injector__Group_11__1__Impl : ( ( rule__Injector__SemaphoreAssignment_11_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6615:1: rule__Injector__Group_11__1__Impl : ( ( rule__Injector__SemaphoreAssignment_11_1 ) ) ;
     public final void rule__Injector__Group_11__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6588:1: ( ( ( rule__Injector__SemaphoreAssignment_11_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6589:1: ( ( rule__Injector__SemaphoreAssignment_11_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6619:1: ( ( ( rule__Injector__SemaphoreAssignment_11_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6620:1: ( ( rule__Injector__SemaphoreAssignment_11_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6589:1: ( ( rule__Injector__SemaphoreAssignment_11_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6590:1: ( rule__Injector__SemaphoreAssignment_11_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6620:1: ( ( rule__Injector__SemaphoreAssignment_11_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6621:1: ( rule__Injector__SemaphoreAssignment_11_1 )
             {
              before(grammarAccess.getInjectorAccess().getSemaphoreAssignment_11_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6591:1: ( rule__Injector__SemaphoreAssignment_11_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6591:2: rule__Injector__SemaphoreAssignment_11_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6622:1: ( rule__Injector__SemaphoreAssignment_11_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6622:2: rule__Injector__SemaphoreAssignment_11_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__SemaphoreAssignment_11_1_in_rule__Injector__Group_11__1__Impl13001);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__SemaphoreAssignment_11_1_in_rule__Injector__Group_11__1__Impl13063);
             rule__Injector__SemaphoreAssignment_11_1();
 
             state._fsp--;
@@ -16950,21 +17035,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6605:1: rule__Injector__Group_12__0 : rule__Injector__Group_12__0__Impl rule__Injector__Group_12__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6636:1: rule__Injector__Group_12__0 : rule__Injector__Group_12__0__Impl rule__Injector__Group_12__1 ;
     public final void rule__Injector__Group_12__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6609:1: ( rule__Injector__Group_12__0__Impl rule__Injector__Group_12__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6610:2: rule__Injector__Group_12__0__Impl rule__Injector__Group_12__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6640:1: ( rule__Injector__Group_12__0__Impl rule__Injector__Group_12__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6641:2: rule__Injector__Group_12__0__Impl rule__Injector__Group_12__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__0__Impl_in_rule__Injector__Group_12__013035);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__0__Impl_in_rule__Injector__Group_12__013097);
             rule__Injector__Group_12__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__1_in_rule__Injector__Group_12__013038);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__1_in_rule__Injector__Group_12__013100);
             rule__Injector__Group_12__1();
 
             state._fsp--;
@@ -16988,20 +17073,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6617:1: rule__Injector__Group_12__0__Impl : ( 'signals' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6648:1: rule__Injector__Group_12__0__Impl : ( 'signals' ) ;
     public final void rule__Injector__Group_12__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6621:1: ( ( 'signals' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6622:1: ( 'signals' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6652:1: ( ( 'signals' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6653:1: ( 'signals' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6622:1: ( 'signals' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6623:1: 'signals'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6653:1: ( 'signals' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6654:1: 'signals'
             {
              before(grammarAccess.getInjectorAccess().getSignalsKeyword_12_0()); 
-            match(input,28,FollowSets000.FOLLOW_28_in_rule__Injector__Group_12__0__Impl13066); 
+            match(input,28,FollowSets000.FOLLOW_28_in_rule__Injector__Group_12__0__Impl13128); 
              after(grammarAccess.getInjectorAccess().getSignalsKeyword_12_0()); 
 
             }
@@ -17025,21 +17110,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6636:1: rule__Injector__Group_12__1 : rule__Injector__Group_12__1__Impl rule__Injector__Group_12__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6667:1: rule__Injector__Group_12__1 : rule__Injector__Group_12__1__Impl rule__Injector__Group_12__2 ;
     public final void rule__Injector__Group_12__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6640:1: ( rule__Injector__Group_12__1__Impl rule__Injector__Group_12__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6641:2: rule__Injector__Group_12__1__Impl rule__Injector__Group_12__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6671:1: ( rule__Injector__Group_12__1__Impl rule__Injector__Group_12__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6672:2: rule__Injector__Group_12__1__Impl rule__Injector__Group_12__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__1__Impl_in_rule__Injector__Group_12__113097);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__1__Impl_in_rule__Injector__Group_12__113159);
             rule__Injector__Group_12__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__2_in_rule__Injector__Group_12__113100);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__2_in_rule__Injector__Group_12__113162);
             rule__Injector__Group_12__2();
 
             state._fsp--;
@@ -17063,20 +17148,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6648:1: rule__Injector__Group_12__1__Impl : ( '(' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6679:1: rule__Injector__Group_12__1__Impl : ( '(' ) ;
     public final void rule__Injector__Group_12__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6652:1: ( ( '(' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6653:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6683:1: ( ( '(' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6684:1: ( '(' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6653:1: ( '(' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6654:1: '('
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6684:1: ( '(' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6685:1: '('
             {
              before(grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_12_1()); 
-            match(input,24,FollowSets000.FOLLOW_24_in_rule__Injector__Group_12__1__Impl13128); 
+            match(input,24,FollowSets000.FOLLOW_24_in_rule__Injector__Group_12__1__Impl13190); 
              after(grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_12_1()); 
 
             }
@@ -17100,21 +17185,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6667:1: rule__Injector__Group_12__2 : rule__Injector__Group_12__2__Impl rule__Injector__Group_12__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6698:1: rule__Injector__Group_12__2 : rule__Injector__Group_12__2__Impl rule__Injector__Group_12__3 ;
     public final void rule__Injector__Group_12__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6671:1: ( rule__Injector__Group_12__2__Impl rule__Injector__Group_12__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6672:2: rule__Injector__Group_12__2__Impl rule__Injector__Group_12__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6702:1: ( rule__Injector__Group_12__2__Impl rule__Injector__Group_12__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6703:2: rule__Injector__Group_12__2__Impl rule__Injector__Group_12__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__2__Impl_in_rule__Injector__Group_12__213159);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__2__Impl_in_rule__Injector__Group_12__213221);
             rule__Injector__Group_12__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__3_in_rule__Injector__Group_12__213162);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__3_in_rule__Injector__Group_12__213224);
             rule__Injector__Group_12__3();
 
             state._fsp--;
@@ -17138,23 +17223,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6679:1: rule__Injector__Group_12__2__Impl : ( ( rule__Injector__SignalsAssignment_12_2 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6710:1: rule__Injector__Group_12__2__Impl : ( ( rule__Injector__SignalsAssignment_12_2 ) ) ;
     public final void rule__Injector__Group_12__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6683:1: ( ( ( rule__Injector__SignalsAssignment_12_2 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6684:1: ( ( rule__Injector__SignalsAssignment_12_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6714:1: ( ( ( rule__Injector__SignalsAssignment_12_2 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6715:1: ( ( rule__Injector__SignalsAssignment_12_2 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6684:1: ( ( rule__Injector__SignalsAssignment_12_2 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6685:1: ( rule__Injector__SignalsAssignment_12_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6715:1: ( ( rule__Injector__SignalsAssignment_12_2 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6716:1: ( rule__Injector__SignalsAssignment_12_2 )
             {
              before(grammarAccess.getInjectorAccess().getSignalsAssignment_12_2()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6686:1: ( rule__Injector__SignalsAssignment_12_2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6686:2: rule__Injector__SignalsAssignment_12_2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6717:1: ( rule__Injector__SignalsAssignment_12_2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6717:2: rule__Injector__SignalsAssignment_12_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__SignalsAssignment_12_2_in_rule__Injector__Group_12__2__Impl13189);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__SignalsAssignment_12_2_in_rule__Injector__Group_12__2__Impl13251);
             rule__Injector__SignalsAssignment_12_2();
 
             state._fsp--;
@@ -17185,21 +17270,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6696:1: rule__Injector__Group_12__3 : rule__Injector__Group_12__3__Impl rule__Injector__Group_12__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6727:1: rule__Injector__Group_12__3 : rule__Injector__Group_12__3__Impl rule__Injector__Group_12__4 ;
     public final void rule__Injector__Group_12__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6700:1: ( rule__Injector__Group_12__3__Impl rule__Injector__Group_12__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6701:2: rule__Injector__Group_12__3__Impl rule__Injector__Group_12__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6731:1: ( rule__Injector__Group_12__3__Impl rule__Injector__Group_12__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6732:2: rule__Injector__Group_12__3__Impl rule__Injector__Group_12__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__3__Impl_in_rule__Injector__Group_12__313219);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__3__Impl_in_rule__Injector__Group_12__313281);
             rule__Injector__Group_12__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__4_in_rule__Injector__Group_12__313222);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__4_in_rule__Injector__Group_12__313284);
             rule__Injector__Group_12__4();
 
             state._fsp--;
@@ -17223,20 +17308,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6708:1: rule__Injector__Group_12__3__Impl : ( ( rule__Injector__Group_12_3__0 )* ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6739:1: rule__Injector__Group_12__3__Impl : ( ( rule__Injector__Group_12_3__0 )* ) ;
     public final void rule__Injector__Group_12__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6712:1: ( ( ( rule__Injector__Group_12_3__0 )* ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6713:1: ( ( rule__Injector__Group_12_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6743:1: ( ( ( rule__Injector__Group_12_3__0 )* ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6744:1: ( ( rule__Injector__Group_12_3__0 )* )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6713:1: ( ( rule__Injector__Group_12_3__0 )* )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6714:1: ( rule__Injector__Group_12_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6744:1: ( ( rule__Injector__Group_12_3__0 )* )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6745:1: ( rule__Injector__Group_12_3__0 )*
             {
              before(grammarAccess.getInjectorAccess().getGroup_12_3()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6715:1: ( rule__Injector__Group_12_3__0 )*
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6746:1: ( rule__Injector__Group_12_3__0 )*
             loop42:
             do {
                 int alt42=2;
@@ -17249,9 +17334,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
                 switch (alt42) {
             	case 1 :
-            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6715:2: rule__Injector__Group_12_3__0
+            	    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6746:2: rule__Injector__Group_12_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12_3__0_in_rule__Injector__Group_12__3__Impl13249);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12_3__0_in_rule__Injector__Group_12__3__Impl13311);
             	    rule__Injector__Group_12_3__0();
 
             	    state._fsp--;
@@ -17288,16 +17373,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6725:1: rule__Injector__Group_12__4 : rule__Injector__Group_12__4__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6756:1: rule__Injector__Group_12__4 : rule__Injector__Group_12__4__Impl ;
     public final void rule__Injector__Group_12__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6729:1: ( rule__Injector__Group_12__4__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6730:2: rule__Injector__Group_12__4__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6760:1: ( rule__Injector__Group_12__4__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6761:2: rule__Injector__Group_12__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__4__Impl_in_rule__Injector__Group_12__413280);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12__4__Impl_in_rule__Injector__Group_12__413342);
             rule__Injector__Group_12__4__Impl();
 
             state._fsp--;
@@ -17321,20 +17406,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6736:1: rule__Injector__Group_12__4__Impl : ( ')' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6767:1: rule__Injector__Group_12__4__Impl : ( ')' ) ;
     public final void rule__Injector__Group_12__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6740:1: ( ( ')' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6741:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6771:1: ( ( ')' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6772:1: ( ')' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6741:1: ( ')' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6742:1: ')'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6772:1: ( ')' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6773:1: ')'
             {
              before(grammarAccess.getInjectorAccess().getRightParenthesisKeyword_12_4()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Injector__Group_12__4__Impl13308); 
+            match(input,25,FollowSets000.FOLLOW_25_in_rule__Injector__Group_12__4__Impl13370); 
              after(grammarAccess.getInjectorAccess().getRightParenthesisKeyword_12_4()); 
 
             }
@@ -17358,21 +17443,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12_3__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6765:1: rule__Injector__Group_12_3__0 : rule__Injector__Group_12_3__0__Impl rule__Injector__Group_12_3__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6796:1: rule__Injector__Group_12_3__0 : rule__Injector__Group_12_3__0__Impl rule__Injector__Group_12_3__1 ;
     public final void rule__Injector__Group_12_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6769:1: ( rule__Injector__Group_12_3__0__Impl rule__Injector__Group_12_3__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6770:2: rule__Injector__Group_12_3__0__Impl rule__Injector__Group_12_3__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6800:1: ( rule__Injector__Group_12_3__0__Impl rule__Injector__Group_12_3__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6801:2: rule__Injector__Group_12_3__0__Impl rule__Injector__Group_12_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12_3__0__Impl_in_rule__Injector__Group_12_3__013349);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12_3__0__Impl_in_rule__Injector__Group_12_3__013411);
             rule__Injector__Group_12_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12_3__1_in_rule__Injector__Group_12_3__013352);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12_3__1_in_rule__Injector__Group_12_3__013414);
             rule__Injector__Group_12_3__1();
 
             state._fsp--;
@@ -17396,20 +17481,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12_3__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6777:1: rule__Injector__Group_12_3__0__Impl : ( ',' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6808:1: rule__Injector__Group_12_3__0__Impl : ( ',' ) ;
     public final void rule__Injector__Group_12_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6781:1: ( ( ',' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6782:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6812:1: ( ( ',' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6813:1: ( ',' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6782:1: ( ',' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6783:1: ','
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6813:1: ( ',' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6814:1: ','
             {
              before(grammarAccess.getInjectorAccess().getCommaKeyword_12_3_0()); 
-            match(input,17,FollowSets000.FOLLOW_17_in_rule__Injector__Group_12_3__0__Impl13380); 
+            match(input,17,FollowSets000.FOLLOW_17_in_rule__Injector__Group_12_3__0__Impl13442); 
              after(grammarAccess.getInjectorAccess().getCommaKeyword_12_3_0()); 
 
             }
@@ -17433,16 +17518,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12_3__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6796:1: rule__Injector__Group_12_3__1 : rule__Injector__Group_12_3__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6827:1: rule__Injector__Group_12_3__1 : rule__Injector__Group_12_3__1__Impl ;
     public final void rule__Injector__Group_12_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6800:1: ( rule__Injector__Group_12_3__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6801:2: rule__Injector__Group_12_3__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6831:1: ( rule__Injector__Group_12_3__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6832:2: rule__Injector__Group_12_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12_3__1__Impl_in_rule__Injector__Group_12_3__113411);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__Group_12_3__1__Impl_in_rule__Injector__Group_12_3__113473);
             rule__Injector__Group_12_3__1__Impl();
 
             state._fsp--;
@@ -17466,23 +17551,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__Group_12_3__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6807:1: rule__Injector__Group_12_3__1__Impl : ( ( rule__Injector__SignalsAssignment_12_3_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6838:1: rule__Injector__Group_12_3__1__Impl : ( ( rule__Injector__SignalsAssignment_12_3_1 ) ) ;
     public final void rule__Injector__Group_12_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6811:1: ( ( ( rule__Injector__SignalsAssignment_12_3_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6812:1: ( ( rule__Injector__SignalsAssignment_12_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6842:1: ( ( ( rule__Injector__SignalsAssignment_12_3_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6843:1: ( ( rule__Injector__SignalsAssignment_12_3_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6812:1: ( ( rule__Injector__SignalsAssignment_12_3_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6813:1: ( rule__Injector__SignalsAssignment_12_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6843:1: ( ( rule__Injector__SignalsAssignment_12_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6844:1: ( rule__Injector__SignalsAssignment_12_3_1 )
             {
              before(grammarAccess.getInjectorAccess().getSignalsAssignment_12_3_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6814:1: ( rule__Injector__SignalsAssignment_12_3_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6814:2: rule__Injector__SignalsAssignment_12_3_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6845:1: ( rule__Injector__SignalsAssignment_12_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6845:2: rule__Injector__SignalsAssignment_12_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Injector__SignalsAssignment_12_3_1_in_rule__Injector__Group_12_3__1__Impl13438);
+            pushFollow(FollowSets000.FOLLOW_rule__Injector__SignalsAssignment_12_3_1_in_rule__Injector__Group_12_3__1__Impl13500);
             rule__Injector__SignalsAssignment_12_3_1();
 
             state._fsp--;
@@ -17513,21 +17598,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6828:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6859:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
     public final void rule__EInt__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6832:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6833:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6863:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6864:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__013472);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__013534);
             rule__EInt__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__013475);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__013537);
             rule__EInt__Group__1();
 
             state._fsp--;
@@ -17551,20 +17636,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6840:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6871:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
     public final void rule__EInt__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6844:1: ( ( ( '-' )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6845:1: ( ( '-' )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6875:1: ( ( ( '-' )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6876:1: ( ( '-' )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6845:1: ( ( '-' )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6846:1: ( '-' )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6876:1: ( ( '-' )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6877:1: ( '-' )?
             {
              before(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6847:1: ( '-' )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6878:1: ( '-' )?
             int alt43=2;
             int LA43_0 = input.LA(1);
 
@@ -17573,9 +17658,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt43) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6848:2: '-'
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6879:2: '-'
                     {
-                    match(input,46,FollowSets000.FOLLOW_46_in_rule__EInt__Group__0__Impl13504); 
+                    match(input,46,FollowSets000.FOLLOW_46_in_rule__EInt__Group__0__Impl13566); 
 
                     }
                     break;
@@ -17605,16 +17690,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6859:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6890:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
     public final void rule__EInt__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6863:1: ( rule__EInt__Group__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6864:2: rule__EInt__Group__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6894:1: ( rule__EInt__Group__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6895:2: rule__EInt__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__113537);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__113599);
             rule__EInt__Group__1__Impl();
 
             state._fsp--;
@@ -17638,20 +17723,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6870:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6901:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
     public final void rule__EInt__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6874:1: ( ( RULE_INT ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6875:1: ( RULE_INT )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6905:1: ( ( RULE_INT ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6906:1: ( RULE_INT )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6875:1: ( RULE_INT )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6876:1: RULE_INT
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6906:1: ( RULE_INT )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6907:1: RULE_INT
             {
              before(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
-            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl13564); 
+            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl13626); 
              after(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
 
             }
@@ -17675,21 +17760,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6891:1: rule__Speedlimit__Group__0 : rule__Speedlimit__Group__0__Impl rule__Speedlimit__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6922:1: rule__Speedlimit__Group__0 : rule__Speedlimit__Group__0__Impl rule__Speedlimit__Group__1 ;
     public final void rule__Speedlimit__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6895:1: ( rule__Speedlimit__Group__0__Impl rule__Speedlimit__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6896:2: rule__Speedlimit__Group__0__Impl rule__Speedlimit__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6926:1: ( rule__Speedlimit__Group__0__Impl rule__Speedlimit__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6927:2: rule__Speedlimit__Group__0__Impl rule__Speedlimit__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__0__Impl_in_rule__Speedlimit__Group__013597);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__0__Impl_in_rule__Speedlimit__Group__013659);
             rule__Speedlimit__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__1_in_rule__Speedlimit__Group__013600);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__1_in_rule__Speedlimit__Group__013662);
             rule__Speedlimit__Group__1();
 
             state._fsp--;
@@ -17713,20 +17798,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6903:1: rule__Speedlimit__Group__0__Impl : ( 'Speedlimit' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6934:1: rule__Speedlimit__Group__0__Impl : ( 'Speedlimit' ) ;
     public final void rule__Speedlimit__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6907:1: ( ( 'Speedlimit' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6908:1: ( 'Speedlimit' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6938:1: ( ( 'Speedlimit' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6939:1: ( 'Speedlimit' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6908:1: ( 'Speedlimit' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6909:1: 'Speedlimit'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6939:1: ( 'Speedlimit' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6940:1: 'Speedlimit'
             {
              before(grammarAccess.getSpeedlimitAccess().getSpeedlimitKeyword_0()); 
-            match(input,47,FollowSets000.FOLLOW_47_in_rule__Speedlimit__Group__0__Impl13628); 
+            match(input,47,FollowSets000.FOLLOW_47_in_rule__Speedlimit__Group__0__Impl13690); 
              after(grammarAccess.getSpeedlimitAccess().getSpeedlimitKeyword_0()); 
 
             }
@@ -17750,21 +17835,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6922:1: rule__Speedlimit__Group__1 : rule__Speedlimit__Group__1__Impl rule__Speedlimit__Group__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6953:1: rule__Speedlimit__Group__1 : rule__Speedlimit__Group__1__Impl rule__Speedlimit__Group__2 ;
     public final void rule__Speedlimit__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6926:1: ( rule__Speedlimit__Group__1__Impl rule__Speedlimit__Group__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6927:2: rule__Speedlimit__Group__1__Impl rule__Speedlimit__Group__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6957:1: ( rule__Speedlimit__Group__1__Impl rule__Speedlimit__Group__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6958:2: rule__Speedlimit__Group__1__Impl rule__Speedlimit__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__1__Impl_in_rule__Speedlimit__Group__113659);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__1__Impl_in_rule__Speedlimit__Group__113721);
             rule__Speedlimit__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__2_in_rule__Speedlimit__Group__113662);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__2_in_rule__Speedlimit__Group__113724);
             rule__Speedlimit__Group__2();
 
             state._fsp--;
@@ -17788,23 +17873,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6934:1: rule__Speedlimit__Group__1__Impl : ( ( rule__Speedlimit__NameAssignment_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6965:1: rule__Speedlimit__Group__1__Impl : ( ( rule__Speedlimit__NameAssignment_1 ) ) ;
     public final void rule__Speedlimit__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6938:1: ( ( ( rule__Speedlimit__NameAssignment_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6939:1: ( ( rule__Speedlimit__NameAssignment_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6969:1: ( ( ( rule__Speedlimit__NameAssignment_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6970:1: ( ( rule__Speedlimit__NameAssignment_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6939:1: ( ( rule__Speedlimit__NameAssignment_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6940:1: ( rule__Speedlimit__NameAssignment_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6970:1: ( ( rule__Speedlimit__NameAssignment_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6971:1: ( rule__Speedlimit__NameAssignment_1 )
             {
              before(grammarAccess.getSpeedlimitAccess().getNameAssignment_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6941:1: ( rule__Speedlimit__NameAssignment_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6941:2: rule__Speedlimit__NameAssignment_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6972:1: ( rule__Speedlimit__NameAssignment_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6972:2: rule__Speedlimit__NameAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__NameAssignment_1_in_rule__Speedlimit__Group__1__Impl13689);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__NameAssignment_1_in_rule__Speedlimit__Group__1__Impl13751);
             rule__Speedlimit__NameAssignment_1();
 
             state._fsp--;
@@ -17835,21 +17920,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6951:1: rule__Speedlimit__Group__2 : rule__Speedlimit__Group__2__Impl rule__Speedlimit__Group__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6982:1: rule__Speedlimit__Group__2 : rule__Speedlimit__Group__2__Impl rule__Speedlimit__Group__3 ;
     public final void rule__Speedlimit__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6955:1: ( rule__Speedlimit__Group__2__Impl rule__Speedlimit__Group__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6956:2: rule__Speedlimit__Group__2__Impl rule__Speedlimit__Group__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6986:1: ( rule__Speedlimit__Group__2__Impl rule__Speedlimit__Group__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6987:2: rule__Speedlimit__Group__2__Impl rule__Speedlimit__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__2__Impl_in_rule__Speedlimit__Group__213719);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__2__Impl_in_rule__Speedlimit__Group__213781);
             rule__Speedlimit__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__3_in_rule__Speedlimit__Group__213722);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__3_in_rule__Speedlimit__Group__213784);
             rule__Speedlimit__Group__3();
 
             state._fsp--;
@@ -17873,20 +17958,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6963:1: rule__Speedlimit__Group__2__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6994:1: rule__Speedlimit__Group__2__Impl : ( '{' ) ;
     public final void rule__Speedlimit__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6967:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6968:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6998:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6999:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6968:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6969:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6999:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7000:1: '{'
             {
              before(grammarAccess.getSpeedlimitAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Speedlimit__Group__2__Impl13750); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Speedlimit__Group__2__Impl13812); 
              after(grammarAccess.getSpeedlimitAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -17910,21 +17995,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6982:1: rule__Speedlimit__Group__3 : rule__Speedlimit__Group__3__Impl rule__Speedlimit__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7013:1: rule__Speedlimit__Group__3 : rule__Speedlimit__Group__3__Impl rule__Speedlimit__Group__4 ;
     public final void rule__Speedlimit__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6986:1: ( rule__Speedlimit__Group__3__Impl rule__Speedlimit__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6987:2: rule__Speedlimit__Group__3__Impl rule__Speedlimit__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7017:1: ( rule__Speedlimit__Group__3__Impl rule__Speedlimit__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7018:2: rule__Speedlimit__Group__3__Impl rule__Speedlimit__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__3__Impl_in_rule__Speedlimit__Group__313781);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__3__Impl_in_rule__Speedlimit__Group__313843);
             rule__Speedlimit__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__4_in_rule__Speedlimit__Group__313784);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__4_in_rule__Speedlimit__Group__313846);
             rule__Speedlimit__Group__4();
 
             state._fsp--;
@@ -17948,20 +18033,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6994:1: rule__Speedlimit__Group__3__Impl : ( ( rule__Speedlimit__Group_3__0 )? ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7025:1: rule__Speedlimit__Group__3__Impl : ( ( rule__Speedlimit__Group_3__0 )? ) ;
     public final void rule__Speedlimit__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6998:1: ( ( ( rule__Speedlimit__Group_3__0 )? ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6999:1: ( ( rule__Speedlimit__Group_3__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7029:1: ( ( ( rule__Speedlimit__Group_3__0 )? ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7030:1: ( ( rule__Speedlimit__Group_3__0 )? )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:6999:1: ( ( rule__Speedlimit__Group_3__0 )? )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7000:1: ( rule__Speedlimit__Group_3__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7030:1: ( ( rule__Speedlimit__Group_3__0 )? )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7031:1: ( rule__Speedlimit__Group_3__0 )?
             {
              before(grammarAccess.getSpeedlimitAccess().getGroup_3()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7001:1: ( rule__Speedlimit__Group_3__0 )?
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7032:1: ( rule__Speedlimit__Group_3__0 )?
             int alt44=2;
             int LA44_0 = input.LA(1);
 
@@ -17970,9 +18055,9 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
             }
             switch (alt44) {
                 case 1 :
-                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7001:2: rule__Speedlimit__Group_3__0
+                    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7032:2: rule__Speedlimit__Group_3__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group_3__0_in_rule__Speedlimit__Group__3__Impl13811);
+                    pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group_3__0_in_rule__Speedlimit__Group__3__Impl13873);
                     rule__Speedlimit__Group_3__0();
 
                     state._fsp--;
@@ -18006,21 +18091,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7011:1: rule__Speedlimit__Group__4 : rule__Speedlimit__Group__4__Impl rule__Speedlimit__Group__5 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7042:1: rule__Speedlimit__Group__4 : rule__Speedlimit__Group__4__Impl rule__Speedlimit__Group__5 ;
     public final void rule__Speedlimit__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7015:1: ( rule__Speedlimit__Group__4__Impl rule__Speedlimit__Group__5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7016:2: rule__Speedlimit__Group__4__Impl rule__Speedlimit__Group__5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7046:1: ( rule__Speedlimit__Group__4__Impl rule__Speedlimit__Group__5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7047:2: rule__Speedlimit__Group__4__Impl rule__Speedlimit__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__4__Impl_in_rule__Speedlimit__Group__413842);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__4__Impl_in_rule__Speedlimit__Group__413904);
             rule__Speedlimit__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__5_in_rule__Speedlimit__Group__413845);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__5_in_rule__Speedlimit__Group__413907);
             rule__Speedlimit__Group__5();
 
             state._fsp--;
@@ -18044,20 +18129,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7023:1: rule__Speedlimit__Group__4__Impl : ( 'belongsTo' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7054:1: rule__Speedlimit__Group__4__Impl : ( 'belongsTo' ) ;
     public final void rule__Speedlimit__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7027:1: ( ( 'belongsTo' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7028:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7058:1: ( ( 'belongsTo' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7059:1: ( 'belongsTo' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7028:1: ( 'belongsTo' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7029:1: 'belongsTo'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7059:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7060:1: 'belongsTo'
             {
              before(grammarAccess.getSpeedlimitAccess().getBelongsToKeyword_4()); 
-            match(input,38,FollowSets000.FOLLOW_38_in_rule__Speedlimit__Group__4__Impl13873); 
+            match(input,38,FollowSets000.FOLLOW_38_in_rule__Speedlimit__Group__4__Impl13935); 
              after(grammarAccess.getSpeedlimitAccess().getBelongsToKeyword_4()); 
 
             }
@@ -18081,21 +18166,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7042:1: rule__Speedlimit__Group__5 : rule__Speedlimit__Group__5__Impl rule__Speedlimit__Group__6 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7073:1: rule__Speedlimit__Group__5 : rule__Speedlimit__Group__5__Impl rule__Speedlimit__Group__6 ;
     public final void rule__Speedlimit__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7046:1: ( rule__Speedlimit__Group__5__Impl rule__Speedlimit__Group__6 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7047:2: rule__Speedlimit__Group__5__Impl rule__Speedlimit__Group__6
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7077:1: ( rule__Speedlimit__Group__5__Impl rule__Speedlimit__Group__6 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7078:2: rule__Speedlimit__Group__5__Impl rule__Speedlimit__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__5__Impl_in_rule__Speedlimit__Group__513904);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__5__Impl_in_rule__Speedlimit__Group__513966);
             rule__Speedlimit__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__6_in_rule__Speedlimit__Group__513907);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__6_in_rule__Speedlimit__Group__513969);
             rule__Speedlimit__Group__6();
 
             state._fsp--;
@@ -18119,23 +18204,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__5__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7054:1: rule__Speedlimit__Group__5__Impl : ( ( rule__Speedlimit__BelongsToAssignment_5 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7085:1: rule__Speedlimit__Group__5__Impl : ( ( rule__Speedlimit__BelongsToAssignment_5 ) ) ;
     public final void rule__Speedlimit__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7058:1: ( ( ( rule__Speedlimit__BelongsToAssignment_5 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7059:1: ( ( rule__Speedlimit__BelongsToAssignment_5 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7089:1: ( ( ( rule__Speedlimit__BelongsToAssignment_5 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7090:1: ( ( rule__Speedlimit__BelongsToAssignment_5 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7059:1: ( ( rule__Speedlimit__BelongsToAssignment_5 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7060:1: ( rule__Speedlimit__BelongsToAssignment_5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7090:1: ( ( rule__Speedlimit__BelongsToAssignment_5 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7091:1: ( rule__Speedlimit__BelongsToAssignment_5 )
             {
              before(grammarAccess.getSpeedlimitAccess().getBelongsToAssignment_5()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7061:1: ( rule__Speedlimit__BelongsToAssignment_5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7061:2: rule__Speedlimit__BelongsToAssignment_5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7092:1: ( rule__Speedlimit__BelongsToAssignment_5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7092:2: rule__Speedlimit__BelongsToAssignment_5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__BelongsToAssignment_5_in_rule__Speedlimit__Group__5__Impl13934);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__BelongsToAssignment_5_in_rule__Speedlimit__Group__5__Impl13996);
             rule__Speedlimit__BelongsToAssignment_5();
 
             state._fsp--;
@@ -18166,16 +18251,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__6"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7071:1: rule__Speedlimit__Group__6 : rule__Speedlimit__Group__6__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7102:1: rule__Speedlimit__Group__6 : rule__Speedlimit__Group__6__Impl ;
     public final void rule__Speedlimit__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7075:1: ( rule__Speedlimit__Group__6__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7076:2: rule__Speedlimit__Group__6__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7106:1: ( rule__Speedlimit__Group__6__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7107:2: rule__Speedlimit__Group__6__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__6__Impl_in_rule__Speedlimit__Group__613964);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group__6__Impl_in_rule__Speedlimit__Group__614026);
             rule__Speedlimit__Group__6__Impl();
 
             state._fsp--;
@@ -18199,20 +18284,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group__6__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7082:1: rule__Speedlimit__Group__6__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7113:1: rule__Speedlimit__Group__6__Impl : ( '}' ) ;
     public final void rule__Speedlimit__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7086:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7087:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7117:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7118:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7087:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7088:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7118:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7119:1: '}'
             {
              before(grammarAccess.getSpeedlimitAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Speedlimit__Group__6__Impl13992); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Speedlimit__Group__6__Impl14054); 
              after(grammarAccess.getSpeedlimitAccess().getRightCurlyBracketKeyword_6()); 
 
             }
@@ -18236,21 +18321,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group_3__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7115:1: rule__Speedlimit__Group_3__0 : rule__Speedlimit__Group_3__0__Impl rule__Speedlimit__Group_3__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7146:1: rule__Speedlimit__Group_3__0 : rule__Speedlimit__Group_3__0__Impl rule__Speedlimit__Group_3__1 ;
     public final void rule__Speedlimit__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7119:1: ( rule__Speedlimit__Group_3__0__Impl rule__Speedlimit__Group_3__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7120:2: rule__Speedlimit__Group_3__0__Impl rule__Speedlimit__Group_3__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7150:1: ( rule__Speedlimit__Group_3__0__Impl rule__Speedlimit__Group_3__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7151:2: rule__Speedlimit__Group_3__0__Impl rule__Speedlimit__Group_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group_3__0__Impl_in_rule__Speedlimit__Group_3__014037);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group_3__0__Impl_in_rule__Speedlimit__Group_3__014099);
             rule__Speedlimit__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group_3__1_in_rule__Speedlimit__Group_3__014040);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group_3__1_in_rule__Speedlimit__Group_3__014102);
             rule__Speedlimit__Group_3__1();
 
             state._fsp--;
@@ -18274,20 +18359,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group_3__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7127:1: rule__Speedlimit__Group_3__0__Impl : ( 'Speed' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7158:1: rule__Speedlimit__Group_3__0__Impl : ( 'Speed' ) ;
     public final void rule__Speedlimit__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7131:1: ( ( 'Speed' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7132:1: ( 'Speed' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7162:1: ( ( 'Speed' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7163:1: ( 'Speed' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7132:1: ( 'Speed' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7133:1: 'Speed'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7163:1: ( 'Speed' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7164:1: 'Speed'
             {
              before(grammarAccess.getSpeedlimitAccess().getSpeedKeyword_3_0()); 
-            match(input,48,FollowSets000.FOLLOW_48_in_rule__Speedlimit__Group_3__0__Impl14068); 
+            match(input,48,FollowSets000.FOLLOW_48_in_rule__Speedlimit__Group_3__0__Impl14130); 
              after(grammarAccess.getSpeedlimitAccess().getSpeedKeyword_3_0()); 
 
             }
@@ -18311,16 +18396,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group_3__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7146:1: rule__Speedlimit__Group_3__1 : rule__Speedlimit__Group_3__1__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7177:1: rule__Speedlimit__Group_3__1 : rule__Speedlimit__Group_3__1__Impl ;
     public final void rule__Speedlimit__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7150:1: ( rule__Speedlimit__Group_3__1__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7151:2: rule__Speedlimit__Group_3__1__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7181:1: ( rule__Speedlimit__Group_3__1__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7182:2: rule__Speedlimit__Group_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group_3__1__Impl_in_rule__Speedlimit__Group_3__114099);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__Group_3__1__Impl_in_rule__Speedlimit__Group_3__114161);
             rule__Speedlimit__Group_3__1__Impl();
 
             state._fsp--;
@@ -18344,23 +18429,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__Group_3__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7157:1: rule__Speedlimit__Group_3__1__Impl : ( ( rule__Speedlimit__SpeedAssignment_3_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7188:1: rule__Speedlimit__Group_3__1__Impl : ( ( rule__Speedlimit__SpeedAssignment_3_1 ) ) ;
     public final void rule__Speedlimit__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7161:1: ( ( ( rule__Speedlimit__SpeedAssignment_3_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7162:1: ( ( rule__Speedlimit__SpeedAssignment_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7192:1: ( ( ( rule__Speedlimit__SpeedAssignment_3_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7193:1: ( ( rule__Speedlimit__SpeedAssignment_3_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7162:1: ( ( rule__Speedlimit__SpeedAssignment_3_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7163:1: ( rule__Speedlimit__SpeedAssignment_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7193:1: ( ( rule__Speedlimit__SpeedAssignment_3_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7194:1: ( rule__Speedlimit__SpeedAssignment_3_1 )
             {
              before(grammarAccess.getSpeedlimitAccess().getSpeedAssignment_3_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7164:1: ( rule__Speedlimit__SpeedAssignment_3_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7164:2: rule__Speedlimit__SpeedAssignment_3_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7195:1: ( rule__Speedlimit__SpeedAssignment_3_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7195:2: rule__Speedlimit__SpeedAssignment_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__SpeedAssignment_3_1_in_rule__Speedlimit__Group_3__1__Impl14126);
+            pushFollow(FollowSets000.FOLLOW_rule__Speedlimit__SpeedAssignment_3_1_in_rule__Speedlimit__Group_3__1__Impl14188);
             rule__Speedlimit__SpeedAssignment_3_1();
 
             state._fsp--;
@@ -18391,21 +18476,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7178:1: rule__Stop__Group__0 : rule__Stop__Group__0__Impl rule__Stop__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7209:1: rule__Stop__Group__0 : rule__Stop__Group__0__Impl rule__Stop__Group__1 ;
     public final void rule__Stop__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7182:1: ( rule__Stop__Group__0__Impl rule__Stop__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7183:2: rule__Stop__Group__0__Impl rule__Stop__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7213:1: ( rule__Stop__Group__0__Impl rule__Stop__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7214:2: rule__Stop__Group__0__Impl rule__Stop__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__0__Impl_in_rule__Stop__Group__014160);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__0__Impl_in_rule__Stop__Group__014222);
             rule__Stop__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__1_in_rule__Stop__Group__014163);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__1_in_rule__Stop__Group__014225);
             rule__Stop__Group__1();
 
             state._fsp--;
@@ -18429,20 +18514,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7190:1: rule__Stop__Group__0__Impl : ( 'Stop' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7221:1: rule__Stop__Group__0__Impl : ( 'Stop' ) ;
     public final void rule__Stop__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7194:1: ( ( 'Stop' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7195:1: ( 'Stop' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7225:1: ( ( 'Stop' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7226:1: ( 'Stop' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7195:1: ( 'Stop' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7196:1: 'Stop'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7226:1: ( 'Stop' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7227:1: 'Stop'
             {
              before(grammarAccess.getStopAccess().getStopKeyword_0()); 
-            match(input,49,FollowSets000.FOLLOW_49_in_rule__Stop__Group__0__Impl14191); 
+            match(input,49,FollowSets000.FOLLOW_49_in_rule__Stop__Group__0__Impl14253); 
              after(grammarAccess.getStopAccess().getStopKeyword_0()); 
 
             }
@@ -18466,21 +18551,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7209:1: rule__Stop__Group__1 : rule__Stop__Group__1__Impl rule__Stop__Group__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7240:1: rule__Stop__Group__1 : rule__Stop__Group__1__Impl rule__Stop__Group__2 ;
     public final void rule__Stop__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7213:1: ( rule__Stop__Group__1__Impl rule__Stop__Group__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7214:2: rule__Stop__Group__1__Impl rule__Stop__Group__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7244:1: ( rule__Stop__Group__1__Impl rule__Stop__Group__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7245:2: rule__Stop__Group__1__Impl rule__Stop__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__1__Impl_in_rule__Stop__Group__114222);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__1__Impl_in_rule__Stop__Group__114284);
             rule__Stop__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__2_in_rule__Stop__Group__114225);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__2_in_rule__Stop__Group__114287);
             rule__Stop__Group__2();
 
             state._fsp--;
@@ -18504,23 +18589,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7221:1: rule__Stop__Group__1__Impl : ( ( rule__Stop__NameAssignment_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7252:1: rule__Stop__Group__1__Impl : ( ( rule__Stop__NameAssignment_1 ) ) ;
     public final void rule__Stop__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7225:1: ( ( ( rule__Stop__NameAssignment_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7226:1: ( ( rule__Stop__NameAssignment_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7256:1: ( ( ( rule__Stop__NameAssignment_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7257:1: ( ( rule__Stop__NameAssignment_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7226:1: ( ( rule__Stop__NameAssignment_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7227:1: ( rule__Stop__NameAssignment_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7257:1: ( ( rule__Stop__NameAssignment_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7258:1: ( rule__Stop__NameAssignment_1 )
             {
              before(grammarAccess.getStopAccess().getNameAssignment_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7228:1: ( rule__Stop__NameAssignment_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7228:2: rule__Stop__NameAssignment_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7259:1: ( rule__Stop__NameAssignment_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7259:2: rule__Stop__NameAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__NameAssignment_1_in_rule__Stop__Group__1__Impl14252);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__NameAssignment_1_in_rule__Stop__Group__1__Impl14314);
             rule__Stop__NameAssignment_1();
 
             state._fsp--;
@@ -18551,21 +18636,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7238:1: rule__Stop__Group__2 : rule__Stop__Group__2__Impl rule__Stop__Group__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7269:1: rule__Stop__Group__2 : rule__Stop__Group__2__Impl rule__Stop__Group__3 ;
     public final void rule__Stop__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7242:1: ( rule__Stop__Group__2__Impl rule__Stop__Group__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7243:2: rule__Stop__Group__2__Impl rule__Stop__Group__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7273:1: ( rule__Stop__Group__2__Impl rule__Stop__Group__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7274:2: rule__Stop__Group__2__Impl rule__Stop__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__2__Impl_in_rule__Stop__Group__214282);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__2__Impl_in_rule__Stop__Group__214344);
             rule__Stop__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__3_in_rule__Stop__Group__214285);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__3_in_rule__Stop__Group__214347);
             rule__Stop__Group__3();
 
             state._fsp--;
@@ -18589,20 +18674,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7250:1: rule__Stop__Group__2__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7281:1: rule__Stop__Group__2__Impl : ( '{' ) ;
     public final void rule__Stop__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7254:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7255:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7285:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7286:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7255:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7256:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7286:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7287:1: '{'
             {
              before(grammarAccess.getStopAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Stop__Group__2__Impl14313); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Stop__Group__2__Impl14375); 
              after(grammarAccess.getStopAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -18626,21 +18711,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7269:1: rule__Stop__Group__3 : rule__Stop__Group__3__Impl rule__Stop__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7300:1: rule__Stop__Group__3 : rule__Stop__Group__3__Impl rule__Stop__Group__4 ;
     public final void rule__Stop__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7273:1: ( rule__Stop__Group__3__Impl rule__Stop__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7274:2: rule__Stop__Group__3__Impl rule__Stop__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7304:1: ( rule__Stop__Group__3__Impl rule__Stop__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7305:2: rule__Stop__Group__3__Impl rule__Stop__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__3__Impl_in_rule__Stop__Group__314344);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__3__Impl_in_rule__Stop__Group__314406);
             rule__Stop__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__4_in_rule__Stop__Group__314347);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__4_in_rule__Stop__Group__314409);
             rule__Stop__Group__4();
 
             state._fsp--;
@@ -18664,20 +18749,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7281:1: rule__Stop__Group__3__Impl : ( 'belongsTo' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7312:1: rule__Stop__Group__3__Impl : ( 'belongsTo' ) ;
     public final void rule__Stop__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7285:1: ( ( 'belongsTo' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7286:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7316:1: ( ( 'belongsTo' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7317:1: ( 'belongsTo' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7286:1: ( 'belongsTo' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7287:1: 'belongsTo'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7317:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7318:1: 'belongsTo'
             {
              before(grammarAccess.getStopAccess().getBelongsToKeyword_3()); 
-            match(input,38,FollowSets000.FOLLOW_38_in_rule__Stop__Group__3__Impl14375); 
+            match(input,38,FollowSets000.FOLLOW_38_in_rule__Stop__Group__3__Impl14437); 
              after(grammarAccess.getStopAccess().getBelongsToKeyword_3()); 
 
             }
@@ -18701,21 +18786,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7300:1: rule__Stop__Group__4 : rule__Stop__Group__4__Impl rule__Stop__Group__5 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7331:1: rule__Stop__Group__4 : rule__Stop__Group__4__Impl rule__Stop__Group__5 ;
     public final void rule__Stop__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7304:1: ( rule__Stop__Group__4__Impl rule__Stop__Group__5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7305:2: rule__Stop__Group__4__Impl rule__Stop__Group__5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7335:1: ( rule__Stop__Group__4__Impl rule__Stop__Group__5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7336:2: rule__Stop__Group__4__Impl rule__Stop__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__4__Impl_in_rule__Stop__Group__414406);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__4__Impl_in_rule__Stop__Group__414468);
             rule__Stop__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__5_in_rule__Stop__Group__414409);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__5_in_rule__Stop__Group__414471);
             rule__Stop__Group__5();
 
             state._fsp--;
@@ -18739,23 +18824,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7312:1: rule__Stop__Group__4__Impl : ( ( rule__Stop__BelongsToAssignment_4 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7343:1: rule__Stop__Group__4__Impl : ( ( rule__Stop__BelongsToAssignment_4 ) ) ;
     public final void rule__Stop__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7316:1: ( ( ( rule__Stop__BelongsToAssignment_4 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7317:1: ( ( rule__Stop__BelongsToAssignment_4 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7347:1: ( ( ( rule__Stop__BelongsToAssignment_4 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7348:1: ( ( rule__Stop__BelongsToAssignment_4 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7317:1: ( ( rule__Stop__BelongsToAssignment_4 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7318:1: ( rule__Stop__BelongsToAssignment_4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7348:1: ( ( rule__Stop__BelongsToAssignment_4 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7349:1: ( rule__Stop__BelongsToAssignment_4 )
             {
              before(grammarAccess.getStopAccess().getBelongsToAssignment_4()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7319:1: ( rule__Stop__BelongsToAssignment_4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7319:2: rule__Stop__BelongsToAssignment_4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7350:1: ( rule__Stop__BelongsToAssignment_4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7350:2: rule__Stop__BelongsToAssignment_4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__BelongsToAssignment_4_in_rule__Stop__Group__4__Impl14436);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__BelongsToAssignment_4_in_rule__Stop__Group__4__Impl14498);
             rule__Stop__BelongsToAssignment_4();
 
             state._fsp--;
@@ -18786,16 +18871,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7329:1: rule__Stop__Group__5 : rule__Stop__Group__5__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7360:1: rule__Stop__Group__5 : rule__Stop__Group__5__Impl ;
     public final void rule__Stop__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7333:1: ( rule__Stop__Group__5__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7334:2: rule__Stop__Group__5__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7364:1: ( rule__Stop__Group__5__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7365:2: rule__Stop__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__5__Impl_in_rule__Stop__Group__514466);
+            pushFollow(FollowSets000.FOLLOW_rule__Stop__Group__5__Impl_in_rule__Stop__Group__514528);
             rule__Stop__Group__5__Impl();
 
             state._fsp--;
@@ -18819,20 +18904,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__Group__5__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7340:1: rule__Stop__Group__5__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7371:1: rule__Stop__Group__5__Impl : ( '}' ) ;
     public final void rule__Stop__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7344:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7345:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7375:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7376:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7345:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7346:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7376:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7377:1: '}'
             {
              before(grammarAccess.getStopAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Stop__Group__5__Impl14494); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Stop__Group__5__Impl14556); 
              after(grammarAccess.getStopAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -18856,21 +18941,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__0"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7371:1: rule__Yield__Group__0 : rule__Yield__Group__0__Impl rule__Yield__Group__1 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7402:1: rule__Yield__Group__0 : rule__Yield__Group__0__Impl rule__Yield__Group__1 ;
     public final void rule__Yield__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7375:1: ( rule__Yield__Group__0__Impl rule__Yield__Group__1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7376:2: rule__Yield__Group__0__Impl rule__Yield__Group__1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7406:1: ( rule__Yield__Group__0__Impl rule__Yield__Group__1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7407:2: rule__Yield__Group__0__Impl rule__Yield__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__0__Impl_in_rule__Yield__Group__014537);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__0__Impl_in_rule__Yield__Group__014599);
             rule__Yield__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__1_in_rule__Yield__Group__014540);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__1_in_rule__Yield__Group__014602);
             rule__Yield__Group__1();
 
             state._fsp--;
@@ -18894,20 +18979,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__0__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7383:1: rule__Yield__Group__0__Impl : ( 'Yield' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7414:1: rule__Yield__Group__0__Impl : ( 'Yield' ) ;
     public final void rule__Yield__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7387:1: ( ( 'Yield' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7388:1: ( 'Yield' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7418:1: ( ( 'Yield' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7419:1: ( 'Yield' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7388:1: ( 'Yield' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7389:1: 'Yield'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7419:1: ( 'Yield' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7420:1: 'Yield'
             {
              before(grammarAccess.getYieldAccess().getYieldKeyword_0()); 
-            match(input,50,FollowSets000.FOLLOW_50_in_rule__Yield__Group__0__Impl14568); 
+            match(input,50,FollowSets000.FOLLOW_50_in_rule__Yield__Group__0__Impl14630); 
              after(grammarAccess.getYieldAccess().getYieldKeyword_0()); 
 
             }
@@ -18931,21 +19016,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7402:1: rule__Yield__Group__1 : rule__Yield__Group__1__Impl rule__Yield__Group__2 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7433:1: rule__Yield__Group__1 : rule__Yield__Group__1__Impl rule__Yield__Group__2 ;
     public final void rule__Yield__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7406:1: ( rule__Yield__Group__1__Impl rule__Yield__Group__2 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7407:2: rule__Yield__Group__1__Impl rule__Yield__Group__2
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7437:1: ( rule__Yield__Group__1__Impl rule__Yield__Group__2 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7438:2: rule__Yield__Group__1__Impl rule__Yield__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__1__Impl_in_rule__Yield__Group__114599);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__1__Impl_in_rule__Yield__Group__114661);
             rule__Yield__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__2_in_rule__Yield__Group__114602);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__2_in_rule__Yield__Group__114664);
             rule__Yield__Group__2();
 
             state._fsp--;
@@ -18969,23 +19054,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__1__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7414:1: rule__Yield__Group__1__Impl : ( ( rule__Yield__NameAssignment_1 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7445:1: rule__Yield__Group__1__Impl : ( ( rule__Yield__NameAssignment_1 ) ) ;
     public final void rule__Yield__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7418:1: ( ( ( rule__Yield__NameAssignment_1 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7419:1: ( ( rule__Yield__NameAssignment_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7449:1: ( ( ( rule__Yield__NameAssignment_1 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7450:1: ( ( rule__Yield__NameAssignment_1 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7419:1: ( ( rule__Yield__NameAssignment_1 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7420:1: ( rule__Yield__NameAssignment_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7450:1: ( ( rule__Yield__NameAssignment_1 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7451:1: ( rule__Yield__NameAssignment_1 )
             {
              before(grammarAccess.getYieldAccess().getNameAssignment_1()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7421:1: ( rule__Yield__NameAssignment_1 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7421:2: rule__Yield__NameAssignment_1
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7452:1: ( rule__Yield__NameAssignment_1 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7452:2: rule__Yield__NameAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__NameAssignment_1_in_rule__Yield__Group__1__Impl14629);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__NameAssignment_1_in_rule__Yield__Group__1__Impl14691);
             rule__Yield__NameAssignment_1();
 
             state._fsp--;
@@ -19016,21 +19101,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7431:1: rule__Yield__Group__2 : rule__Yield__Group__2__Impl rule__Yield__Group__3 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7462:1: rule__Yield__Group__2 : rule__Yield__Group__2__Impl rule__Yield__Group__3 ;
     public final void rule__Yield__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7435:1: ( rule__Yield__Group__2__Impl rule__Yield__Group__3 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7436:2: rule__Yield__Group__2__Impl rule__Yield__Group__3
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7466:1: ( rule__Yield__Group__2__Impl rule__Yield__Group__3 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7467:2: rule__Yield__Group__2__Impl rule__Yield__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__2__Impl_in_rule__Yield__Group__214659);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__2__Impl_in_rule__Yield__Group__214721);
             rule__Yield__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__3_in_rule__Yield__Group__214662);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__3_in_rule__Yield__Group__214724);
             rule__Yield__Group__3();
 
             state._fsp--;
@@ -19054,20 +19139,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__2__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7443:1: rule__Yield__Group__2__Impl : ( '{' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7474:1: rule__Yield__Group__2__Impl : ( '{' ) ;
     public final void rule__Yield__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7447:1: ( ( '{' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7448:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7478:1: ( ( '{' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7479:1: ( '{' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7448:1: ( '{' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7449:1: '{'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7479:1: ( '{' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7480:1: '{'
             {
              before(grammarAccess.getYieldAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Yield__Group__2__Impl14690); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Yield__Group__2__Impl14752); 
              after(grammarAccess.getYieldAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -19091,21 +19176,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__3"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7462:1: rule__Yield__Group__3 : rule__Yield__Group__3__Impl rule__Yield__Group__4 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7493:1: rule__Yield__Group__3 : rule__Yield__Group__3__Impl rule__Yield__Group__4 ;
     public final void rule__Yield__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7466:1: ( rule__Yield__Group__3__Impl rule__Yield__Group__4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7467:2: rule__Yield__Group__3__Impl rule__Yield__Group__4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7497:1: ( rule__Yield__Group__3__Impl rule__Yield__Group__4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7498:2: rule__Yield__Group__3__Impl rule__Yield__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__3__Impl_in_rule__Yield__Group__314721);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__3__Impl_in_rule__Yield__Group__314783);
             rule__Yield__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__4_in_rule__Yield__Group__314724);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__4_in_rule__Yield__Group__314786);
             rule__Yield__Group__4();
 
             state._fsp--;
@@ -19129,20 +19214,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__3__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7474:1: rule__Yield__Group__3__Impl : ( 'belongsTo' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7505:1: rule__Yield__Group__3__Impl : ( 'belongsTo' ) ;
     public final void rule__Yield__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7478:1: ( ( 'belongsTo' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7479:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7509:1: ( ( 'belongsTo' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7510:1: ( 'belongsTo' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7479:1: ( 'belongsTo' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7480:1: 'belongsTo'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7510:1: ( 'belongsTo' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7511:1: 'belongsTo'
             {
              before(grammarAccess.getYieldAccess().getBelongsToKeyword_3()); 
-            match(input,38,FollowSets000.FOLLOW_38_in_rule__Yield__Group__3__Impl14752); 
+            match(input,38,FollowSets000.FOLLOW_38_in_rule__Yield__Group__3__Impl14814); 
              after(grammarAccess.getYieldAccess().getBelongsToKeyword_3()); 
 
             }
@@ -19166,21 +19251,21 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7493:1: rule__Yield__Group__4 : rule__Yield__Group__4__Impl rule__Yield__Group__5 ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7524:1: rule__Yield__Group__4 : rule__Yield__Group__4__Impl rule__Yield__Group__5 ;
     public final void rule__Yield__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7497:1: ( rule__Yield__Group__4__Impl rule__Yield__Group__5 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7498:2: rule__Yield__Group__4__Impl rule__Yield__Group__5
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7528:1: ( rule__Yield__Group__4__Impl rule__Yield__Group__5 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7529:2: rule__Yield__Group__4__Impl rule__Yield__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__4__Impl_in_rule__Yield__Group__414783);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__4__Impl_in_rule__Yield__Group__414845);
             rule__Yield__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__5_in_rule__Yield__Group__414786);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__5_in_rule__Yield__Group__414848);
             rule__Yield__Group__5();
 
             state._fsp--;
@@ -19204,23 +19289,23 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__4__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7505:1: rule__Yield__Group__4__Impl : ( ( rule__Yield__BelongsToAssignment_4 ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7536:1: rule__Yield__Group__4__Impl : ( ( rule__Yield__BelongsToAssignment_4 ) ) ;
     public final void rule__Yield__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7509:1: ( ( ( rule__Yield__BelongsToAssignment_4 ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7510:1: ( ( rule__Yield__BelongsToAssignment_4 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7540:1: ( ( ( rule__Yield__BelongsToAssignment_4 ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7541:1: ( ( rule__Yield__BelongsToAssignment_4 ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7510:1: ( ( rule__Yield__BelongsToAssignment_4 ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7511:1: ( rule__Yield__BelongsToAssignment_4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7541:1: ( ( rule__Yield__BelongsToAssignment_4 ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7542:1: ( rule__Yield__BelongsToAssignment_4 )
             {
              before(grammarAccess.getYieldAccess().getBelongsToAssignment_4()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7512:1: ( rule__Yield__BelongsToAssignment_4 )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7512:2: rule__Yield__BelongsToAssignment_4
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7543:1: ( rule__Yield__BelongsToAssignment_4 )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7543:2: rule__Yield__BelongsToAssignment_4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__BelongsToAssignment_4_in_rule__Yield__Group__4__Impl14813);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__BelongsToAssignment_4_in_rule__Yield__Group__4__Impl14875);
             rule__Yield__BelongsToAssignment_4();
 
             state._fsp--;
@@ -19251,16 +19336,16 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7522:1: rule__Yield__Group__5 : rule__Yield__Group__5__Impl ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7553:1: rule__Yield__Group__5 : rule__Yield__Group__5__Impl ;
     public final void rule__Yield__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7526:1: ( rule__Yield__Group__5__Impl )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7527:2: rule__Yield__Group__5__Impl
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7557:1: ( rule__Yield__Group__5__Impl )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7558:2: rule__Yield__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__5__Impl_in_rule__Yield__Group__514843);
+            pushFollow(FollowSets000.FOLLOW_rule__Yield__Group__5__Impl_in_rule__Yield__Group__514905);
             rule__Yield__Group__5__Impl();
 
             state._fsp--;
@@ -19284,20 +19369,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__Group__5__Impl"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7533:1: rule__Yield__Group__5__Impl : ( '}' ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7564:1: rule__Yield__Group__5__Impl : ( '}' ) ;
     public final void rule__Yield__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7537:1: ( ( '}' ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7538:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7568:1: ( ( '}' ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7569:1: ( '}' )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7538:1: ( '}' )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7539:1: '}'
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7569:1: ( '}' )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7570:1: '}'
             {
              before(grammarAccess.getYieldAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,15,FollowSets000.FOLLOW_15_in_rule__Yield__Group__5__Impl14871); 
+            match(input,15,FollowSets000.FOLLOW_15_in_rule__Yield__Group__5__Impl14933); 
              after(grammarAccess.getYieldAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -19321,20 +19406,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitSegmentsAssignment_3_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7565:1: rule__Highway__InitSegmentsAssignment_3_2 : ( ruleSegment ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7596:1: rule__Highway__InitSegmentsAssignment_3_2 : ( ruleSegment ) ;
     public final void rule__Highway__InitSegmentsAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7569:1: ( ( ruleSegment ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7570:1: ( ruleSegment )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7600:1: ( ( ruleSegment ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7601:1: ( ruleSegment )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7570:1: ( ruleSegment )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7571:1: ruleSegment
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7601:1: ( ruleSegment )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7602:1: ruleSegment
             {
              before(grammarAccess.getHighwayAccess().getInitSegmentsSegmentParserRuleCall_3_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSegment_in_rule__Highway__InitSegmentsAssignment_3_214919);
+            pushFollow(FollowSets000.FOLLOW_ruleSegment_in_rule__Highway__InitSegmentsAssignment_3_214981);
             ruleSegment();
 
             state._fsp--;
@@ -19362,20 +19447,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitSegmentsAssignment_3_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7580:1: rule__Highway__InitSegmentsAssignment_3_3_1 : ( ruleSegment ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7611:1: rule__Highway__InitSegmentsAssignment_3_3_1 : ( ruleSegment ) ;
     public final void rule__Highway__InitSegmentsAssignment_3_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7584:1: ( ( ruleSegment ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7585:1: ( ruleSegment )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7615:1: ( ( ruleSegment ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7616:1: ( ruleSegment )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7585:1: ( ruleSegment )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7586:1: ruleSegment
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7616:1: ( ruleSegment )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7617:1: ruleSegment
             {
              before(grammarAccess.getHighwayAccess().getInitSegmentsSegmentParserRuleCall_3_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSegment_in_rule__Highway__InitSegmentsAssignment_3_3_114950);
+            pushFollow(FollowSets000.FOLLOW_ruleSegment_in_rule__Highway__InitSegmentsAssignment_3_3_115012);
             ruleSegment();
 
             state._fsp--;
@@ -19403,20 +19488,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitNodesAssignment_4_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7595:1: rule__Highway__InitNodesAssignment_4_2 : ( ruleNode ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7626:1: rule__Highway__InitNodesAssignment_4_2 : ( ruleNode ) ;
     public final void rule__Highway__InitNodesAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7599:1: ( ( ruleNode ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7600:1: ( ruleNode )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7630:1: ( ( ruleNode ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7631:1: ( ruleNode )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7600:1: ( ruleNode )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7601:1: ruleNode
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7631:1: ( ruleNode )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7632:1: ruleNode
             {
              before(grammarAccess.getHighwayAccess().getInitNodesNodeParserRuleCall_4_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNode_in_rule__Highway__InitNodesAssignment_4_214981);
+            pushFollow(FollowSets000.FOLLOW_ruleNode_in_rule__Highway__InitNodesAssignment_4_215043);
             ruleNode();
 
             state._fsp--;
@@ -19444,20 +19529,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitNodesAssignment_4_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7610:1: rule__Highway__InitNodesAssignment_4_3_1 : ( ruleNode ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7641:1: rule__Highway__InitNodesAssignment_4_3_1 : ( ruleNode ) ;
     public final void rule__Highway__InitNodesAssignment_4_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7614:1: ( ( ruleNode ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7615:1: ( ruleNode )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7645:1: ( ( ruleNode ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7646:1: ( ruleNode )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7615:1: ( ruleNode )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7616:1: ruleNode
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7646:1: ( ruleNode )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7647:1: ruleNode
             {
              before(grammarAccess.getHighwayAccess().getInitNodesNodeParserRuleCall_4_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNode_in_rule__Highway__InitNodesAssignment_4_3_115012);
+            pushFollow(FollowSets000.FOLLOW_ruleNode_in_rule__Highway__InitNodesAssignment_4_3_115074);
             ruleNode();
 
             state._fsp--;
@@ -19485,20 +19570,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitCarsAssignment_5_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7625:1: rule__Highway__InitCarsAssignment_5_2 : ( ruleCar ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7656:1: rule__Highway__InitCarsAssignment_5_2 : ( ruleCar ) ;
     public final void rule__Highway__InitCarsAssignment_5_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7629:1: ( ( ruleCar ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7630:1: ( ruleCar )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7660:1: ( ( ruleCar ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7661:1: ( ruleCar )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7630:1: ( ruleCar )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7631:1: ruleCar
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7661:1: ( ruleCar )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7662:1: ruleCar
             {
              before(grammarAccess.getHighwayAccess().getInitCarsCarParserRuleCall_5_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCar_in_rule__Highway__InitCarsAssignment_5_215043);
+            pushFollow(FollowSets000.FOLLOW_ruleCar_in_rule__Highway__InitCarsAssignment_5_215105);
             ruleCar();
 
             state._fsp--;
@@ -19526,20 +19611,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitCarsAssignment_5_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7640:1: rule__Highway__InitCarsAssignment_5_3_1 : ( ruleCar ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7671:1: rule__Highway__InitCarsAssignment_5_3_1 : ( ruleCar ) ;
     public final void rule__Highway__InitCarsAssignment_5_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7644:1: ( ( ruleCar ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7645:1: ( ruleCar )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7675:1: ( ( ruleCar ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7676:1: ( ruleCar )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7645:1: ( ruleCar )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7646:1: ruleCar
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7676:1: ( ruleCar )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7677:1: ruleCar
             {
              before(grammarAccess.getHighwayAccess().getInitCarsCarParserRuleCall_5_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCar_in_rule__Highway__InitCarsAssignment_5_3_115074);
+            pushFollow(FollowSets000.FOLLOW_ruleCar_in_rule__Highway__InitCarsAssignment_5_3_115136);
             ruleCar();
 
             state._fsp--;
@@ -19567,20 +19652,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitSemaphoreAssignment_6_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7655:1: rule__Highway__InitSemaphoreAssignment_6_2 : ( ruleSemaphore ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7686:1: rule__Highway__InitSemaphoreAssignment_6_2 : ( ruleSemaphore ) ;
     public final void rule__Highway__InitSemaphoreAssignment_6_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7659:1: ( ( ruleSemaphore ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7660:1: ( ruleSemaphore )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7690:1: ( ( ruleSemaphore ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7691:1: ( ruleSemaphore )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7660:1: ( ruleSemaphore )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7661:1: ruleSemaphore
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7691:1: ( ruleSemaphore )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7692:1: ruleSemaphore
             {
              before(grammarAccess.getHighwayAccess().getInitSemaphoreSemaphoreParserRuleCall_6_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSemaphore_in_rule__Highway__InitSemaphoreAssignment_6_215105);
+            pushFollow(FollowSets000.FOLLOW_ruleSemaphore_in_rule__Highway__InitSemaphoreAssignment_6_215167);
             ruleSemaphore();
 
             state._fsp--;
@@ -19608,20 +19693,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitSemaphoreAssignment_6_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7670:1: rule__Highway__InitSemaphoreAssignment_6_3_1 : ( ruleSemaphore ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7701:1: rule__Highway__InitSemaphoreAssignment_6_3_1 : ( ruleSemaphore ) ;
     public final void rule__Highway__InitSemaphoreAssignment_6_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7674:1: ( ( ruleSemaphore ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7675:1: ( ruleSemaphore )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7705:1: ( ( ruleSemaphore ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7706:1: ( ruleSemaphore )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7675:1: ( ruleSemaphore )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7676:1: ruleSemaphore
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7706:1: ( ruleSemaphore )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7707:1: ruleSemaphore
             {
              before(grammarAccess.getHighwayAccess().getInitSemaphoreSemaphoreParserRuleCall_6_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSemaphore_in_rule__Highway__InitSemaphoreAssignment_6_3_115136);
+            pushFollow(FollowSets000.FOLLOW_ruleSemaphore_in_rule__Highway__InitSemaphoreAssignment_6_3_115198);
             ruleSemaphore();
 
             state._fsp--;
@@ -19649,20 +19734,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitSignalAssignment_7_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7685:1: rule__Highway__InitSignalAssignment_7_2 : ( ruleSignal ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7716:1: rule__Highway__InitSignalAssignment_7_2 : ( ruleSignal ) ;
     public final void rule__Highway__InitSignalAssignment_7_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7689:1: ( ( ruleSignal ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7690:1: ( ruleSignal )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7720:1: ( ( ruleSignal ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7721:1: ( ruleSignal )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7690:1: ( ruleSignal )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7691:1: ruleSignal
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7721:1: ( ruleSignal )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7722:1: ruleSignal
             {
              before(grammarAccess.getHighwayAccess().getInitSignalSignalParserRuleCall_7_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSignal_in_rule__Highway__InitSignalAssignment_7_215167);
+            pushFollow(FollowSets000.FOLLOW_ruleSignal_in_rule__Highway__InitSignalAssignment_7_215229);
             ruleSignal();
 
             state._fsp--;
@@ -19690,20 +19775,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Highway__InitSignalAssignment_7_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7700:1: rule__Highway__InitSignalAssignment_7_3_1 : ( ruleSignal ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7731:1: rule__Highway__InitSignalAssignment_7_3_1 : ( ruleSignal ) ;
     public final void rule__Highway__InitSignalAssignment_7_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7704:1: ( ( ruleSignal ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7705:1: ( ruleSignal )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7735:1: ( ( ruleSignal ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7736:1: ( ruleSignal )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7705:1: ( ruleSignal )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7706:1: ruleSignal
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7736:1: ( ruleSignal )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7737:1: ruleSignal
             {
              before(grammarAccess.getHighwayAccess().getInitSignalSignalParserRuleCall_7_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSignal_in_rule__Highway__InitSignalAssignment_7_3_115198);
+            pushFollow(FollowSets000.FOLLOW_ruleSignal_in_rule__Highway__InitSignalAssignment_7_3_115260);
             ruleSignal();
 
             state._fsp--;
@@ -19731,20 +19816,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node_Impl__NameAssignment_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7715:1: rule__Node_Impl__NameAssignment_2 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7746:1: rule__Node_Impl__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Node_Impl__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7719:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7720:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7750:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7751:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7720:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7721:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7751:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7752:1: ruleEString
             {
              before(grammarAccess.getNode_ImplAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__NameAssignment_215229);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__NameAssignment_215291);
             ruleEString();
 
             state._fsp--;
@@ -19772,24 +19857,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node_Impl__HasStartsAssignment_6"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7730:1: rule__Node_Impl__HasStartsAssignment_6 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7761:1: rule__Node_Impl__HasStartsAssignment_6 : ( ( ruleEString ) ) ;
     public final void rule__Node_Impl__HasStartsAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7734:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7735:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7765:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7766:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7735:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7736:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7766:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7767:1: ( ruleEString )
             {
              before(grammarAccess.getNode_ImplAccess().getHasStartsSegmentCrossReference_6_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7737:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7738:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7768:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7769:1: ruleEString
             {
              before(grammarAccess.getNode_ImplAccess().getHasStartsSegmentEStringParserRuleCall_6_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__HasStartsAssignment_615264);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__HasStartsAssignment_615326);
             ruleEString();
 
             state._fsp--;
@@ -19821,24 +19906,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node_Impl__HasStartsAssignment_7_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7749:1: rule__Node_Impl__HasStartsAssignment_7_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7780:1: rule__Node_Impl__HasStartsAssignment_7_1 : ( ( ruleEString ) ) ;
     public final void rule__Node_Impl__HasStartsAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7753:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7754:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7784:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7785:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7754:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7755:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7785:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7786:1: ( ruleEString )
             {
              before(grammarAccess.getNode_ImplAccess().getHasStartsSegmentCrossReference_7_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7756:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7757:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7787:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7788:1: ruleEString
             {
              before(grammarAccess.getNode_ImplAccess().getHasStartsSegmentEStringParserRuleCall_7_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__HasStartsAssignment_7_115303);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__HasStartsAssignment_7_115365);
             ruleEString();
 
             state._fsp--;
@@ -19870,24 +19955,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node_Impl__HasEndsAssignment_11"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7768:1: rule__Node_Impl__HasEndsAssignment_11 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7799:1: rule__Node_Impl__HasEndsAssignment_11 : ( ( ruleEString ) ) ;
     public final void rule__Node_Impl__HasEndsAssignment_11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7772:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7773:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7803:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7804:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7773:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7774:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7804:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7805:1: ( ruleEString )
             {
              before(grammarAccess.getNode_ImplAccess().getHasEndsSegmentCrossReference_11_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7775:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7776:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7806:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7807:1: ruleEString
             {
              before(grammarAccess.getNode_ImplAccess().getHasEndsSegmentEStringParserRuleCall_11_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__HasEndsAssignment_1115342);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__HasEndsAssignment_1115404);
             ruleEString();
 
             state._fsp--;
@@ -19919,24 +20004,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node_Impl__HasEndsAssignment_12_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7787:1: rule__Node_Impl__HasEndsAssignment_12_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7818:1: rule__Node_Impl__HasEndsAssignment_12_1 : ( ( ruleEString ) ) ;
     public final void rule__Node_Impl__HasEndsAssignment_12_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7791:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7792:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7822:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7823:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7792:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7793:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7823:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7824:1: ( ruleEString )
             {
              before(grammarAccess.getNode_ImplAccess().getHasEndsSegmentCrossReference_12_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7794:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7795:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7825:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7826:1: ruleEString
             {
              before(grammarAccess.getNode_ImplAccess().getHasEndsSegmentEStringParserRuleCall_12_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__HasEndsAssignment_12_115381);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__HasEndsAssignment_12_115443);
             ruleEString();
 
             state._fsp--;
@@ -19968,24 +20053,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node_Impl__SemaphoreAssignment_14_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7806:1: rule__Node_Impl__SemaphoreAssignment_14_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7837:1: rule__Node_Impl__SemaphoreAssignment_14_1 : ( ( ruleEString ) ) ;
     public final void rule__Node_Impl__SemaphoreAssignment_14_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7810:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7811:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7841:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7842:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7811:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7812:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7842:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7843:1: ( ruleEString )
             {
              before(grammarAccess.getNode_ImplAccess().getSemaphoreSemaphoreCrossReference_14_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7813:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7814:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7844:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7845:1: ruleEString
             {
              before(grammarAccess.getNode_ImplAccess().getSemaphoreSemaphoreEStringParserRuleCall_14_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__SemaphoreAssignment_14_115420);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__SemaphoreAssignment_14_115482);
             ruleEString();
 
             state._fsp--;
@@ -20017,24 +20102,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node_Impl__SignalsAssignment_15_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7825:1: rule__Node_Impl__SignalsAssignment_15_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7856:1: rule__Node_Impl__SignalsAssignment_15_2 : ( ( ruleEString ) ) ;
     public final void rule__Node_Impl__SignalsAssignment_15_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7829:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7830:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7860:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7861:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7830:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7831:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7861:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7862:1: ( ruleEString )
             {
              before(grammarAccess.getNode_ImplAccess().getSignalsSignalCrossReference_15_2_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7832:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7833:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7863:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7864:1: ruleEString
             {
              before(grammarAccess.getNode_ImplAccess().getSignalsSignalEStringParserRuleCall_15_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__SignalsAssignment_15_215459);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__SignalsAssignment_15_215521);
             ruleEString();
 
             state._fsp--;
@@ -20066,24 +20151,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node_Impl__SignalsAssignment_15_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7844:1: rule__Node_Impl__SignalsAssignment_15_3_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7875:1: rule__Node_Impl__SignalsAssignment_15_3_1 : ( ( ruleEString ) ) ;
     public final void rule__Node_Impl__SignalsAssignment_15_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7848:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7849:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7879:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7880:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7849:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7850:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7880:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7881:1: ( ruleEString )
             {
              before(grammarAccess.getNode_ImplAccess().getSignalsSignalCrossReference_15_3_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7851:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7852:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7882:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7883:1: ruleEString
             {
              before(grammarAccess.getNode_ImplAccess().getSignalsSignalEStringParserRuleCall_15_3_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__SignalsAssignment_15_3_115498);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Node_Impl__SignalsAssignment_15_3_115560);
             ruleEString();
 
             state._fsp--;
@@ -20114,116 +20199,26 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Node_Impl__SignalsAssignment_15_3_1"
 
 
-    // $ANTLR start "rule__Car__TimeInAssignment_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7863:1: rule__Car__TimeInAssignment_3_1 : ( ruleEDate ) ;
-    public final void rule__Car__TimeInAssignment_3_1() throws RecognitionException {
+    // $ANTLR start "rule__Car__NameAssignment_2"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7894:1: rule__Car__NameAssignment_2 : ( ruleEString ) ;
+    public final void rule__Car__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7867:1: ( ( ruleEDate ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7868:1: ( ruleEDate )
-            {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7868:1: ( ruleEDate )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7869:1: ruleEDate
-            {
-             before(grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDate_in_rule__Car__TimeInAssignment_3_115533);
-            ruleEDate();
-
-            state._fsp--;
-
-             after(grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Car__TimeInAssignment_3_1"
-
-
-    // $ANTLR start "rule__Car__TimeOutAssignment_4_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7878:1: rule__Car__TimeOutAssignment_4_1 : ( ruleEDate ) ;
-    public final void rule__Car__TimeOutAssignment_4_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7882:1: ( ( ruleEDate ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7883:1: ( ruleEDate )
-            {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7883:1: ( ruleEDate )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7884:1: ruleEDate
-            {
-             before(grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_4_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDate_in_rule__Car__TimeOutAssignment_4_115564);
-            ruleEDate();
-
-            state._fsp--;
-
-             after(grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_4_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Car__TimeOutAssignment_4_1"
-
-
-    // $ANTLR start "rule__Car__IsInSegmentAssignment_5_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7893:1: rule__Car__IsInSegmentAssignment_5_1 : ( ( ruleEString ) ) ;
-    public final void rule__Car__IsInSegmentAssignment_5_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7897:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7898:1: ( ( ruleEString ) )
-            {
             // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7898:1: ( ( ruleEString ) )
             // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7899:1: ( ruleEString )
             {
-             before(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_5_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7900:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7901:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7899:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7900:1: ruleEString
             {
-             before(grammarAccess.getCarAccess().getIsInSegmentSegmentEStringParserRuleCall_5_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Car__IsInSegmentAssignment_5_115599);
+             before(grammarAccess.getCarAccess().getNameEStringParserRuleCall_2_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Car__NameAssignment_215595);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getCarAccess().getIsInSegmentSegmentEStringParserRuleCall_5_1_0_1()); 
-
-            }
-
-             after(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_5_1_0()); 
+             after(grammarAccess.getCarAccess().getNameEStringParserRuleCall_2_0()); 
 
             }
 
@@ -20242,24 +20237,155 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Car__IsInSegmentAssignment_5_1"
+    // $ANTLR end "rule__Car__NameAssignment_2"
+
+
+    // $ANTLR start "rule__Car__TimeInAssignment_4_1"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7909:1: rule__Car__TimeInAssignment_4_1 : ( ruleEDate ) ;
+    public final void rule__Car__TimeInAssignment_4_1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7913:1: ( ( ruleEDate ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7914:1: ( ruleEDate )
+            {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7914:1: ( ruleEDate )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7915:1: ruleEDate
+            {
+             before(grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_4_1_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleEDate_in_rule__Car__TimeInAssignment_4_115626);
+            ruleEDate();
+
+            state._fsp--;
+
+             after(grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_4_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Car__TimeInAssignment_4_1"
+
+
+    // $ANTLR start "rule__Car__TimeOutAssignment_5_1"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7924:1: rule__Car__TimeOutAssignment_5_1 : ( ruleEDate ) ;
+    public final void rule__Car__TimeOutAssignment_5_1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7928:1: ( ( ruleEDate ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7929:1: ( ruleEDate )
+            {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7929:1: ( ruleEDate )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7930:1: ruleEDate
+            {
+             before(grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_5_1_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleEDate_in_rule__Car__TimeOutAssignment_5_115657);
+            ruleEDate();
+
+            state._fsp--;
+
+             after(grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_5_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Car__TimeOutAssignment_5_1"
+
+
+    // $ANTLR start "rule__Car__IsInSegmentAssignment_6_1"
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7939:1: rule__Car__IsInSegmentAssignment_6_1 : ( ( ruleEString ) ) ;
+    public final void rule__Car__IsInSegmentAssignment_6_1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7943:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7944:1: ( ( ruleEString ) )
+            {
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7944:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7945:1: ( ruleEString )
+            {
+             before(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_6_1_0()); 
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7946:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7947:1: ruleEString
+            {
+             before(grammarAccess.getCarAccess().getIsInSegmentSegmentEStringParserRuleCall_6_1_0_1()); 
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Car__IsInSegmentAssignment_6_115692);
+            ruleEString();
+
+            state._fsp--;
+
+             after(grammarAccess.getCarAccess().getIsInSegmentSegmentEStringParserRuleCall_6_1_0_1()); 
+
+            }
+
+             after(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_6_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Car__IsInSegmentAssignment_6_1"
 
 
     // $ANTLR start "rule__Segment__NameAssignment_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7912:1: rule__Segment__NameAssignment_2 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7958:1: rule__Segment__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Segment__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7916:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7917:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7962:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7963:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7917:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7918:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7963:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7964:1: ruleEString
             {
              before(grammarAccess.getSegmentAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Segment__NameAssignment_215634);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Segment__NameAssignment_215727);
             ruleEString();
 
             state._fsp--;
@@ -20287,20 +20413,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__NumLanesAssignment_4_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7927:1: rule__Segment__NumLanesAssignment_4_1 : ( ruleEInt ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7973:1: rule__Segment__NumLanesAssignment_4_1 : ( ruleEInt ) ;
     public final void rule__Segment__NumLanesAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7931:1: ( ( ruleEInt ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7932:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7977:1: ( ( ruleEInt ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7978:1: ( ruleEInt )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7932:1: ( ruleEInt )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7933:1: ruleEInt
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7978:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7979:1: ruleEInt
             {
              before(grammarAccess.getSegmentAccess().getNumLanesEIntParserRuleCall_4_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Segment__NumLanesAssignment_4_115665);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Segment__NumLanesAssignment_4_115758);
             ruleEInt();
 
             state._fsp--;
@@ -20328,20 +20454,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__LengthAssignment_5_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7942:1: rule__Segment__LengthAssignment_5_1 : ( ruleEInt ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7988:1: rule__Segment__LengthAssignment_5_1 : ( ruleEInt ) ;
     public final void rule__Segment__LengthAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7946:1: ( ( ruleEInt ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7947:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7992:1: ( ( ruleEInt ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7993:1: ( ruleEInt )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7947:1: ( ruleEInt )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7948:1: ruleEInt
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7993:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7994:1: ruleEInt
             {
              before(grammarAccess.getSegmentAccess().getLengthEIntParserRuleCall_5_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Segment__LengthAssignment_5_115696);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Segment__LengthAssignment_5_115789);
             ruleEInt();
 
             state._fsp--;
@@ -20369,24 +20495,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__HasCarsAssignment_6_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7957:1: rule__Segment__HasCarsAssignment_6_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8003:1: rule__Segment__HasCarsAssignment_6_2 : ( ( ruleEString ) ) ;
     public final void rule__Segment__HasCarsAssignment_6_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7961:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7962:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8007:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8008:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7962:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7963:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8008:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8009:1: ( ruleEString )
             {
              before(grammarAccess.getSegmentAccess().getHasCarsCarCrossReference_6_2_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7964:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7965:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8010:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8011:1: ruleEString
             {
              before(grammarAccess.getSegmentAccess().getHasCarsCarEStringParserRuleCall_6_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Segment__HasCarsAssignment_6_215731);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Segment__HasCarsAssignment_6_215824);
             ruleEString();
 
             state._fsp--;
@@ -20418,24 +20544,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Segment__HasCarsAssignment_6_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7976:1: rule__Segment__HasCarsAssignment_6_3_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8022:1: rule__Segment__HasCarsAssignment_6_3_1 : ( ( ruleEString ) ) ;
     public final void rule__Segment__HasCarsAssignment_6_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7980:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7981:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8026:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8027:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7981:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7982:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8027:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8028:1: ( ruleEString )
             {
              before(grammarAccess.getSegmentAccess().getHasCarsCarCrossReference_6_3_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7983:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7984:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8029:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8030:1: ruleEString
             {
              before(grammarAccess.getSegmentAccess().getHasCarsCarEStringParserRuleCall_6_3_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Segment__HasCarsAssignment_6_3_115770);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Segment__HasCarsAssignment_6_3_115863);
             ruleEString();
 
             state._fsp--;
@@ -20467,20 +20593,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__NameAssignment_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7995:1: rule__Semaphore__NameAssignment_2 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8041:1: rule__Semaphore__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Semaphore__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:7999:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8000:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8045:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8046:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8000:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8001:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8046:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8047:1: ruleEString
             {
              before(grammarAccess.getSemaphoreAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Semaphore__NameAssignment_215805);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Semaphore__NameAssignment_215898);
             ruleEString();
 
             state._fsp--;
@@ -20508,20 +20634,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__CanGoAssignment_4_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8010:1: rule__Semaphore__CanGoAssignment_4_1 : ( ruleEBoolean ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8056:1: rule__Semaphore__CanGoAssignment_4_1 : ( ruleEBoolean ) ;
     public final void rule__Semaphore__CanGoAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8014:1: ( ( ruleEBoolean ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8015:1: ( ruleEBoolean )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8060:1: ( ( ruleEBoolean ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8061:1: ( ruleEBoolean )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8015:1: ( ruleEBoolean )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8016:1: ruleEBoolean
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8061:1: ( ruleEBoolean )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8062:1: ruleEBoolean
             {
              before(grammarAccess.getSemaphoreAccess().getCanGoEBooleanParserRuleCall_4_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEBoolean_in_rule__Semaphore__CanGoAssignment_4_115836);
+            pushFollow(FollowSets000.FOLLOW_ruleEBoolean_in_rule__Semaphore__CanGoAssignment_4_115929);
             ruleEBoolean();
 
             state._fsp--;
@@ -20549,20 +20675,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__SecondsRedAssignment_5_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8025:1: rule__Semaphore__SecondsRedAssignment_5_1 : ( ruleEInt ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8071:1: rule__Semaphore__SecondsRedAssignment_5_1 : ( ruleEInt ) ;
     public final void rule__Semaphore__SecondsRedAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8029:1: ( ( ruleEInt ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8030:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8075:1: ( ( ruleEInt ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8076:1: ( ruleEInt )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8030:1: ( ruleEInt )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8031:1: ruleEInt
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8076:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8077:1: ruleEInt
             {
              before(grammarAccess.getSemaphoreAccess().getSecondsRedEIntParserRuleCall_5_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Semaphore__SecondsRedAssignment_5_115867);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Semaphore__SecondsRedAssignment_5_115960);
             ruleEInt();
 
             state._fsp--;
@@ -20590,20 +20716,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__SecondsGreenAssignment_6_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8040:1: rule__Semaphore__SecondsGreenAssignment_6_1 : ( ruleEInt ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8086:1: rule__Semaphore__SecondsGreenAssignment_6_1 : ( ruleEInt ) ;
     public final void rule__Semaphore__SecondsGreenAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8044:1: ( ( ruleEInt ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8045:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8090:1: ( ( ruleEInt ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8091:1: ( ruleEInt )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8045:1: ( ruleEInt )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8046:1: ruleEInt
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8091:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8092:1: ruleEInt
             {
              before(grammarAccess.getSemaphoreAccess().getSecondsGreenEIntParserRuleCall_6_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Semaphore__SecondsGreenAssignment_6_115898);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Semaphore__SecondsGreenAssignment_6_115991);
             ruleEInt();
 
             state._fsp--;
@@ -20631,24 +20757,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Semaphore__BelongsToAssignment_8"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8055:1: rule__Semaphore__BelongsToAssignment_8 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8101:1: rule__Semaphore__BelongsToAssignment_8 : ( ( ruleEString ) ) ;
     public final void rule__Semaphore__BelongsToAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8059:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8060:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8105:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8106:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8060:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8061:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8106:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8107:1: ( ruleEString )
             {
              before(grammarAccess.getSemaphoreAccess().getBelongsToNodeCrossReference_8_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8062:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8063:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8108:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8109:1: ruleEString
             {
              before(grammarAccess.getSemaphoreAccess().getBelongsToNodeEStringParserRuleCall_8_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Semaphore__BelongsToAssignment_815933);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Semaphore__BelongsToAssignment_816026);
             ruleEString();
 
             state._fsp--;
@@ -20680,20 +20806,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__NameAssignment_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8074:1: rule__Signal_Impl__NameAssignment_2 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8120:1: rule__Signal_Impl__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Signal_Impl__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8078:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8079:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8124:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8125:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8079:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8080:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8125:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8126:1: ruleEString
             {
              before(grammarAccess.getSignal_ImplAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Signal_Impl__NameAssignment_215968);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Signal_Impl__NameAssignment_216061);
             ruleEString();
 
             state._fsp--;
@@ -20721,24 +20847,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Signal_Impl__BelongsToAssignment_5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8089:1: rule__Signal_Impl__BelongsToAssignment_5 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8135:1: rule__Signal_Impl__BelongsToAssignment_5 : ( ( ruleEString ) ) ;
     public final void rule__Signal_Impl__BelongsToAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8093:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8094:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8139:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8140:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8094:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8095:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8140:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8141:1: ( ruleEString )
             {
              before(grammarAccess.getSignal_ImplAccess().getBelongsToNodeCrossReference_5_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8096:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8097:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8142:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8143:1: ruleEString
             {
              before(grammarAccess.getSignal_ImplAccess().getBelongsToNodeEStringParserRuleCall_5_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Signal_Impl__BelongsToAssignment_516003);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Signal_Impl__BelongsToAssignment_516096);
             ruleEString();
 
             state._fsp--;
@@ -20770,20 +20896,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__NameAssignment_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8108:1: rule__Extractor__NameAssignment_2 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8154:1: rule__Extractor__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Extractor__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8112:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8113:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8158:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8159:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8113:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8114:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8159:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8160:1: ruleEString
             {
              before(grammarAccess.getExtractorAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__NameAssignment_216038);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__NameAssignment_216131);
             ruleEString();
 
             state._fsp--;
@@ -20811,24 +20937,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__HasStartsAssignment_4_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8123:1: rule__Extractor__HasStartsAssignment_4_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8169:1: rule__Extractor__HasStartsAssignment_4_2 : ( ( ruleEString ) ) ;
     public final void rule__Extractor__HasStartsAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8127:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8128:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8173:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8174:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8128:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8129:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8174:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8175:1: ( ruleEString )
             {
              before(grammarAccess.getExtractorAccess().getHasStartsSegmentCrossReference_4_2_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8130:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8131:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8176:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8177:1: ruleEString
             {
              before(grammarAccess.getExtractorAccess().getHasStartsSegmentEStringParserRuleCall_4_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__HasStartsAssignment_4_216073);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__HasStartsAssignment_4_216166);
             ruleEString();
 
             state._fsp--;
@@ -20860,24 +20986,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__HasStartsAssignment_4_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8142:1: rule__Extractor__HasStartsAssignment_4_3_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8188:1: rule__Extractor__HasStartsAssignment_4_3_1 : ( ( ruleEString ) ) ;
     public final void rule__Extractor__HasStartsAssignment_4_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8146:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8147:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8192:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8193:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8147:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8148:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8193:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8194:1: ( ruleEString )
             {
              before(grammarAccess.getExtractorAccess().getHasStartsSegmentCrossReference_4_3_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8149:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8150:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8195:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8196:1: ruleEString
             {
              before(grammarAccess.getExtractorAccess().getHasStartsSegmentEStringParserRuleCall_4_3_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__HasStartsAssignment_4_3_116112);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__HasStartsAssignment_4_3_116205);
             ruleEString();
 
             state._fsp--;
@@ -20909,24 +21035,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__HasEndsAssignment_7"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8161:1: rule__Extractor__HasEndsAssignment_7 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8207:1: rule__Extractor__HasEndsAssignment_7 : ( ( ruleEString ) ) ;
     public final void rule__Extractor__HasEndsAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8165:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8166:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8211:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8212:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8166:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8167:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8212:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8213:1: ( ruleEString )
             {
              before(grammarAccess.getExtractorAccess().getHasEndsSegmentCrossReference_7_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8168:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8169:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8214:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8215:1: ruleEString
             {
              before(grammarAccess.getExtractorAccess().getHasEndsSegmentEStringParserRuleCall_7_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__HasEndsAssignment_716151);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__HasEndsAssignment_716244);
             ruleEString();
 
             state._fsp--;
@@ -20958,24 +21084,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__HasEndsAssignment_8_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8180:1: rule__Extractor__HasEndsAssignment_8_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8226:1: rule__Extractor__HasEndsAssignment_8_1 : ( ( ruleEString ) ) ;
     public final void rule__Extractor__HasEndsAssignment_8_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8184:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8185:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8230:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8231:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8185:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8186:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8231:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8232:1: ( ruleEString )
             {
              before(grammarAccess.getExtractorAccess().getHasEndsSegmentCrossReference_8_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8187:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8188:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8233:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8234:1: ruleEString
             {
              before(grammarAccess.getExtractorAccess().getHasEndsSegmentEStringParserRuleCall_8_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__HasEndsAssignment_8_116190);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__HasEndsAssignment_8_116283);
             ruleEString();
 
             state._fsp--;
@@ -21007,24 +21133,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__SemaphoreAssignment_10_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8199:1: rule__Extractor__SemaphoreAssignment_10_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8245:1: rule__Extractor__SemaphoreAssignment_10_1 : ( ( ruleEString ) ) ;
     public final void rule__Extractor__SemaphoreAssignment_10_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8203:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8204:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8249:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8250:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8204:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8205:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8250:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8251:1: ( ruleEString )
             {
              before(grammarAccess.getExtractorAccess().getSemaphoreSemaphoreCrossReference_10_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8206:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8207:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8252:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8253:1: ruleEString
             {
              before(grammarAccess.getExtractorAccess().getSemaphoreSemaphoreEStringParserRuleCall_10_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__SemaphoreAssignment_10_116229);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__SemaphoreAssignment_10_116322);
             ruleEString();
 
             state._fsp--;
@@ -21056,24 +21182,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__SignalsAssignment_11_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8218:1: rule__Extractor__SignalsAssignment_11_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8264:1: rule__Extractor__SignalsAssignment_11_2 : ( ( ruleEString ) ) ;
     public final void rule__Extractor__SignalsAssignment_11_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8222:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8223:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8268:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8269:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8223:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8224:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8269:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8270:1: ( ruleEString )
             {
              before(grammarAccess.getExtractorAccess().getSignalsSignalCrossReference_11_2_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8225:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8226:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8271:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8272:1: ruleEString
             {
              before(grammarAccess.getExtractorAccess().getSignalsSignalEStringParserRuleCall_11_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__SignalsAssignment_11_216268);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__SignalsAssignment_11_216361);
             ruleEString();
 
             state._fsp--;
@@ -21105,24 +21231,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Extractor__SignalsAssignment_11_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8237:1: rule__Extractor__SignalsAssignment_11_3_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8283:1: rule__Extractor__SignalsAssignment_11_3_1 : ( ( ruleEString ) ) ;
     public final void rule__Extractor__SignalsAssignment_11_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8241:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8242:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8287:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8288:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8242:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8243:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8288:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8289:1: ( ruleEString )
             {
              before(grammarAccess.getExtractorAccess().getSignalsSignalCrossReference_11_3_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8244:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8245:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8290:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8291:1: ruleEString
             {
              before(grammarAccess.getExtractorAccess().getSignalsSignalEStringParserRuleCall_11_3_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__SignalsAssignment_11_3_116307);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Extractor__SignalsAssignment_11_3_116400);
             ruleEString();
 
             state._fsp--;
@@ -21154,20 +21280,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__NameAssignment_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8256:1: rule__Injector__NameAssignment_2 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8302:1: rule__Injector__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Injector__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8260:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8261:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8306:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8307:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8261:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8262:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8307:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8308:1: ruleEString
             {
              before(grammarAccess.getInjectorAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__NameAssignment_216342);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__NameAssignment_216435);
             ruleEString();
 
             state._fsp--;
@@ -21195,20 +21321,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__CarsPerHourAssignment_4_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8271:1: rule__Injector__CarsPerHourAssignment_4_1 : ( ruleEInt ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8317:1: rule__Injector__CarsPerHourAssignment_4_1 : ( ruleEInt ) ;
     public final void rule__Injector__CarsPerHourAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8275:1: ( ( ruleEInt ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8276:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8321:1: ( ( ruleEInt ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8322:1: ( ruleEInt )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8276:1: ( ruleEInt )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8277:1: ruleEInt
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8322:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8323:1: ruleEInt
             {
              before(grammarAccess.getInjectorAccess().getCarsPerHourEIntParserRuleCall_4_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Injector__CarsPerHourAssignment_4_116373);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Injector__CarsPerHourAssignment_4_116466);
             ruleEInt();
 
             state._fsp--;
@@ -21236,24 +21362,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__HasStartsAssignment_7"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8286:1: rule__Injector__HasStartsAssignment_7 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8332:1: rule__Injector__HasStartsAssignment_7 : ( ( ruleEString ) ) ;
     public final void rule__Injector__HasStartsAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8290:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8291:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8336:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8337:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8291:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8292:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8337:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8338:1: ( ruleEString )
             {
              before(grammarAccess.getInjectorAccess().getHasStartsSegmentCrossReference_7_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8293:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8294:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8339:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8340:1: ruleEString
             {
              before(grammarAccess.getInjectorAccess().getHasStartsSegmentEStringParserRuleCall_7_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__HasStartsAssignment_716408);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__HasStartsAssignment_716501);
             ruleEString();
 
             state._fsp--;
@@ -21285,24 +21411,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__HasStartsAssignment_8_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8305:1: rule__Injector__HasStartsAssignment_8_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8351:1: rule__Injector__HasStartsAssignment_8_1 : ( ( ruleEString ) ) ;
     public final void rule__Injector__HasStartsAssignment_8_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8309:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8310:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8355:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8356:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8310:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8311:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8356:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8357:1: ( ruleEString )
             {
              before(grammarAccess.getInjectorAccess().getHasStartsSegmentCrossReference_8_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8312:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8313:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8358:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8359:1: ruleEString
             {
              before(grammarAccess.getInjectorAccess().getHasStartsSegmentEStringParserRuleCall_8_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__HasStartsAssignment_8_116447);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__HasStartsAssignment_8_116540);
             ruleEString();
 
             state._fsp--;
@@ -21334,24 +21460,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__HasEndsAssignment_10_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8324:1: rule__Injector__HasEndsAssignment_10_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8370:1: rule__Injector__HasEndsAssignment_10_2 : ( ( ruleEString ) ) ;
     public final void rule__Injector__HasEndsAssignment_10_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8328:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8329:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8374:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8375:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8329:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8330:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8375:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8376:1: ( ruleEString )
             {
              before(grammarAccess.getInjectorAccess().getHasEndsSegmentCrossReference_10_2_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8331:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8332:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8377:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8378:1: ruleEString
             {
              before(grammarAccess.getInjectorAccess().getHasEndsSegmentEStringParserRuleCall_10_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__HasEndsAssignment_10_216486);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__HasEndsAssignment_10_216579);
             ruleEString();
 
             state._fsp--;
@@ -21383,24 +21509,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__HasEndsAssignment_10_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8343:1: rule__Injector__HasEndsAssignment_10_3_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8389:1: rule__Injector__HasEndsAssignment_10_3_1 : ( ( ruleEString ) ) ;
     public final void rule__Injector__HasEndsAssignment_10_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8347:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8348:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8393:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8394:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8348:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8349:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8394:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8395:1: ( ruleEString )
             {
              before(grammarAccess.getInjectorAccess().getHasEndsSegmentCrossReference_10_3_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8350:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8351:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8396:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8397:1: ruleEString
             {
              before(grammarAccess.getInjectorAccess().getHasEndsSegmentEStringParserRuleCall_10_3_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__HasEndsAssignment_10_3_116525);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__HasEndsAssignment_10_3_116618);
             ruleEString();
 
             state._fsp--;
@@ -21432,24 +21558,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__SemaphoreAssignment_11_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8362:1: rule__Injector__SemaphoreAssignment_11_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8408:1: rule__Injector__SemaphoreAssignment_11_1 : ( ( ruleEString ) ) ;
     public final void rule__Injector__SemaphoreAssignment_11_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8366:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8367:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8412:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8413:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8367:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8368:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8413:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8414:1: ( ruleEString )
             {
              before(grammarAccess.getInjectorAccess().getSemaphoreSemaphoreCrossReference_11_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8369:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8370:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8415:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8416:1: ruleEString
             {
              before(grammarAccess.getInjectorAccess().getSemaphoreSemaphoreEStringParserRuleCall_11_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__SemaphoreAssignment_11_116564);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__SemaphoreAssignment_11_116657);
             ruleEString();
 
             state._fsp--;
@@ -21481,24 +21607,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__SignalsAssignment_12_2"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8381:1: rule__Injector__SignalsAssignment_12_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8427:1: rule__Injector__SignalsAssignment_12_2 : ( ( ruleEString ) ) ;
     public final void rule__Injector__SignalsAssignment_12_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8385:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8386:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8431:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8432:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8386:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8387:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8432:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8433:1: ( ruleEString )
             {
              before(grammarAccess.getInjectorAccess().getSignalsSignalCrossReference_12_2_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8388:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8389:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8434:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8435:1: ruleEString
             {
              before(grammarAccess.getInjectorAccess().getSignalsSignalEStringParserRuleCall_12_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__SignalsAssignment_12_216603);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__SignalsAssignment_12_216696);
             ruleEString();
 
             state._fsp--;
@@ -21530,24 +21656,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Injector__SignalsAssignment_12_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8400:1: rule__Injector__SignalsAssignment_12_3_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8446:1: rule__Injector__SignalsAssignment_12_3_1 : ( ( ruleEString ) ) ;
     public final void rule__Injector__SignalsAssignment_12_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8404:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8405:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8450:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8451:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8405:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8406:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8451:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8452:1: ( ruleEString )
             {
              before(grammarAccess.getInjectorAccess().getSignalsSignalCrossReference_12_3_1_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8407:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8408:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8453:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8454:1: ruleEString
             {
              before(grammarAccess.getInjectorAccess().getSignalsSignalEStringParserRuleCall_12_3_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__SignalsAssignment_12_3_116642);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Injector__SignalsAssignment_12_3_116735);
             ruleEString();
 
             state._fsp--;
@@ -21579,20 +21705,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__NameAssignment_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8419:1: rule__Speedlimit__NameAssignment_1 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8465:1: rule__Speedlimit__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Speedlimit__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8423:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8424:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8469:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8470:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8424:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8425:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8470:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8471:1: ruleEString
             {
              before(grammarAccess.getSpeedlimitAccess().getNameEStringParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Speedlimit__NameAssignment_116677);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Speedlimit__NameAssignment_116770);
             ruleEString();
 
             state._fsp--;
@@ -21620,20 +21746,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__SpeedAssignment_3_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8434:1: rule__Speedlimit__SpeedAssignment_3_1 : ( ruleEInt ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8480:1: rule__Speedlimit__SpeedAssignment_3_1 : ( ruleEInt ) ;
     public final void rule__Speedlimit__SpeedAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8438:1: ( ( ruleEInt ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8439:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8484:1: ( ( ruleEInt ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8485:1: ( ruleEInt )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8439:1: ( ruleEInt )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8440:1: ruleEInt
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8485:1: ( ruleEInt )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8486:1: ruleEInt
             {
              before(grammarAccess.getSpeedlimitAccess().getSpeedEIntParserRuleCall_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Speedlimit__SpeedAssignment_3_116708);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Speedlimit__SpeedAssignment_3_116801);
             ruleEInt();
 
             state._fsp--;
@@ -21661,24 +21787,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Speedlimit__BelongsToAssignment_5"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8449:1: rule__Speedlimit__BelongsToAssignment_5 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8495:1: rule__Speedlimit__BelongsToAssignment_5 : ( ( ruleEString ) ) ;
     public final void rule__Speedlimit__BelongsToAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8453:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8454:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8499:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8500:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8454:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8455:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8500:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8501:1: ( ruleEString )
             {
              before(grammarAccess.getSpeedlimitAccess().getBelongsToNodeCrossReference_5_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8456:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8457:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8502:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8503:1: ruleEString
             {
              before(grammarAccess.getSpeedlimitAccess().getBelongsToNodeEStringParserRuleCall_5_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Speedlimit__BelongsToAssignment_516743);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Speedlimit__BelongsToAssignment_516836);
             ruleEString();
 
             state._fsp--;
@@ -21710,20 +21836,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__NameAssignment_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8468:1: rule__Stop__NameAssignment_1 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8514:1: rule__Stop__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Stop__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8472:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8473:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8518:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8519:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8473:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8474:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8519:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8520:1: ruleEString
             {
              before(grammarAccess.getStopAccess().getNameEStringParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Stop__NameAssignment_116778);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Stop__NameAssignment_116871);
             ruleEString();
 
             state._fsp--;
@@ -21751,24 +21877,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stop__BelongsToAssignment_4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8483:1: rule__Stop__BelongsToAssignment_4 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8529:1: rule__Stop__BelongsToAssignment_4 : ( ( ruleEString ) ) ;
     public final void rule__Stop__BelongsToAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8487:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8488:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8533:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8534:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8488:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8489:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8534:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8535:1: ( ruleEString )
             {
              before(grammarAccess.getStopAccess().getBelongsToNodeCrossReference_4_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8490:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8491:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8536:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8537:1: ruleEString
             {
              before(grammarAccess.getStopAccess().getBelongsToNodeEStringParserRuleCall_4_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Stop__BelongsToAssignment_416813);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Stop__BelongsToAssignment_416906);
             ruleEString();
 
             state._fsp--;
@@ -21800,20 +21926,20 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__NameAssignment_1"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8502:1: rule__Yield__NameAssignment_1 : ( ruleEString ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8548:1: rule__Yield__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Yield__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8506:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8507:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8552:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8553:1: ( ruleEString )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8507:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8508:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8553:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8554:1: ruleEString
             {
              before(grammarAccess.getYieldAccess().getNameEStringParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Yield__NameAssignment_116848);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Yield__NameAssignment_116941);
             ruleEString();
 
             state._fsp--;
@@ -21841,24 +21967,24 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Yield__BelongsToAssignment_4"
-    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8517:1: rule__Yield__BelongsToAssignment_4 : ( ( ruleEString ) ) ;
+    // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8563:1: rule__Yield__BelongsToAssignment_4 : ( ( ruleEString ) ) ;
     public final void rule__Yield__BelongsToAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8521:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8522:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8567:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8568:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8522:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8523:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8568:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8569:1: ( ruleEString )
             {
              before(grammarAccess.getYieldAccess().getBelongsToNodeCrossReference_4_0()); 
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8524:1: ( ruleEString )
-            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8525:1: ruleEString
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8570:1: ( ruleEString )
+            // ../org.xtext.Highway.ui/src-gen/org/xtext/ui/contentassist/antlr/internal/InternalHighway.g:8571:1: ruleEString
             {
              before(grammarAccess.getYieldAccess().getBelongsToNodeEStringParserRuleCall_4_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Yield__BelongsToAssignment_416883);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Yield__BelongsToAssignment_416976);
             ruleEString();
 
             state._fsp--;
@@ -22162,450 +22288,454 @@ public class InternalHighwayParser extends AbstractInternalContentAssistParser {
         public static final BitSet FOLLOW_rule__Node_Impl__SignalsAssignment_15_3_1_in_rule__Node_Impl__Group_15_3__1__Impl5938 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Car__Group__0__Impl_in_rule__Car__Group__05972 = new BitSet(new long[]{0x0000000020000000L});
         public static final BitSet FOLLOW_rule__Car__Group__1_in_rule__Car__Group__05975 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group__1__Impl_in_rule__Car__Group__16033 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Car__Group__1__Impl_in_rule__Car__Group__16033 = new BitSet(new long[]{0x0000000000000030L});
         public static final BitSet FOLLOW_rule__Car__Group__2_in_rule__Car__Group__16036 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_29_in_rule__Car__Group__1__Impl6064 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group__2__Impl_in_rule__Car__Group__26095 = new BitSet(new long[]{0x00000001C0008000L});
+        public static final BitSet FOLLOW_rule__Car__Group__2__Impl_in_rule__Car__Group__26095 = new BitSet(new long[]{0x0000000000004000L});
         public static final BitSet FOLLOW_rule__Car__Group__3_in_rule__Car__Group__26098 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Car__Group__2__Impl6126 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group__3__Impl_in_rule__Car__Group__36157 = new BitSet(new long[]{0x00000001C0008000L});
-        public static final BitSet FOLLOW_rule__Car__Group__4_in_rule__Car__Group__36160 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_3__0_in_rule__Car__Group__3__Impl6187 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group__4__Impl_in_rule__Car__Group__46218 = new BitSet(new long[]{0x00000001C0008000L});
-        public static final BitSet FOLLOW_rule__Car__Group__5_in_rule__Car__Group__46221 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_4__0_in_rule__Car__Group__4__Impl6248 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group__5__Impl_in_rule__Car__Group__56279 = new BitSet(new long[]{0x00000001C0008000L});
-        public static final BitSet FOLLOW_rule__Car__Group__6_in_rule__Car__Group__56282 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_5__0_in_rule__Car__Group__5__Impl6309 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group__6__Impl_in_rule__Car__Group__66340 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Car__Group__6__Impl6368 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_3__0__Impl_in_rule__Car__Group_3__06413 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__Car__Group_3__1_in_rule__Car__Group_3__06416 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_30_in_rule__Car__Group_3__0__Impl6444 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_3__1__Impl_in_rule__Car__Group_3__16475 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__TimeInAssignment_3_1_in_rule__Car__Group_3__1__Impl6502 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_4__0__Impl_in_rule__Car__Group_4__06536 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__Car__Group_4__1_in_rule__Car__Group_4__06539 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_31_in_rule__Car__Group_4__0__Impl6567 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_4__1__Impl_in_rule__Car__Group_4__16598 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__TimeOutAssignment_4_1_in_rule__Car__Group_4__1__Impl6625 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_5__0__Impl_in_rule__Car__Group_5__06659 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Car__Group_5__1_in_rule__Car__Group_5__06662 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_rule__Car__Group_5__0__Impl6690 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__Group_5__1__Impl_in_rule__Car__Group_5__16721 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Car__IsInSegmentAssignment_5_1_in_rule__Car__Group_5__1__Impl6748 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group__0__Impl_in_rule__Segment__Group__06782 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_rule__Segment__Group__1_in_rule__Segment__Group__06785 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group__1__Impl_in_rule__Segment__Group__16843 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Segment__Group__2_in_rule__Segment__Group__16846 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_rule__Segment__Group__1__Impl6874 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group__2__Impl_in_rule__Segment__Group__26905 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Segment__Group__3_in_rule__Segment__Group__26908 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__NameAssignment_2_in_rule__Segment__Group__2__Impl6935 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group__3__Impl_in_rule__Segment__Group__36965 = new BitSet(new long[]{0x0000001C00008000L});
-        public static final BitSet FOLLOW_rule__Segment__Group__4_in_rule__Segment__Group__36968 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Segment__Group__3__Impl6996 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group__4__Impl_in_rule__Segment__Group__47027 = new BitSet(new long[]{0x0000001C00008000L});
-        public static final BitSet FOLLOW_rule__Segment__Group__5_in_rule__Segment__Group__47030 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_4__0_in_rule__Segment__Group__4__Impl7057 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group__5__Impl_in_rule__Segment__Group__57088 = new BitSet(new long[]{0x0000001C00008000L});
-        public static final BitSet FOLLOW_rule__Segment__Group__6_in_rule__Segment__Group__57091 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_5__0_in_rule__Segment__Group__5__Impl7118 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group__6__Impl_in_rule__Segment__Group__67149 = new BitSet(new long[]{0x0000001C00008000L});
-        public static final BitSet FOLLOW_rule__Segment__Group__7_in_rule__Segment__Group__67152 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__0_in_rule__Segment__Group__6__Impl7179 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group__7__Impl_in_rule__Segment__Group__77210 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Segment__Group__7__Impl7238 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_4__0__Impl_in_rule__Segment__Group_4__07285 = new BitSet(new long[]{0x0000400000000040L});
-        public static final BitSet FOLLOW_rule__Segment__Group_4__1_in_rule__Segment__Group_4__07288 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_34_in_rule__Segment__Group_4__0__Impl7316 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_4__1__Impl_in_rule__Segment__Group_4__17347 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__NumLanesAssignment_4_1_in_rule__Segment__Group_4__1__Impl7374 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_5__0__Impl_in_rule__Segment__Group_5__07408 = new BitSet(new long[]{0x0000400000000040L});
-        public static final BitSet FOLLOW_rule__Segment__Group_5__1_in_rule__Segment__Group_5__07411 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_35_in_rule__Segment__Group_5__0__Impl7439 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_5__1__Impl_in_rule__Segment__Group_5__17470 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__LengthAssignment_5_1_in_rule__Segment__Group_5__1__Impl7497 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__0__Impl_in_rule__Segment__Group_6__07531 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__1_in_rule__Segment__Group_6__07534 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_36_in_rule__Segment__Group_6__0__Impl7562 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__1__Impl_in_rule__Segment__Group_6__17593 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__2_in_rule__Segment__Group_6__17596 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_24_in_rule__Segment__Group_6__1__Impl7624 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__2__Impl_in_rule__Segment__Group_6__27655 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__3_in_rule__Segment__Group_6__27658 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__HasCarsAssignment_6_2_in_rule__Segment__Group_6__2__Impl7685 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__3__Impl_in_rule__Segment__Group_6__37715 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__4_in_rule__Segment__Group_6__37718 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6_3__0_in_rule__Segment__Group_6__3__Impl7745 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6__4__Impl_in_rule__Segment__Group_6__47776 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Segment__Group_6__4__Impl7804 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6_3__0__Impl_in_rule__Segment__Group_6_3__07845 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6_3__1_in_rule__Segment__Group_6_3__07848 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_rule__Segment__Group_6_3__0__Impl7876 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__Group_6_3__1__Impl_in_rule__Segment__Group_6_3__17907 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Segment__HasCarsAssignment_6_3_1_in_rule__Segment__Group_6_3__1__Impl7934 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__0__Impl_in_rule__Semaphore__Group__07968 = new BitSet(new long[]{0x0000002000000000L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__1_in_rule__Semaphore__Group__07971 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__1__Impl_in_rule__Semaphore__Group__18029 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__2_in_rule__Semaphore__Group__18032 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_37_in_rule__Semaphore__Group__1__Impl8060 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__2__Impl_in_rule__Semaphore__Group__28091 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__3_in_rule__Semaphore__Group__28094 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__NameAssignment_2_in_rule__Semaphore__Group__2__Impl8121 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__3__Impl_in_rule__Semaphore__Group__38151 = new BitSet(new long[]{0x000003C000000000L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__4_in_rule__Semaphore__Group__38154 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Semaphore__Group__3__Impl8182 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__4__Impl_in_rule__Semaphore__Group__48213 = new BitSet(new long[]{0x000003C000000000L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__5_in_rule__Semaphore__Group__48216 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_4__0_in_rule__Semaphore__Group__4__Impl8243 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__5__Impl_in_rule__Semaphore__Group__58274 = new BitSet(new long[]{0x000003C000000000L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__6_in_rule__Semaphore__Group__58277 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_5__0_in_rule__Semaphore__Group__5__Impl8304 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__6__Impl_in_rule__Semaphore__Group__68335 = new BitSet(new long[]{0x000003C000000000L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__7_in_rule__Semaphore__Group__68338 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_6__0_in_rule__Semaphore__Group__6__Impl8365 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__7__Impl_in_rule__Semaphore__Group__78396 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__8_in_rule__Semaphore__Group__78399 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_rule__Semaphore__Group__7__Impl8427 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__8__Impl_in_rule__Semaphore__Group__88458 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__9_in_rule__Semaphore__Group__88461 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__BelongsToAssignment_8_in_rule__Semaphore__Group__8__Impl8488 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group__9__Impl_in_rule__Semaphore__Group__98518 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Semaphore__Group__9__Impl8546 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_4__0__Impl_in_rule__Semaphore__Group_4__08597 = new BitSet(new long[]{0x0000000000001800L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_4__1_in_rule__Semaphore__Group_4__08600 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rule__Semaphore__Group_4__0__Impl8628 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_4__1__Impl_in_rule__Semaphore__Group_4__18659 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__CanGoAssignment_4_1_in_rule__Semaphore__Group_4__1__Impl8686 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_5__0__Impl_in_rule__Semaphore__Group_5__08720 = new BitSet(new long[]{0x0000400000000040L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_5__1_in_rule__Semaphore__Group_5__08723 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_40_in_rule__Semaphore__Group_5__0__Impl8751 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_5__1__Impl_in_rule__Semaphore__Group_5__18782 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__SecondsRedAssignment_5_1_in_rule__Semaphore__Group_5__1__Impl8809 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_6__0__Impl_in_rule__Semaphore__Group_6__08843 = new BitSet(new long[]{0x0000400000000040L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_6__1_in_rule__Semaphore__Group_6__08846 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_41_in_rule__Semaphore__Group_6__0__Impl8874 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__Group_6__1__Impl_in_rule__Semaphore__Group_6__18905 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Semaphore__SecondsGreenAssignment_6_1_in_rule__Semaphore__Group_6__1__Impl8932 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__0__Impl_in_rule__Signal_Impl__Group__08966 = new BitSet(new long[]{0x0000040000000000L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__1_in_rule__Signal_Impl__Group__08969 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__1__Impl_in_rule__Signal_Impl__Group__19027 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__2_in_rule__Signal_Impl__Group__19030 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_42_in_rule__Signal_Impl__Group__1__Impl9058 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__2__Impl_in_rule__Signal_Impl__Group__29089 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__3_in_rule__Signal_Impl__Group__29092 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__NameAssignment_2_in_rule__Signal_Impl__Group__2__Impl9119 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__3__Impl_in_rule__Signal_Impl__Group__39149 = new BitSet(new long[]{0x0000004000000000L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__4_in_rule__Signal_Impl__Group__39152 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Signal_Impl__Group__3__Impl9180 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__4__Impl_in_rule__Signal_Impl__Group__49211 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__5_in_rule__Signal_Impl__Group__49214 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_rule__Signal_Impl__Group__4__Impl9242 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__5__Impl_in_rule__Signal_Impl__Group__59273 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__6_in_rule__Signal_Impl__Group__59276 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__BelongsToAssignment_5_in_rule__Signal_Impl__Group__5__Impl9303 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Signal_Impl__Group__6__Impl_in_rule__Signal_Impl__Group__69333 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Signal_Impl__Group__6__Impl9361 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__0__Impl_in_rule__Extractor__Group__09406 = new BitSet(new long[]{0x0000080000000000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__1_in_rule__Extractor__Group__09409 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__1__Impl_in_rule__Extractor__Group__19467 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__2_in_rule__Extractor__Group__19470 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_43_in_rule__Extractor__Group__1__Impl9498 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__2__Impl_in_rule__Extractor__Group__29529 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__3_in_rule__Extractor__Group__29532 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__NameAssignment_2_in_rule__Extractor__Group__2__Impl9559 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__3__Impl_in_rule__Extractor__Group__39589 = new BitSet(new long[]{0x0000000004800000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__4_in_rule__Extractor__Group__39592 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Extractor__Group__3__Impl9620 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__4__Impl_in_rule__Extractor__Group__49651 = new BitSet(new long[]{0x0000000004800000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__5_in_rule__Extractor__Group__49654 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__0_in_rule__Extractor__Group__4__Impl9681 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__5__Impl_in_rule__Extractor__Group__59712 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__6_in_rule__Extractor__Group__59715 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_26_in_rule__Extractor__Group__5__Impl9743 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__6__Impl_in_rule__Extractor__Group__69774 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__7_in_rule__Extractor__Group__69777 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_24_in_rule__Extractor__Group__6__Impl9805 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__7__Impl_in_rule__Extractor__Group__79836 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__8_in_rule__Extractor__Group__79839 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__HasEndsAssignment_7_in_rule__Extractor__Group__7__Impl9866 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__8__Impl_in_rule__Extractor__Group__89896 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__9_in_rule__Extractor__Group__89899 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_8__0_in_rule__Extractor__Group__8__Impl9926 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__9__Impl_in_rule__Extractor__Group__99957 = new BitSet(new long[]{0x0000000018008000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__10_in_rule__Extractor__Group__99960 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Extractor__Group__9__Impl9988 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__10__Impl_in_rule__Extractor__Group__1010019 = new BitSet(new long[]{0x0000000018008000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__11_in_rule__Extractor__Group__1010022 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_10__0_in_rule__Extractor__Group__10__Impl10049 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__11__Impl_in_rule__Extractor__Group__1110080 = new BitSet(new long[]{0x0000000018008000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__12_in_rule__Extractor__Group__1110083 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__0_in_rule__Extractor__Group__11__Impl10110 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group__12__Impl_in_rule__Extractor__Group__1210141 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Extractor__Group__12__Impl10169 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__0__Impl_in_rule__Extractor__Group_4__010226 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__1_in_rule__Extractor__Group_4__010229 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_23_in_rule__Extractor__Group_4__0__Impl10257 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__1__Impl_in_rule__Extractor__Group_4__110288 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__2_in_rule__Extractor__Group_4__110291 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_24_in_rule__Extractor__Group_4__1__Impl10319 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__2__Impl_in_rule__Extractor__Group_4__210350 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__3_in_rule__Extractor__Group_4__210353 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__HasStartsAssignment_4_2_in_rule__Extractor__Group_4__2__Impl10380 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__3__Impl_in_rule__Extractor__Group_4__310410 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__4_in_rule__Extractor__Group_4__310413 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4_3__0_in_rule__Extractor__Group_4__3__Impl10440 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4__4__Impl_in_rule__Extractor__Group_4__410471 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Extractor__Group_4__4__Impl10499 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4_3__0__Impl_in_rule__Extractor__Group_4_3__010540 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4_3__1_in_rule__Extractor__Group_4_3__010543 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_rule__Extractor__Group_4_3__0__Impl10571 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_4_3__1__Impl_in_rule__Extractor__Group_4_3__110602 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__HasStartsAssignment_4_3_1_in_rule__Extractor__Group_4_3__1__Impl10629 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_8__0__Impl_in_rule__Extractor__Group_8__010663 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_8__1_in_rule__Extractor__Group_8__010666 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_rule__Extractor__Group_8__0__Impl10694 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_8__1__Impl_in_rule__Extractor__Group_8__110725 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__HasEndsAssignment_8_1_in_rule__Extractor__Group_8__1__Impl10752 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_10__0__Impl_in_rule__Extractor__Group_10__010786 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_10__1_in_rule__Extractor__Group_10__010789 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__Extractor__Group_10__0__Impl10817 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_10__1__Impl_in_rule__Extractor__Group_10__110848 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__SemaphoreAssignment_10_1_in_rule__Extractor__Group_10__1__Impl10875 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__0__Impl_in_rule__Extractor__Group_11__010909 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__1_in_rule__Extractor__Group_11__010912 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_28_in_rule__Extractor__Group_11__0__Impl10940 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__1__Impl_in_rule__Extractor__Group_11__110971 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__2_in_rule__Extractor__Group_11__110974 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_24_in_rule__Extractor__Group_11__1__Impl11002 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__2__Impl_in_rule__Extractor__Group_11__211033 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__3_in_rule__Extractor__Group_11__211036 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__SignalsAssignment_11_2_in_rule__Extractor__Group_11__2__Impl11063 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__3__Impl_in_rule__Extractor__Group_11__311093 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__4_in_rule__Extractor__Group_11__311096 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11_3__0_in_rule__Extractor__Group_11__3__Impl11123 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11__4__Impl_in_rule__Extractor__Group_11__411154 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Extractor__Group_11__4__Impl11182 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11_3__0__Impl_in_rule__Extractor__Group_11_3__011223 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11_3__1_in_rule__Extractor__Group_11_3__011226 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_rule__Extractor__Group_11_3__0__Impl11254 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__Group_11_3__1__Impl_in_rule__Extractor__Group_11_3__111285 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Extractor__SignalsAssignment_11_3_1_in_rule__Extractor__Group_11_3__1__Impl11312 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__0__Impl_in_rule__Injector__Group__011346 = new BitSet(new long[]{0x0000180000400000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__1_in_rule__Injector__Group__011349 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__1__Impl_in_rule__Injector__Group__111407 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Injector__Group__2_in_rule__Injector__Group__111410 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_44_in_rule__Injector__Group__1__Impl11438 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__2__Impl_in_rule__Injector__Group__211469 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__3_in_rule__Injector__Group__211472 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__NameAssignment_2_in_rule__Injector__Group__2__Impl11499 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__3__Impl_in_rule__Injector__Group__311529 = new BitSet(new long[]{0x0000200000800000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__4_in_rule__Injector__Group__311532 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Injector__Group__3__Impl11560 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__4__Impl_in_rule__Injector__Group__411591 = new BitSet(new long[]{0x0000200000800000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__5_in_rule__Injector__Group__411594 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_4__0_in_rule__Injector__Group__4__Impl11621 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__5__Impl_in_rule__Injector__Group__511652 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__6_in_rule__Injector__Group__511655 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_23_in_rule__Injector__Group__5__Impl11683 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__6__Impl_in_rule__Injector__Group__611714 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Injector__Group__7_in_rule__Injector__Group__611717 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_24_in_rule__Injector__Group__6__Impl11745 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__7__Impl_in_rule__Injector__Group__711776 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__8_in_rule__Injector__Group__711779 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__HasStartsAssignment_7_in_rule__Injector__Group__7__Impl11806 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__8__Impl_in_rule__Injector__Group__811836 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__9_in_rule__Injector__Group__811839 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_8__0_in_rule__Injector__Group__8__Impl11866 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__9__Impl_in_rule__Injector__Group__911897 = new BitSet(new long[]{0x000000001C008000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__10_in_rule__Injector__Group__911900 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Injector__Group__9__Impl11928 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__10__Impl_in_rule__Injector__Group__1011959 = new BitSet(new long[]{0x000000001C008000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__11_in_rule__Injector__Group__1011962 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__0_in_rule__Injector__Group__10__Impl11989 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__11__Impl_in_rule__Injector__Group__1112020 = new BitSet(new long[]{0x000000001C008000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__12_in_rule__Injector__Group__1112023 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_11__0_in_rule__Injector__Group__11__Impl12050 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__12__Impl_in_rule__Injector__Group__1212081 = new BitSet(new long[]{0x000000001C008000L});
-        public static final BitSet FOLLOW_rule__Injector__Group__13_in_rule__Injector__Group__1212084 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__0_in_rule__Injector__Group__12__Impl12111 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group__13__Impl_in_rule__Injector__Group__1312142 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Injector__Group__13__Impl12170 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_4__0__Impl_in_rule__Injector__Group_4__012229 = new BitSet(new long[]{0x0000400000000040L});
-        public static final BitSet FOLLOW_rule__Injector__Group_4__1_in_rule__Injector__Group_4__012232 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_rule__Injector__Group_4__0__Impl12260 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_4__1__Impl_in_rule__Injector__Group_4__112291 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__CarsPerHourAssignment_4_1_in_rule__Injector__Group_4__1__Impl12318 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_8__0__Impl_in_rule__Injector__Group_8__012352 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Injector__Group_8__1_in_rule__Injector__Group_8__012355 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_rule__Injector__Group_8__0__Impl12383 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_8__1__Impl_in_rule__Injector__Group_8__112414 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__HasStartsAssignment_8_1_in_rule__Injector__Group_8__1__Impl12441 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__0__Impl_in_rule__Injector__Group_10__012475 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__1_in_rule__Injector__Group_10__012478 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_26_in_rule__Injector__Group_10__0__Impl12506 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__1__Impl_in_rule__Injector__Group_10__112537 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__2_in_rule__Injector__Group_10__112540 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_24_in_rule__Injector__Group_10__1__Impl12568 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__2__Impl_in_rule__Injector__Group_10__212599 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__3_in_rule__Injector__Group_10__212602 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__HasEndsAssignment_10_2_in_rule__Injector__Group_10__2__Impl12629 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__3__Impl_in_rule__Injector__Group_10__312659 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__4_in_rule__Injector__Group_10__312662 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10_3__0_in_rule__Injector__Group_10__3__Impl12689 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10__4__Impl_in_rule__Injector__Group_10__412720 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Injector__Group_10__4__Impl12748 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10_3__0__Impl_in_rule__Injector__Group_10_3__012789 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10_3__1_in_rule__Injector__Group_10_3__012792 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_rule__Injector__Group_10_3__0__Impl12820 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_10_3__1__Impl_in_rule__Injector__Group_10_3__112851 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__HasEndsAssignment_10_3_1_in_rule__Injector__Group_10_3__1__Impl12878 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_11__0__Impl_in_rule__Injector__Group_11__012912 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Injector__Group_11__1_in_rule__Injector__Group_11__012915 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__Injector__Group_11__0__Impl12943 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_11__1__Impl_in_rule__Injector__Group_11__112974 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__SemaphoreAssignment_11_1_in_rule__Injector__Group_11__1__Impl13001 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__0__Impl_in_rule__Injector__Group_12__013035 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__1_in_rule__Injector__Group_12__013038 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_28_in_rule__Injector__Group_12__0__Impl13066 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__1__Impl_in_rule__Injector__Group_12__113097 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__2_in_rule__Injector__Group_12__113100 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_24_in_rule__Injector__Group_12__1__Impl13128 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__2__Impl_in_rule__Injector__Group_12__213159 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__3_in_rule__Injector__Group_12__213162 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__SignalsAssignment_12_2_in_rule__Injector__Group_12__2__Impl13189 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__3__Impl_in_rule__Injector__Group_12__313219 = new BitSet(new long[]{0x0000000002020000L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__4_in_rule__Injector__Group_12__313222 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12_3__0_in_rule__Injector__Group_12__3__Impl13249 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12__4__Impl_in_rule__Injector__Group_12__413280 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Injector__Group_12__4__Impl13308 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12_3__0__Impl_in_rule__Injector__Group_12_3__013349 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12_3__1_in_rule__Injector__Group_12_3__013352 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_rule__Injector__Group_12_3__0__Impl13380 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__Group_12_3__1__Impl_in_rule__Injector__Group_12_3__113411 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Injector__SignalsAssignment_12_3_1_in_rule__Injector__Group_12_3__1__Impl13438 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__013472 = new BitSet(new long[]{0x0000400000000040L});
-        public static final BitSet FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__013475 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_46_in_rule__EInt__Group__0__Impl13504 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__113537 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl13564 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__0__Impl_in_rule__Speedlimit__Group__013597 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__1_in_rule__Speedlimit__Group__013600 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_47_in_rule__Speedlimit__Group__0__Impl13628 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__1__Impl_in_rule__Speedlimit__Group__113659 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__2_in_rule__Speedlimit__Group__113662 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__NameAssignment_1_in_rule__Speedlimit__Group__1__Impl13689 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__2__Impl_in_rule__Speedlimit__Group__213719 = new BitSet(new long[]{0x0001004000000000L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__3_in_rule__Speedlimit__Group__213722 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Speedlimit__Group__2__Impl13750 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__3__Impl_in_rule__Speedlimit__Group__313781 = new BitSet(new long[]{0x0001004000000000L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__4_in_rule__Speedlimit__Group__313784 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group_3__0_in_rule__Speedlimit__Group__3__Impl13811 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__4__Impl_in_rule__Speedlimit__Group__413842 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__5_in_rule__Speedlimit__Group__413845 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_rule__Speedlimit__Group__4__Impl13873 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__5__Impl_in_rule__Speedlimit__Group__513904 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__6_in_rule__Speedlimit__Group__513907 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__BelongsToAssignment_5_in_rule__Speedlimit__Group__5__Impl13934 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group__6__Impl_in_rule__Speedlimit__Group__613964 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Speedlimit__Group__6__Impl13992 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group_3__0__Impl_in_rule__Speedlimit__Group_3__014037 = new BitSet(new long[]{0x0000400000000040L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group_3__1_in_rule__Speedlimit__Group_3__014040 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_48_in_rule__Speedlimit__Group_3__0__Impl14068 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__Group_3__1__Impl_in_rule__Speedlimit__Group_3__114099 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Speedlimit__SpeedAssignment_3_1_in_rule__Speedlimit__Group_3__1__Impl14126 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Stop__Group__0__Impl_in_rule__Stop__Group__014160 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Stop__Group__1_in_rule__Stop__Group__014163 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_49_in_rule__Stop__Group__0__Impl14191 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Stop__Group__1__Impl_in_rule__Stop__Group__114222 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Stop__Group__2_in_rule__Stop__Group__114225 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Stop__NameAssignment_1_in_rule__Stop__Group__1__Impl14252 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Stop__Group__2__Impl_in_rule__Stop__Group__214282 = new BitSet(new long[]{0x0000004000000000L});
-        public static final BitSet FOLLOW_rule__Stop__Group__3_in_rule__Stop__Group__214285 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Stop__Group__2__Impl14313 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Stop__Group__3__Impl_in_rule__Stop__Group__314344 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Stop__Group__4_in_rule__Stop__Group__314347 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_rule__Stop__Group__3__Impl14375 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Stop__Group__4__Impl_in_rule__Stop__Group__414406 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_rule__Stop__Group__5_in_rule__Stop__Group__414409 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Stop__BelongsToAssignment_4_in_rule__Stop__Group__4__Impl14436 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Stop__Group__5__Impl_in_rule__Stop__Group__514466 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Stop__Group__5__Impl14494 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Yield__Group__0__Impl_in_rule__Yield__Group__014537 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Yield__Group__1_in_rule__Yield__Group__014540 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_50_in_rule__Yield__Group__0__Impl14568 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Yield__Group__1__Impl_in_rule__Yield__Group__114599 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Yield__Group__2_in_rule__Yield__Group__114602 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Yield__NameAssignment_1_in_rule__Yield__Group__1__Impl14629 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Yield__Group__2__Impl_in_rule__Yield__Group__214659 = new BitSet(new long[]{0x0000004000000000L});
-        public static final BitSet FOLLOW_rule__Yield__Group__3_in_rule__Yield__Group__214662 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Yield__Group__2__Impl14690 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Yield__Group__3__Impl_in_rule__Yield__Group__314721 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Yield__Group__4_in_rule__Yield__Group__314724 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_rule__Yield__Group__3__Impl14752 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Yield__Group__4__Impl_in_rule__Yield__Group__414783 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_rule__Yield__Group__5_in_rule__Yield__Group__414786 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Yield__BelongsToAssignment_4_in_rule__Yield__Group__4__Impl14813 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Yield__Group__5__Impl_in_rule__Yield__Group__514843 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_rule__Yield__Group__5__Impl14871 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSegment_in_rule__Highway__InitSegmentsAssignment_3_214919 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSegment_in_rule__Highway__InitSegmentsAssignment_3_3_114950 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNode_in_rule__Highway__InitNodesAssignment_4_214981 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNode_in_rule__Highway__InitNodesAssignment_4_3_115012 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCar_in_rule__Highway__InitCarsAssignment_5_215043 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCar_in_rule__Highway__InitCarsAssignment_5_3_115074 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSemaphore_in_rule__Highway__InitSemaphoreAssignment_6_215105 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSemaphore_in_rule__Highway__InitSemaphoreAssignment_6_3_115136 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSignal_in_rule__Highway__InitSignalAssignment_7_215167 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSignal_in_rule__Highway__InitSignalAssignment_7_3_115198 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__NameAssignment_215229 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__HasStartsAssignment_615264 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__HasStartsAssignment_7_115303 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__HasEndsAssignment_1115342 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__HasEndsAssignment_12_115381 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__SemaphoreAssignment_14_115420 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__SignalsAssignment_15_215459 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__SignalsAssignment_15_3_115498 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDate_in_rule__Car__TimeInAssignment_3_115533 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDate_in_rule__Car__TimeOutAssignment_4_115564 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Car__IsInSegmentAssignment_5_115599 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Segment__NameAssignment_215634 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__Segment__NumLanesAssignment_4_115665 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__Segment__LengthAssignment_5_115696 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Segment__HasCarsAssignment_6_215731 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Segment__HasCarsAssignment_6_3_115770 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Semaphore__NameAssignment_215805 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEBoolean_in_rule__Semaphore__CanGoAssignment_4_115836 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__Semaphore__SecondsRedAssignment_5_115867 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__Semaphore__SecondsGreenAssignment_6_115898 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Semaphore__BelongsToAssignment_815933 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Signal_Impl__NameAssignment_215968 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Signal_Impl__BelongsToAssignment_516003 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__NameAssignment_216038 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__HasStartsAssignment_4_216073 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__HasStartsAssignment_4_3_116112 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__HasEndsAssignment_716151 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__HasEndsAssignment_8_116190 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__SemaphoreAssignment_10_116229 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__SignalsAssignment_11_216268 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__SignalsAssignment_11_3_116307 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__NameAssignment_216342 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__Injector__CarsPerHourAssignment_4_116373 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__HasStartsAssignment_716408 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__HasStartsAssignment_8_116447 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__HasEndsAssignment_10_216486 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__HasEndsAssignment_10_3_116525 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__SemaphoreAssignment_11_116564 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__SignalsAssignment_12_216603 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__SignalsAssignment_12_3_116642 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Speedlimit__NameAssignment_116677 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__Speedlimit__SpeedAssignment_3_116708 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Speedlimit__BelongsToAssignment_516743 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Stop__NameAssignment_116778 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Stop__BelongsToAssignment_416813 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Yield__NameAssignment_116848 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Yield__BelongsToAssignment_416883 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__NameAssignment_2_in_rule__Car__Group__2__Impl6125 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group__3__Impl_in_rule__Car__Group__36155 = new BitSet(new long[]{0x00000001C0008000L});
+        public static final BitSet FOLLOW_rule__Car__Group__4_in_rule__Car__Group__36158 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Car__Group__3__Impl6186 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group__4__Impl_in_rule__Car__Group__46217 = new BitSet(new long[]{0x00000001C0008000L});
+        public static final BitSet FOLLOW_rule__Car__Group__5_in_rule__Car__Group__46220 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_4__0_in_rule__Car__Group__4__Impl6247 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group__5__Impl_in_rule__Car__Group__56278 = new BitSet(new long[]{0x00000001C0008000L});
+        public static final BitSet FOLLOW_rule__Car__Group__6_in_rule__Car__Group__56281 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_5__0_in_rule__Car__Group__5__Impl6308 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group__6__Impl_in_rule__Car__Group__66339 = new BitSet(new long[]{0x00000001C0008000L});
+        public static final BitSet FOLLOW_rule__Car__Group__7_in_rule__Car__Group__66342 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_6__0_in_rule__Car__Group__6__Impl6369 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group__7__Impl_in_rule__Car__Group__76400 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Car__Group__7__Impl6428 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_4__0__Impl_in_rule__Car__Group_4__06475 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__Car__Group_4__1_in_rule__Car__Group_4__06478 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_30_in_rule__Car__Group_4__0__Impl6506 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_4__1__Impl_in_rule__Car__Group_4__16537 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__TimeInAssignment_4_1_in_rule__Car__Group_4__1__Impl6564 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_5__0__Impl_in_rule__Car__Group_5__06598 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__Car__Group_5__1_in_rule__Car__Group_5__06601 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_rule__Car__Group_5__0__Impl6629 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_5__1__Impl_in_rule__Car__Group_5__16660 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__TimeOutAssignment_5_1_in_rule__Car__Group_5__1__Impl6687 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_6__0__Impl_in_rule__Car__Group_6__06721 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Car__Group_6__1_in_rule__Car__Group_6__06724 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_rule__Car__Group_6__0__Impl6752 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__Group_6__1__Impl_in_rule__Car__Group_6__16783 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Car__IsInSegmentAssignment_6_1_in_rule__Car__Group_6__1__Impl6810 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group__0__Impl_in_rule__Segment__Group__06844 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_rule__Segment__Group__1_in_rule__Segment__Group__06847 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group__1__Impl_in_rule__Segment__Group__16905 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Segment__Group__2_in_rule__Segment__Group__16908 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_rule__Segment__Group__1__Impl6936 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group__2__Impl_in_rule__Segment__Group__26967 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Segment__Group__3_in_rule__Segment__Group__26970 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__NameAssignment_2_in_rule__Segment__Group__2__Impl6997 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group__3__Impl_in_rule__Segment__Group__37027 = new BitSet(new long[]{0x0000001C00008000L});
+        public static final BitSet FOLLOW_rule__Segment__Group__4_in_rule__Segment__Group__37030 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Segment__Group__3__Impl7058 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group__4__Impl_in_rule__Segment__Group__47089 = new BitSet(new long[]{0x0000001C00008000L});
+        public static final BitSet FOLLOW_rule__Segment__Group__5_in_rule__Segment__Group__47092 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_4__0_in_rule__Segment__Group__4__Impl7119 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group__5__Impl_in_rule__Segment__Group__57150 = new BitSet(new long[]{0x0000001C00008000L});
+        public static final BitSet FOLLOW_rule__Segment__Group__6_in_rule__Segment__Group__57153 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_5__0_in_rule__Segment__Group__5__Impl7180 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group__6__Impl_in_rule__Segment__Group__67211 = new BitSet(new long[]{0x0000001C00008000L});
+        public static final BitSet FOLLOW_rule__Segment__Group__7_in_rule__Segment__Group__67214 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__0_in_rule__Segment__Group__6__Impl7241 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group__7__Impl_in_rule__Segment__Group__77272 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Segment__Group__7__Impl7300 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_4__0__Impl_in_rule__Segment__Group_4__07347 = new BitSet(new long[]{0x0000400000000040L});
+        public static final BitSet FOLLOW_rule__Segment__Group_4__1_in_rule__Segment__Group_4__07350 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_34_in_rule__Segment__Group_4__0__Impl7378 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_4__1__Impl_in_rule__Segment__Group_4__17409 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__NumLanesAssignment_4_1_in_rule__Segment__Group_4__1__Impl7436 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_5__0__Impl_in_rule__Segment__Group_5__07470 = new BitSet(new long[]{0x0000400000000040L});
+        public static final BitSet FOLLOW_rule__Segment__Group_5__1_in_rule__Segment__Group_5__07473 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_35_in_rule__Segment__Group_5__0__Impl7501 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_5__1__Impl_in_rule__Segment__Group_5__17532 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__LengthAssignment_5_1_in_rule__Segment__Group_5__1__Impl7559 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__0__Impl_in_rule__Segment__Group_6__07593 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__1_in_rule__Segment__Group_6__07596 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_36_in_rule__Segment__Group_6__0__Impl7624 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__1__Impl_in_rule__Segment__Group_6__17655 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__2_in_rule__Segment__Group_6__17658 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_24_in_rule__Segment__Group_6__1__Impl7686 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__2__Impl_in_rule__Segment__Group_6__27717 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__3_in_rule__Segment__Group_6__27720 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__HasCarsAssignment_6_2_in_rule__Segment__Group_6__2__Impl7747 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__3__Impl_in_rule__Segment__Group_6__37777 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__4_in_rule__Segment__Group_6__37780 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6_3__0_in_rule__Segment__Group_6__3__Impl7807 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6__4__Impl_in_rule__Segment__Group_6__47838 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_rule__Segment__Group_6__4__Impl7866 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6_3__0__Impl_in_rule__Segment__Group_6_3__07907 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6_3__1_in_rule__Segment__Group_6_3__07910 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_rule__Segment__Group_6_3__0__Impl7938 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__Group_6_3__1__Impl_in_rule__Segment__Group_6_3__17969 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Segment__HasCarsAssignment_6_3_1_in_rule__Segment__Group_6_3__1__Impl7996 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__0__Impl_in_rule__Semaphore__Group__08030 = new BitSet(new long[]{0x0000002000000000L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__1_in_rule__Semaphore__Group__08033 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__1__Impl_in_rule__Semaphore__Group__18091 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__2_in_rule__Semaphore__Group__18094 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_37_in_rule__Semaphore__Group__1__Impl8122 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__2__Impl_in_rule__Semaphore__Group__28153 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__3_in_rule__Semaphore__Group__28156 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__NameAssignment_2_in_rule__Semaphore__Group__2__Impl8183 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__3__Impl_in_rule__Semaphore__Group__38213 = new BitSet(new long[]{0x000003C000000000L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__4_in_rule__Semaphore__Group__38216 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Semaphore__Group__3__Impl8244 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__4__Impl_in_rule__Semaphore__Group__48275 = new BitSet(new long[]{0x000003C000000000L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__5_in_rule__Semaphore__Group__48278 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_4__0_in_rule__Semaphore__Group__4__Impl8305 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__5__Impl_in_rule__Semaphore__Group__58336 = new BitSet(new long[]{0x000003C000000000L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__6_in_rule__Semaphore__Group__58339 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_5__0_in_rule__Semaphore__Group__5__Impl8366 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__6__Impl_in_rule__Semaphore__Group__68397 = new BitSet(new long[]{0x000003C000000000L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__7_in_rule__Semaphore__Group__68400 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_6__0_in_rule__Semaphore__Group__6__Impl8427 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__7__Impl_in_rule__Semaphore__Group__78458 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__8_in_rule__Semaphore__Group__78461 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_rule__Semaphore__Group__7__Impl8489 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__8__Impl_in_rule__Semaphore__Group__88520 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__9_in_rule__Semaphore__Group__88523 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__BelongsToAssignment_8_in_rule__Semaphore__Group__8__Impl8550 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group__9__Impl_in_rule__Semaphore__Group__98580 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Semaphore__Group__9__Impl8608 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_4__0__Impl_in_rule__Semaphore__Group_4__08659 = new BitSet(new long[]{0x0000000000001800L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_4__1_in_rule__Semaphore__Group_4__08662 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rule__Semaphore__Group_4__0__Impl8690 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_4__1__Impl_in_rule__Semaphore__Group_4__18721 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__CanGoAssignment_4_1_in_rule__Semaphore__Group_4__1__Impl8748 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_5__0__Impl_in_rule__Semaphore__Group_5__08782 = new BitSet(new long[]{0x0000400000000040L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_5__1_in_rule__Semaphore__Group_5__08785 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_40_in_rule__Semaphore__Group_5__0__Impl8813 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_5__1__Impl_in_rule__Semaphore__Group_5__18844 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__SecondsRedAssignment_5_1_in_rule__Semaphore__Group_5__1__Impl8871 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_6__0__Impl_in_rule__Semaphore__Group_6__08905 = new BitSet(new long[]{0x0000400000000040L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_6__1_in_rule__Semaphore__Group_6__08908 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_41_in_rule__Semaphore__Group_6__0__Impl8936 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__Group_6__1__Impl_in_rule__Semaphore__Group_6__18967 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Semaphore__SecondsGreenAssignment_6_1_in_rule__Semaphore__Group_6__1__Impl8994 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__0__Impl_in_rule__Signal_Impl__Group__09028 = new BitSet(new long[]{0x0000040000000000L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__1_in_rule__Signal_Impl__Group__09031 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__1__Impl_in_rule__Signal_Impl__Group__19089 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__2_in_rule__Signal_Impl__Group__19092 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_42_in_rule__Signal_Impl__Group__1__Impl9120 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__2__Impl_in_rule__Signal_Impl__Group__29151 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__3_in_rule__Signal_Impl__Group__29154 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__NameAssignment_2_in_rule__Signal_Impl__Group__2__Impl9181 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__3__Impl_in_rule__Signal_Impl__Group__39211 = new BitSet(new long[]{0x0000004000000000L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__4_in_rule__Signal_Impl__Group__39214 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Signal_Impl__Group__3__Impl9242 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__4__Impl_in_rule__Signal_Impl__Group__49273 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__5_in_rule__Signal_Impl__Group__49276 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_rule__Signal_Impl__Group__4__Impl9304 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__5__Impl_in_rule__Signal_Impl__Group__59335 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__6_in_rule__Signal_Impl__Group__59338 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__BelongsToAssignment_5_in_rule__Signal_Impl__Group__5__Impl9365 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Signal_Impl__Group__6__Impl_in_rule__Signal_Impl__Group__69395 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Signal_Impl__Group__6__Impl9423 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__0__Impl_in_rule__Extractor__Group__09468 = new BitSet(new long[]{0x0000080000000000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__1_in_rule__Extractor__Group__09471 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__1__Impl_in_rule__Extractor__Group__19529 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__2_in_rule__Extractor__Group__19532 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_43_in_rule__Extractor__Group__1__Impl9560 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__2__Impl_in_rule__Extractor__Group__29591 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__3_in_rule__Extractor__Group__29594 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__NameAssignment_2_in_rule__Extractor__Group__2__Impl9621 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__3__Impl_in_rule__Extractor__Group__39651 = new BitSet(new long[]{0x0000000004800000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__4_in_rule__Extractor__Group__39654 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Extractor__Group__3__Impl9682 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__4__Impl_in_rule__Extractor__Group__49713 = new BitSet(new long[]{0x0000000004800000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__5_in_rule__Extractor__Group__49716 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__0_in_rule__Extractor__Group__4__Impl9743 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__5__Impl_in_rule__Extractor__Group__59774 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__6_in_rule__Extractor__Group__59777 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_26_in_rule__Extractor__Group__5__Impl9805 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__6__Impl_in_rule__Extractor__Group__69836 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__7_in_rule__Extractor__Group__69839 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_24_in_rule__Extractor__Group__6__Impl9867 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__7__Impl_in_rule__Extractor__Group__79898 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__8_in_rule__Extractor__Group__79901 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__HasEndsAssignment_7_in_rule__Extractor__Group__7__Impl9928 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__8__Impl_in_rule__Extractor__Group__89958 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__9_in_rule__Extractor__Group__89961 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_8__0_in_rule__Extractor__Group__8__Impl9988 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__9__Impl_in_rule__Extractor__Group__910019 = new BitSet(new long[]{0x0000000018008000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__10_in_rule__Extractor__Group__910022 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_rule__Extractor__Group__9__Impl10050 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__10__Impl_in_rule__Extractor__Group__1010081 = new BitSet(new long[]{0x0000000018008000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__11_in_rule__Extractor__Group__1010084 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_10__0_in_rule__Extractor__Group__10__Impl10111 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__11__Impl_in_rule__Extractor__Group__1110142 = new BitSet(new long[]{0x0000000018008000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__12_in_rule__Extractor__Group__1110145 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__0_in_rule__Extractor__Group__11__Impl10172 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group__12__Impl_in_rule__Extractor__Group__1210203 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Extractor__Group__12__Impl10231 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__0__Impl_in_rule__Extractor__Group_4__010288 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__1_in_rule__Extractor__Group_4__010291 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_23_in_rule__Extractor__Group_4__0__Impl10319 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__1__Impl_in_rule__Extractor__Group_4__110350 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__2_in_rule__Extractor__Group_4__110353 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_24_in_rule__Extractor__Group_4__1__Impl10381 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__2__Impl_in_rule__Extractor__Group_4__210412 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__3_in_rule__Extractor__Group_4__210415 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__HasStartsAssignment_4_2_in_rule__Extractor__Group_4__2__Impl10442 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__3__Impl_in_rule__Extractor__Group_4__310472 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__4_in_rule__Extractor__Group_4__310475 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4_3__0_in_rule__Extractor__Group_4__3__Impl10502 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4__4__Impl_in_rule__Extractor__Group_4__410533 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_rule__Extractor__Group_4__4__Impl10561 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4_3__0__Impl_in_rule__Extractor__Group_4_3__010602 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4_3__1_in_rule__Extractor__Group_4_3__010605 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_rule__Extractor__Group_4_3__0__Impl10633 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_4_3__1__Impl_in_rule__Extractor__Group_4_3__110664 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__HasStartsAssignment_4_3_1_in_rule__Extractor__Group_4_3__1__Impl10691 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_8__0__Impl_in_rule__Extractor__Group_8__010725 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_8__1_in_rule__Extractor__Group_8__010728 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_rule__Extractor__Group_8__0__Impl10756 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_8__1__Impl_in_rule__Extractor__Group_8__110787 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__HasEndsAssignment_8_1_in_rule__Extractor__Group_8__1__Impl10814 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_10__0__Impl_in_rule__Extractor__Group_10__010848 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_10__1_in_rule__Extractor__Group_10__010851 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__Extractor__Group_10__0__Impl10879 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_10__1__Impl_in_rule__Extractor__Group_10__110910 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__SemaphoreAssignment_10_1_in_rule__Extractor__Group_10__1__Impl10937 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__0__Impl_in_rule__Extractor__Group_11__010971 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__1_in_rule__Extractor__Group_11__010974 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_28_in_rule__Extractor__Group_11__0__Impl11002 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__1__Impl_in_rule__Extractor__Group_11__111033 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__2_in_rule__Extractor__Group_11__111036 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_24_in_rule__Extractor__Group_11__1__Impl11064 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__2__Impl_in_rule__Extractor__Group_11__211095 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__3_in_rule__Extractor__Group_11__211098 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__SignalsAssignment_11_2_in_rule__Extractor__Group_11__2__Impl11125 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__3__Impl_in_rule__Extractor__Group_11__311155 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__4_in_rule__Extractor__Group_11__311158 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11_3__0_in_rule__Extractor__Group_11__3__Impl11185 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11__4__Impl_in_rule__Extractor__Group_11__411216 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_rule__Extractor__Group_11__4__Impl11244 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11_3__0__Impl_in_rule__Extractor__Group_11_3__011285 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11_3__1_in_rule__Extractor__Group_11_3__011288 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_rule__Extractor__Group_11_3__0__Impl11316 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__Group_11_3__1__Impl_in_rule__Extractor__Group_11_3__111347 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Extractor__SignalsAssignment_11_3_1_in_rule__Extractor__Group_11_3__1__Impl11374 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__0__Impl_in_rule__Injector__Group__011408 = new BitSet(new long[]{0x0000180000400000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__1_in_rule__Injector__Group__011411 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__1__Impl_in_rule__Injector__Group__111469 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Injector__Group__2_in_rule__Injector__Group__111472 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_44_in_rule__Injector__Group__1__Impl11500 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__2__Impl_in_rule__Injector__Group__211531 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__3_in_rule__Injector__Group__211534 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__NameAssignment_2_in_rule__Injector__Group__2__Impl11561 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__3__Impl_in_rule__Injector__Group__311591 = new BitSet(new long[]{0x0000200000800000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__4_in_rule__Injector__Group__311594 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Injector__Group__3__Impl11622 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__4__Impl_in_rule__Injector__Group__411653 = new BitSet(new long[]{0x0000200000800000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__5_in_rule__Injector__Group__411656 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_4__0_in_rule__Injector__Group__4__Impl11683 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__5__Impl_in_rule__Injector__Group__511714 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__6_in_rule__Injector__Group__511717 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_23_in_rule__Injector__Group__5__Impl11745 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__6__Impl_in_rule__Injector__Group__611776 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Injector__Group__7_in_rule__Injector__Group__611779 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_24_in_rule__Injector__Group__6__Impl11807 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__7__Impl_in_rule__Injector__Group__711838 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__8_in_rule__Injector__Group__711841 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__HasStartsAssignment_7_in_rule__Injector__Group__7__Impl11868 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__8__Impl_in_rule__Injector__Group__811898 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__9_in_rule__Injector__Group__811901 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_8__0_in_rule__Injector__Group__8__Impl11928 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__9__Impl_in_rule__Injector__Group__911959 = new BitSet(new long[]{0x000000001C008000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__10_in_rule__Injector__Group__911962 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_rule__Injector__Group__9__Impl11990 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__10__Impl_in_rule__Injector__Group__1012021 = new BitSet(new long[]{0x000000001C008000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__11_in_rule__Injector__Group__1012024 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__0_in_rule__Injector__Group__10__Impl12051 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__11__Impl_in_rule__Injector__Group__1112082 = new BitSet(new long[]{0x000000001C008000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__12_in_rule__Injector__Group__1112085 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_11__0_in_rule__Injector__Group__11__Impl12112 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__12__Impl_in_rule__Injector__Group__1212143 = new BitSet(new long[]{0x000000001C008000L});
+        public static final BitSet FOLLOW_rule__Injector__Group__13_in_rule__Injector__Group__1212146 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__0_in_rule__Injector__Group__12__Impl12173 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group__13__Impl_in_rule__Injector__Group__1312204 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Injector__Group__13__Impl12232 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_4__0__Impl_in_rule__Injector__Group_4__012291 = new BitSet(new long[]{0x0000400000000040L});
+        public static final BitSet FOLLOW_rule__Injector__Group_4__1_in_rule__Injector__Group_4__012294 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__Injector__Group_4__0__Impl12322 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_4__1__Impl_in_rule__Injector__Group_4__112353 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__CarsPerHourAssignment_4_1_in_rule__Injector__Group_4__1__Impl12380 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_8__0__Impl_in_rule__Injector__Group_8__012414 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Injector__Group_8__1_in_rule__Injector__Group_8__012417 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_rule__Injector__Group_8__0__Impl12445 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_8__1__Impl_in_rule__Injector__Group_8__112476 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__HasStartsAssignment_8_1_in_rule__Injector__Group_8__1__Impl12503 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__0__Impl_in_rule__Injector__Group_10__012537 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__1_in_rule__Injector__Group_10__012540 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_26_in_rule__Injector__Group_10__0__Impl12568 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__1__Impl_in_rule__Injector__Group_10__112599 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__2_in_rule__Injector__Group_10__112602 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_24_in_rule__Injector__Group_10__1__Impl12630 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__2__Impl_in_rule__Injector__Group_10__212661 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__3_in_rule__Injector__Group_10__212664 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__HasEndsAssignment_10_2_in_rule__Injector__Group_10__2__Impl12691 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__3__Impl_in_rule__Injector__Group_10__312721 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__4_in_rule__Injector__Group_10__312724 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10_3__0_in_rule__Injector__Group_10__3__Impl12751 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10__4__Impl_in_rule__Injector__Group_10__412782 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_rule__Injector__Group_10__4__Impl12810 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10_3__0__Impl_in_rule__Injector__Group_10_3__012851 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10_3__1_in_rule__Injector__Group_10_3__012854 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_rule__Injector__Group_10_3__0__Impl12882 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_10_3__1__Impl_in_rule__Injector__Group_10_3__112913 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__HasEndsAssignment_10_3_1_in_rule__Injector__Group_10_3__1__Impl12940 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_11__0__Impl_in_rule__Injector__Group_11__012974 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Injector__Group_11__1_in_rule__Injector__Group_11__012977 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__Injector__Group_11__0__Impl13005 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_11__1__Impl_in_rule__Injector__Group_11__113036 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__SemaphoreAssignment_11_1_in_rule__Injector__Group_11__1__Impl13063 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__0__Impl_in_rule__Injector__Group_12__013097 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__1_in_rule__Injector__Group_12__013100 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_28_in_rule__Injector__Group_12__0__Impl13128 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__1__Impl_in_rule__Injector__Group_12__113159 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__2_in_rule__Injector__Group_12__113162 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_24_in_rule__Injector__Group_12__1__Impl13190 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__2__Impl_in_rule__Injector__Group_12__213221 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__3_in_rule__Injector__Group_12__213224 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__SignalsAssignment_12_2_in_rule__Injector__Group_12__2__Impl13251 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__3__Impl_in_rule__Injector__Group_12__313281 = new BitSet(new long[]{0x0000000002020000L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__4_in_rule__Injector__Group_12__313284 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12_3__0_in_rule__Injector__Group_12__3__Impl13311 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12__4__Impl_in_rule__Injector__Group_12__413342 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_rule__Injector__Group_12__4__Impl13370 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12_3__0__Impl_in_rule__Injector__Group_12_3__013411 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12_3__1_in_rule__Injector__Group_12_3__013414 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_rule__Injector__Group_12_3__0__Impl13442 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__Group_12_3__1__Impl_in_rule__Injector__Group_12_3__113473 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Injector__SignalsAssignment_12_3_1_in_rule__Injector__Group_12_3__1__Impl13500 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__013534 = new BitSet(new long[]{0x0000400000000040L});
+        public static final BitSet FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__013537 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_46_in_rule__EInt__Group__0__Impl13566 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__113599 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl13626 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__0__Impl_in_rule__Speedlimit__Group__013659 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__1_in_rule__Speedlimit__Group__013662 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_47_in_rule__Speedlimit__Group__0__Impl13690 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__1__Impl_in_rule__Speedlimit__Group__113721 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__2_in_rule__Speedlimit__Group__113724 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__NameAssignment_1_in_rule__Speedlimit__Group__1__Impl13751 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__2__Impl_in_rule__Speedlimit__Group__213781 = new BitSet(new long[]{0x0001004000000000L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__3_in_rule__Speedlimit__Group__213784 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Speedlimit__Group__2__Impl13812 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__3__Impl_in_rule__Speedlimit__Group__313843 = new BitSet(new long[]{0x0001004000000000L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__4_in_rule__Speedlimit__Group__313846 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group_3__0_in_rule__Speedlimit__Group__3__Impl13873 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__4__Impl_in_rule__Speedlimit__Group__413904 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__5_in_rule__Speedlimit__Group__413907 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_rule__Speedlimit__Group__4__Impl13935 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__5__Impl_in_rule__Speedlimit__Group__513966 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__6_in_rule__Speedlimit__Group__513969 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__BelongsToAssignment_5_in_rule__Speedlimit__Group__5__Impl13996 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group__6__Impl_in_rule__Speedlimit__Group__614026 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Speedlimit__Group__6__Impl14054 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group_3__0__Impl_in_rule__Speedlimit__Group_3__014099 = new BitSet(new long[]{0x0000400000000040L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group_3__1_in_rule__Speedlimit__Group_3__014102 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_48_in_rule__Speedlimit__Group_3__0__Impl14130 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__Group_3__1__Impl_in_rule__Speedlimit__Group_3__114161 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Speedlimit__SpeedAssignment_3_1_in_rule__Speedlimit__Group_3__1__Impl14188 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Stop__Group__0__Impl_in_rule__Stop__Group__014222 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Stop__Group__1_in_rule__Stop__Group__014225 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_49_in_rule__Stop__Group__0__Impl14253 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Stop__Group__1__Impl_in_rule__Stop__Group__114284 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Stop__Group__2_in_rule__Stop__Group__114287 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Stop__NameAssignment_1_in_rule__Stop__Group__1__Impl14314 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Stop__Group__2__Impl_in_rule__Stop__Group__214344 = new BitSet(new long[]{0x0000004000000000L});
+        public static final BitSet FOLLOW_rule__Stop__Group__3_in_rule__Stop__Group__214347 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Stop__Group__2__Impl14375 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Stop__Group__3__Impl_in_rule__Stop__Group__314406 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Stop__Group__4_in_rule__Stop__Group__314409 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_rule__Stop__Group__3__Impl14437 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Stop__Group__4__Impl_in_rule__Stop__Group__414468 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rule__Stop__Group__5_in_rule__Stop__Group__414471 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Stop__BelongsToAssignment_4_in_rule__Stop__Group__4__Impl14498 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Stop__Group__5__Impl_in_rule__Stop__Group__514528 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Stop__Group__5__Impl14556 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Yield__Group__0__Impl_in_rule__Yield__Group__014599 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Yield__Group__1_in_rule__Yield__Group__014602 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_50_in_rule__Yield__Group__0__Impl14630 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Yield__Group__1__Impl_in_rule__Yield__Group__114661 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Yield__Group__2_in_rule__Yield__Group__114664 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Yield__NameAssignment_1_in_rule__Yield__Group__1__Impl14691 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Yield__Group__2__Impl_in_rule__Yield__Group__214721 = new BitSet(new long[]{0x0000004000000000L});
+        public static final BitSet FOLLOW_rule__Yield__Group__3_in_rule__Yield__Group__214724 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Yield__Group__2__Impl14752 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Yield__Group__3__Impl_in_rule__Yield__Group__314783 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Yield__Group__4_in_rule__Yield__Group__314786 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_rule__Yield__Group__3__Impl14814 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Yield__Group__4__Impl_in_rule__Yield__Group__414845 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rule__Yield__Group__5_in_rule__Yield__Group__414848 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Yield__BelongsToAssignment_4_in_rule__Yield__Group__4__Impl14875 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Yield__Group__5__Impl_in_rule__Yield__Group__514905 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_rule__Yield__Group__5__Impl14933 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSegment_in_rule__Highway__InitSegmentsAssignment_3_214981 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSegment_in_rule__Highway__InitSegmentsAssignment_3_3_115012 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNode_in_rule__Highway__InitNodesAssignment_4_215043 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNode_in_rule__Highway__InitNodesAssignment_4_3_115074 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCar_in_rule__Highway__InitCarsAssignment_5_215105 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCar_in_rule__Highway__InitCarsAssignment_5_3_115136 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSemaphore_in_rule__Highway__InitSemaphoreAssignment_6_215167 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSemaphore_in_rule__Highway__InitSemaphoreAssignment_6_3_115198 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSignal_in_rule__Highway__InitSignalAssignment_7_215229 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSignal_in_rule__Highway__InitSignalAssignment_7_3_115260 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__NameAssignment_215291 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__HasStartsAssignment_615326 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__HasStartsAssignment_7_115365 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__HasEndsAssignment_1115404 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__HasEndsAssignment_12_115443 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__SemaphoreAssignment_14_115482 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__SignalsAssignment_15_215521 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Node_Impl__SignalsAssignment_15_3_115560 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Car__NameAssignment_215595 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDate_in_rule__Car__TimeInAssignment_4_115626 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDate_in_rule__Car__TimeOutAssignment_5_115657 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Car__IsInSegmentAssignment_6_115692 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Segment__NameAssignment_215727 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__Segment__NumLanesAssignment_4_115758 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__Segment__LengthAssignment_5_115789 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Segment__HasCarsAssignment_6_215824 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Segment__HasCarsAssignment_6_3_115863 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Semaphore__NameAssignment_215898 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEBoolean_in_rule__Semaphore__CanGoAssignment_4_115929 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__Semaphore__SecondsRedAssignment_5_115960 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__Semaphore__SecondsGreenAssignment_6_115991 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Semaphore__BelongsToAssignment_816026 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Signal_Impl__NameAssignment_216061 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Signal_Impl__BelongsToAssignment_516096 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__NameAssignment_216131 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__HasStartsAssignment_4_216166 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__HasStartsAssignment_4_3_116205 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__HasEndsAssignment_716244 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__HasEndsAssignment_8_116283 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__SemaphoreAssignment_10_116322 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__SignalsAssignment_11_216361 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Extractor__SignalsAssignment_11_3_116400 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__NameAssignment_216435 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__Injector__CarsPerHourAssignment_4_116466 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__HasStartsAssignment_716501 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__HasStartsAssignment_8_116540 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__HasEndsAssignment_10_216579 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__HasEndsAssignment_10_3_116618 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__SemaphoreAssignment_11_116657 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__SignalsAssignment_12_216696 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Injector__SignalsAssignment_12_3_116735 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Speedlimit__NameAssignment_116770 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__Speedlimit__SpeedAssignment_3_116801 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Speedlimit__BelongsToAssignment_516836 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Stop__NameAssignment_116871 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Stop__BelongsToAssignment_416906 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Yield__NameAssignment_116941 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Yield__BelongsToAssignment_416976 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

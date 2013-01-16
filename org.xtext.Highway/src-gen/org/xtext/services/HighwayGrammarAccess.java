@@ -520,30 +520,34 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cCarAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cCarKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cTimeInKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
-		private final Assignment cTimeInAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final RuleCall cTimeInEDateParserRuleCall_3_1_0 = (RuleCall)cTimeInAssignment_3_1.eContents().get(0);
+		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cNameEStringParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cTimeOutKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cTimeOutAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cTimeOutEDateParserRuleCall_4_1_0 = (RuleCall)cTimeOutAssignment_4_1.eContents().get(0);
+		private final Keyword cTimeInKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Assignment cTimeInAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final RuleCall cTimeInEDateParserRuleCall_4_1_0 = (RuleCall)cTimeInAssignment_4_1.eContents().get(0);
 		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cIsInSegmentKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Assignment cIsInSegmentAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
-		private final CrossReference cIsInSegmentSegmentCrossReference_5_1_0 = (CrossReference)cIsInSegmentAssignment_5_1.eContents().get(0);
-		private final RuleCall cIsInSegmentSegmentEStringParserRuleCall_5_1_0_1 = (RuleCall)cIsInSegmentSegmentCrossReference_5_1_0.eContents().get(1);
-		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Keyword cTimeOutKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
+		private final Assignment cTimeOutAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
+		private final RuleCall cTimeOutEDateParserRuleCall_5_1_0 = (RuleCall)cTimeOutAssignment_5_1.eContents().get(0);
+		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
+		private final Keyword cIsInSegmentKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final Assignment cIsInSegmentAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
+		private final CrossReference cIsInSegmentSegmentCrossReference_6_1_0 = (CrossReference)cIsInSegmentAssignment_6_1.eContents().get(0);
+		private final RuleCall cIsInSegmentSegmentEStringParserRuleCall_6_1_0_1 = (RuleCall)cIsInSegmentSegmentCrossReference_6_1_0.eContents().get(1);
+		private final Keyword cRightCurlyBracketKeyword_7 = (Keyword)cGroup.eContents().get(7);
 		
 		//Car:
 		//
-		//	{Car} "Car" "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment" isInSegment=[Segment|EString])?
+		//	{Car} "Car" name=EString "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment"
 		//
-		//	"}";
+		//	isInSegment=[Segment|EString])? "}";
 		public ParserRule getRule() { return rule; }
 
-		//{Car} "Car" "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment" isInSegment=[Segment|EString])? "}"
+		//{Car} "Car" name=EString "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment"
+		//
+		//isInSegment=[Segment|EString])? "}"
 		public Group getGroup() { return cGroup; }
 
 		//{Car}
@@ -552,50 +556,56 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		//"Car"
 		public Keyword getCarKeyword_1() { return cCarKeyword_1; }
 
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
-
-		//("timeIn" timeIn=EDate)?
-		public Group getGroup_3() { return cGroup_3; }
-
-		//"timeIn"
-		public Keyword getTimeInKeyword_3_0() { return cTimeInKeyword_3_0; }
-
-		//timeIn=EDate
-		public Assignment getTimeInAssignment_3_1() { return cTimeInAssignment_3_1; }
-
-		//EDate
-		public RuleCall getTimeInEDateParserRuleCall_3_1_0() { return cTimeInEDateParserRuleCall_3_1_0; }
-
-		//("timeOut" timeOut=EDate)?
-		public Group getGroup_4() { return cGroup_4; }
-
-		//"timeOut"
-		public Keyword getTimeOutKeyword_4_0() { return cTimeOutKeyword_4_0; }
-
-		//timeOut=EDate
-		public Assignment getTimeOutAssignment_4_1() { return cTimeOutAssignment_4_1; }
-
-		//EDate
-		public RuleCall getTimeOutEDateParserRuleCall_4_1_0() { return cTimeOutEDateParserRuleCall_4_1_0; }
-
-		//("isInSegment" isInSegment=[Segment|EString])?
-		public Group getGroup_5() { return cGroup_5; }
-
-		//"isInSegment"
-		public Keyword getIsInSegmentKeyword_5_0() { return cIsInSegmentKeyword_5_0; }
-
-		//isInSegment=[Segment|EString]
-		public Assignment getIsInSegmentAssignment_5_1() { return cIsInSegmentAssignment_5_1; }
-
-		//[Segment|EString]
-		public CrossReference getIsInSegmentSegmentCrossReference_5_1_0() { return cIsInSegmentSegmentCrossReference_5_1_0; }
+		//name=EString
+		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
 
 		//EString
-		public RuleCall getIsInSegmentSegmentEStringParserRuleCall_5_1_0_1() { return cIsInSegmentSegmentEStringParserRuleCall_5_1_0_1; }
+		public RuleCall getNameEStringParserRuleCall_2_0() { return cNameEStringParserRuleCall_2_0; }
+
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
+
+		//("timeIn" timeIn=EDate)?
+		public Group getGroup_4() { return cGroup_4; }
+
+		//"timeIn"
+		public Keyword getTimeInKeyword_4_0() { return cTimeInKeyword_4_0; }
+
+		//timeIn=EDate
+		public Assignment getTimeInAssignment_4_1() { return cTimeInAssignment_4_1; }
+
+		//EDate
+		public RuleCall getTimeInEDateParserRuleCall_4_1_0() { return cTimeInEDateParserRuleCall_4_1_0; }
+
+		//("timeOut" timeOut=EDate)?
+		public Group getGroup_5() { return cGroup_5; }
+
+		//"timeOut"
+		public Keyword getTimeOutKeyword_5_0() { return cTimeOutKeyword_5_0; }
+
+		//timeOut=EDate
+		public Assignment getTimeOutAssignment_5_1() { return cTimeOutAssignment_5_1; }
+
+		//EDate
+		public RuleCall getTimeOutEDateParserRuleCall_5_1_0() { return cTimeOutEDateParserRuleCall_5_1_0; }
+
+		//("isInSegment" isInSegment=[Segment|EString])?
+		public Group getGroup_6() { return cGroup_6; }
+
+		//"isInSegment"
+		public Keyword getIsInSegmentKeyword_6_0() { return cIsInSegmentKeyword_6_0; }
+
+		//isInSegment=[Segment|EString]
+		public Assignment getIsInSegmentAssignment_6_1() { return cIsInSegmentAssignment_6_1; }
+
+		//[Segment|EString]
+		public CrossReference getIsInSegmentSegmentCrossReference_6_1_0() { return cIsInSegmentSegmentCrossReference_6_1_0; }
+
+		//EString
+		public RuleCall getIsInSegmentSegmentEStringParserRuleCall_6_1_0_1() { return cIsInSegmentSegmentEStringParserRuleCall_6_1_0_1; }
 
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
+		public Keyword getRightCurlyBracketKeyword_7() { return cRightCurlyBracketKeyword_7; }
 	}
 
 	public class SegmentElements extends AbstractParserRuleElementFinder {
@@ -1663,9 +1673,9 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 
 	//Car:
 	//
-	//	{Car} "Car" "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment" isInSegment=[Segment|EString])?
+	//	{Car} "Car" name=EString "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment"
 	//
-	//	"}";
+	//	isInSegment=[Segment|EString])? "}";
 	public CarElements getCarAccess() {
 		return (pCar != null) ? pCar : (pCar = new CarElements());
 	}

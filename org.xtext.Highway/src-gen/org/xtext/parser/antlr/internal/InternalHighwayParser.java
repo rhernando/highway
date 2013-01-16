@@ -1709,29 +1709,31 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCar"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:699:1: ruleCar returns [EObject current=null] : ( () otherlv_1= 'Car' otherlv_2= '{' (otherlv_3= 'timeIn' ( (lv_timeIn_4_0= ruleEDate ) ) )? (otherlv_5= 'timeOut' ( (lv_timeOut_6_0= ruleEDate ) ) )? (otherlv_7= 'isInSegment' ( ( ruleEString ) ) )? otherlv_9= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:699:1: ruleCar returns [EObject current=null] : ( () otherlv_1= 'Car' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'timeIn' ( (lv_timeIn_5_0= ruleEDate ) ) )? (otherlv_6= 'timeOut' ( (lv_timeOut_7_0= ruleEDate ) ) )? (otherlv_8= 'isInSegment' ( ( ruleEString ) ) )? otherlv_10= '}' ) ;
     public final EObject ruleCar() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
-        Token otherlv_2=null;
         Token otherlv_3=null;
-        Token otherlv_5=null;
-        Token otherlv_7=null;
-        Token otherlv_9=null;
-        AntlrDatatypeRuleToken lv_timeIn_4_0 = null;
+        Token otherlv_4=null;
+        Token otherlv_6=null;
+        Token otherlv_8=null;
+        Token otherlv_10=null;
+        AntlrDatatypeRuleToken lv_name_2_0 = null;
 
-        AntlrDatatypeRuleToken lv_timeOut_6_0 = null;
+        AntlrDatatypeRuleToken lv_timeIn_5_0 = null;
+
+        AntlrDatatypeRuleToken lv_timeOut_7_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:702:28: ( ( () otherlv_1= 'Car' otherlv_2= '{' (otherlv_3= 'timeIn' ( (lv_timeIn_4_0= ruleEDate ) ) )? (otherlv_5= 'timeOut' ( (lv_timeOut_6_0= ruleEDate ) ) )? (otherlv_7= 'isInSegment' ( ( ruleEString ) ) )? otherlv_9= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:703:1: ( () otherlv_1= 'Car' otherlv_2= '{' (otherlv_3= 'timeIn' ( (lv_timeIn_4_0= ruleEDate ) ) )? (otherlv_5= 'timeOut' ( (lv_timeOut_6_0= ruleEDate ) ) )? (otherlv_7= 'isInSegment' ( ( ruleEString ) ) )? otherlv_9= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:702:28: ( ( () otherlv_1= 'Car' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'timeIn' ( (lv_timeIn_5_0= ruleEDate ) ) )? (otherlv_6= 'timeOut' ( (lv_timeOut_7_0= ruleEDate ) ) )? (otherlv_8= 'isInSegment' ( ( ruleEString ) ) )? otherlv_10= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:703:1: ( () otherlv_1= 'Car' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'timeIn' ( (lv_timeIn_5_0= ruleEDate ) ) )? (otherlv_6= 'timeOut' ( (lv_timeOut_7_0= ruleEDate ) ) )? (otherlv_8= 'isInSegment' ( ( ruleEString ) ) )? otherlv_10= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:703:1: ( () otherlv_1= 'Car' otherlv_2= '{' (otherlv_3= 'timeIn' ( (lv_timeIn_4_0= ruleEDate ) ) )? (otherlv_5= 'timeOut' ( (lv_timeOut_6_0= ruleEDate ) ) )? (otherlv_7= 'isInSegment' ( ( ruleEString ) ) )? otherlv_9= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:703:2: () otherlv_1= 'Car' otherlv_2= '{' (otherlv_3= 'timeIn' ( (lv_timeIn_4_0= ruleEDate ) ) )? (otherlv_5= 'timeOut' ( (lv_timeOut_6_0= ruleEDate ) ) )? (otherlv_7= 'isInSegment' ( ( ruleEString ) ) )? otherlv_9= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:703:1: ( () otherlv_1= 'Car' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'timeIn' ( (lv_timeIn_5_0= ruleEDate ) ) )? (otherlv_6= 'timeOut' ( (lv_timeOut_7_0= ruleEDate ) ) )? (otherlv_8= 'isInSegment' ( ( ruleEString ) ) )? otherlv_10= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:703:2: () otherlv_1= 'Car' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'timeIn' ( (lv_timeIn_5_0= ruleEDate ) ) )? (otherlv_6= 'timeOut' ( (lv_timeOut_7_0= ruleEDate ) ) )? (otherlv_8= 'isInSegment' ( ( ruleEString ) ) )? otherlv_10= '}'
             {
             // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:703:2: ()
             // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:704:5: 
@@ -1748,11 +1750,42 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                 	newLeafNode(otherlv_1, grammarAccess.getCarAccess().getCarKeyword_1());
                 
-            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleCar1527); 
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:713:1: ( (lv_name_2_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:714:1: (lv_name_2_0= ruleEString )
+            {
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:714:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:715:3: lv_name_2_0= ruleEString
+            {
+             
+            	        newCompositeNode(grammarAccess.getCarAccess().getNameEStringParserRuleCall_2_0()); 
+            	    
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleCar1536);
+            lv_name_2_0=ruleEString();
 
-                	newLeafNode(otherlv_2, grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_2());
+            state._fsp--;
+
+
+            	        if (current==null) {
+            	            current = createModelElementForParent(grammarAccess.getCarRule());
+            	        }
+                   		set(
+                   			current, 
+                   			"name",
+                    		lv_name_2_0, 
+                    		"EString");
+            	        afterParserOrEnumRuleCall();
+            	    
+
+            }
+
+
+            }
+
+            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleCar1548); 
+
+                	newLeafNode(otherlv_3, grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:717:1: (otherlv_3= 'timeIn' ( (lv_timeIn_4_0= ruleEDate ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:735:1: (otherlv_4= 'timeIn' ( (lv_timeIn_5_0= ruleEDate ) ) )?
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -1761,23 +1794,23 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt18) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:717:3: otherlv_3= 'timeIn' ( (lv_timeIn_4_0= ruleEDate ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:735:3: otherlv_4= 'timeIn' ( (lv_timeIn_5_0= ruleEDate ) )
                     {
-                    otherlv_3=(Token)match(input,28,FollowSets000.FOLLOW_28_in_ruleCar1540); 
+                    otherlv_4=(Token)match(input,28,FollowSets000.FOLLOW_28_in_ruleCar1561); 
 
-                        	newLeafNode(otherlv_3, grammarAccess.getCarAccess().getTimeInKeyword_3_0());
+                        	newLeafNode(otherlv_4, grammarAccess.getCarAccess().getTimeInKeyword_4_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:721:1: ( (lv_timeIn_4_0= ruleEDate ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:722:1: (lv_timeIn_4_0= ruleEDate )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:739:1: ( (lv_timeIn_5_0= ruleEDate ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:740:1: (lv_timeIn_5_0= ruleEDate )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:722:1: (lv_timeIn_4_0= ruleEDate )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:723:3: lv_timeIn_4_0= ruleEDate
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:740:1: (lv_timeIn_5_0= ruleEDate )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:741:3: lv_timeIn_5_0= ruleEDate
                     {
                      
-                    	        newCompositeNode(grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_3_1_0()); 
+                    	        newCompositeNode(grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_4_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEDate_in_ruleCar1561);
-                    lv_timeIn_4_0=ruleEDate();
+                    pushFollow(FollowSets000.FOLLOW_ruleEDate_in_ruleCar1582);
+                    lv_timeIn_5_0=ruleEDate();
 
                     state._fsp--;
 
@@ -1788,7 +1821,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                            		set(
                            			current, 
                            			"timeIn",
-                            		lv_timeIn_4_0, 
+                            		lv_timeIn_5_0, 
                             		"EDate");
                     	        afterParserOrEnumRuleCall();
                     	    
@@ -1804,7 +1837,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:739:4: (otherlv_5= 'timeOut' ( (lv_timeOut_6_0= ruleEDate ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:757:4: (otherlv_6= 'timeOut' ( (lv_timeOut_7_0= ruleEDate ) ) )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -1813,23 +1846,23 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt19) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:739:6: otherlv_5= 'timeOut' ( (lv_timeOut_6_0= ruleEDate ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:757:6: otherlv_6= 'timeOut' ( (lv_timeOut_7_0= ruleEDate ) )
                     {
-                    otherlv_5=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleCar1576); 
+                    otherlv_6=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleCar1597); 
 
-                        	newLeafNode(otherlv_5, grammarAccess.getCarAccess().getTimeOutKeyword_4_0());
+                        	newLeafNode(otherlv_6, grammarAccess.getCarAccess().getTimeOutKeyword_5_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:743:1: ( (lv_timeOut_6_0= ruleEDate ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:744:1: (lv_timeOut_6_0= ruleEDate )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:761:1: ( (lv_timeOut_7_0= ruleEDate ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:762:1: (lv_timeOut_7_0= ruleEDate )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:744:1: (lv_timeOut_6_0= ruleEDate )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:745:3: lv_timeOut_6_0= ruleEDate
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:762:1: (lv_timeOut_7_0= ruleEDate )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:763:3: lv_timeOut_7_0= ruleEDate
                     {
                      
-                    	        newCompositeNode(grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_4_1_0()); 
+                    	        newCompositeNode(grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_5_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEDate_in_ruleCar1597);
-                    lv_timeOut_6_0=ruleEDate();
+                    pushFollow(FollowSets000.FOLLOW_ruleEDate_in_ruleCar1618);
+                    lv_timeOut_7_0=ruleEDate();
 
                     state._fsp--;
 
@@ -1840,7 +1873,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                            		set(
                            			current, 
                            			"timeOut",
-                            		lv_timeOut_6_0, 
+                            		lv_timeOut_7_0, 
                             		"EDate");
                     	        afterParserOrEnumRuleCall();
                     	    
@@ -1856,7 +1889,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:761:4: (otherlv_7= 'isInSegment' ( ( ruleEString ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:779:4: (otherlv_8= 'isInSegment' ( ( ruleEString ) ) )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -1865,17 +1898,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt20) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:761:6: otherlv_7= 'isInSegment' ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:779:6: otherlv_8= 'isInSegment' ( ( ruleEString ) )
                     {
-                    otherlv_7=(Token)match(input,30,FollowSets000.FOLLOW_30_in_ruleCar1612); 
+                    otherlv_8=(Token)match(input,30,FollowSets000.FOLLOW_30_in_ruleCar1633); 
 
-                        	newLeafNode(otherlv_7, grammarAccess.getCarAccess().getIsInSegmentKeyword_5_0());
+                        	newLeafNode(otherlv_8, grammarAccess.getCarAccess().getIsInSegmentKeyword_6_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:765:1: ( ( ruleEString ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:766:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:783:1: ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:784:1: ( ruleEString )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:766:1: ( ruleEString )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:767:3: ruleEString
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:784:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:785:3: ruleEString
                     {
 
                     			if (current==null) {
@@ -1883,9 +1916,9 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                     	        }
                             
                      
-                    	        newCompositeNode(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_5_1_0()); 
+                    	        newCompositeNode(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_6_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleCar1635);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleCar1656);
                     ruleEString();
 
                     state._fsp--;
@@ -1905,9 +1938,9 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_9=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleCar1649); 
+            otherlv_10=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleCar1670); 
 
-                	newLeafNode(otherlv_9, grammarAccess.getCarAccess().getRightCurlyBracketKeyword_6());
+                	newLeafNode(otherlv_10, grammarAccess.getCarAccess().getRightCurlyBracketKeyword_7());
                 
 
             }
@@ -1930,7 +1963,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleSegment"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:792:1: entryRuleSegment returns [EObject current=null] : iv_ruleSegment= ruleSegment EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:810:1: entryRuleSegment returns [EObject current=null] : iv_ruleSegment= ruleSegment EOF ;
     public final EObject entryRuleSegment() throws RecognitionException {
         EObject current = null;
 
@@ -1938,17 +1971,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:793:2: (iv_ruleSegment= ruleSegment EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:794:2: iv_ruleSegment= ruleSegment EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:811:2: (iv_ruleSegment= ruleSegment EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:812:2: iv_ruleSegment= ruleSegment EOF
             {
              newCompositeNode(grammarAccess.getSegmentRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSegment_in_entryRuleSegment1685);
+            pushFollow(FollowSets000.FOLLOW_ruleSegment_in_entryRuleSegment1706);
             iv_ruleSegment=ruleSegment();
 
             state._fsp--;
 
              current =iv_ruleSegment; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSegment1695); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSegment1716); 
 
             }
 
@@ -1966,7 +1999,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSegment"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:801:1: ruleSegment returns [EObject current=null] : ( () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:819:1: ruleSegment returns [EObject current=null] : ( () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}' ) ;
     public final EObject ruleSegment() throws RecognitionException {
         EObject current = null;
 
@@ -1989,14 +2022,14 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:804:28: ( ( () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:805:1: ( () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:822:28: ( ( () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:823:1: ( () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:805:1: ( () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:805:2: () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:823:1: ( () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:823:2: () otherlv_1= 'Segment' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )? (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )? (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )? otherlv_14= '}'
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:805:2: ()
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:806:5: 
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:823:2: ()
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:824:5: 
             {
 
                     current = forceCreateModelElement(
@@ -2006,20 +2039,20 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleSegment1741); 
+            otherlv_1=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleSegment1762); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getSegmentAccess().getSegmentKeyword_1());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:815:1: ( (lv_name_2_0= ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:816:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:833:1: ( (lv_name_2_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:834:1: (lv_name_2_0= ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:816:1: (lv_name_2_0= ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:817:3: lv_name_2_0= ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:834:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:835:3: lv_name_2_0= ruleEString
             {
              
             	        newCompositeNode(grammarAccess.getSegmentAccess().getNameEStringParserRuleCall_2_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSegment1762);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSegment1783);
             lv_name_2_0=ruleEString();
 
             state._fsp--;
@@ -2041,11 +2074,11 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleSegment1774); 
+            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleSegment1795); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getSegmentAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:837:1: (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:855:1: (otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) ) )?
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -2054,22 +2087,22 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt21) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:837:3: otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:855:3: otherlv_4= 'numLanes' ( (lv_numLanes_5_0= ruleEInt ) )
                     {
-                    otherlv_4=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleSegment1787); 
+                    otherlv_4=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleSegment1808); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getSegmentAccess().getNumLanesKeyword_4_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:841:1: ( (lv_numLanes_5_0= ruleEInt ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:842:1: (lv_numLanes_5_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:859:1: ( (lv_numLanes_5_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:860:1: (lv_numLanes_5_0= ruleEInt )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:842:1: (lv_numLanes_5_0= ruleEInt )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:843:3: lv_numLanes_5_0= ruleEInt
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:860:1: (lv_numLanes_5_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:861:3: lv_numLanes_5_0= ruleEInt
                     {
                      
                     	        newCompositeNode(grammarAccess.getSegmentAccess().getNumLanesEIntParserRuleCall_4_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSegment1808);
+                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSegment1829);
                     lv_numLanes_5_0=ruleEInt();
 
                     state._fsp--;
@@ -2097,7 +2130,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:859:4: (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:877:4: (otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) ) )?
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -2106,22 +2139,22 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt22) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:859:6: otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:877:6: otherlv_6= 'length' ( (lv_length_7_0= ruleEInt ) )
                     {
-                    otherlv_6=(Token)match(input,33,FollowSets000.FOLLOW_33_in_ruleSegment1823); 
+                    otherlv_6=(Token)match(input,33,FollowSets000.FOLLOW_33_in_ruleSegment1844); 
 
                         	newLeafNode(otherlv_6, grammarAccess.getSegmentAccess().getLengthKeyword_5_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:863:1: ( (lv_length_7_0= ruleEInt ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:864:1: (lv_length_7_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:881:1: ( (lv_length_7_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:882:1: (lv_length_7_0= ruleEInt )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:864:1: (lv_length_7_0= ruleEInt )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:865:3: lv_length_7_0= ruleEInt
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:882:1: (lv_length_7_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:883:3: lv_length_7_0= ruleEInt
                     {
                      
                     	        newCompositeNode(grammarAccess.getSegmentAccess().getLengthEIntParserRuleCall_5_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSegment1844);
+                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSegment1865);
                     lv_length_7_0=ruleEInt();
 
                     state._fsp--;
@@ -2149,7 +2182,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:881:4: (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:899:4: (otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')' )?
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -2158,21 +2191,21 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt24) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:881:6: otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')'
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:899:6: otherlv_8= 'hasCars' otherlv_9= '(' ( ( ruleEString ) ) (otherlv_11= ',' ( ( ruleEString ) ) )* otherlv_13= ')'
                     {
-                    otherlv_8=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleSegment1859); 
+                    otherlv_8=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleSegment1880); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getSegmentAccess().getHasCarsKeyword_6_0());
                         
-                    otherlv_9=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleSegment1871); 
+                    otherlv_9=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleSegment1892); 
 
                         	newLeafNode(otherlv_9, grammarAccess.getSegmentAccess().getLeftParenthesisKeyword_6_1());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:889:1: ( ( ruleEString ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:890:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:907:1: ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:908:1: ( ruleEString )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:890:1: ( ruleEString )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:891:3: ruleEString
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:908:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:909:3: ruleEString
                     {
 
                     			if (current==null) {
@@ -2182,7 +2215,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getSegmentAccess().getHasCarsCarCrossReference_6_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSegment1894);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSegment1915);
                     ruleEString();
 
                     state._fsp--;
@@ -2196,7 +2229,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:904:2: (otherlv_11= ',' ( ( ruleEString ) ) )*
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:922:2: (otherlv_11= ',' ( ( ruleEString ) ) )*
                     loop23:
                     do {
                         int alt23=2;
@@ -2209,17 +2242,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                         switch (alt23) {
                     	case 1 :
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:904:4: otherlv_11= ',' ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:922:4: otherlv_11= ',' ( ( ruleEString ) )
                     	    {
-                    	    otherlv_11=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleSegment1907); 
+                    	    otherlv_11=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleSegment1928); 
 
                     	        	newLeafNode(otherlv_11, grammarAccess.getSegmentAccess().getCommaKeyword_6_3_0());
                     	        
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:908:1: ( ( ruleEString ) )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:909:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:926:1: ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:927:1: ( ruleEString )
                     	    {
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:909:1: ( ruleEString )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:910:3: ruleEString
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:927:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:928:3: ruleEString
                     	    {
 
                     	    			if (current==null) {
@@ -2229,7 +2262,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getSegmentAccess().getHasCarsCarCrossReference_6_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSegment1930);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSegment1951);
                     	    ruleEString();
 
                     	    state._fsp--;
@@ -2252,7 +2285,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_13=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleSegment1944); 
+                    otherlv_13=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleSegment1965); 
 
                         	newLeafNode(otherlv_13, grammarAccess.getSegmentAccess().getRightParenthesisKeyword_6_4());
                         
@@ -2262,7 +2295,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_14=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleSegment1958); 
+            otherlv_14=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleSegment1979); 
 
                 	newLeafNode(otherlv_14, grammarAccess.getSegmentAccess().getRightCurlyBracketKeyword_7());
                 
@@ -2287,7 +2320,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleSemaphore"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:939:1: entryRuleSemaphore returns [EObject current=null] : iv_ruleSemaphore= ruleSemaphore EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:957:1: entryRuleSemaphore returns [EObject current=null] : iv_ruleSemaphore= ruleSemaphore EOF ;
     public final EObject entryRuleSemaphore() throws RecognitionException {
         EObject current = null;
 
@@ -2295,17 +2328,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:940:2: (iv_ruleSemaphore= ruleSemaphore EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:941:2: iv_ruleSemaphore= ruleSemaphore EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:958:2: (iv_ruleSemaphore= ruleSemaphore EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:959:2: iv_ruleSemaphore= ruleSemaphore EOF
             {
              newCompositeNode(grammarAccess.getSemaphoreRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSemaphore_in_entryRuleSemaphore1994);
+            pushFollow(FollowSets000.FOLLOW_ruleSemaphore_in_entryRuleSemaphore2015);
             iv_ruleSemaphore=ruleSemaphore();
 
             state._fsp--;
 
              current =iv_ruleSemaphore; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSemaphore2004); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSemaphore2025); 
 
             }
 
@@ -2323,7 +2356,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSemaphore"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:948:1: ruleSemaphore returns [EObject current=null] : ( () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:966:1: ruleSemaphore returns [EObject current=null] : ( () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}' ) ;
     public final EObject ruleSemaphore() throws RecognitionException {
         EObject current = null;
 
@@ -2346,14 +2379,14 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:951:28: ( ( () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:952:1: ( () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:969:28: ( ( () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:970:1: ( () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:952:1: ( () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:952:2: () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:970:1: ( () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:970:2: () otherlv_1= 'Semaphore' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )? (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )? (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )? otherlv_10= 'belongsTo' ( ( ruleEString ) ) otherlv_12= '}'
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:952:2: ()
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:953:5: 
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:970:2: ()
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:971:5: 
             {
 
                     current = forceCreateModelElement(
@@ -2363,20 +2396,20 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleSemaphore2050); 
+            otherlv_1=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleSemaphore2071); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getSemaphoreAccess().getSemaphoreKeyword_1());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:962:1: ( (lv_name_2_0= ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:963:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:980:1: ( (lv_name_2_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:981:1: (lv_name_2_0= ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:963:1: (lv_name_2_0= ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:964:3: lv_name_2_0= ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:981:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:982:3: lv_name_2_0= ruleEString
             {
              
             	        newCompositeNode(grammarAccess.getSemaphoreAccess().getNameEStringParserRuleCall_2_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSemaphore2071);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSemaphore2092);
             lv_name_2_0=ruleEString();
 
             state._fsp--;
@@ -2398,11 +2431,11 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleSemaphore2083); 
+            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleSemaphore2104); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getSemaphoreAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:984:1: (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1002:1: (otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) ) )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -2411,22 +2444,22 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt25) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:984:3: otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1002:3: otherlv_4= 'canGo' ( (lv_canGo_5_0= ruleEBoolean ) )
                     {
-                    otherlv_4=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleSemaphore2096); 
+                    otherlv_4=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleSemaphore2117); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getSemaphoreAccess().getCanGoKeyword_4_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:988:1: ( (lv_canGo_5_0= ruleEBoolean ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:989:1: (lv_canGo_5_0= ruleEBoolean )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1006:1: ( (lv_canGo_5_0= ruleEBoolean ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1007:1: (lv_canGo_5_0= ruleEBoolean )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:989:1: (lv_canGo_5_0= ruleEBoolean )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:990:3: lv_canGo_5_0= ruleEBoolean
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1007:1: (lv_canGo_5_0= ruleEBoolean )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1008:3: lv_canGo_5_0= ruleEBoolean
                     {
                      
                     	        newCompositeNode(grammarAccess.getSemaphoreAccess().getCanGoEBooleanParserRuleCall_4_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEBoolean_in_ruleSemaphore2117);
+                    pushFollow(FollowSets000.FOLLOW_ruleEBoolean_in_ruleSemaphore2138);
                     lv_canGo_5_0=ruleEBoolean();
 
                     state._fsp--;
@@ -2454,7 +2487,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1006:4: (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1024:4: (otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) ) )?
             int alt26=2;
             int LA26_0 = input.LA(1);
 
@@ -2463,22 +2496,22 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt26) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1006:6: otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1024:6: otherlv_6= 'secondsRed' ( (lv_secondsRed_7_0= ruleEInt ) )
                     {
-                    otherlv_6=(Token)match(input,37,FollowSets000.FOLLOW_37_in_ruleSemaphore2132); 
+                    otherlv_6=(Token)match(input,37,FollowSets000.FOLLOW_37_in_ruleSemaphore2153); 
 
                         	newLeafNode(otherlv_6, grammarAccess.getSemaphoreAccess().getSecondsRedKeyword_5_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1010:1: ( (lv_secondsRed_7_0= ruleEInt ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1011:1: (lv_secondsRed_7_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1028:1: ( (lv_secondsRed_7_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1029:1: (lv_secondsRed_7_0= ruleEInt )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1011:1: (lv_secondsRed_7_0= ruleEInt )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1012:3: lv_secondsRed_7_0= ruleEInt
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1029:1: (lv_secondsRed_7_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1030:3: lv_secondsRed_7_0= ruleEInt
                     {
                      
                     	        newCompositeNode(grammarAccess.getSemaphoreAccess().getSecondsRedEIntParserRuleCall_5_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSemaphore2153);
+                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSemaphore2174);
                     lv_secondsRed_7_0=ruleEInt();
 
                     state._fsp--;
@@ -2506,7 +2539,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1028:4: (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1046:4: (otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) ) )?
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -2515,22 +2548,22 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt27) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1028:6: otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1046:6: otherlv_8= 'secondsGreen' ( (lv_secondsGreen_9_0= ruleEInt ) )
                     {
-                    otherlv_8=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleSemaphore2168); 
+                    otherlv_8=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleSemaphore2189); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getSemaphoreAccess().getSecondsGreenKeyword_6_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1032:1: ( (lv_secondsGreen_9_0= ruleEInt ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1033:1: (lv_secondsGreen_9_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1050:1: ( (lv_secondsGreen_9_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1051:1: (lv_secondsGreen_9_0= ruleEInt )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1033:1: (lv_secondsGreen_9_0= ruleEInt )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1034:3: lv_secondsGreen_9_0= ruleEInt
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1051:1: (lv_secondsGreen_9_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1052:3: lv_secondsGreen_9_0= ruleEInt
                     {
                      
                     	        newCompositeNode(grammarAccess.getSemaphoreAccess().getSecondsGreenEIntParserRuleCall_6_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSemaphore2189);
+                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSemaphore2210);
                     lv_secondsGreen_9_0=ruleEInt();
 
                     state._fsp--;
@@ -2558,15 +2591,15 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_10=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleSemaphore2203); 
+            otherlv_10=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleSemaphore2224); 
 
                 	newLeafNode(otherlv_10, grammarAccess.getSemaphoreAccess().getBelongsToKeyword_7());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1054:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1055:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1072:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1073:1: ( ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1055:1: ( ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1056:3: ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1073:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1074:3: ruleEString
             {
 
             			if (current==null) {
@@ -2576,7 +2609,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getSemaphoreAccess().getBelongsToNodeCrossReference_8_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSemaphore2226);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSemaphore2247);
             ruleEString();
 
             state._fsp--;
@@ -2590,7 +2623,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_12=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleSemaphore2238); 
+            otherlv_12=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleSemaphore2259); 
 
                 	newLeafNode(otherlv_12, grammarAccess.getSemaphoreAccess().getRightCurlyBracketKeyword_9());
                 
@@ -2615,7 +2648,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleSignal_Impl"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1081:1: entryRuleSignal_Impl returns [EObject current=null] : iv_ruleSignal_Impl= ruleSignal_Impl EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1099:1: entryRuleSignal_Impl returns [EObject current=null] : iv_ruleSignal_Impl= ruleSignal_Impl EOF ;
     public final EObject entryRuleSignal_Impl() throws RecognitionException {
         EObject current = null;
 
@@ -2623,17 +2656,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1082:2: (iv_ruleSignal_Impl= ruleSignal_Impl EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1083:2: iv_ruleSignal_Impl= ruleSignal_Impl EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1100:2: (iv_ruleSignal_Impl= ruleSignal_Impl EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1101:2: iv_ruleSignal_Impl= ruleSignal_Impl EOF
             {
              newCompositeNode(grammarAccess.getSignal_ImplRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSignal_Impl_in_entryRuleSignal_Impl2274);
+            pushFollow(FollowSets000.FOLLOW_ruleSignal_Impl_in_entryRuleSignal_Impl2295);
             iv_ruleSignal_Impl=ruleSignal_Impl();
 
             state._fsp--;
 
              current =iv_ruleSignal_Impl; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSignal_Impl2284); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSignal_Impl2305); 
 
             }
 
@@ -2651,7 +2684,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSignal_Impl"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1090:1: ruleSignal_Impl returns [EObject current=null] : ( () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1108:1: ruleSignal_Impl returns [EObject current=null] : ( () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}' ) ;
     public final EObject ruleSignal_Impl() throws RecognitionException {
         EObject current = null;
 
@@ -2665,14 +2698,14 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1093:28: ( ( () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1094:1: ( () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1111:28: ( ( () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1112:1: ( () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1094:1: ( () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1094:2: () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1112:1: ( () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1112:2: () otherlv_1= 'Signal' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' otherlv_4= 'belongsTo' ( ( ruleEString ) ) otherlv_6= '}'
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1094:2: ()
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1095:5: 
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1112:2: ()
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1113:5: 
             {
 
                     current = forceCreateModelElement(
@@ -2682,20 +2715,20 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,40,FollowSets000.FOLLOW_40_in_ruleSignal_Impl2330); 
+            otherlv_1=(Token)match(input,40,FollowSets000.FOLLOW_40_in_ruleSignal_Impl2351); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getSignal_ImplAccess().getSignalKeyword_1());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1104:1: ( (lv_name_2_0= ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1105:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1122:1: ( (lv_name_2_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1123:1: (lv_name_2_0= ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1105:1: (lv_name_2_0= ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1106:3: lv_name_2_0= ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1123:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1124:3: lv_name_2_0= ruleEString
             {
              
             	        newCompositeNode(grammarAccess.getSignal_ImplAccess().getNameEStringParserRuleCall_2_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSignal_Impl2351);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSignal_Impl2372);
             lv_name_2_0=ruleEString();
 
             state._fsp--;
@@ -2717,19 +2750,19 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleSignal_Impl2363); 
+            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleSignal_Impl2384); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getSignal_ImplAccess().getLeftCurlyBracketKeyword_3());
                 
-            otherlv_4=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleSignal_Impl2375); 
+            otherlv_4=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleSignal_Impl2396); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getSignal_ImplAccess().getBelongsToKeyword_4());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1130:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1131:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1148:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1149:1: ( ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1131:1: ( ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1132:3: ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1149:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1150:3: ruleEString
             {
 
             			if (current==null) {
@@ -2739,7 +2772,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getSignal_ImplAccess().getBelongsToNodeCrossReference_5_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSignal_Impl2398);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSignal_Impl2419);
             ruleEString();
 
             state._fsp--;
@@ -2753,7 +2786,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleSignal_Impl2410); 
+            otherlv_6=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleSignal_Impl2431); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getSignal_ImplAccess().getRightCurlyBracketKeyword_6());
                 
@@ -2778,7 +2811,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEString"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1157:1: entryRuleEString returns [String current=null] : iv_ruleEString= ruleEString EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1175:1: entryRuleEString returns [String current=null] : iv_ruleEString= ruleEString EOF ;
     public final String entryRuleEString() throws RecognitionException {
         String current = null;
 
@@ -2786,17 +2819,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1158:2: (iv_ruleEString= ruleEString EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1159:2: iv_ruleEString= ruleEString EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1176:2: (iv_ruleEString= ruleEString EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1177:2: iv_ruleEString= ruleEString EOF
             {
              newCompositeNode(grammarAccess.getEStringRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_entryRuleEString2447);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_entryRuleEString2468);
             iv_ruleEString=ruleEString();
 
             state._fsp--;
 
              current =iv_ruleEString.getText(); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEString2458); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEString2479); 
 
             }
 
@@ -2814,7 +2847,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEString"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1166:1: ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1184:1: ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) ;
     public final AntlrDatatypeRuleToken ruleEString() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -2824,10 +2857,10 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1169:28: ( (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1170:1: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1187:28: ( (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1188:1: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1170:1: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1188:1: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -2845,9 +2878,9 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt28) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1170:6: this_STRING_0= RULE_STRING
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1188:6: this_STRING_0= RULE_STRING
                     {
-                    this_STRING_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleEString2498); 
+                    this_STRING_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleEString2519); 
 
                     		current.merge(this_STRING_0);
                         
@@ -2858,9 +2891,9 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1178:10: this_ID_1= RULE_ID
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1196:10: this_ID_1= RULE_ID
                     {
-                    this_ID_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEString2524); 
+                    this_ID_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEString2545); 
 
                     		current.merge(this_ID_1);
                         
@@ -2891,7 +2924,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleExtractor"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1193:1: entryRuleExtractor returns [EObject current=null] : iv_ruleExtractor= ruleExtractor EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1211:1: entryRuleExtractor returns [EObject current=null] : iv_ruleExtractor= ruleExtractor EOF ;
     public final EObject entryRuleExtractor() throws RecognitionException {
         EObject current = null;
 
@@ -2899,17 +2932,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1194:2: (iv_ruleExtractor= ruleExtractor EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1195:2: iv_ruleExtractor= ruleExtractor EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1212:2: (iv_ruleExtractor= ruleExtractor EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1213:2: iv_ruleExtractor= ruleExtractor EOF
             {
              newCompositeNode(grammarAccess.getExtractorRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleExtractor_in_entryRuleExtractor2569);
+            pushFollow(FollowSets000.FOLLOW_ruleExtractor_in_entryRuleExtractor2590);
             iv_ruleExtractor=ruleExtractor();
 
             state._fsp--;
 
              current =iv_ruleExtractor; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleExtractor2579); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleExtractor2600); 
 
             }
 
@@ -2927,7 +2960,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleExtractor"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1202:1: ruleExtractor returns [EObject current=null] : ( () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1220:1: ruleExtractor returns [EObject current=null] : ( () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}' ) ;
     public final EObject ruleExtractor() throws RecognitionException {
         EObject current = null;
 
@@ -2953,14 +2986,14 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1205:28: ( ( () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1206:1: ( () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1223:28: ( ( () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1224:1: ( () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1206:1: ( () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1206:2: () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1224:1: ( () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1224:2: () otherlv_1= 'Extractor' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )? otherlv_10= 'hasEnds' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* otherlv_15= ')' (otherlv_16= 'semaphore' ( ( ruleEString ) ) )? (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )? otherlv_24= '}'
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1206:2: ()
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1207:5: 
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1224:2: ()
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1225:5: 
             {
 
                     current = forceCreateModelElement(
@@ -2970,20 +3003,20 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,41,FollowSets000.FOLLOW_41_in_ruleExtractor2625); 
+            otherlv_1=(Token)match(input,41,FollowSets000.FOLLOW_41_in_ruleExtractor2646); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getExtractorAccess().getExtractorKeyword_1());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1216:1: ( (lv_name_2_0= ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1217:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1234:1: ( (lv_name_2_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1235:1: (lv_name_2_0= ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1217:1: (lv_name_2_0= ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1218:3: lv_name_2_0= ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1235:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1236:3: lv_name_2_0= ruleEString
             {
              
             	        newCompositeNode(grammarAccess.getExtractorAccess().getNameEStringParserRuleCall_2_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2646);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2667);
             lv_name_2_0=ruleEString();
 
             state._fsp--;
@@ -3005,11 +3038,11 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleExtractor2658); 
+            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleExtractor2679); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getExtractorAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1238:1: (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1256:1: (otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')' )?
             int alt30=2;
             int LA30_0 = input.LA(1);
 
@@ -3018,21 +3051,21 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt30) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1238:3: otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')'
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1256:3: otherlv_4= 'hasStarts' otherlv_5= '(' ( ( ruleEString ) ) (otherlv_7= ',' ( ( ruleEString ) ) )* otherlv_9= ')'
                     {
-                    otherlv_4=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleExtractor2671); 
+                    otherlv_4=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleExtractor2692); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getExtractorAccess().getHasStartsKeyword_4_0());
                         
-                    otherlv_5=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleExtractor2683); 
+                    otherlv_5=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleExtractor2704); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_4_1());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1246:1: ( ( ruleEString ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1247:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1264:1: ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1265:1: ( ruleEString )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1247:1: ( ruleEString )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1248:3: ruleEString
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1265:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1266:3: ruleEString
                     {
 
                     			if (current==null) {
@@ -3042,7 +3075,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getExtractorAccess().getHasStartsSegmentCrossReference_4_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2706);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2727);
                     ruleEString();
 
                     state._fsp--;
@@ -3056,7 +3089,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1261:2: (otherlv_7= ',' ( ( ruleEString ) ) )*
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1279:2: (otherlv_7= ',' ( ( ruleEString ) ) )*
                     loop29:
                     do {
                         int alt29=2;
@@ -3069,17 +3102,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                         switch (alt29) {
                     	case 1 :
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1261:4: otherlv_7= ',' ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1279:4: otherlv_7= ',' ( ( ruleEString ) )
                     	    {
-                    	    otherlv_7=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleExtractor2719); 
+                    	    otherlv_7=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleExtractor2740); 
 
                     	        	newLeafNode(otherlv_7, grammarAccess.getExtractorAccess().getCommaKeyword_4_3_0());
                     	        
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1265:1: ( ( ruleEString ) )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1266:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1283:1: ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1284:1: ( ruleEString )
                     	    {
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1266:1: ( ruleEString )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1267:3: ruleEString
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1284:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1285:3: ruleEString
                     	    {
 
                     	    			if (current==null) {
@@ -3089,7 +3122,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getExtractorAccess().getHasStartsSegmentCrossReference_4_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2742);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2763);
                     	    ruleEString();
 
                     	    state._fsp--;
@@ -3112,7 +3145,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_9=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleExtractor2756); 
+                    otherlv_9=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleExtractor2777); 
 
                         	newLeafNode(otherlv_9, grammarAccess.getExtractorAccess().getRightParenthesisKeyword_4_4());
                         
@@ -3122,19 +3155,19 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_10=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleExtractor2770); 
+            otherlv_10=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleExtractor2791); 
 
                 	newLeafNode(otherlv_10, grammarAccess.getExtractorAccess().getHasEndsKeyword_5());
                 
-            otherlv_11=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleExtractor2782); 
+            otherlv_11=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleExtractor2803); 
 
                 	newLeafNode(otherlv_11, grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_6());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1292:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1293:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1310:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1311:1: ( ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1293:1: ( ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1294:3: ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1311:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1312:3: ruleEString
             {
 
             			if (current==null) {
@@ -3144,7 +3177,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getExtractorAccess().getHasEndsSegmentCrossReference_7_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2805);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2826);
             ruleEString();
 
             state._fsp--;
@@ -3158,7 +3191,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1307:2: (otherlv_13= ',' ( ( ruleEString ) ) )*
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1325:2: (otherlv_13= ',' ( ( ruleEString ) ) )*
             loop31:
             do {
                 int alt31=2;
@@ -3171,17 +3204,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                 switch (alt31) {
             	case 1 :
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1307:4: otherlv_13= ',' ( ( ruleEString ) )
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1325:4: otherlv_13= ',' ( ( ruleEString ) )
             	    {
-            	    otherlv_13=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleExtractor2818); 
+            	    otherlv_13=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleExtractor2839); 
 
             	        	newLeafNode(otherlv_13, grammarAccess.getExtractorAccess().getCommaKeyword_8_0());
             	        
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1311:1: ( ( ruleEString ) )
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1312:1: ( ruleEString )
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1329:1: ( ( ruleEString ) )
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1330:1: ( ruleEString )
             	    {
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1312:1: ( ruleEString )
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1313:3: ruleEString
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1330:1: ( ruleEString )
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1331:3: ruleEString
             	    {
 
             	    			if (current==null) {
@@ -3191,7 +3224,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             	     
             	    	        newCompositeNode(grammarAccess.getExtractorAccess().getHasEndsSegmentCrossReference_8_1_0()); 
             	    	    
-            	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2841);
+            	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2862);
             	    ruleEString();
 
             	    state._fsp--;
@@ -3214,11 +3247,11 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_15=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleExtractor2855); 
+            otherlv_15=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleExtractor2876); 
 
                 	newLeafNode(otherlv_15, grammarAccess.getExtractorAccess().getRightParenthesisKeyword_9());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1330:1: (otherlv_16= 'semaphore' ( ( ruleEString ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1348:1: (otherlv_16= 'semaphore' ( ( ruleEString ) ) )?
             int alt32=2;
             int LA32_0 = input.LA(1);
 
@@ -3227,17 +3260,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt32) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1330:3: otherlv_16= 'semaphore' ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1348:3: otherlv_16= 'semaphore' ( ( ruleEString ) )
                     {
-                    otherlv_16=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleExtractor2868); 
+                    otherlv_16=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleExtractor2889); 
 
                         	newLeafNode(otherlv_16, grammarAccess.getExtractorAccess().getSemaphoreKeyword_10_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1334:1: ( ( ruleEString ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1335:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1352:1: ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1353:1: ( ruleEString )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1335:1: ( ruleEString )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1336:3: ruleEString
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1353:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1354:3: ruleEString
                     {
 
                     			if (current==null) {
@@ -3247,7 +3280,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getExtractorAccess().getSemaphoreSemaphoreCrossReference_10_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2891);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2912);
                     ruleEString();
 
                     state._fsp--;
@@ -3267,7 +3300,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1349:4: (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1367:4: (otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')' )?
             int alt34=2;
             int LA34_0 = input.LA(1);
 
@@ -3276,21 +3309,21 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt34) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1349:6: otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')'
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1367:6: otherlv_18= 'signals' otherlv_19= '(' ( ( ruleEString ) ) (otherlv_21= ',' ( ( ruleEString ) ) )* otherlv_23= ')'
                     {
-                    otherlv_18=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleExtractor2906); 
+                    otherlv_18=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleExtractor2927); 
 
                         	newLeafNode(otherlv_18, grammarAccess.getExtractorAccess().getSignalsKeyword_11_0());
                         
-                    otherlv_19=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleExtractor2918); 
+                    otherlv_19=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleExtractor2939); 
 
                         	newLeafNode(otherlv_19, grammarAccess.getExtractorAccess().getLeftParenthesisKeyword_11_1());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1357:1: ( ( ruleEString ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1358:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1375:1: ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1376:1: ( ruleEString )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1358:1: ( ruleEString )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1359:3: ruleEString
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1376:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1377:3: ruleEString
                     {
 
                     			if (current==null) {
@@ -3300,7 +3333,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getExtractorAccess().getSignalsSignalCrossReference_11_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2941);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2962);
                     ruleEString();
 
                     state._fsp--;
@@ -3314,7 +3347,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1372:2: (otherlv_21= ',' ( ( ruleEString ) ) )*
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1390:2: (otherlv_21= ',' ( ( ruleEString ) ) )*
                     loop33:
                     do {
                         int alt33=2;
@@ -3327,17 +3360,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                         switch (alt33) {
                     	case 1 :
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1372:4: otherlv_21= ',' ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1390:4: otherlv_21= ',' ( ( ruleEString ) )
                     	    {
-                    	    otherlv_21=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleExtractor2954); 
+                    	    otherlv_21=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleExtractor2975); 
 
                     	        	newLeafNode(otherlv_21, grammarAccess.getExtractorAccess().getCommaKeyword_11_3_0());
                     	        
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1376:1: ( ( ruleEString ) )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1377:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1394:1: ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1395:1: ( ruleEString )
                     	    {
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1377:1: ( ruleEString )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1378:3: ruleEString
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1395:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1396:3: ruleEString
                     	    {
 
                     	    			if (current==null) {
@@ -3347,7 +3380,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getExtractorAccess().getSignalsSignalCrossReference_11_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2977);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleExtractor2998);
                     	    ruleEString();
 
                     	    state._fsp--;
@@ -3370,7 +3403,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_23=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleExtractor2991); 
+                    otherlv_23=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleExtractor3012); 
 
                         	newLeafNode(otherlv_23, grammarAccess.getExtractorAccess().getRightParenthesisKeyword_11_4());
                         
@@ -3380,7 +3413,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_24=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleExtractor3005); 
+            otherlv_24=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleExtractor3026); 
 
                 	newLeafNode(otherlv_24, grammarAccess.getExtractorAccess().getRightCurlyBracketKeyword_12());
                 
@@ -3405,7 +3438,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleInjector"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1407:1: entryRuleInjector returns [EObject current=null] : iv_ruleInjector= ruleInjector EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1425:1: entryRuleInjector returns [EObject current=null] : iv_ruleInjector= ruleInjector EOF ;
     public final EObject entryRuleInjector() throws RecognitionException {
         EObject current = null;
 
@@ -3413,17 +3446,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1408:2: (iv_ruleInjector= ruleInjector EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1409:2: iv_ruleInjector= ruleInjector EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1426:2: (iv_ruleInjector= ruleInjector EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1427:2: iv_ruleInjector= ruleInjector EOF
             {
              newCompositeNode(grammarAccess.getInjectorRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleInjector_in_entryRuleInjector3041);
+            pushFollow(FollowSets000.FOLLOW_ruleInjector_in_entryRuleInjector3062);
             iv_ruleInjector=ruleInjector();
 
             state._fsp--;
 
              current =iv_ruleInjector; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleInjector3051); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleInjector3072); 
 
             }
 
@@ -3441,7 +3474,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleInjector"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1416:1: ruleInjector returns [EObject current=null] : ( () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1434:1: ruleInjector returns [EObject current=null] : ( () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}' ) ;
     public final EObject ruleInjector() throws RecognitionException {
         EObject current = null;
 
@@ -3470,14 +3503,14 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1419:28: ( ( () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1420:1: ( () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1437:28: ( ( () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1438:1: ( () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1420:1: ( () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1420:2: () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1438:1: ( () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1438:2: () otherlv_1= 'Injector' ( (lv_name_2_0= ruleEString ) ) otherlv_3= '{' (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )? otherlv_6= 'hasStarts' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )? (otherlv_18= 'semaphore' ( ( ruleEString ) ) )? (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )? otherlv_26= '}'
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1420:2: ()
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1421:5: 
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1438:2: ()
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1439:5: 
             {
 
                     current = forceCreateModelElement(
@@ -3487,20 +3520,20 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,42,FollowSets000.FOLLOW_42_in_ruleInjector3097); 
+            otherlv_1=(Token)match(input,42,FollowSets000.FOLLOW_42_in_ruleInjector3118); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getInjectorAccess().getInjectorKeyword_1());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1430:1: ( (lv_name_2_0= ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1431:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1448:1: ( (lv_name_2_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1449:1: (lv_name_2_0= ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1431:1: (lv_name_2_0= ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1432:3: lv_name_2_0= ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1449:1: (lv_name_2_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1450:3: lv_name_2_0= ruleEString
             {
              
             	        newCompositeNode(grammarAccess.getInjectorAccess().getNameEStringParserRuleCall_2_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3118);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3139);
             lv_name_2_0=ruleEString();
 
             state._fsp--;
@@ -3522,11 +3555,11 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleInjector3130); 
+            otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleInjector3151); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getInjectorAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1452:1: (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1470:1: (otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) ) )?
             int alt35=2;
             int LA35_0 = input.LA(1);
 
@@ -3535,22 +3568,22 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt35) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1452:3: otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1470:3: otherlv_4= 'carsPerHour' ( (lv_carsPerHour_5_0= ruleEInt ) )
                     {
-                    otherlv_4=(Token)match(input,43,FollowSets000.FOLLOW_43_in_ruleInjector3143); 
+                    otherlv_4=(Token)match(input,43,FollowSets000.FOLLOW_43_in_ruleInjector3164); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getInjectorAccess().getCarsPerHourKeyword_4_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1456:1: ( (lv_carsPerHour_5_0= ruleEInt ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1457:1: (lv_carsPerHour_5_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1474:1: ( (lv_carsPerHour_5_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1475:1: (lv_carsPerHour_5_0= ruleEInt )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1457:1: (lv_carsPerHour_5_0= ruleEInt )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1458:3: lv_carsPerHour_5_0= ruleEInt
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1475:1: (lv_carsPerHour_5_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1476:3: lv_carsPerHour_5_0= ruleEInt
                     {
                      
                     	        newCompositeNode(grammarAccess.getInjectorAccess().getCarsPerHourEIntParserRuleCall_4_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleInjector3164);
+                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleInjector3185);
                     lv_carsPerHour_5_0=ruleEInt();
 
                     state._fsp--;
@@ -3578,19 +3611,19 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleInjector3178); 
+            otherlv_6=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleInjector3199); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getInjectorAccess().getHasStartsKeyword_5());
                 
-            otherlv_7=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleInjector3190); 
+            otherlv_7=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleInjector3211); 
 
                 	newLeafNode(otherlv_7, grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_6());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1482:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1483:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1500:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1501:1: ( ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1483:1: ( ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1484:3: ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1501:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1502:3: ruleEString
             {
 
             			if (current==null) {
@@ -3600,7 +3633,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getInjectorAccess().getHasStartsSegmentCrossReference_7_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3213);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3234);
             ruleEString();
 
             state._fsp--;
@@ -3614,7 +3647,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1497:2: (otherlv_9= ',' ( ( ruleEString ) ) )*
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1515:2: (otherlv_9= ',' ( ( ruleEString ) ) )*
             loop36:
             do {
                 int alt36=2;
@@ -3627,17 +3660,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                 switch (alt36) {
             	case 1 :
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1497:4: otherlv_9= ',' ( ( ruleEString ) )
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1515:4: otherlv_9= ',' ( ( ruleEString ) )
             	    {
-            	    otherlv_9=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleInjector3226); 
+            	    otherlv_9=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleInjector3247); 
 
             	        	newLeafNode(otherlv_9, grammarAccess.getInjectorAccess().getCommaKeyword_8_0());
             	        
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1501:1: ( ( ruleEString ) )
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1502:1: ( ruleEString )
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1519:1: ( ( ruleEString ) )
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1520:1: ( ruleEString )
             	    {
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1502:1: ( ruleEString )
-            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1503:3: ruleEString
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1520:1: ( ruleEString )
+            	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1521:3: ruleEString
             	    {
 
             	    			if (current==null) {
@@ -3647,7 +3680,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             	     
             	    	        newCompositeNode(grammarAccess.getInjectorAccess().getHasStartsSegmentCrossReference_8_1_0()); 
             	    	    
-            	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3249);
+            	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3270);
             	    ruleEString();
 
             	    state._fsp--;
@@ -3670,11 +3703,11 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_11=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleInjector3263); 
+            otherlv_11=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleInjector3284); 
 
                 	newLeafNode(otherlv_11, grammarAccess.getInjectorAccess().getRightParenthesisKeyword_9());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1520:1: (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1538:1: (otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')' )?
             int alt38=2;
             int LA38_0 = input.LA(1);
 
@@ -3683,21 +3716,21 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt38) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1520:3: otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')'
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1538:3: otherlv_12= 'hasEnds' otherlv_13= '(' ( ( ruleEString ) ) (otherlv_15= ',' ( ( ruleEString ) ) )* otherlv_17= ')'
                     {
-                    otherlv_12=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleInjector3276); 
+                    otherlv_12=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleInjector3297); 
 
                         	newLeafNode(otherlv_12, grammarAccess.getInjectorAccess().getHasEndsKeyword_10_0());
                         
-                    otherlv_13=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleInjector3288); 
+                    otherlv_13=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleInjector3309); 
 
                         	newLeafNode(otherlv_13, grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_10_1());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1528:1: ( ( ruleEString ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1529:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1546:1: ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1547:1: ( ruleEString )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1529:1: ( ruleEString )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1530:3: ruleEString
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1547:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1548:3: ruleEString
                     {
 
                     			if (current==null) {
@@ -3707,7 +3740,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getInjectorAccess().getHasEndsSegmentCrossReference_10_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3311);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3332);
                     ruleEString();
 
                     state._fsp--;
@@ -3721,7 +3754,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1543:2: (otherlv_15= ',' ( ( ruleEString ) ) )*
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1561:2: (otherlv_15= ',' ( ( ruleEString ) ) )*
                     loop37:
                     do {
                         int alt37=2;
@@ -3734,17 +3767,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                         switch (alt37) {
                     	case 1 :
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1543:4: otherlv_15= ',' ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1561:4: otherlv_15= ',' ( ( ruleEString ) )
                     	    {
-                    	    otherlv_15=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleInjector3324); 
+                    	    otherlv_15=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleInjector3345); 
 
                     	        	newLeafNode(otherlv_15, grammarAccess.getInjectorAccess().getCommaKeyword_10_3_0());
                     	        
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1547:1: ( ( ruleEString ) )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1548:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1565:1: ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1566:1: ( ruleEString )
                     	    {
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1548:1: ( ruleEString )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1549:3: ruleEString
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1566:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1567:3: ruleEString
                     	    {
 
                     	    			if (current==null) {
@@ -3754,7 +3787,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getInjectorAccess().getHasEndsSegmentCrossReference_10_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3347);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3368);
                     	    ruleEString();
 
                     	    state._fsp--;
@@ -3777,7 +3810,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_17=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleInjector3361); 
+                    otherlv_17=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleInjector3382); 
 
                         	newLeafNode(otherlv_17, grammarAccess.getInjectorAccess().getRightParenthesisKeyword_10_4());
                         
@@ -3787,7 +3820,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1566:3: (otherlv_18= 'semaphore' ( ( ruleEString ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1584:3: (otherlv_18= 'semaphore' ( ( ruleEString ) ) )?
             int alt39=2;
             int LA39_0 = input.LA(1);
 
@@ -3796,17 +3829,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt39) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1566:5: otherlv_18= 'semaphore' ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1584:5: otherlv_18= 'semaphore' ( ( ruleEString ) )
                     {
-                    otherlv_18=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleInjector3376); 
+                    otherlv_18=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleInjector3397); 
 
                         	newLeafNode(otherlv_18, grammarAccess.getInjectorAccess().getSemaphoreKeyword_11_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1570:1: ( ( ruleEString ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1571:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1588:1: ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1589:1: ( ruleEString )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1571:1: ( ruleEString )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1572:3: ruleEString
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1589:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1590:3: ruleEString
                     {
 
                     			if (current==null) {
@@ -3816,7 +3849,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getInjectorAccess().getSemaphoreSemaphoreCrossReference_11_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3399);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3420);
                     ruleEString();
 
                     state._fsp--;
@@ -3836,7 +3869,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1585:4: (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1603:4: (otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')' )?
             int alt41=2;
             int LA41_0 = input.LA(1);
 
@@ -3845,21 +3878,21 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt41) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1585:6: otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')'
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1603:6: otherlv_20= 'signals' otherlv_21= '(' ( ( ruleEString ) ) (otherlv_23= ',' ( ( ruleEString ) ) )* otherlv_25= ')'
                     {
-                    otherlv_20=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleInjector3414); 
+                    otherlv_20=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleInjector3435); 
 
                         	newLeafNode(otherlv_20, grammarAccess.getInjectorAccess().getSignalsKeyword_12_0());
                         
-                    otherlv_21=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleInjector3426); 
+                    otherlv_21=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleInjector3447); 
 
                         	newLeafNode(otherlv_21, grammarAccess.getInjectorAccess().getLeftParenthesisKeyword_12_1());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1593:1: ( ( ruleEString ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1594:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1611:1: ( ( ruleEString ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1612:1: ( ruleEString )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1594:1: ( ruleEString )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1595:3: ruleEString
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1612:1: ( ruleEString )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1613:3: ruleEString
                     {
 
                     			if (current==null) {
@@ -3869,7 +3902,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getInjectorAccess().getSignalsSignalCrossReference_12_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3449);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3470);
                     ruleEString();
 
                     state._fsp--;
@@ -3883,7 +3916,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1608:2: (otherlv_23= ',' ( ( ruleEString ) ) )*
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1626:2: (otherlv_23= ',' ( ( ruleEString ) ) )*
                     loop40:
                     do {
                         int alt40=2;
@@ -3896,17 +3929,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
                         switch (alt40) {
                     	case 1 :
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1608:4: otherlv_23= ',' ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1626:4: otherlv_23= ',' ( ( ruleEString ) )
                     	    {
-                    	    otherlv_23=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleInjector3462); 
+                    	    otherlv_23=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleInjector3483); 
 
                     	        	newLeafNode(otherlv_23, grammarAccess.getInjectorAccess().getCommaKeyword_12_3_0());
                     	        
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1612:1: ( ( ruleEString ) )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1613:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1630:1: ( ( ruleEString ) )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1631:1: ( ruleEString )
                     	    {
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1613:1: ( ruleEString )
-                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1614:3: ruleEString
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1631:1: ( ruleEString )
+                    	    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1632:3: ruleEString
                     	    {
 
                     	    			if (current==null) {
@@ -3916,7 +3949,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getInjectorAccess().getSignalsSignalCrossReference_12_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3485);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleInjector3506);
                     	    ruleEString();
 
                     	    state._fsp--;
@@ -3939,7 +3972,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_25=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleInjector3499); 
+                    otherlv_25=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleInjector3520); 
 
                         	newLeafNode(otherlv_25, grammarAccess.getInjectorAccess().getRightParenthesisKeyword_12_4());
                         
@@ -3949,7 +3982,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_26=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleInjector3513); 
+            otherlv_26=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleInjector3534); 
 
                 	newLeafNode(otherlv_26, grammarAccess.getInjectorAccess().getRightCurlyBracketKeyword_13());
                 
@@ -3974,7 +4007,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEInt"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1643:1: entryRuleEInt returns [String current=null] : iv_ruleEInt= ruleEInt EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1661:1: entryRuleEInt returns [String current=null] : iv_ruleEInt= ruleEInt EOF ;
     public final String entryRuleEInt() throws RecognitionException {
         String current = null;
 
@@ -3982,17 +4015,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1644:2: (iv_ruleEInt= ruleEInt EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1645:2: iv_ruleEInt= ruleEInt EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1662:2: (iv_ruleEInt= ruleEInt EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1663:2: iv_ruleEInt= ruleEInt EOF
             {
              newCompositeNode(grammarAccess.getEIntRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_entryRuleEInt3550);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_entryRuleEInt3571);
             iv_ruleEInt=ruleEInt();
 
             state._fsp--;
 
              current =iv_ruleEInt.getText(); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEInt3561); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEInt3582); 
 
             }
 
@@ -4010,7 +4043,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEInt"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1652:1: ruleEInt returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '-' )? this_INT_1= RULE_INT ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1670:1: ruleEInt returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '-' )? this_INT_1= RULE_INT ) ;
     public final AntlrDatatypeRuleToken ruleEInt() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -4020,13 +4053,13 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1655:28: ( ( (kw= '-' )? this_INT_1= RULE_INT ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1656:1: ( (kw= '-' )? this_INT_1= RULE_INT )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1673:28: ( ( (kw= '-' )? this_INT_1= RULE_INT ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1674:1: ( (kw= '-' )? this_INT_1= RULE_INT )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1656:1: ( (kw= '-' )? this_INT_1= RULE_INT )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1656:2: (kw= '-' )? this_INT_1= RULE_INT
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1674:1: ( (kw= '-' )? this_INT_1= RULE_INT )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1674:2: (kw= '-' )? this_INT_1= RULE_INT
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1656:2: (kw= '-' )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1674:2: (kw= '-' )?
             int alt42=2;
             int LA42_0 = input.LA(1);
 
@@ -4035,9 +4068,9 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt42) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1657:2: kw= '-'
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1675:2: kw= '-'
                     {
-                    kw=(Token)match(input,44,FollowSets000.FOLLOW_44_in_ruleEInt3600); 
+                    kw=(Token)match(input,44,FollowSets000.FOLLOW_44_in_ruleEInt3621); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
@@ -4048,7 +4081,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            this_INT_1=(Token)match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_ruleEInt3617); 
+            this_INT_1=(Token)match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_ruleEInt3638); 
 
             		current.merge(this_INT_1);
                 
@@ -4076,7 +4109,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEDate"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1677:1: entryRuleEDate returns [String current=null] : iv_ruleEDate= ruleEDate EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1695:1: entryRuleEDate returns [String current=null] : iv_ruleEDate= ruleEDate EOF ;
     public final String entryRuleEDate() throws RecognitionException {
         String current = null;
 
@@ -4084,17 +4117,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1678:2: (iv_ruleEDate= ruleEDate EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1679:2: iv_ruleEDate= ruleEDate EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1696:2: (iv_ruleEDate= ruleEDate EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1697:2: iv_ruleEDate= ruleEDate EOF
             {
              newCompositeNode(grammarAccess.getEDateRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDate_in_entryRuleEDate3663);
+            pushFollow(FollowSets000.FOLLOW_ruleEDate_in_entryRuleEDate3684);
             iv_ruleEDate=ruleEDate();
 
             state._fsp--;
 
              current =iv_ruleEDate.getText(); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEDate3674); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEDate3695); 
 
             }
 
@@ -4112,7 +4145,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEDate"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1686:1: ruleEDate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_STRING_0= RULE_STRING ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1704:1: ruleEDate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_STRING_0= RULE_STRING ;
     public final AntlrDatatypeRuleToken ruleEDate() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -4121,10 +4154,10 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1689:28: (this_STRING_0= RULE_STRING )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1690:5: this_STRING_0= RULE_STRING
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1707:28: (this_STRING_0= RULE_STRING )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1708:5: this_STRING_0= RULE_STRING
             {
-            this_STRING_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleEDate3713); 
+            this_STRING_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleEDate3734); 
 
             		current.merge(this_STRING_0);
                 
@@ -4149,7 +4182,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEBoolean"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1705:1: entryRuleEBoolean returns [String current=null] : iv_ruleEBoolean= ruleEBoolean EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1723:1: entryRuleEBoolean returns [String current=null] : iv_ruleEBoolean= ruleEBoolean EOF ;
     public final String entryRuleEBoolean() throws RecognitionException {
         String current = null;
 
@@ -4157,17 +4190,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1706:2: (iv_ruleEBoolean= ruleEBoolean EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1707:2: iv_ruleEBoolean= ruleEBoolean EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1724:2: (iv_ruleEBoolean= ruleEBoolean EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1725:2: iv_ruleEBoolean= ruleEBoolean EOF
             {
              newCompositeNode(grammarAccess.getEBooleanRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEBoolean_in_entryRuleEBoolean3758);
+            pushFollow(FollowSets000.FOLLOW_ruleEBoolean_in_entryRuleEBoolean3779);
             iv_ruleEBoolean=ruleEBoolean();
 
             state._fsp--;
 
              current =iv_ruleEBoolean.getText(); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEBoolean3769); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEBoolean3790); 
 
             }
 
@@ -4185,7 +4218,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEBoolean"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1714:1: ruleEBoolean returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= 'true' | kw= 'false' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1732:1: ruleEBoolean returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= 'true' | kw= 'false' ) ;
     public final AntlrDatatypeRuleToken ruleEBoolean() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -4194,10 +4227,10 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1717:28: ( (kw= 'true' | kw= 'false' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1718:1: (kw= 'true' | kw= 'false' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1735:28: ( (kw= 'true' | kw= 'false' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1736:1: (kw= 'true' | kw= 'false' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1718:1: (kw= 'true' | kw= 'false' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1736:1: (kw= 'true' | kw= 'false' )
             int alt43=2;
             int LA43_0 = input.LA(1);
 
@@ -4215,9 +4248,9 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt43) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1719:2: kw= 'true'
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1737:2: kw= 'true'
                     {
-                    kw=(Token)match(input,45,FollowSets000.FOLLOW_45_in_ruleEBoolean3807); 
+                    kw=(Token)match(input,45,FollowSets000.FOLLOW_45_in_ruleEBoolean3828); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getEBooleanAccess().getTrueKeyword_0()); 
@@ -4226,9 +4259,9 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1726:2: kw= 'false'
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1744:2: kw= 'false'
                     {
-                    kw=(Token)match(input,46,FollowSets000.FOLLOW_46_in_ruleEBoolean3826); 
+                    kw=(Token)match(input,46,FollowSets000.FOLLOW_46_in_ruleEBoolean3847); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getEBooleanAccess().getFalseKeyword_1()); 
@@ -4257,7 +4290,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleSpeedlimit"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1739:1: entryRuleSpeedlimit returns [EObject current=null] : iv_ruleSpeedlimit= ruleSpeedlimit EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1757:1: entryRuleSpeedlimit returns [EObject current=null] : iv_ruleSpeedlimit= ruleSpeedlimit EOF ;
     public final EObject entryRuleSpeedlimit() throws RecognitionException {
         EObject current = null;
 
@@ -4265,17 +4298,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1740:2: (iv_ruleSpeedlimit= ruleSpeedlimit EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1741:2: iv_ruleSpeedlimit= ruleSpeedlimit EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1758:2: (iv_ruleSpeedlimit= ruleSpeedlimit EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1759:2: iv_ruleSpeedlimit= ruleSpeedlimit EOF
             {
              newCompositeNode(grammarAccess.getSpeedlimitRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSpeedlimit_in_entryRuleSpeedlimit3866);
+            pushFollow(FollowSets000.FOLLOW_ruleSpeedlimit_in_entryRuleSpeedlimit3887);
             iv_ruleSpeedlimit=ruleSpeedlimit();
 
             state._fsp--;
 
              current =iv_ruleSpeedlimit; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSpeedlimit3876); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSpeedlimit3897); 
 
             }
 
@@ -4293,7 +4326,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSpeedlimit"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1748:1: ruleSpeedlimit returns [EObject current=null] : (otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1766:1: ruleSpeedlimit returns [EObject current=null] : (otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}' ) ;
     public final EObject ruleSpeedlimit() throws RecognitionException {
         EObject current = null;
 
@@ -4310,26 +4343,26 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1751:28: ( (otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1752:1: (otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1769:28: ( (otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1770:1: (otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1752:1: (otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1752:3: otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1770:1: (otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1770:3: otherlv_0= 'Speedlimit' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )? otherlv_5= 'belongsTo' ( ( ruleEString ) ) otherlv_7= '}'
             {
-            otherlv_0=(Token)match(input,47,FollowSets000.FOLLOW_47_in_ruleSpeedlimit3913); 
+            otherlv_0=(Token)match(input,47,FollowSets000.FOLLOW_47_in_ruleSpeedlimit3934); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getSpeedlimitAccess().getSpeedlimitKeyword_0());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1756:1: ( (lv_name_1_0= ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1757:1: (lv_name_1_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1774:1: ( (lv_name_1_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1775:1: (lv_name_1_0= ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1757:1: (lv_name_1_0= ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1758:3: lv_name_1_0= ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1775:1: (lv_name_1_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1776:3: lv_name_1_0= ruleEString
             {
              
             	        newCompositeNode(grammarAccess.getSpeedlimitAccess().getNameEStringParserRuleCall_1_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSpeedlimit3934);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSpeedlimit3955);
             lv_name_1_0=ruleEString();
 
             state._fsp--;
@@ -4351,11 +4384,11 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleSpeedlimit3946); 
+            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleSpeedlimit3967); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getSpeedlimitAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1778:1: (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )?
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1796:1: (otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) ) )?
             int alt44=2;
             int LA44_0 = input.LA(1);
 
@@ -4364,22 +4397,22 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
             }
             switch (alt44) {
                 case 1 :
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1778:3: otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1796:3: otherlv_3= 'Speed' ( (lv_Speed_4_0= ruleEInt ) )
                     {
-                    otherlv_3=(Token)match(input,48,FollowSets000.FOLLOW_48_in_ruleSpeedlimit3959); 
+                    otherlv_3=(Token)match(input,48,FollowSets000.FOLLOW_48_in_ruleSpeedlimit3980); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getSpeedlimitAccess().getSpeedKeyword_3_0());
                         
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1782:1: ( (lv_Speed_4_0= ruleEInt ) )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1783:1: (lv_Speed_4_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1800:1: ( (lv_Speed_4_0= ruleEInt ) )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1801:1: (lv_Speed_4_0= ruleEInt )
                     {
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1783:1: (lv_Speed_4_0= ruleEInt )
-                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1784:3: lv_Speed_4_0= ruleEInt
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1801:1: (lv_Speed_4_0= ruleEInt )
+                    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1802:3: lv_Speed_4_0= ruleEInt
                     {
                      
                     	        newCompositeNode(grammarAccess.getSpeedlimitAccess().getSpeedEIntParserRuleCall_3_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSpeedlimit3980);
+                    pushFollow(FollowSets000.FOLLOW_ruleEInt_in_ruleSpeedlimit4001);
                     lv_Speed_4_0=ruleEInt();
 
                     state._fsp--;
@@ -4407,15 +4440,15 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_5=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleSpeedlimit3994); 
+            otherlv_5=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleSpeedlimit4015); 
 
                 	newLeafNode(otherlv_5, grammarAccess.getSpeedlimitAccess().getBelongsToKeyword_4());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1804:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1805:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1822:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1823:1: ( ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1805:1: ( ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1806:3: ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1823:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1824:3: ruleEString
             {
 
             			if (current==null) {
@@ -4425,7 +4458,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getSpeedlimitAccess().getBelongsToNodeCrossReference_5_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSpeedlimit4017);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleSpeedlimit4038);
             ruleEString();
 
             state._fsp--;
@@ -4439,7 +4472,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_7=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleSpeedlimit4029); 
+            otherlv_7=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleSpeedlimit4050); 
 
                 	newLeafNode(otherlv_7, grammarAccess.getSpeedlimitAccess().getRightCurlyBracketKeyword_6());
                 
@@ -4464,7 +4497,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleStop"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1831:1: entryRuleStop returns [EObject current=null] : iv_ruleStop= ruleStop EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1849:1: entryRuleStop returns [EObject current=null] : iv_ruleStop= ruleStop EOF ;
     public final EObject entryRuleStop() throws RecognitionException {
         EObject current = null;
 
@@ -4472,17 +4505,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1832:2: (iv_ruleStop= ruleStop EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1833:2: iv_ruleStop= ruleStop EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1850:2: (iv_ruleStop= ruleStop EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1851:2: iv_ruleStop= ruleStop EOF
             {
              newCompositeNode(grammarAccess.getStopRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleStop_in_entryRuleStop4065);
+            pushFollow(FollowSets000.FOLLOW_ruleStop_in_entryRuleStop4086);
             iv_ruleStop=ruleStop();
 
             state._fsp--;
 
              current =iv_ruleStop; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleStop4075); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleStop4096); 
 
             }
 
@@ -4500,7 +4533,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleStop"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1840:1: ruleStop returns [EObject current=null] : (otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1858:1: ruleStop returns [EObject current=null] : (otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' ) ;
     public final EObject ruleStop() throws RecognitionException {
         EObject current = null;
 
@@ -4514,26 +4547,26 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1843:28: ( (otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1844:1: (otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1861:28: ( (otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1862:1: (otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1844:1: (otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1844:3: otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1862:1: (otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1862:3: otherlv_0= 'Stop' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}'
             {
-            otherlv_0=(Token)match(input,49,FollowSets000.FOLLOW_49_in_ruleStop4112); 
+            otherlv_0=(Token)match(input,49,FollowSets000.FOLLOW_49_in_ruleStop4133); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getStopAccess().getStopKeyword_0());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1848:1: ( (lv_name_1_0= ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1849:1: (lv_name_1_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1866:1: ( (lv_name_1_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1867:1: (lv_name_1_0= ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1849:1: (lv_name_1_0= ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1850:3: lv_name_1_0= ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1867:1: (lv_name_1_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1868:3: lv_name_1_0= ruleEString
             {
              
             	        newCompositeNode(grammarAccess.getStopAccess().getNameEStringParserRuleCall_1_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleStop4133);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleStop4154);
             lv_name_1_0=ruleEString();
 
             state._fsp--;
@@ -4555,19 +4588,19 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleStop4145); 
+            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleStop4166); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getStopAccess().getLeftCurlyBracketKeyword_2());
                 
-            otherlv_3=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleStop4157); 
+            otherlv_3=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleStop4178); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getStopAccess().getBelongsToKeyword_3());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1874:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1875:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1892:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1893:1: ( ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1875:1: ( ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1876:3: ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1893:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1894:3: ruleEString
             {
 
             			if (current==null) {
@@ -4577,7 +4610,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getStopAccess().getBelongsToNodeCrossReference_4_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleStop4180);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleStop4201);
             ruleEString();
 
             state._fsp--;
@@ -4591,7 +4624,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_5=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleStop4192); 
+            otherlv_5=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleStop4213); 
 
                 	newLeafNode(otherlv_5, grammarAccess.getStopAccess().getRightCurlyBracketKeyword_5());
                 
@@ -4616,7 +4649,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleYield"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1901:1: entryRuleYield returns [EObject current=null] : iv_ruleYield= ruleYield EOF ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1919:1: entryRuleYield returns [EObject current=null] : iv_ruleYield= ruleYield EOF ;
     public final EObject entryRuleYield() throws RecognitionException {
         EObject current = null;
 
@@ -4624,17 +4657,17 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1902:2: (iv_ruleYield= ruleYield EOF )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1903:2: iv_ruleYield= ruleYield EOF
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1920:2: (iv_ruleYield= ruleYield EOF )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1921:2: iv_ruleYield= ruleYield EOF
             {
              newCompositeNode(grammarAccess.getYieldRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleYield_in_entryRuleYield4228);
+            pushFollow(FollowSets000.FOLLOW_ruleYield_in_entryRuleYield4249);
             iv_ruleYield=ruleYield();
 
             state._fsp--;
 
              current =iv_ruleYield; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleYield4238); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleYield4259); 
 
             }
 
@@ -4652,7 +4685,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleYield"
-    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1910:1: ruleYield returns [EObject current=null] : (otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' ) ;
+    // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1928:1: ruleYield returns [EObject current=null] : (otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' ) ;
     public final EObject ruleYield() throws RecognitionException {
         EObject current = null;
 
@@ -4666,26 +4699,26 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1913:28: ( (otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1914:1: (otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1931:28: ( (otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1932:1: (otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1914:1: (otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1914:3: otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}'
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1932:1: (otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}' )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1932:3: otherlv_0= 'Yield' ( (lv_name_1_0= ruleEString ) ) otherlv_2= '{' otherlv_3= 'belongsTo' ( ( ruleEString ) ) otherlv_5= '}'
             {
-            otherlv_0=(Token)match(input,50,FollowSets000.FOLLOW_50_in_ruleYield4275); 
+            otherlv_0=(Token)match(input,50,FollowSets000.FOLLOW_50_in_ruleYield4296); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getYieldAccess().getYieldKeyword_0());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1918:1: ( (lv_name_1_0= ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1919:1: (lv_name_1_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1936:1: ( (lv_name_1_0= ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1937:1: (lv_name_1_0= ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1919:1: (lv_name_1_0= ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1920:3: lv_name_1_0= ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1937:1: (lv_name_1_0= ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1938:3: lv_name_1_0= ruleEString
             {
              
             	        newCompositeNode(grammarAccess.getYieldAccess().getNameEStringParserRuleCall_1_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleYield4296);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleYield4317);
             lv_name_1_0=ruleEString();
 
             state._fsp--;
@@ -4707,19 +4740,19 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleYield4308); 
+            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleYield4329); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getYieldAccess().getLeftCurlyBracketKeyword_2());
                 
-            otherlv_3=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleYield4320); 
+            otherlv_3=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleYield4341); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getYieldAccess().getBelongsToKeyword_3());
                 
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1944:1: ( ( ruleEString ) )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1945:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1962:1: ( ( ruleEString ) )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1963:1: ( ruleEString )
             {
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1945:1: ( ruleEString )
-            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1946:3: ruleEString
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1963:1: ( ruleEString )
+            // ../org.xtext.Highway/src-gen/org/xtext/parser/antlr/internal/InternalHighway.g:1964:3: ruleEString
             {
 
             			if (current==null) {
@@ -4729,7 +4762,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getYieldAccess().getBelongsToNodeCrossReference_4_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleYield4343);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleYield4364);
             ruleEString();
 
             state._fsp--;
@@ -4743,7 +4776,7 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_5=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleYield4355); 
+            otherlv_5=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleYield4376); 
 
                 	newLeafNode(otherlv_5, grammarAccess.getYieldAccess().getRightCurlyBracketKeyword_5());
                 
@@ -4847,148 +4880,149 @@ public class InternalHighwayParser extends AbstractInternalAntlrParser {
         public static final BitSet FOLLOW_15_in_ruleNode_Impl1423 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_ruleCar_in_entryRuleCar1459 = new BitSet(new long[]{0x0000000000000000L});
         public static final BitSet FOLLOW_EOF_in_entryRuleCar1469 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_ruleCar1515 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleCar1527 = new BitSet(new long[]{0x0000000070008000L});
-        public static final BitSet FOLLOW_28_in_ruleCar1540 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleEDate_in_ruleCar1561 = new BitSet(new long[]{0x0000000060008000L});
-        public static final BitSet FOLLOW_29_in_ruleCar1576 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleEDate_in_ruleCar1597 = new BitSet(new long[]{0x0000000040008000L});
-        public static final BitSet FOLLOW_30_in_ruleCar1612 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleCar1635 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleCar1649 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSegment_in_entryRuleSegment1685 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleSegment1695 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_31_in_ruleSegment1741 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSegment1762 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleSegment1774 = new BitSet(new long[]{0x0000000700008000L});
-        public static final BitSet FOLLOW_32_in_ruleSegment1787 = new BitSet(new long[]{0x0000100000000040L});
-        public static final BitSet FOLLOW_ruleEInt_in_ruleSegment1808 = new BitSet(new long[]{0x0000000600008000L});
-        public static final BitSet FOLLOW_33_in_ruleSegment1823 = new BitSet(new long[]{0x0000100000000040L});
-        public static final BitSet FOLLOW_ruleEInt_in_ruleSegment1844 = new BitSet(new long[]{0x0000000400008000L});
-        public static final BitSet FOLLOW_34_in_ruleSegment1859 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_22_in_ruleSegment1871 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSegment1894 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_14_in_ruleSegment1907 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSegment1930 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_23_in_ruleSegment1944 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleSegment1958 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSemaphore_in_entryRuleSemaphore1994 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleSemaphore2004 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_35_in_ruleSemaphore2050 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSemaphore2071 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleSemaphore2083 = new BitSet(new long[]{0x000000F000000000L});
-        public static final BitSet FOLLOW_36_in_ruleSemaphore2096 = new BitSet(new long[]{0x0000600000000000L});
-        public static final BitSet FOLLOW_ruleEBoolean_in_ruleSemaphore2117 = new BitSet(new long[]{0x000000E000000000L});
-        public static final BitSet FOLLOW_37_in_ruleSemaphore2132 = new BitSet(new long[]{0x0000100000000040L});
-        public static final BitSet FOLLOW_ruleEInt_in_ruleSemaphore2153 = new BitSet(new long[]{0x000000C000000000L});
-        public static final BitSet FOLLOW_38_in_ruleSemaphore2168 = new BitSet(new long[]{0x0000100000000040L});
-        public static final BitSet FOLLOW_ruleEInt_in_ruleSemaphore2189 = new BitSet(new long[]{0x0000008000000000L});
-        public static final BitSet FOLLOW_39_in_ruleSemaphore2203 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSemaphore2226 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleSemaphore2238 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSignal_Impl_in_entryRuleSignal_Impl2274 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleSignal_Impl2284 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_40_in_ruleSignal_Impl2330 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSignal_Impl2351 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleSignal_Impl2363 = new BitSet(new long[]{0x0000008000000000L});
-        public static final BitSet FOLLOW_39_in_ruleSignal_Impl2375 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSignal_Impl2398 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleSignal_Impl2410 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_entryRuleEString2447 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEString2458 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_ruleEString2498 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleEString2524 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleExtractor_in_entryRuleExtractor2569 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleExtractor2579 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_41_in_ruleExtractor2625 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2646 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleExtractor2658 = new BitSet(new long[]{0x0000000001200000L});
-        public static final BitSet FOLLOW_21_in_ruleExtractor2671 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_22_in_ruleExtractor2683 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2706 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_14_in_ruleExtractor2719 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2742 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_23_in_ruleExtractor2756 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_24_in_ruleExtractor2770 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_22_in_ruleExtractor2782 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2805 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_14_in_ruleExtractor2818 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2841 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_23_in_ruleExtractor2855 = new BitSet(new long[]{0x0000000006008000L});
-        public static final BitSet FOLLOW_25_in_ruleExtractor2868 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2891 = new BitSet(new long[]{0x0000000004008000L});
-        public static final BitSet FOLLOW_26_in_ruleExtractor2906 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_22_in_ruleExtractor2918 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2941 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_14_in_ruleExtractor2954 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2977 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_23_in_ruleExtractor2991 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleExtractor3005 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleInjector_in_entryRuleInjector3041 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleInjector3051 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_42_in_ruleInjector3097 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3118 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleInjector3130 = new BitSet(new long[]{0x0000080000200000L});
-        public static final BitSet FOLLOW_43_in_ruleInjector3143 = new BitSet(new long[]{0x0000100000000040L});
-        public static final BitSet FOLLOW_ruleEInt_in_ruleInjector3164 = new BitSet(new long[]{0x0000000000200000L});
-        public static final BitSet FOLLOW_21_in_ruleInjector3178 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_22_in_ruleInjector3190 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3213 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_14_in_ruleInjector3226 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3249 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_23_in_ruleInjector3263 = new BitSet(new long[]{0x0000000007008000L});
-        public static final BitSet FOLLOW_24_in_ruleInjector3276 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_22_in_ruleInjector3288 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3311 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_14_in_ruleInjector3324 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3347 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_23_in_ruleInjector3361 = new BitSet(new long[]{0x0000000006008000L});
-        public static final BitSet FOLLOW_25_in_ruleInjector3376 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3399 = new BitSet(new long[]{0x0000000004008000L});
-        public static final BitSet FOLLOW_26_in_ruleInjector3414 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_22_in_ruleInjector3426 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3449 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_14_in_ruleInjector3462 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3485 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_23_in_ruleInjector3499 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleInjector3513 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_entryRuleEInt3550 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEInt3561 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_44_in_ruleEInt3600 = new BitSet(new long[]{0x0000000000000040L});
-        public static final BitSet FOLLOW_RULE_INT_in_ruleEInt3617 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDate_in_entryRuleEDate3663 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEDate3674 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_ruleEDate3713 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEBoolean_in_entryRuleEBoolean3758 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEBoolean3769 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_ruleEBoolean3807 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_46_in_ruleEBoolean3826 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSpeedlimit_in_entryRuleSpeedlimit3866 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleSpeedlimit3876 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_47_in_ruleSpeedlimit3913 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSpeedlimit3934 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleSpeedlimit3946 = new BitSet(new long[]{0x0001008000000000L});
-        public static final BitSet FOLLOW_48_in_ruleSpeedlimit3959 = new BitSet(new long[]{0x0000100000000040L});
-        public static final BitSet FOLLOW_ruleEInt_in_ruleSpeedlimit3980 = new BitSet(new long[]{0x0000008000000000L});
-        public static final BitSet FOLLOW_39_in_ruleSpeedlimit3994 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleSpeedlimit4017 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleSpeedlimit4029 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleStop_in_entryRuleStop4065 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleStop4075 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_49_in_ruleStop4112 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleStop4133 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleStop4145 = new BitSet(new long[]{0x0000008000000000L});
-        public static final BitSet FOLLOW_39_in_ruleStop4157 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleStop4180 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleStop4192 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleYield_in_entryRuleYield4228 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleYield4238 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_50_in_ruleYield4275 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleYield4296 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleYield4308 = new BitSet(new long[]{0x0000008000000000L});
-        public static final BitSet FOLLOW_39_in_ruleYield4320 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleYield4343 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleYield4355 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_ruleCar1515 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleCar1536 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleCar1548 = new BitSet(new long[]{0x0000000070008000L});
+        public static final BitSet FOLLOW_28_in_ruleCar1561 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleEDate_in_ruleCar1582 = new BitSet(new long[]{0x0000000060008000L});
+        public static final BitSet FOLLOW_29_in_ruleCar1597 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleEDate_in_ruleCar1618 = new BitSet(new long[]{0x0000000040008000L});
+        public static final BitSet FOLLOW_30_in_ruleCar1633 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleCar1656 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleCar1670 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSegment_in_entryRuleSegment1706 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleSegment1716 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_ruleSegment1762 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSegment1783 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleSegment1795 = new BitSet(new long[]{0x0000000700008000L});
+        public static final BitSet FOLLOW_32_in_ruleSegment1808 = new BitSet(new long[]{0x0000100000000040L});
+        public static final BitSet FOLLOW_ruleEInt_in_ruleSegment1829 = new BitSet(new long[]{0x0000000600008000L});
+        public static final BitSet FOLLOW_33_in_ruleSegment1844 = new BitSet(new long[]{0x0000100000000040L});
+        public static final BitSet FOLLOW_ruleEInt_in_ruleSegment1865 = new BitSet(new long[]{0x0000000400008000L});
+        public static final BitSet FOLLOW_34_in_ruleSegment1880 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_22_in_ruleSegment1892 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSegment1915 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_14_in_ruleSegment1928 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSegment1951 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_23_in_ruleSegment1965 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleSegment1979 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSemaphore_in_entryRuleSemaphore2015 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleSemaphore2025 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_35_in_ruleSemaphore2071 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSemaphore2092 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleSemaphore2104 = new BitSet(new long[]{0x000000F000000000L});
+        public static final BitSet FOLLOW_36_in_ruleSemaphore2117 = new BitSet(new long[]{0x0000600000000000L});
+        public static final BitSet FOLLOW_ruleEBoolean_in_ruleSemaphore2138 = new BitSet(new long[]{0x000000E000000000L});
+        public static final BitSet FOLLOW_37_in_ruleSemaphore2153 = new BitSet(new long[]{0x0000100000000040L});
+        public static final BitSet FOLLOW_ruleEInt_in_ruleSemaphore2174 = new BitSet(new long[]{0x000000C000000000L});
+        public static final BitSet FOLLOW_38_in_ruleSemaphore2189 = new BitSet(new long[]{0x0000100000000040L});
+        public static final BitSet FOLLOW_ruleEInt_in_ruleSemaphore2210 = new BitSet(new long[]{0x0000008000000000L});
+        public static final BitSet FOLLOW_39_in_ruleSemaphore2224 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSemaphore2247 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleSemaphore2259 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSignal_Impl_in_entryRuleSignal_Impl2295 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleSignal_Impl2305 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_40_in_ruleSignal_Impl2351 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSignal_Impl2372 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleSignal_Impl2384 = new BitSet(new long[]{0x0000008000000000L});
+        public static final BitSet FOLLOW_39_in_ruleSignal_Impl2396 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSignal_Impl2419 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleSignal_Impl2431 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_entryRuleEString2468 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEString2479 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_ruleEString2519 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleEString2545 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleExtractor_in_entryRuleExtractor2590 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleExtractor2600 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_41_in_ruleExtractor2646 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2667 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleExtractor2679 = new BitSet(new long[]{0x0000000001200000L});
+        public static final BitSet FOLLOW_21_in_ruleExtractor2692 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_22_in_ruleExtractor2704 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2727 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_14_in_ruleExtractor2740 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2763 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_23_in_ruleExtractor2777 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_24_in_ruleExtractor2791 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_22_in_ruleExtractor2803 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2826 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_14_in_ruleExtractor2839 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2862 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_23_in_ruleExtractor2876 = new BitSet(new long[]{0x0000000006008000L});
+        public static final BitSet FOLLOW_25_in_ruleExtractor2889 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2912 = new BitSet(new long[]{0x0000000004008000L});
+        public static final BitSet FOLLOW_26_in_ruleExtractor2927 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_22_in_ruleExtractor2939 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2962 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_14_in_ruleExtractor2975 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleExtractor2998 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_23_in_ruleExtractor3012 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleExtractor3026 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleInjector_in_entryRuleInjector3062 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleInjector3072 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_42_in_ruleInjector3118 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3139 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleInjector3151 = new BitSet(new long[]{0x0000080000200000L});
+        public static final BitSet FOLLOW_43_in_ruleInjector3164 = new BitSet(new long[]{0x0000100000000040L});
+        public static final BitSet FOLLOW_ruleEInt_in_ruleInjector3185 = new BitSet(new long[]{0x0000000000200000L});
+        public static final BitSet FOLLOW_21_in_ruleInjector3199 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_22_in_ruleInjector3211 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3234 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_14_in_ruleInjector3247 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3270 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_23_in_ruleInjector3284 = new BitSet(new long[]{0x0000000007008000L});
+        public static final BitSet FOLLOW_24_in_ruleInjector3297 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_22_in_ruleInjector3309 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3332 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_14_in_ruleInjector3345 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3368 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_23_in_ruleInjector3382 = new BitSet(new long[]{0x0000000006008000L});
+        public static final BitSet FOLLOW_25_in_ruleInjector3397 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3420 = new BitSet(new long[]{0x0000000004008000L});
+        public static final BitSet FOLLOW_26_in_ruleInjector3435 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_22_in_ruleInjector3447 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3470 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_14_in_ruleInjector3483 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleInjector3506 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_23_in_ruleInjector3520 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleInjector3534 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_entryRuleEInt3571 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEInt3582 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_44_in_ruleEInt3621 = new BitSet(new long[]{0x0000000000000040L});
+        public static final BitSet FOLLOW_RULE_INT_in_ruleEInt3638 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDate_in_entryRuleEDate3684 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEDate3695 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_ruleEDate3734 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEBoolean_in_entryRuleEBoolean3779 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEBoolean3790 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_ruleEBoolean3828 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_46_in_ruleEBoolean3847 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSpeedlimit_in_entryRuleSpeedlimit3887 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleSpeedlimit3897 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_47_in_ruleSpeedlimit3934 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSpeedlimit3955 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleSpeedlimit3967 = new BitSet(new long[]{0x0001008000000000L});
+        public static final BitSet FOLLOW_48_in_ruleSpeedlimit3980 = new BitSet(new long[]{0x0000100000000040L});
+        public static final BitSet FOLLOW_ruleEInt_in_ruleSpeedlimit4001 = new BitSet(new long[]{0x0000008000000000L});
+        public static final BitSet FOLLOW_39_in_ruleSpeedlimit4015 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleSpeedlimit4038 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleSpeedlimit4050 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleStop_in_entryRuleStop4086 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleStop4096 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_49_in_ruleStop4133 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleStop4154 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleStop4166 = new BitSet(new long[]{0x0000008000000000L});
+        public static final BitSet FOLLOW_39_in_ruleStop4178 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleStop4201 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleStop4213 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleYield_in_entryRuleYield4249 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleYield4259 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_50_in_ruleYield4296 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleYield4317 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleYield4329 = new BitSet(new long[]{0x0000008000000000L});
+        public static final BitSet FOLLOW_39_in_ruleYield4341 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleYield4364 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleYield4376 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

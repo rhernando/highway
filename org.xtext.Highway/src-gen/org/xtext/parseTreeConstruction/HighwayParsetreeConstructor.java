@@ -2542,13 +2542,15 @@ protected class Node_Impl_RightCurlyBracketKeyword_16 extends KeywordToken  {
  *
  * Car:
  * 
- * 	{Car} "Car" "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment" isInSegment=[Segment|EString])?
+ * 	{Car} "Car" name=EString "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment"
  * 
- * 	"}";
+ * 	isInSegment=[Segment|EString])? "}";
  *
  **/
 
-// {Car} "Car" "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment" isInSegment=[Segment|EString])? "}"
+// {Car} "Car" name=EString "{" ("timeIn" timeIn=EDate)? ("timeOut" timeOut=EDate)? ("isInSegment"
+// 
+// isInSegment=[Segment|EString])? "}"
 protected class Car_Group extends GroupToken {
 	
 	public Car_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -2563,7 +2565,7 @@ protected class Car_Group extends GroupToken {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Car_RightCurlyBracketKeyword_6(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Car_RightCurlyBracketKeyword_7(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -2625,16 +2627,16 @@ protected class Car_CarKeyword_1 extends KeywordToken  {
 
 }
 
-// "{"
-protected class Car_LeftCurlyBracketKeyword_2 extends KeywordToken  {
+// name=EString
+protected class Car_NameAssignment_2 extends AssignmentToken  {
 	
-	public Car_LeftCurlyBracketKeyword_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Car_NameAssignment_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
-	public Keyword getGrammarElement() {
-		return grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_2();
+	public Assignment getGrammarElement() {
+		return grammarAccess.getCarAccess().getNameAssignment_2();
 	}
 
     @Override
@@ -2645,79 +2647,13 @@ protected class Car_LeftCurlyBracketKeyword_2 extends KeywordToken  {
 		}	
 	}
 
-}
-
-// ("timeIn" timeIn=EDate)?
-protected class Car_Group_3 extends GroupToken {
-	
-	public Car_Group_3(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
-		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
-	}
-	
-	@Override
-	public Group getGrammarElement() {
-		return grammarAccess.getCarAccess().getGroup_3();
-	}
-
-    @Override
-	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
-		switch(index) {
-			case 0: return new Car_TimeInAssignment_3_1(lastRuleCallOrigin, this, 0, inst);
-			default: return null;
-		}	
-	}
-
-}
-
-// "timeIn"
-protected class Car_TimeInKeyword_3_0 extends KeywordToken  {
-	
-	public Car_TimeInKeyword_3_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
-		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
-	}
-	
-	@Override
-	public Keyword getGrammarElement() {
-		return grammarAccess.getCarAccess().getTimeInKeyword_3_0();
-	}
-
-    @Override
-	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
-		switch(index) {
-			case 0: return new Car_LeftCurlyBracketKeyword_2(lastRuleCallOrigin, this, 0, inst);
-			default: return null;
-		}	
-	}
-
-}
-
-// timeIn=EDate
-protected class Car_TimeInAssignment_3_1 extends AssignmentToken  {
-	
-	public Car_TimeInAssignment_3_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
-		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
-	}
-	
-	@Override
-	public Assignment getGrammarElement() {
-		return grammarAccess.getCarAccess().getTimeInAssignment_3_1();
-	}
-
-    @Override
-	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
-		switch(index) {
-			case 0: return new Car_TimeInKeyword_3_0(lastRuleCallOrigin, this, 0, inst);
-			default: return null;
-		}	
-	}
-
     @Override	
 	public IEObjectConsumer tryConsume() {
-		if((value = eObjectConsumer.getConsumable("timeIn",false)) == null) return null;
-		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("timeIn");
-		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_3_1_0(), value, null)) {
+		if((value = eObjectConsumer.getConsumable("name",true)) == null) return null;
+		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("name");
+		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getCarAccess().getNameEStringParserRuleCall_2_0(), value, null)) {
 			type = AssignmentType.DATATYPE_RULE_CALL;
-			element = grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_3_1_0();
+			element = grammarAccess.getCarAccess().getNameEStringParserRuleCall_2_0();
 			return obj;
 		}
 		return null;
@@ -2725,8 +2661,29 @@ protected class Car_TimeInAssignment_3_1 extends AssignmentToken  {
 
 }
 
+// "{"
+protected class Car_LeftCurlyBracketKeyword_3 extends KeywordToken  {
+	
+	public Car_LeftCurlyBracketKeyword_3(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Keyword getGrammarElement() {
+		return grammarAccess.getCarAccess().getLeftCurlyBracketKeyword_3();
+	}
 
-// ("timeOut" timeOut=EDate)?
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Car_NameAssignment_2(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+}
+
+// ("timeIn" timeIn=EDate)?
 protected class Car_Group_4 extends GroupToken {
 	
 	public Car_Group_4(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -2741,63 +2698,62 @@ protected class Car_Group_4 extends GroupToken {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Car_TimeOutAssignment_4_1(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Car_TimeInAssignment_4_1(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
 
 }
 
-// "timeOut"
-protected class Car_TimeOutKeyword_4_0 extends KeywordToken  {
+// "timeIn"
+protected class Car_TimeInKeyword_4_0 extends KeywordToken  {
 	
-	public Car_TimeOutKeyword_4_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Car_TimeInKeyword_4_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Keyword getGrammarElement() {
-		return grammarAccess.getCarAccess().getTimeOutKeyword_4_0();
+		return grammarAccess.getCarAccess().getTimeInKeyword_4_0();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Car_Group_3(lastRuleCallOrigin, this, 0, inst);
-			case 1: return new Car_LeftCurlyBracketKeyword_2(lastRuleCallOrigin, this, 1, inst);
+			case 0: return new Car_LeftCurlyBracketKeyword_3(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
 
 }
 
-// timeOut=EDate
-protected class Car_TimeOutAssignment_4_1 extends AssignmentToken  {
+// timeIn=EDate
+protected class Car_TimeInAssignment_4_1 extends AssignmentToken  {
 	
-	public Car_TimeOutAssignment_4_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Car_TimeInAssignment_4_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Assignment getGrammarElement() {
-		return grammarAccess.getCarAccess().getTimeOutAssignment_4_1();
+		return grammarAccess.getCarAccess().getTimeInAssignment_4_1();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Car_TimeOutKeyword_4_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Car_TimeInKeyword_4_0(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
 
     @Override	
 	public IEObjectConsumer tryConsume() {
-		if((value = eObjectConsumer.getConsumable("timeOut",false)) == null) return null;
-		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("timeOut");
-		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_4_1_0(), value, null)) {
+		if((value = eObjectConsumer.getConsumable("timeIn",false)) == null) return null;
+		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("timeIn");
+		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_4_1_0(), value, null)) {
 			type = AssignmentType.DATATYPE_RULE_CALL;
-			element = grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_4_1_0();
+			element = grammarAccess.getCarAccess().getTimeInEDateParserRuleCall_4_1_0();
 			return obj;
 		}
 		return null;
@@ -2806,7 +2762,7 @@ protected class Car_TimeOutAssignment_4_1 extends AssignmentToken  {
 }
 
 
-// ("isInSegment" isInSegment=[Segment|EString])?
+// ("timeOut" timeOut=EDate)?
 protected class Car_Group_5 extends GroupToken {
 	
 	public Car_Group_5(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -2821,7 +2777,87 @@ protected class Car_Group_5 extends GroupToken {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Car_IsInSegmentAssignment_5_1(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Car_TimeOutAssignment_5_1(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+}
+
+// "timeOut"
+protected class Car_TimeOutKeyword_5_0 extends KeywordToken  {
+	
+	public Car_TimeOutKeyword_5_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Keyword getGrammarElement() {
+		return grammarAccess.getCarAccess().getTimeOutKeyword_5_0();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Car_Group_4(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new Car_LeftCurlyBracketKeyword_3(lastRuleCallOrigin, this, 1, inst);
+			default: return null;
+		}	
+	}
+
+}
+
+// timeOut=EDate
+protected class Car_TimeOutAssignment_5_1 extends AssignmentToken  {
+	
+	public Car_TimeOutAssignment_5_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Assignment getGrammarElement() {
+		return grammarAccess.getCarAccess().getTimeOutAssignment_5_1();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Car_TimeOutKeyword_5_0(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+    @Override	
+	public IEObjectConsumer tryConsume() {
+		if((value = eObjectConsumer.getConsumable("timeOut",false)) == null) return null;
+		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("timeOut");
+		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_5_1_0(), value, null)) {
+			type = AssignmentType.DATATYPE_RULE_CALL;
+			element = grammarAccess.getCarAccess().getTimeOutEDateParserRuleCall_5_1_0();
+			return obj;
+		}
+		return null;
+	}
+
+}
+
+
+// ("isInSegment" isInSegment=[Segment|EString])?
+protected class Car_Group_6 extends GroupToken {
+	
+	public Car_Group_6(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Group getGrammarElement() {
+		return grammarAccess.getCarAccess().getGroup_6();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Car_IsInSegmentAssignment_6_1(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -2829,23 +2865,23 @@ protected class Car_Group_5 extends GroupToken {
 }
 
 // "isInSegment"
-protected class Car_IsInSegmentKeyword_5_0 extends KeywordToken  {
+protected class Car_IsInSegmentKeyword_6_0 extends KeywordToken  {
 	
-	public Car_IsInSegmentKeyword_5_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Car_IsInSegmentKeyword_6_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Keyword getGrammarElement() {
-		return grammarAccess.getCarAccess().getIsInSegmentKeyword_5_0();
+		return grammarAccess.getCarAccess().getIsInSegmentKeyword_6_0();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Car_Group_4(lastRuleCallOrigin, this, 0, inst);
-			case 1: return new Car_Group_3(lastRuleCallOrigin, this, 1, inst);
-			case 2: return new Car_LeftCurlyBracketKeyword_2(lastRuleCallOrigin, this, 2, inst);
+			case 0: return new Car_Group_5(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new Car_Group_4(lastRuleCallOrigin, this, 1, inst);
+			case 2: return new Car_LeftCurlyBracketKeyword_3(lastRuleCallOrigin, this, 2, inst);
 			default: return null;
 		}	
 	}
@@ -2853,21 +2889,21 @@ protected class Car_IsInSegmentKeyword_5_0 extends KeywordToken  {
 }
 
 // isInSegment=[Segment|EString]
-protected class Car_IsInSegmentAssignment_5_1 extends AssignmentToken  {
+protected class Car_IsInSegmentAssignment_6_1 extends AssignmentToken  {
 	
-	public Car_IsInSegmentAssignment_5_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Car_IsInSegmentAssignment_6_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Assignment getGrammarElement() {
-		return grammarAccess.getCarAccess().getIsInSegmentAssignment_5_1();
+		return grammarAccess.getCarAccess().getIsInSegmentAssignment_6_1();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Car_IsInSegmentKeyword_5_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Car_IsInSegmentKeyword_6_0(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -2878,9 +2914,9 @@ protected class Car_IsInSegmentAssignment_5_1 extends AssignmentToken  {
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("isInSegment");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::CrossReferenceImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
-			if(param.isInstanceOf(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_5_1_0().getType().getClassifier())) {
+			if(param.isInstanceOf(grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_6_1_0().getType().getClassifier())) {
 				type = AssignmentType.CROSS_REFERENCE;
-				element = grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_5_1_0(); 
+				element = grammarAccess.getCarAccess().getIsInSegmentSegmentCrossReference_6_1_0(); 
 				return obj;
 			}
 		}
@@ -2891,24 +2927,24 @@ protected class Car_IsInSegmentAssignment_5_1 extends AssignmentToken  {
 
 
 // "}"
-protected class Car_RightCurlyBracketKeyword_6 extends KeywordToken  {
+protected class Car_RightCurlyBracketKeyword_7 extends KeywordToken  {
 	
-	public Car_RightCurlyBracketKeyword_6(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Car_RightCurlyBracketKeyword_7(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Keyword getGrammarElement() {
-		return grammarAccess.getCarAccess().getRightCurlyBracketKeyword_6();
+		return grammarAccess.getCarAccess().getRightCurlyBracketKeyword_7();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Car_Group_5(lastRuleCallOrigin, this, 0, inst);
-			case 1: return new Car_Group_4(lastRuleCallOrigin, this, 1, inst);
-			case 2: return new Car_Group_3(lastRuleCallOrigin, this, 2, inst);
-			case 3: return new Car_LeftCurlyBracketKeyword_2(lastRuleCallOrigin, this, 3, inst);
+			case 0: return new Car_Group_6(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new Car_Group_5(lastRuleCallOrigin, this, 1, inst);
+			case 2: return new Car_Group_4(lastRuleCallOrigin, this, 2, inst);
+			case 3: return new Car_LeftCurlyBracketKeyword_3(lastRuleCallOrigin, this, 3, inst);
 			default: return null;
 		}	
 	}

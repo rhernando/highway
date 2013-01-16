@@ -29,7 +29,7 @@ Node_Impl returns Node: {Node}
 	'}';
 
 Car returns Car: {Car}
-	'Car' '{'
+	'Car' name=EString '{'
 		('timeIn' timeIn=EDate)?
 		('timeOut' timeOut=EDate)?
 		('isInSegment' isInSegment=[Segment|EString])?
