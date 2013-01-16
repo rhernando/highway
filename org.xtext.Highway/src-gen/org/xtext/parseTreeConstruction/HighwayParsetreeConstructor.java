@@ -56,9 +56,9 @@ protected class ThisRootNode extends RootToken {
  * 
  * 	{Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
  * 
- * 	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphore" "{"
+ * 	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
  * 
- * 	initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signal" "{" initSignal+=Signal (","
+ * 	initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signals" "{" initSignal+=Signal (","
  * 
  * 	initSignal+=Signal)* "}")? "}";
  *
@@ -66,9 +66,9 @@ protected class ThisRootNode extends RootToken {
 
 // {Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
 // 
-// initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphore" "{"
+// initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
 // 
-// initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signal" "{" initSignal+=Signal (","
+// initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signals" "{" initSignal+=Signal (","
 // 
 // initSignal+=Signal)* "}")? "}"
 protected class Highway_Group extends GroupToken {
@@ -856,7 +856,7 @@ protected class Highway_RightCurlyBracketKeyword_5_4 extends KeywordToken  {
 }
 
 
-// ("Semaphore" "{" initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")?
+// ("Semaphores" "{" initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")?
 protected class Highway_Group_6 extends GroupToken {
 	
 	public Highway_Group_6(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -878,16 +878,16 @@ protected class Highway_Group_6 extends GroupToken {
 
 }
 
-// "Semaphore"
-protected class Highway_SemaphoreKeyword_6_0 extends KeywordToken  {
+// "Semaphores"
+protected class Highway_SemaphoresKeyword_6_0 extends KeywordToken  {
 	
-	public Highway_SemaphoreKeyword_6_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Highway_SemaphoresKeyword_6_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Keyword getGrammarElement() {
-		return grammarAccess.getHighwayAccess().getSemaphoreKeyword_6_0();
+		return grammarAccess.getHighwayAccess().getSemaphoresKeyword_6_0();
 	}
 
     @Override
@@ -918,7 +918,7 @@ protected class Highway_LeftCurlyBracketKeyword_6_1 extends KeywordToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Highway_SemaphoreKeyword_6_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Highway_SemaphoresKeyword_6_0(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -1087,7 +1087,7 @@ protected class Highway_RightCurlyBracketKeyword_6_4 extends KeywordToken  {
 }
 
 
-// ("Signal" "{" initSignal+=Signal ("," initSignal+=Signal)* "}")?
+// ("Signals" "{" initSignal+=Signal ("," initSignal+=Signal)* "}")?
 protected class Highway_Group_7 extends GroupToken {
 	
 	public Highway_Group_7(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -1109,16 +1109,16 @@ protected class Highway_Group_7 extends GroupToken {
 
 }
 
-// "Signal"
-protected class Highway_SignalKeyword_7_0 extends KeywordToken  {
+// "Signals"
+protected class Highway_SignalsKeyword_7_0 extends KeywordToken  {
 	
-	public Highway_SignalKeyword_7_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Highway_SignalsKeyword_7_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Keyword getGrammarElement() {
-		return grammarAccess.getHighwayAccess().getSignalKeyword_7_0();
+		return grammarAccess.getHighwayAccess().getSignalsKeyword_7_0();
 	}
 
     @Override
@@ -1150,7 +1150,7 @@ protected class Highway_LeftCurlyBracketKeyword_7_1 extends KeywordToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Highway_SignalKeyword_7_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Highway_SignalsKeyword_7_0(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}

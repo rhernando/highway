@@ -408,11 +408,9 @@ ruleEDate
     }
 	:
 (
-{ before(grammarAccess.getEDateAccess().getEDateKeyword()); }
-
-	'EDate' 
-
-{ after(grammarAccess.getEDateAccess().getEDateKeyword()); }
+{ before(grammarAccess.getEDateAccess().getSTRINGTerminalRuleCall()); }
+	RULE_STRING
+{ after(grammarAccess.getEDateAccess().getSTRINGTerminalRuleCall()); }
 )
 
 ;
@@ -1620,11 +1618,11 @@ rule__Highway__Group_6__0__Impl
     }
 :
 (
-{ before(grammarAccess.getHighwayAccess().getSemaphoreKeyword_6_0()); }
+{ before(grammarAccess.getHighwayAccess().getSemaphoresKeyword_6_0()); }
 
-	'Semaphore' 
+	'Semaphores' 
 
-{ after(grammarAccess.getHighwayAccess().getSemaphoreKeyword_6_0()); }
+{ after(grammarAccess.getHighwayAccess().getSemaphoresKeyword_6_0()); }
 )
 
 ;
@@ -1843,11 +1841,11 @@ rule__Highway__Group_7__0__Impl
     }
 :
 (
-{ before(grammarAccess.getHighwayAccess().getSignalKeyword_7_0()); }
+{ before(grammarAccess.getHighwayAccess().getSignalsKeyword_7_0()); }
 
-	'Signal' 
+	'Signals' 
 
-{ after(grammarAccess.getHighwayAccess().getSignalKeyword_7_0()); }
+{ after(grammarAccess.getHighwayAccess().getSignalsKeyword_7_0()); }
 )
 
 ;

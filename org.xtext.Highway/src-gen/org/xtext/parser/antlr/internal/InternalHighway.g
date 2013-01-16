@@ -247,9 +247,9 @@ ruleHighway returns [EObject current=null]
     {
     	newLeafNode(otherlv_20, grammarAccess.getHighwayAccess().getRightCurlyBracketKeyword_5_4());
     }
-)?(	otherlv_21='Semaphore' 
+)?(	otherlv_21='Semaphores' 
     {
-    	newLeafNode(otherlv_21, grammarAccess.getHighwayAccess().getSemaphoreKeyword_6_0());
+    	newLeafNode(otherlv_21, grammarAccess.getHighwayAccess().getSemaphoresKeyword_6_0());
     }
 	otherlv_22='{' 
     {
@@ -299,9 +299,9 @@ ruleHighway returns [EObject current=null]
     {
     	newLeafNode(otherlv_26, grammarAccess.getHighwayAccess().getRightCurlyBracketKeyword_6_4());
     }
-)?(	otherlv_27='Signal' 
+)?(	otherlv_27='Signals' 
     {
-    	newLeafNode(otherlv_27, grammarAccess.getHighwayAccess().getSignalKeyword_7_0());
+    	newLeafNode(otherlv_27, grammarAccess.getHighwayAccess().getSignalsKeyword_7_0());
     }
 	otherlv_28='{' 
     {
@@ -1687,11 +1687,12 @@ ruleEDate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
+    this_STRING_0=RULE_STRING    {
+		$current.merge(this_STRING_0);
+    }
 
-	kw='EDate' 
-    {
-        $current.merge(kw);
-        newLeafNode(kw, grammarAccess.getEDateAccess().getEDateKeyword()); 
+    { 
+    newLeafNode(this_STRING_0, grammarAccess.getEDateAccess().getSTRINGTerminalRuleCall()); 
     }
 
     ;

@@ -62,7 +62,7 @@
           <elements xsi:type="xtext:Keyword" value="}"/>
         </elements>
         <elements xsi:type="xtext:Group" cardinality="?">
-          <elements xsi:type="xtext:Keyword" value="Semaphore"/>
+          <elements xsi:type="xtext:Keyword" value="Semaphores"/>
           <elements xsi:type="xtext:Keyword" value="{"/>
           <elements xsi:type="xtext:Assignment" feature="initSemaphore" operator="+=">
             <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.6"/>
@@ -76,7 +76,7 @@
           <elements xsi:type="xtext:Keyword" value="}"/>
         </elements>
         <elements xsi:type="xtext:Group" cardinality="?">
-          <elements xsi:type="xtext:Keyword" value="Signal"/>
+          <elements xsi:type="xtext:Keyword" value="Signals"/>
           <elements xsi:type="xtext:Keyword" value="{"/>
           <elements xsi:type="xtext:Assignment" feature="initSignal" operator="+=">
             <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.2"/>
@@ -600,7 +600,7 @@
       <type metamodel="/0/@metamodelDeclarations.1">
         <classifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       </type>
-      <alternatives xsi:type="xtext:Keyword" value="EDate"/>
+      <alternatives xsi:type="xtext:RuleCall" rule="/1/@rules.2"/>
     </rules>
     <rules xsi:type="xtext:ParserRule" name="EBoolean">
       <type metamodel="/0/@metamodelDeclarations.1">

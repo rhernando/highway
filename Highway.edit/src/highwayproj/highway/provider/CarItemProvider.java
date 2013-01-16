@@ -64,6 +64,7 @@ public class CarItemProvider
 			addTimeInPropertyDescriptor(object);
 			addTimeOutPropertyDescriptor(object);
 			addIsInSegmentPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -135,6 +136,28 @@ public class CarItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Car_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Car_name_feature", "_UI_Car_type"),
+				 HighwayPackage.Literals.CAR__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Car.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -153,8 +176,7 @@ public class CarItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		Date labelValue = ((Car)object).getTimeIn();
-		String label = labelValue == null ? null : labelValue.toString();
+		String label = ((Car)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Car_type") :
 			getString("_UI_Car_type") + " " + label;
@@ -174,6 +196,7 @@ public class CarItemProvider
 		switch (notification.getFeatureID(Car.class)) {
 			case HighwayPackage.CAR__TIME_IN:
 			case HighwayPackage.CAR__TIME_OUT:
+			case HighwayPackage.CAR__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

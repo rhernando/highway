@@ -443,6 +443,15 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getCar_Name() {
+		return (EAttribute)carEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getExtractor() {
 		return extractorEClass;
 	}
@@ -564,6 +573,7 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 		createEAttribute(carEClass, CAR__TIME_IN);
 		createEAttribute(carEClass, CAR__TIME_OUT);
 		createEReference(carEClass, CAR__IS_IN_SEGMENT);
+		createEAttribute(carEClass, CAR__NAME);
 
 		extractorEClass = createEClass(EXTRACTOR);
 
@@ -648,6 +658,7 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 		initEAttribute(getCar_TimeIn(), ecorePackage.getEDate(), "timeIn", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCar_TimeOut(), ecorePackage.getEDate(), "timeOut", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCar_IsInSegment(), this.getSegment(), null, "isInSegment", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCar_Name(), ecorePackage.getEString(), "name", null, 1, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(extractorEClass, Extractor.class, "Extractor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

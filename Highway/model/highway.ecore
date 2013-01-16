@@ -57,6 +57,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeIn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeOut" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="isInSegment" eType="#//Segment"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Extractor" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="Injector" eSuperTypes="#//Node">

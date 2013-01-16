@@ -56,7 +56,7 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cInitCarsCarParserRuleCall_5_3_1_0 = (RuleCall)cInitCarsAssignment_5_3_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_5_4 = (Keyword)cGroup_5.eContents().get(4);
 		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
-		private final Keyword cSemaphoreKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final Keyword cSemaphoresKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_6_1 = (Keyword)cGroup_6.eContents().get(1);
 		private final Assignment cInitSemaphoreAssignment_6_2 = (Assignment)cGroup_6.eContents().get(2);
 		private final RuleCall cInitSemaphoreSemaphoreParserRuleCall_6_2_0 = (RuleCall)cInitSemaphoreAssignment_6_2.eContents().get(0);
@@ -66,7 +66,7 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cInitSemaphoreSemaphoreParserRuleCall_6_3_1_0 = (RuleCall)cInitSemaphoreAssignment_6_3_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_6_4 = (Keyword)cGroup_6.eContents().get(4);
 		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
-		private final Keyword cSignalKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Keyword cSignalsKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_7_1 = (Keyword)cGroup_7.eContents().get(1);
 		private final Assignment cInitSignalAssignment_7_2 = (Assignment)cGroup_7.eContents().get(2);
 		private final RuleCall cInitSignalSignalParserRuleCall_7_2_0 = (RuleCall)cInitSignalAssignment_7_2.eContents().get(0);
@@ -81,18 +81,18 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		//
 		//	{Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
 		//
-		//	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphore" "{"
+		//	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
 		//
-		//	initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signal" "{" initSignal+=Signal (","
+		//	initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signals" "{" initSignal+=Signal (","
 		//
 		//	initSignal+=Signal)* "}")? "}";
 		public ParserRule getRule() { return rule; }
 
 		//{Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
 		//
-		//initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphore" "{"
+		//initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
 		//
-		//initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signal" "{" initSignal+=Signal (","
+		//initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signals" "{" initSignal+=Signal (","
 		//
 		//initSignal+=Signal)* "}")? "}"
 		public Group getGroup() { return cGroup; }
@@ -196,11 +196,11 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_5_4() { return cRightCurlyBracketKeyword_5_4; }
 
-		//("Semaphore" "{" initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")?
+		//("Semaphores" "{" initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")?
 		public Group getGroup_6() { return cGroup_6; }
 
-		//"Semaphore"
-		public Keyword getSemaphoreKeyword_6_0() { return cSemaphoreKeyword_6_0; }
+		//"Semaphores"
+		public Keyword getSemaphoresKeyword_6_0() { return cSemaphoresKeyword_6_0; }
 
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_6_1() { return cLeftCurlyBracketKeyword_6_1; }
@@ -226,11 +226,11 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_6_4() { return cRightCurlyBracketKeyword_6_4; }
 
-		//("Signal" "{" initSignal+=Signal ("," initSignal+=Signal)* "}")?
+		//("Signals" "{" initSignal+=Signal ("," initSignal+=Signal)* "}")?
 		public Group getGroup_7() { return cGroup_7; }
 
-		//"Signal"
-		public Keyword getSignalKeyword_7_0() { return cSignalKeyword_7_0; }
+		//"Signals"
+		public Keyword getSignalsKeyword_7_0() { return cSignalsKeyword_7_0; }
 
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_7_1() { return cLeftCurlyBracketKeyword_7_1; }
@@ -1355,15 +1355,15 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class EDateElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EDate");
-		private final Keyword cEDateKeyword = (Keyword)rule.eContents().get(1);
+		private final RuleCall cSTRINGTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		/// * TODO: implement this rule and an appropriate IValueConverter * / EDate returns ecore::EDate:
 		//
-		//	"EDate";
+		//	STRING;
 		public ParserRule getRule() { return rule; }
 
-		//"EDate"
-		public Keyword getEDateKeyword() { return cEDateKeyword; }
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall() { return cSTRINGTerminalRuleCall; }
 	}
 
 	public class EBooleanElements extends AbstractParserRuleElementFinder {
@@ -1611,9 +1611,9 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 	//
 	//	{Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
 	//
-	//	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphore" "{"
+	//	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
 	//
-	//	initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signal" "{" initSignal+=Signal (","
+	//	initSemaphore+=Semaphore ("," initSemaphore+=Semaphore)* "}")? ("Signals" "{" initSignal+=Signal (","
 	//
 	//	initSignal+=Signal)* "}")? "}";
 	public HighwayElements getHighwayAccess() {
@@ -1769,7 +1769,7 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 
 	/// * TODO: implement this rule and an appropriate IValueConverter * / EDate returns ecore::EDate:
 	//
-	//	"EDate";
+	//	STRING;
 	public EDateElements getEDateAccess() {
 		return (pEDate != null) ? pEDate : (pEDate = new EDateElements());
 	}

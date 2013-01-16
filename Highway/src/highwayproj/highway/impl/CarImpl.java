@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link highwayproj.highway.impl.CarImpl#getTimeIn <em>Time In</em>}</li>
  *   <li>{@link highwayproj.highway.impl.CarImpl#getTimeOut <em>Time Out</em>}</li>
  *   <li>{@link highwayproj.highway.impl.CarImpl#getIsInSegment <em>Is In Segment</em>}</li>
+ *   <li>{@link highwayproj.highway.impl.CarImpl#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -81,6 +82,26 @@ public class CarImpl extends EObjectImpl implements Car {
 	 * @ordered
 	 */
 	protected Segment isInSegment;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,6 +207,27 @@ public class CarImpl extends EObjectImpl implements Car {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HighwayPackage.CAR__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -196,6 +238,8 @@ public class CarImpl extends EObjectImpl implements Car {
 			case HighwayPackage.CAR__IS_IN_SEGMENT:
 				if (resolve) return getIsInSegment();
 				return basicGetIsInSegment();
+			case HighwayPackage.CAR__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -216,6 +260,9 @@ public class CarImpl extends EObjectImpl implements Car {
 				return;
 			case HighwayPackage.CAR__IS_IN_SEGMENT:
 				setIsInSegment((Segment)newValue);
+				return;
+			case HighwayPackage.CAR__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -238,6 +285,9 @@ public class CarImpl extends EObjectImpl implements Car {
 			case HighwayPackage.CAR__IS_IN_SEGMENT:
 				setIsInSegment((Segment)null);
 				return;
+			case HighwayPackage.CAR__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -256,6 +306,8 @@ public class CarImpl extends EObjectImpl implements Car {
 				return TIME_OUT_EDEFAULT == null ? timeOut != null : !TIME_OUT_EDEFAULT.equals(timeOut);
 			case HighwayPackage.CAR__IS_IN_SEGMENT:
 				return isInSegment != null;
+			case HighwayPackage.CAR__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -274,6 +326,8 @@ public class CarImpl extends EObjectImpl implements Car {
 		result.append(timeIn);
 		result.append(", timeOut: ");
 		result.append(timeOut);
+		result.append(", name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

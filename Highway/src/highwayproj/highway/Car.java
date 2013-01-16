@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link highwayproj.highway.Car#getTimeIn <em>Time In</em>}</li>
  *   <li>{@link highwayproj.highway.Car#getTimeOut <em>Time Out</em>}</li>
  *   <li>{@link highwayproj.highway.Car#getIsInSegment <em>Is In Segment</em>}</li>
+ *   <li>{@link highwayproj.highway.Car#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -102,5 +103,31 @@ public interface Car extends EObject {
 	 * @generated
 	 */
 	void setIsInSegment(Segment value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see highwayproj.highway.HighwayPackage#getCar_Name()
+	 * @model required="true"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link highwayproj.highway.Car#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // Car

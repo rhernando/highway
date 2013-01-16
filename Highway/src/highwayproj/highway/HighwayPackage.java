@@ -377,13 +377,22 @@ public interface HighwayPackage extends EPackage {
 	int CAR__IS_IN_SEGMENT = 2;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAR__NAME = 3;
+
+	/**
 	 * The number of structural features of the '<em>Car</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CAR_FEATURE_COUNT = 3;
+	int CAR_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link highwayproj.highway.impl.ExtractorImpl <em>Extractor</em>}' class.
@@ -968,6 +977,17 @@ public interface HighwayPackage extends EPackage {
 	EReference getCar_IsInSegment();
 
 	/**
+	 * Returns the meta object for the attribute '{@link highwayproj.highway.Car#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see highwayproj.highway.Car#getName()
+	 * @see #getCar()
+	 * @generated
+	 */
+	EAttribute getCar_Name();
+
+	/**
 	 * Returns the meta object for class '{@link highwayproj.highway.Extractor <em>Extractor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1312,6 +1332,14 @@ public interface HighwayPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CAR__IS_IN_SEGMENT = eINSTANCE.getCar_IsInSegment();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CAR__NAME = eINSTANCE.getCar_Name();
 
 		/**
 		 * The meta object literal for the '{@link highwayproj.highway.impl.ExtractorImpl <em>Extractor</em>}' class.

@@ -4,7 +4,6 @@ package highwayproj.highway.impl;
 
 import highwayproj.highway.Car;
 import highwayproj.highway.HighwayPackage;
-import highwayproj.highway.Node;
 import highwayproj.highway.Segment;
 
 import java.util.Collection;
@@ -15,7 +14,6 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 

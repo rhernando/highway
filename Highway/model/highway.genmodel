@@ -40,6 +40,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Car/timeIn"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Car/timeOut"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference highway.ecore#//Car/isInSegment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute highway.ecore#//Car/name"/>
     </genClasses>
     <genClasses ecoreClass="highway.ecore#//Extractor"/>
     <genClasses ecoreClass="highway.ecore#//Injector">
