@@ -13,7 +13,7 @@ Workflow {
 	bean = StandaloneSetup {
 		scanClassPath  = true
 		platformUri = "${runtimeProject}/.."
-	registerGeneratedEPackage = "highwayproj.highway.HighwayPackage"
+	registerGeneratedEPackage = "Highway.highway.HighwayPackage"
 	// registerGenModelFile = "platform:/resource/Highway/model/highway.genmodel"
 	
 	}

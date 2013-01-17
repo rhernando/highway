@@ -9,12 +9,12 @@
     </metamodelDeclarations>
     <rules xsi:type="xtext:ParserRule" name="Highway">
       <type metamodel="/0/@metamodelDeclarations.0">
-        <classifier xsi:type="ecore:EClass" href="highway#//Highway"/>
+        <classifier xsi:type="ecore:EClass" href="highway#//highway"/>
       </type>
       <alternatives xsi:type="xtext:Group">
         <elements xsi:type="xtext:Action">
           <type metamodel="/0/@metamodelDeclarations.0">
-            <classifier xsi:type="ecore:EClass" href="highway#//Highway"/>
+            <classifier xsi:type="ecore:EClass" href="highway#//highway"/>
           </type>
         </elements>
         <elements xsi:type="xtext:Keyword" value="Highway"/>

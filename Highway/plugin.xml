@@ -5,12 +5,14 @@
 -->
 
 <plugin>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
+   <extension
+         point="org.eclipse.emf.ecore.generated_package">
       <package
-            uri="highway"
-            class="highway.HighwayPackage"
-            genModel="highway_gen.genmodel"/>
+            class="Highway.highway.HighwayPackage"
+            genModel="model/highway.genmodel"
+            uri="highway">
+      </package>
    </extension>
+
 
 </plugin>

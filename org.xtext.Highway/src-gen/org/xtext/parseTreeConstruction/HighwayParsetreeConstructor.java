@@ -52,9 +52,9 @@ protected class ThisRootNode extends RootToken {
 
 /************ begin Rule Highway ****************
  *
- * Highway:
+ * Highway returns highway:
  * 
- * 	{Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
+ * 	{highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
  * 
  * 	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
  * 
@@ -64,7 +64,7 @@ protected class ThisRootNode extends RootToken {
  *
  **/
 
-// {Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
+// {highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
 // 
 // initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
 // 
@@ -99,7 +99,7 @@ protected class Highway_Group extends GroupToken {
 
 }
 
-// {Highway}
+// {highway}
 protected class Highway_HighwayAction_0 extends ActionToken  {
 
 	public Highway_HighwayAction_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {

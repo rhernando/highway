@@ -77,9 +77,9 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_7_4 = (Keyword)cGroup_7.eContents().get(4);
 		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
-		//Highway:
+		//Highway returns highway:
 		//
-		//	{Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
+		//	{highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
 		//
 		//	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
 		//
@@ -88,7 +88,7 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		//	initSignal+=Signal)* "}")? "}";
 		public ParserRule getRule() { return rule; }
 
-		//{Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
+		//{highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
 		//
 		//initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
 		//
@@ -97,7 +97,7 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 		//initSignal+=Signal)* "}")? "}"
 		public Group getGroup() { return cGroup; }
 
-		//{Highway}
+		//{highway}
 		public Action getHighwayAction_0() { return cHighwayAction_0; }
 
 		//"Highway"
@@ -1617,9 +1617,9 @@ public class HighwayGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	
-	//Highway:
+	//Highway returns highway:
 	//
-	//	{Highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
+	//	{highway} "Highway" "{" ("Segments" "{" initSegments+=Segment ("," initSegments+=Segment)* "}")? ("Nodes" "{"
 	//
 	//	initNodes+=Node ("," initNodes+=Node)* "}")? ("Cars" "{" initCars+=Car ("," initCars+=Car)* "}")? ("Semaphores" "{"
 	//
