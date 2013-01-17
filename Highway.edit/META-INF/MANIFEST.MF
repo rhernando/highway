@@ -4,11 +4,11 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: Highway.edit;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: highwayproj.highway.provider.HighwayEditPlugin$Implementation
+Bundle-Activator: Highway.highway.provider.HighwayEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: highwayproj.highway.provider
+Export-Package: Highway.highway.provider
 Require-Bundle: org.eclipse.core.runtime,
  Highway;visibility:=reexport,
  org.eclipse.emf.edit;visibility:=reexport

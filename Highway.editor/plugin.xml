@@ -11,9 +11,9 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="highwayproj.highway.presentation.HighwayModelWizardID"
+            id="Highway.highway.presentation.HighwayModelWizardID"
             name="%_UI_HighwayModelWizard_label"
-            class="highwayproj.highway.presentation.HighwayModelWizard"
+            class="Highway.highway.presentation.HighwayModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
             icon="icons/full/obj16/HighwayModelFile.gif">
          <description>%_UI_HighwayModelWizard_description</description>
@@ -23,12 +23,12 @@
 
    <extension point="org.eclipse.ui.editors">
       <editor
-            id="highwayproj.highway.presentation.HighwayEditorID"
+            id="Highway.highway.presentation.HighwayEditorID"
             name="%_UI_HighwayEditor_label"
             icon="icons/full/obj16/HighwayModelFile.gif"
             extensions="highway"
-            class="highwayproj.highway.presentation.HighwayEditor"
-            contributorClass="highwayproj.highway.presentation.HighwayActionBarContributor">
+            class="Highway.highway.presentation.HighwayEditor"
+            contributorClass="Highway.highway.presentation.HighwayActionBarContributor">
       </editor>
    </extension>
 
