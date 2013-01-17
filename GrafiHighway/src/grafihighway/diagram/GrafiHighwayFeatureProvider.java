@@ -18,11 +18,6 @@ import grafihighway.features.CreateSemaphoreFeature;
 import grafihighway.features.CreateSignalFeature;
 import grafihighway.features.LayoutNodeFeature;
 import grafihighway.features.LayoutSemaphoreFeature;
-import highwayproj.highway.Car;
-import highwayproj.highway.Node;
-import highwayproj.highway.Segment;
-import highwayproj.highway.Semaphore;
-import highwayproj.highway.Signal;
 
 import org.eclipse.graphiti.dt.IDiagramTypeProvider;
 import org.eclipse.graphiti.features.IAddFeature;
@@ -34,6 +29,12 @@ import org.eclipse.graphiti.features.context.IAddContext;
 import org.eclipse.graphiti.features.context.ILayoutContext;
 import org.eclipse.graphiti.mm.pictograms.ContainerShape;
 import org.eclipse.graphiti.ui.features.DefaultFeatureProvider;
+
+import Highway.highway.Car;
+import Highway.highway.Node;
+import Highway.highway.Segment;
+import Highway.highway.Semaphore;
+import Highway.highway.Signal;
 
 public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 

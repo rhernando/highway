@@ -1,7 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.Segment;
-
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.IAddConnectionContext;
@@ -20,6 +18,8 @@ import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
 import org.eclipse.graphiti.util.IColorConstant;
+
+import Highway.highway.Segment;
 
 
 public class AddSegmentConnectionFeature extends AbstractAddFeature implements

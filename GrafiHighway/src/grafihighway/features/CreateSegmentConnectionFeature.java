@@ -1,9 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.HighwayFactory;
-import highwayproj.highway.Node;
-import highwayproj.highway.Segment;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
@@ -18,6 +14,10 @@ import org.eclipse.graphiti.features.impl.AbstractCreateConnectionFeature;
 import org.eclipse.graphiti.mm.pictograms.Anchor;
 import org.eclipse.graphiti.mm.pictograms.Connection;
 import org.eclipse.graphiti.mm.pictograms.PictogramElement;
+
+import Highway.highway.HighwayFactory;
+import Highway.highway.Node;
+import Highway.highway.Segment;
 
 public class CreateSegmentConnectionFeature extends
 		AbstractCreateConnectionFeature implements ICreateConnectionFeature {

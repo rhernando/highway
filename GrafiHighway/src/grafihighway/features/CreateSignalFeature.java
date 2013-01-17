@@ -1,9 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.HighwayFactory;
-import highwayproj.highway.Signal;
-import highwayproj.highway.Speedlimit;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -12,6 +8,10 @@ import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.ICreateContext;
 import org.eclipse.graphiti.features.impl.AbstractCreateFeature;
 import org.eclipse.graphiti.mm.pictograms.Diagram;
+
+import Highway.highway.HighwayFactory;
+import Highway.highway.Signal;
+import Highway.highway.Speedlimit;
 
 public class CreateSignalFeature extends AbstractCreateFeature implements
 		ICreateFeature {

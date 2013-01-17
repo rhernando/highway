@@ -1,7 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.Node;
-
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.ILayoutFeature;
@@ -14,6 +12,8 @@ import org.eclipse.graphiti.mm.pictograms.ContainerShape;
 import org.eclipse.graphiti.mm.pictograms.PictogramElement;
 import org.eclipse.graphiti.mm.pictograms.Shape;
 import org.eclipse.graphiti.services.Graphiti;
+
+import Highway.highway.Node;
 
 public class LayoutNodeFeature extends AbstractLayoutFeature implements
 		ILayoutFeature {

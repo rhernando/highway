@@ -1,8 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.Car;
-import highwayproj.highway.HighwayFactory;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -11,6 +8,9 @@ import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.ICreateContext;
 import org.eclipse.graphiti.features.impl.AbstractCreateFeature;
 import org.eclipse.graphiti.mm.pictograms.Diagram;
+
+import Highway.highway.Car;
+import Highway.highway.HighwayFactory;
 
 public class CreateCarFeature extends AbstractCreateFeature implements
 		ICreateFeature {

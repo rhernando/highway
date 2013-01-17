@@ -1,10 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.Signal;
-import highwayproj.highway.Speedlimit;
-import highwayproj.highway.Stop;
-import highwayproj.highway.Yield;
-
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.IAddContext;
@@ -21,6 +16,11 @@ import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
 import org.eclipse.graphiti.util.IColorConstant;
+
+import Highway.highway.Signal;
+import Highway.highway.Speedlimit;
+import Highway.highway.Stop;
+import Highway.highway.Yield;
 
 public class AddSignalFeature extends AbstractAddFeature implements
 		IAddFeature {

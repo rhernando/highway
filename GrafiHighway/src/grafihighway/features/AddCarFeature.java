@@ -1,7 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.Car;
-
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.IAddContext;
@@ -17,6 +15,8 @@ import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
 import org.eclipse.graphiti.util.ColorConstant;
+
+import Highway.highway.Car;
 
 public class AddCarFeature extends AbstractAddFeature implements
 		IAddFeature {

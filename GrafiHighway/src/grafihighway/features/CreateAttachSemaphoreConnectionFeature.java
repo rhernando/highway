@@ -1,8 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.Node;
-import highwayproj.highway.Semaphore;
-
 import org.eclipse.graphiti.features.ICreateConnectionFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.ICreateConnectionContext;
@@ -11,6 +8,9 @@ import org.eclipse.graphiti.features.impl.AbstractCreateConnectionFeature;
 import org.eclipse.graphiti.mm.pictograms.Anchor;
 import org.eclipse.graphiti.mm.pictograms.Connection;
 import org.eclipse.graphiti.mm.pictograms.PictogramElement;
+
+import Highway.highway.Node;
+import Highway.highway.Semaphore;
 
 public class CreateAttachSemaphoreConnectionFeature extends
 		AbstractCreateConnectionFeature implements ICreateConnectionFeature {

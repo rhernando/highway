@@ -1,7 +1,5 @@
 package grafihighway.features;
 
-import highwayproj.highway.Semaphore;
-
 import org.eclipse.graphiti.features.IAddFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.IAddContext;
@@ -15,6 +13,8 @@ import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
 import org.eclipse.graphiti.util.ColorConstant;
 import org.eclipse.graphiti.util.IColorConstant;
+
+import Highway.highway.Semaphore;
 
 public class AddSemaphoreFeature extends AbstractAddFeature implements
 		IAddFeature {
