@@ -1,14 +1,14 @@
 package grafihighway.features;
 
+import highwayproj.highway.HighwayFactory;
+import highwayproj.highway.Node;
+import highwayproj.highway.Segment;
+
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
-
-import highwayproj.highway.HighwayFactory;
-import highwayproj.highway.Node;
-import highwayproj.highway.Segment;
 
 import org.eclipse.graphiti.features.ICreateConnectionFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
@@ -81,8 +81,8 @@ public class CreateSegmentConnectionFeature extends
 
 		SpinnerModel sm = new SpinnerNumberModel(100,10,3600, 10);
 		JSpinner jsp = new JSpinner(sm);
-        int len = JOptionPane.showOptionDialog(null, jsp, "Length of Segment", JOptionPane.OK_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
-        newSegment.setLength(len);
+        JOptionPane.showOptionDialog(null, jsp, "Length of Segment", JOptionPane.CLOSED_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+        newSegment.setLength((Integer)sm.getValue());
 		PictogramElement source = context.getSourceAnchor().getParent();
 		PictogramElement target = context.getTargetAnchor().getParent();
 		
@@ -97,6 +97,8 @@ public class CreateSegmentConnectionFeature extends
 		// TODO: create the domain object connection here
 		//Object newDomainObjectConnetion = null;
 
+		getDiagram().eResource().getContents().add(newSegment);
+		
 		AddConnectionContext addContext = new AddConnectionContext(
 				context.getSourceAnchor(), context.getTargetAnchor());
 		addContext.setNewObject(newSegment);

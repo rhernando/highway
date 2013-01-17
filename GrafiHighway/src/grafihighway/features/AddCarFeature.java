@@ -16,6 +16,7 @@ import org.eclipse.graphiti.mm.pictograms.Shape;
 import org.eclipse.graphiti.services.Graphiti;
 import org.eclipse.graphiti.services.IGaService;
 import org.eclipse.graphiti.services.IPeCreateService;
+import org.eclipse.graphiti.util.ColorConstant;
 
 public class AddCarFeature extends AbstractAddFeature implements
 		IAddFeature {
@@ -34,7 +35,6 @@ public class AddCarFeature extends AbstractAddFeature implements
 	public PictogramElement add(IAddContext context) {
 		
 		Car newCar = (Car)context.getNewObject();
-
 		Diagram targetDiagram = (Diagram) context.getTargetContainer();
 		IPeCreateService peCreateService = Graphiti.getPeCreateService();
 		IGaService gaService = Graphiti.getGaService();
@@ -42,13 +42,17 @@ public class AddCarFeature extends AbstractAddFeature implements
 		ContainerShape containerShape = peCreateService.createContainerShape(targetDiagram, true);
 		RoundedRectangle roundedRectangle = gaService.createRoundedRectangle(containerShape, 5, 5);
 		gaService.setLocationAndSize(roundedRectangle, context.getX(), context.getY(), context.getWidth(), context.getHeight());
-		roundedRectangle.setFilled(false);
-		
+
+		roundedRectangle.setBackground(manageColor(new ColorConstant(120,120,120)));
+		roundedRectangle.setForeground(manageColor(new ColorConstant(20,20,20)));
+		roundedRectangle.setLineWidth(3);
+
 		Shape shape = peCreateService.createShape(containerShape, false);
-		Text text = gaService.createText(shape, "Car");
+		Text text = gaService.createText(shape, "Car " + newCar.getName());
 		text.setHorizontalAlignment(Orientation.ALIGNMENT_CENTER);
 		text.setVerticalAlignment(Orientation.ALIGNMENT_CENTER);
-		gaService.setLocationAndSize(text, 0, 0, context.getWidth(), context.getHeight());
+		text.setForeground(manageColor(new ColorConstant(230,230,230)));
+		gaService.setLocationAndSize(text, 0, 0, 100, 50);
 
 		peCreateService.createChopboxAnchor(containerShape);
 

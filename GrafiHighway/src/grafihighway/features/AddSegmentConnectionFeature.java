@@ -9,8 +9,10 @@ import org.eclipse.graphiti.features.context.IAddContext;
 import org.eclipse.graphiti.features.impl.AbstractAddFeature;
 import org.eclipse.graphiti.mm.GraphicsAlgorithmContainer;
 import org.eclipse.graphiti.mm.algorithms.Polyline;
+import org.eclipse.graphiti.mm.algorithms.Rectangle;
 import org.eclipse.graphiti.mm.algorithms.Text;
 import org.eclipse.graphiti.mm.algorithms.styles.LineStyle;
+import org.eclipse.graphiti.mm.pictograms.BoxRelativeAnchor;
 import org.eclipse.graphiti.mm.pictograms.Connection;
 import org.eclipse.graphiti.mm.pictograms.ConnectionDecorator;
 import org.eclipse.graphiti.mm.pictograms.PictogramElement;
@@ -41,13 +43,15 @@ public class AddSegmentConnectionFeature extends AbstractAddFeature implements
 
 		Segment segm = (Segment)context.getNewObject();
 		
-		
 		Connection connection = peCreateService
 				.createFreeFormConnection(getDiagram());
+		
 		connection.setStart(addConContext.getSourceAnchor());
 		connection.setEnd(addConContext.getTargetAnchor());
 
-		Polyline polyline = gaService.createPolyline(connection);
+		int xy[] = new int[] { 0, 0, 50, 0, 25, 50 };
+		int beforeAfter[] = new int[] { 5, 5, 5, 5, 5, 5};
+		Polyline polyline = gaService.createPolyline(connection, xy, beforeAfter);
 		polyline.setForeground(manageColor(IColorConstant.BLACK));
 		int w = 2;
 		if (segm.getNumLanes() != 0)
@@ -55,7 +59,20 @@ public class AddSegmentConnectionFeature extends AbstractAddFeature implements
 		
 		polyline.setLineWidth(w);
 		polyline.setLineStyle(LineStyle.SOLID);
-
+		polyline.setTransparency(0.5);
+		
+		peCreateService.createChopboxAnchor(connection);
+		final BoxRelativeAnchor boxAnchor = peCreateService
+				.createBoxRelativeAnchor(connection);
+		boxAnchor.setRelativeWidth(1.0);
+		boxAnchor.setRelativeHeight(0.38); // use golden section
+		boxAnchor.setReferencedGraphicsAlgorithm(polyline);		 
+	      final Rectangle rectangle = gaService.createPlainRectangle(boxAnchor);
+	   //   rectangle.setForeground(manageColor(E_CLASS_FOREGROUND));
+	 //     rectangle.setBackground(manageColor(E_CLASS_BACKGROUND));
+	      rectangle.setLineWidth(2);
+	      gaService.setLocationAndSize(rectangle, -12, -6, 12, 12);
+		 
 		ConnectionDecorator textDecorator = peCreateService
 				.createConnectionDecorator(connection, true, 0.5, true);
 		Text text = gaService.createDefaultText(getDiagram(), textDecorator);

@@ -43,11 +43,11 @@ public class CreateSemaphoreFeature extends AbstractCreateFeature implements
 		SpinnerModel sm = new SpinnerNumberModel(0,0,60, 1);
 		JSpinner jsp = new JSpinner(sm);
 		
-        int numCar = JOptionPane.showOptionDialog(null, jsp, "Red light delay", JOptionPane.CLOSED_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
-        newSemaphore.setSecondsRed(numCar);
+        JOptionPane.showOptionDialog(null, jsp, "Red light delay", JOptionPane.CLOSED_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+        newSemaphore.setSecondsRed((Integer)sm.getValue());
 
-        numCar = JOptionPane.showOptionDialog(null, jsp, "Green light delay", JOptionPane.CLOSED_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
-        newSemaphore.setSecondsGreen(numCar);
+        JOptionPane.showOptionDialog(null, jsp, "Green light delay", JOptionPane.CLOSED_OPTION, JOptionPane.CLOSED_OPTION, null, null, null);
+        newSemaphore.setSecondsGreen((Integer)sm.getValue());
         
         
 		// TODO: in case of an EMF object add the new object to a suitable resource

@@ -1,8 +1,13 @@
 package grafihighway.features;
 
 import highwayproj.highway.Car;
+import highwayproj.highway.Node;
 import highwayproj.highway.Segment;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.graphiti.features.ICreateConnectionFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.ICreateConnectionContext;
@@ -43,7 +48,9 @@ public class CreateAttachCarConnectionFeature extends
 			
 			// : check for right domain object instance below
 			if (getBusinessObjectForPictogramElement(sourcePictogramElement) instanceof Car
-					&& getBusinessObjectForPictogramElement(targetPictogramElement) instanceof Segment) {
+					&& getBusinessObjectForPictogramElement(targetPictogramElement) instanceof Node) {
+				if (((Node)getBusinessObjectForPictogramElement(targetPictogramElement)).getHasEnds().isEmpty() && ((Node)getBusinessObjectForPictogramElement(targetPictogramElement)).getHasStarts().isEmpty())
+					return false;
 				return true;
 			}else{
 				return false;
@@ -63,8 +70,29 @@ public class CreateAttachCarConnectionFeature extends
 				.getTargetPictogramElement();
 
 		Car myCar = (Car)getBusinessObjectForPictogramElement(sourcePictogramElement);
-		Segment mySegment = (Segment)getBusinessObjectForPictogramElement(targetPictogramElement);
-		mySegment.getHasCars().add(myCar);
+		Node myNode = (Node)getBusinessObjectForPictogramElement(targetPictogramElement);
+		EList<Segment> segList = myNode.getHasEnds();
+		segList.addAll(myNode.getHasStarts());
+		Object[] options = new Object[segList.size()];
+		int i = 0;
+		for (Segment s : segList){
+			options[i] = s.getName(); 
+			i++;
+		}
+		Object seleccion = JOptionPane.showInputDialog(
+				new JFrame(),
+				   "Select SEGMENT",
+				   "Options",
+				   JOptionPane.QUESTION_MESSAGE,
+				   null,  
+				   options, 
+				   options[0]);
+		
+		for (Segment s : segList){
+			if (s.getName().equals(seleccion))
+				s.getHasCars().add(myCar);
+		}
+		
 
 		// TODO: create the domain object connection here
 		Object newDomainObjectConnetion = "CAR";

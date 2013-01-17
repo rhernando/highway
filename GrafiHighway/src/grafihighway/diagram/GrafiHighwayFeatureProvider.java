@@ -12,8 +12,6 @@ import grafihighway.features.CreateAttachCarConnectionFeature;
 import grafihighway.features.CreateAttachSemaphoreConnectionFeature;
 import grafihighway.features.CreateAttachSignalConnectionFeature;
 import grafihighway.features.CreateCarFeature;
-import grafihighway.features.CreateDomainObjectConnectionConnectionFeature;
-import grafihighway.features.CreateHighwayFeature;
 import grafihighway.features.CreateNodeFeature;
 import grafihighway.features.CreateSegmentConnectionFeature;
 import grafihighway.features.CreateSemaphoreFeature;
@@ -45,7 +43,7 @@ public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 
 	@Override
 	public ICreateFeature[] getCreateFeatures() {
-		return new ICreateFeature[] { new CreateHighwayFeature(this),
+		return new ICreateFeature[] {// new CreateHighwayFeature(this),
 				new CreateNodeFeature(this), new CreateSemaphoreFeature(this),
 				new CreateSignalFeature(this),
 				new CreateCarFeature(this)};
@@ -54,7 +52,7 @@ public class GrafiHighwayFeatureProvider extends DefaultFeatureProvider {
 	@Override
 	public ICreateConnectionFeature[] getCreateConnectionFeatures() {
 		return new ICreateConnectionFeature[] {
-				new CreateDomainObjectConnectionConnectionFeature(this),
+		//		new CreateDomainObjectConnectionConnectionFeature(this),
 				new CreateSegmentConnectionFeature(this),
 				new CreateAttachSignalConnectionFeature(this),
 				new CreateAttachSemaphoreConnectionFeature(this),

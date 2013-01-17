@@ -1,11 +1,11 @@
 package grafihighway.features;
 
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-
 import highwayproj.highway.HighwayFactory;
 import highwayproj.highway.Signal;
 import highwayproj.highway.Speedlimit;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import org.eclipse.graphiti.features.ICreateFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
