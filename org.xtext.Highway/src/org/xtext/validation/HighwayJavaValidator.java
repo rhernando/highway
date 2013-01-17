@@ -64,19 +64,20 @@ public class HighwayJavaValidator extends AbstractHighwayJavaValidator {
 	}
 	
 	@Check
-	public void checkNodeName (Node node, highway myhighway) {
+	public void checkNodeName (highway myhighway) {
 		List nodes = myhighway.getInitNodes();
 		int size = nodes.size();
-		boolean exists = false;
+		boolean doublename = false;
 		
-		for (int i = 0; i < size; i++) {
+		for (int i = 1; i < size; i++) {
+			Node node1 = (Node)nodes.get(i-1);
 			Node node2 = (Node)nodes.get(i);
-			if (!node.equals(node2) && node.getName().equals(node2.getName())) {
-				exists = true;
+			if (node1.getName() == node2.getName()) {
+				doublename = true;
 			}
 		}
 		
-		if (exists) 
+		if (doublename) 
 			error("Nodename already exists", return_feat);
 	}
 
