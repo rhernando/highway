@@ -37,7 +37,7 @@ public interface Car extends EObject {
 	 * @return the value of the '<em>Time In</em>' attribute.
 	 * @see #setTimeIn(Date)
 	 * @see Highway.highway.HighwayPackage#getCar_TimeIn()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	Date getTimeIn();
@@ -63,7 +63,7 @@ public interface Car extends EObject {
 	 * @return the value of the '<em>Time Out</em>' attribute.
 	 * @see #setTimeOut(Date)
 	 * @see Highway.highway.HighwayPackage#getCar_TimeOut()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	Date getTimeOut();
@@ -89,7 +89,7 @@ public interface Car extends EObject {
 	 * @return the value of the '<em>Is In Segment</em>' reference.
 	 * @see #setIsInSegment(Segment)
 	 * @see Highway.highway.HighwayPackage#getCar_IsInSegment()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	Segment getIsInSegment();
@@ -115,7 +115,7 @@ public interface Car extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see Highway.highway.HighwayPackage#getCar_Name()
-	 * @model required="true"
+	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	String getName();

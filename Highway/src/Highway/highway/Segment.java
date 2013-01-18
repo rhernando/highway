@@ -22,12 +22,14 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see Highway.highway.HighwayPackage#getSegment()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NullName UniqueName'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot null='numLanes > 0' NullName='name <> null' UniqueName='highway.initNodes->isUnique(name)'"
  * @generated
  */
 public interface Segment extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Num Lanes</b></em>' attribute.
+	 * The default value is <code>"1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Num Lanes</em>' attribute isn't clear,
@@ -37,7 +39,7 @@ public interface Segment extends EObject {
 	 * @return the value of the '<em>Num Lanes</em>' attribute.
 	 * @see #setNumLanes(int)
 	 * @see Highway.highway.HighwayPackage#getSegment_NumLanes()
-	 * @model ordered="false"
+	 * @model default="1" ordered="false"
 	 * @generated
 	 */
 	int getNumLanes();

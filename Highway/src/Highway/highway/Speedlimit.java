@@ -16,7 +16,7 @@ package Highway.highway;
  * </p>
  *
  * @see Highway.highway.HighwayPackage#getSpeedlimit()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot null='Speed > 0'"
  * @generated
  */
 public interface Speedlimit extends Signal {
@@ -31,7 +31,7 @@ public interface Speedlimit extends Signal {
 	 * @return the value of the '<em>Speed</em>' attribute.
 	 * @see #setSpeed(int)
 	 * @see Highway.highway.HighwayPackage#getSpeedlimit_Speed()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	int getSpeed();

@@ -16,7 +16,8 @@ package Highway.highway;
  * </p>
  *
  * @see Highway.highway.HighwayPackage#getInjector()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NoStart'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot NoStart='hasStarts->isEmpty()'"
  * @generated
  */
 public interface Injector extends Node {
@@ -31,7 +32,7 @@ public interface Injector extends Node {
 	 * @return the value of the '<em>Cars Per Hour</em>' attribute.
 	 * @see #setCarsPerHour(int)
 	 * @see Highway.highway.HighwayPackage#getInjector_CarsPerHour()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	int getCarsPerHour();

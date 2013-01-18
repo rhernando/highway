@@ -16,11 +16,13 @@ import Highway.highway.Stop;
 import Highway.highway.Yield;
 import Highway.highway.highway;
 
+import Highway.highway.util.HighwayValidator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -158,6 +160,15 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 
 		// Initialize created meta-data
 		theHighwayPackage.initializePackageContents();
+
+		// Register package validator
+		EValidator.Registry.INSTANCE.put
+			(theHighwayPackage, 
+			 new EValidator.Descriptor() {
+				 public EValidator getEValidator() {
+					 return HighwayValidator.INSTANCE;
+				 }
+			 });
 
 		// Mark meta-data to indicate it can't be changed
 		theHighwayPackage.freeze();
@@ -638,7 +649,7 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 		initEAttribute(getNode_Name(), ecorePackage.getEString(), "name", null, 1, 1, Node.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(segmentEClass, Segment.class, "Segment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSegment_NumLanes(), ecorePackage.getEInt(), "numLanes", null, 0, 1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSegment_NumLanes(), ecorePackage.getEInt(), "numLanes", "1", 0, 1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getSegment_HasCars(), this.getCar(), null, "hasCars", null, 0, -1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSegment_Length(), ecorePackage.getEInt(), "length", null, 0, 1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSegment_Name(), ecorePackage.getEString(), "name", null, 1, 1, Segment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -655,18 +666,18 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 		initEAttribute(getSignal_Name(), ecorePackage.getEString(), "name", null, 1, 1, Signal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(carEClass, Car.class, "Car", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCar_TimeIn(), ecorePackage.getEDate(), "timeIn", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCar_TimeOut(), ecorePackage.getEDate(), "timeOut", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCar_IsInSegment(), this.getSegment(), null, "isInSegment", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCar_Name(), ecorePackage.getEString(), "name", null, 1, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCar_TimeIn(), ecorePackage.getEDate(), "timeIn", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCar_TimeOut(), ecorePackage.getEDate(), "timeOut", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getCar_IsInSegment(), this.getSegment(), null, "isInSegment", null, 0, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCar_Name(), ecorePackage.getEString(), "name", null, 1, 1, Car.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(extractorEClass, Extractor.class, "Extractor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(injectorEClass, Injector.class, "Injector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getInjector_CarsPerHour(), ecorePackage.getEInt(), "carsPerHour", null, 0, 1, Injector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInjector_CarsPerHour(), ecorePackage.getEInt(), "carsPerHour", null, 0, 1, Injector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(speedlimitEClass, Speedlimit.class, "Speedlimit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSpeedlimit_Speed(), ecorePackage.getEInt(), "Speed", null, 0, 1, Speedlimit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSpeedlimit_Speed(), ecorePackage.getEInt(), "Speed", null, 0, 1, Speedlimit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(stopEClass, Stop.class, "Stop", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -674,6 +685,103 @@ public class HighwayPackageImpl extends EPackageImpl implements HighwayPackage {
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// http://www.eclipse.org/emf/2002/Ecore
+		createEcoreAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot
+		createPivotAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createEcoreAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore";		
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
+		   });		
+		addAnnotation
+		  (nodeEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "NullName UniqueName"
+		   });			
+		addAnnotation
+		  (segmentEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "NullName UniqueName"
+		   });				
+		addAnnotation
+		  (extractorEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "NoEnds"
+		   });			
+		addAnnotation
+		  (injectorEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "NoStart"
+		   });		
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createPivotAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";				
+		addAnnotation
+		  (nodeEClass, 
+		   source, 
+		   new String[] {
+			 "NullName", "name <> null",
+			 "UniqueName", "highway.initNodes->isUnique(name)"
+		   });			
+		addAnnotation
+		  (segmentEClass, 
+		   source, 
+		   new String[] {
+			 null, "numLanes > 0",
+			 "NullName", "name <> null",
+			 "UniqueName", "highway.initNodes->isUnique(name)"
+		   });		
+		addAnnotation
+		  (semaphoreEClass, 
+		   source, 
+		   new String[] {
+			 null, "secondsGreen > 0"
+		   });			
+		addAnnotation
+		  (extractorEClass, 
+		   source, 
+		   new String[] {
+			 "NoEnds", "hasEnds->isEmpty()"
+		   });			
+		addAnnotation
+		  (injectorEClass, 
+		   source, 
+		   new String[] {
+			 "NoStart", "hasStarts->isEmpty()"
+		   });		
+		addAnnotation
+		  (speedlimitEClass, 
+		   source, 
+		   new String[] {
+			 null, "Speed > 0"
+		   });
 	}
 
 } //HighwayPackageImpl

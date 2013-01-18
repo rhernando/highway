@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<highway:highway
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:highway="highway">
+  <initNodes
+      xsi:type="highway:Injector"
+      hasEnds="//@initSegments.0"
+      name="Inj1"
+      carsPerHour="10"/>
+  <initNodes
+      hasStarts="//@initSegments.0"
+      hasEnds="//@initSegments.1"
+      name="node1"/>
+  <initNodes
+      xsi:type="highway:Extractor"
+      hasStarts="//@initSegments.1"
+      name="Ext1"/>
+  <initCars/>
+  <initCars/>
+  <initCars/>
+  <initSegments
+      hasCars="//@initCars.0"
+      name="segm1"/>
+  <initSegments
+      hasCars="//@initCars.1 //@initCars.2"
+      name="segm2"/>
+</highway:highway>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TPN name="C:/Users/Esteban/Desktop/noName.xml">
+		
+		 
+			
+				<place id="1" label="segm2" initialMarking="2" eft="0" lft="inf"> 
+			      <graphics color="0"> 
+			         <position x="200" y="30"/> 
+			         <deltaLabel deltax="10" deltay="10"/> 
+			      </graphics> 
+			      <scheduling gamma="0" omega="0"/> 
+			  	</place> 
+					
+		 
+		
+		 
+			
+				<transition id="2" label="Ext1"  eft="0" lft="inf"  obs="1"> 
+			     <graphics color="0"> 
+			        <position x="300" y="60"/> 
+			        <deltaLabel deltax="10" deltay="10"/> 
+			     </graphics> 
+			  	</transition> 
+					
+		 
+		
+		 
+			
+				<place id="3" label="segm1" initialMarking="1" eft="0" lft="inf"> 
+			      <graphics color="0"> 
+			         <position x="200" y="90"/> 
+			         <deltaLabel deltax="10" deltay="10"/> 
+			      </graphics> 
+			      <scheduling gamma="0" omega="0"/> 
+			  	</place> 
+					
+		 
+		
+		 
+			
+				<transition id="4" label="node1"  eft="0" lft="inf"  obs="1"> 
+			     <graphics color="0"> 
+			        <position x="300" y="120"/> 
+			        <deltaLabel deltax="10" deltay="10"/> 
+			     </graphics> 
+			  	</transition> 
+					
+		 
+		
+		 
+			
+				<transition id="5" label="Inj1"  eft="0" lft="inf"  obs="1"> 
+			     <graphics color="0"> 
+			        <position x="300" y="150"/> 
+			        <deltaLabel deltax="10" deltay="10"/> 
+			     </graphics> 
+			  	</transition> 
+					
+		 
+		
+
+			   <arc place="3" transition="4" type="PlaceTransition" weight="1"> 
+			     <nail xnail="0" ynail="0"/> 
+			     <graphics  color="0"> 
+			     </graphics> 
+			  </arc> 
+					
+		
+			   <arc place="1" transition="2" type="PlaceTransition" weight="1"> 
+			     <nail xnail="0" ynail="0"/> 
+			     <graphics  color="0"> 
+			     </graphics> 
+			  </arc> 
+					
+		
+			   <arc place="3" transition="5" type="TransitionPlace" weight="1"> 
+			     <nail xnail="0" ynail="0"/> 
+			     <graphics  color="0"> 
+			     </graphics> 
+			  </arc> 
+					
+		
+			   <arc place="1" transition="4" type="TransitionPlace" weight="1"> 
+			     <nail xnail="0" ynail="0"/> 
+			     <graphics  color="0"> 
+			     </graphics> 
+			  </arc> 
+					
+		
+	  	<preferences> 
+	      <colorPlace  c0="SkyBlue2"  c1="gray"  c2="cyan"  c3="green"  c4="yellow"  c5="brown" /> 
+	 
+	      <colorTransition  c0="yellow"  c1="gray"  c2="cyan"  c3="green"  c4="SkyBlue2"  c5="brown" /> 
+	 
+	      <colorArc  c0="black"  c1="gray"  c2="blue"  c3="#beb760"  c4="#be5c7e"  c5="#46be90" /> 
+	 
+	  	</preferences> 
+</TPN> 

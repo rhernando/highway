@@ -44,7 +44,7 @@ public class SegmentImpl extends EObjectImpl implements Segment {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int NUM_LANES_EDEFAULT = 0;
+	protected static final int NUM_LANES_EDEFAULT = 1;
 
 	/**
 	 * The cached value of the '{@link #getNumLanes() <em>Num Lanes</em>}' attribute.

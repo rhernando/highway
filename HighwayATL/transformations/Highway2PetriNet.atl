@@ -1,0 +1,53 @@
+-- @path Highway=/HighwayATL/metamodels/highway.ecore
+-- @path PetriNet=/HighwayATL/metamodels/PetriNetModel.ecore
+
+module Highway2PetriNet;
+create OUT : PetriNet from IN : Highway;
+
+rule RHighwayRoot {
+	from
+		mIn : Highway!highway
+	to
+		mOut: PetriNet!PetriNetRoot (elements <- mIn.initNodes,
+									 elements <-  mIn.initSegments,
+									 arcs <-Highway!Segment.allInstances()->collect(e | thisModule.getArcTransition2Place(e)).union(Highway!Segment.allInstances()->collect(e | thisModule.getArcPlace2Transition(e))) 
+									 )
+}
+
+rule RPetriNetTransition {
+	from
+		mIn : Highway!Node
+	to
+		mTran: PetriNet!Transition (name <- mIn.name) 
+	
+}
+
+
+rule RPetriNetPlace {
+	from
+		mIn : Highway!Segment
+	to
+		mPlace: PetriNet!Place  (name <- mIn.name, 
+								Tokens <- mIn.hasCars->size())
+		
+		
+}
+
+lazy rule getArcTransition2Place {
+	from mIn: Highway!Segment
+	to mArc : PetriNet!Arc(
+		In <- Highway!Node.allInstances()->select(node | node.hasEnds.includes(mIn))->first(),
+		Out <- mIn 
+	) 	
+}
+
+lazy rule getArcPlace2Transition {
+	from mIn: Highway!Segment
+	to mArc : PetriNet!Arc(
+		In <-  mIn,
+		Out <- Highway!Node.allInstances()->select(node | node.hasStarts.includes(mIn))->first()
+		 ) 	
+}
+
+
+

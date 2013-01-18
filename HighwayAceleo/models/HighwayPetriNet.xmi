@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<PetriNet:PetriNetRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PetriNet="PetriNet">
+  <elements xsi:type="PetriNet:Transition" name="Inj1"/>
+  <elements xsi:type="PetriNet:Transition" name="node1"/>
+  <elements xsi:type="PetriNet:Transition" name="Ext1"/>
+  <elements xsi:type="PetriNet:Place" name="segm1" Tokens="1"/>
+  <elements xsi:type="PetriNet:Place" name="segm2" Tokens="2"/>
+  <arcs In="//@elements.0" Out="//@elements.3"/>
+  <arcs In="//@elements.1" Out="//@elements.4"/>
+  <arcs In="//@elements.3" Out="//@elements.1"/>
+  <arcs In="//@elements.4" Out="//@elements.2"/>
+</PetriNet:PetriNetRoot>

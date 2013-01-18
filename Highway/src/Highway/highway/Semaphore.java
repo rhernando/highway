@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see Highway.highway.HighwayPackage#getSemaphore()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot null='secondsGreen > 0'"
  * @generated
  */
 public interface Semaphore extends EObject {

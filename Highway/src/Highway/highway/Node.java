@@ -23,7 +23,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see Highway.highway.HighwayPackage#getNode()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NullName UniqueName'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot NullName='name <> null' UniqueName='highway.initNodes->isUnique(name)'"
  * @generated
  */
 public interface Node extends EObject {
